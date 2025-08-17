@@ -1,0 +1,104 @@
+\documentclass{ppfcmthesis}
+
+% Polish captions for contents and lists
+\addto\captionspolish{%
+  \renewcommand{\contentsname}{Spis treści}%
+  \renewcommand{\listfigurename}{Spis rysunków}%
+  \renewcommand{\listtablename}{Spis tabel}%
+  \renewcommand{\lstlistingname}{Listing}%
+  \renewcommand{\lstlistlistingname}{Spis listingów}%
+}
+
+% Ensure Polish is active (defensive)
+\selectlanguage{polish}
+
+% Thesis information
+\thesistitle{Analiza bezpieczeństwa aplikacji mobilnych Android}
+\thesisauthor{Mikołaj Kmieciak}
+\thesisyear{2025}
+
+\begin{document}
+
+% Title page
+\maketitle
+
+% Table of contents and lists (now with consistent arabic numbering)
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\lstlistoflistings
+
+\chapter{Wprowadzenie}
+
+To jest pierwszy rozdział pracy magisterskiej. Tutaj przedstawiamy wprowadzenie do tematu.
+
+\section{Cele pracy}
+
+Główne cele tej pracy to:
+\begin{itemize}
+\item Analiza bezpieczeństwa aplikacji Android
+\item Opracowanie metodologii testowania
+\item Implementacja narzędzi testowych
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\rule{5cm}{3cm}
+\caption{Przykładowy rysunek}
+\label{fig:przyklad}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Kolumna 1 & Kolumna 2 \\
+\hline
+Wartość 1 & Wartość 2 \\
+\hline
+\end{tabular}
+\caption{Przykładowa tabela}
+\label{tab:przyklad}
+\end{table}
+
+\begin{lstlisting}[language=Java, caption=Przykładowy kod Java]
+public class Example {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+\end{lstlisting}
+
+\begin{equation}
+E = mc^2
+\label{eq:einstein}
+\end{equation}
+
+\chapter{Przegląd literatury}
+
+Drugi rozdział zawiera przegląd literatury przedmiotu.
+
+\section{Stan badań}
+
+Obecny stan badań w dziedzinie bezpieczeństwa Android...
+
+\chapter{Metodologia}
+
+Trzeci rozdział opisuje metodologię badawczą.
+
+\chapter{Implementacja}
+
+Czwarty rozdział przedstawia szczegóły implementacji.
+
+\chapter{Wyniki}
+
+Piąty rozdział zawiera wyniki przeprowadzonych badań.
+
+\chapter{Wnioski}
+
+Ostatni rozdział podsumowuje pracę i przedstawia wnioski.
+
+\end{document}
