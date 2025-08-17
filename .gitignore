@@ -1,0 +1,32 @@
+# LaTeX generated files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.lol
+*.fdb_latexmk
+*.fls
+*.out
+*.pdf
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Virtual environment
+mitm-env/
+
+# Logs
+mitm_logs/
+pcap_logs/
