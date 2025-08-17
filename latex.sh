@@ -1,0 +1,1 @@
+cd latex && tectonic -X compile main.tex || true
