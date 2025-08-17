@@ -1,10 +1,9 @@
-% Główny plik pracy magisterskiej (modułowy).
 \documentclass{ppfcmthesis}
 
 % ------------------- PAKIETY OGÓLNE -------------------
 \usepackage{amsmath,amssymb}
-\usepackage{microtype} % lepsza typografia (dzielenie, kerning)
-\usepackage{setspace} % dla \setstretch w streszczeniach
+\usepackage{microtype}
+\usepackage{setspace}
 \usepackage{siunitx}
 \usepackage{listings}
 \usepackage{graphicx}
@@ -18,8 +17,7 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,fit,shapes,calc}
-% Algorytmy: unikamy pakietu 'algorithm' (ostrzeżenie UTF-8 w Tectonic)
-\usepackage{algpseudocode} % zapewnia środowisko algorithmic
+\usepackage{algpseudocode}
 \usepackage{float}
 \floatstyle{ruled}
 \newfloat{algorithm}{tbp}{loa}
@@ -44,8 +42,6 @@
   \renewcommand{\listfigurename}{Spis rysunków}%
   \renewcommand{\listtablename}{Spis tabel}%
 }
-% Nazwa listy listingów
-\renewcommand{\lstlistlistingname}{Spis listingów}
 
 % ------------------- LISTINGS -------------------
 \lstdefinestyle{code}{
@@ -83,18 +79,9 @@
 
 % ------------------- METADANE -------------------
 \title{Analiza ruchu sieciowego aplikacji mobilnych na platformie Android}
-\authortitle{Imię Nazwisko, nr albumu 123456}
-\author{Imię Nazwisko\album{123456}}
-\ppsupervisor{dr inż. Imię Nazwisko}
+\authortitle{Mikołaj Kmieciak, nr albumu 147575}
+\ppsupervisor{dr inż. dr inż. Michał Kalewski}
 \ppyear{2025}
-
-% (Opcja: identyczne logo na kolofonie)
-% \renewcommand{\ppColophonLogoFile}{wit/sygnet-pp}
-% \renewcommand{\ppColophonLogoWidth}{0.5\textwidth}
-
-% (Opcja Times – jeśli zechcesz później)
-% \usepackage{newtxtext}
-% \usepackage{newtxmath}
 
 \begin{document}
 \maketitle
@@ -102,19 +89,8 @@
 % ======= STRESZCZENIA =======
 \input{chapters/00-streszczenia}
 
+% ======= SPIS TREŚCI =======
 \tableofcontents*
-\cleardoublepage
-\listoffigures
-\cleardoublepage
-\listoftables
-\cleardoublepage
-\listof{algorithm}{Spis algorytmów}
-\cleardoublepage
-\lstlistoflistings
-\cleardoublepage
-\input{chapters/wykaz-skrotow}
-
-
 \mainmatter*
 
 % ======= ROZDZIAŁY GŁÓWNE =======
@@ -132,11 +108,6 @@
 % ======= BIBLIOGRAFIA =======
 \backmatter
 \printbibliography[heading=bibintoc,title={Bibliografia}]
-
-% ======= DODATKI =======
-\appendix
-\input{chapters/appendix-a-dodatkowe-wykresy}
-\input{chapters/appendix-b-konfiguracja}
 
 % Kolofon
 \ppcolophon
