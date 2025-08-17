@@ -1,0 +1,22 @@
+\chapter{Wstęp}
+
+\section{Motywacja}
+Ekosystem aplikacji mobilnych rozwija się dynamicznie: rośnie złożoność warstw komunikacyjnych (HTTP/2, QUIC), wzmacnia się szyfrowanie (TLS~1.3) i presja regulacyjna dotycząca prywatności. Użytkownicy mają ograniczoną widoczność tego, jakie dane i do jakich domen są wysyłane.
+
+\section{Cel i zakres pracy}
+\cel{Opracowanie oraz ewaluacja środowiska do systematycznej analizy ruchu sieciowego aplikacji Android i identyfikacji wzorców komunikacyjnych oraz ryzyk prywatności.}
+
+Zakres obejmuje: (i) przygotowanie środowiska do przechwytywania, (ii) normalizację i klasyfikację ruchu, (iii) zdefiniowanie metryk, (iv) eksperymenty na wybranym zbiorze aplikacji, (v) analizę protokołów i domen trackingowych.
+
+\section{Pytania badawcze i hipotezy}
+\pytanie{Jakie protokoły transportowe dominują w ruchu popularnych aplikacji?}\\
+\hipoteza{Ponad 60\% żądań wykorzystuje HTTP/2 lub QUIC.}
+
+\pytanie{Czy aplikacje multimedialne kierują większy odsetek ruchu do domen analitycznych niż komunikatory?}\\
+\hipoteza{Aplikacje multimedialne wykazują wyższy udział żądań do domen trackingowych.}
+
+\section{Metody i podejście}
+Krótki opis strategii: obserwacja black-box, przechwytywanie TLS z wstrzykniętym CA, heurystyki klasyfikacji domen, pomiar i agregacje.
+
+\section{Struktura pracy}
+Opis zawartości kolejnych rozdziałów (skrót).

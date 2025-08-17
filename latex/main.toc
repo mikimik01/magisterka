@@ -1,0 +1,68 @@
+\babel@toc {polish}{}\relax 
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Spis rysunków}{7}{section*.5}%
+\contentsline {chapter}{Spis tabel}{9}{section*.6}%
+\contentsline {chapter}{Spis listingów}{13}{section*.8}%
+\contentsline {chapter}{Wykaz skrótów}{15}{chapter*.9}%
+\contentsline {chapter}{\chapternumberline {1}Wstęp}{17}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motywacja}{17}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Cel i zakres pracy}{17}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Pytania badawcze i hipotezy}{17}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Metody i podejście}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Struktura pracy}{17}{section.1.5}%
+\contentsline {chapter}{\chapternumberline {2}Przegląd literatury i technologii}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Architektura systemu Android}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Model bezpieczeństwa}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Protokoły}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Techniki analizy ruchu}{19}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Prywatność i tracking}{19}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Powiązane badania}{19}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Metodyka badawcza}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Kryteria doboru aplikacji}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Środowisko testowe}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Procedura przechwytywania}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Automatyzacja interakcji}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Model danych i metryki}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Anonimizacja i etyka}{21}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Walidacja}{21}{section.3.7}%
+\contentsline {chapter}{\chapternumberline {4}Architektura rozwiązania}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Przegląd komponentów}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagram wysokopoziomowy}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Przepływ danych (ETL)}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Struktura repozytorium}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Model normalizacji}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Rozszerzalność}{23}{section.4.6}%
+\contentsline {chapter}{\chapternumberline {5}Implementacja}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Moduł przechwytywania}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hooki mitmproxy}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Parser i normalizacja}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Klasyfikacja domen}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Agregacje i raporty}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Testy}{25}{section.5.6}%
+\contentsline {chapter}{\chapternumberline {6}Eksperymenty i wyniki}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Plan eksperymentalny}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Charakterystyka próbek}{27}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Wykorzystanie protokołów}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Analiza domen trackingowych}{27}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Czasy odpowiedzi i rozmiary}{27}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Ograniczenia}{27}{section.6.6}%
+\contentsline {chapter}{\chapternumberline {7}Aspekty bezpieczeństwa i prywatności}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Szyfrowanie i wersje TLS}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Certificate pinning}{29}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Potencjalne wycieki metadanych}{29}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Domeny trackingowe}{29}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Implikacje}{29}{section.7.5}%
+\contentsline {chapter}{\chapternumberline {8}Dyskusja}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Interpretacja wyników}{31}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Porównanie z literaturą}{31}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Zagrożenia dla ważności}{31}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Perspektywa praktyczna}{31}{section.8.4}%
+\contentsline {chapter}{\chapternumberline {9}Wnioski i dalsze prace}{33}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Podsumowanie}{33}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Odpowiedzi na pytania badawcze}{33}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Możliwe rozszerzenia}{33}{section.9.3}%
+\contentsline {appendix}{\chapternumberline {A}Dodatkowe wykresy}{35}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}Konfiguracja środowiska}{37}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Parametry mitmproxy}{37}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Skrypt automatyzacji ADB (fragment)}{37}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Struktura katalogów danych}{37}{section.B.3}%

@@ -1,0 +1,147 @@
+% Główny plik pracy magisterskiej (modułowy).
+\documentclass{ppfcmthesis}
+
+% ------------------- PAKIETY OGÓLNE -------------------
+\usepackage{amsmath,amssymb}
+\usepackage{microtype} % lepsza typografia (dzielenie, kerning)
+\usepackage{setspace} % dla \setstretch w streszczeniach
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes,calc}
+% Algorytmy: unikamy pakietu 'algorithm' (ostrzeżenie UTF-8 w Tectonic)
+\usepackage{algpseudocode} % zapewnia środowisko algorithmic
+\usepackage{float}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorytm}
+\usepackage{csquotes}
+
+% Bibliografia (biblatex + biber)
+\usepackage[
+  backend=bibtex,
+  style=ieee,
+  doi=false,
+  isbn=false,
+  url=true,
+  giveninits=true,
+  sorting=nyt
+]{biblatex}
+\addbibresource{bibliografia.bib}
+
+% Polskie nazwy spisów
+\addto\captionspolish{%
+  \renewcommand{\contentsname}{Spis treści}% (już jest, dla pewności)
+  \renewcommand{\listfigurename}{Spis rysunków}%
+  \renewcommand{\listtablename}{Spis tabel}%
+}
+% Nazwa listy listingów
+\renewcommand{\lstlistlistingname}{Spis listingów}
+
+% ------------------- LISTINGS -------------------
+\lstdefinestyle{code}{
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=6pt,
+  frame=single,
+  framerule=0.4pt,
+  breaklines=true,
+  tabsize=2,
+  showstringspaces=false,
+  keywordstyle=\color{blue!70!black}\bfseries,
+  commentstyle=\color{green!40!black}\itshape,
+  stringstyle=\color{orange!60!black},
+  captionpos=b
+}
+\lstset{style=code,numberbychapter=false}
+% Prosta globalna numeracja listingów
+\AtBeginDocument{\renewcommand{\thelstlisting}{\arabic{lstlisting}}}
+
+% ------------------- NUMERACJA RÓWNAŃ / ALGORYTMÓW -------------------
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+\numberwithin{algorithm}{chapter}
+% Głębokość numerowania sekcji: rozdział (1), sekcja (1.1), podsekcja (1.1.1)
+\setcounter{secnumdepth}{2}
+
+% ------------------- MAKRA BADAWCZE / SKRÓTY -------------------
+\newcommand{\cel}[1]{\textbf{Cel:} #1}
+\newcommand{\pytanie}[1]{\textbf{Pytanie badawcze:} #1}
+\newcommand{\hipoteza}[1]{\textbf{Hipoteza:} #1}
+\newcommand{\abbr}[2]{\textbf{#1} – #2\\}
+
+% ------------------- METADANE -------------------
+\title{Analiza ruchu sieciowego aplikacji mobilnych na platformie Android}
+\authortitle{Imię Nazwisko, nr albumu 123456}
+\author{Imię Nazwisko\album{123456}}
+\ppsupervisor{dr inż. Imię Nazwisko}
+\ppyear{2025}
+
+% (Opcja: identyczne logo na kolofonie)
+% \renewcommand{\ppColophonLogoFile}{wit/sygnet-pp}
+% \renewcommand{\ppColophonLogoWidth}{0.5\textwidth}
+
+% (Opcja Times – jeśli zechcesz później)
+% \usepackage{newtxtext}
+% \usepackage{newtxmath}
+
+\begin{document}
+\maketitle
+
+% ======= STRESZCZENIA =======
+\input{chapters/00-streszczenia}
+
+\tableofcontents*
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\cleardoublepage
+\listof{algorithm}{Spis algorytmów}
+\cleardoublepage
+\lstlistoflistings
+\cleardoublepage
+\input{chapters/wykaz-skrotow}
+
+
+\mainmatter*
+
+% ======= ROZDZIAŁY GŁÓWNE =======
+\input{chapters/01-wstep}
+\input{chapters/02-przeglad-literatury}
+\input{chapters/03-metodyka}
+\input{chapters/04-architektura}
+\input{chapters/05-implementacja}
+\input{chapters/06-eksperymenty-wyniki}
+\input{chapters/07-bezpieczenstwo-prywatnosc}
+\input{chapters/08-dyskusja}
+\input{chapters/09-wnioski}
+
+
+% ======= BIBLIOGRAFIA =======
+
+
+% ======= DODATKI =======
+\appendix
+\input{chapters/appendix-a-dodatkowe-wykresy}
+\input{chapters/appendix-b-konfiguracja}
+
+% Kolofon
+\ppcolophon
+
+\end{document}
+
+% ======= BIBLIOGRAFIA =======
+\backmatter
+\printbibliography[heading=bibintoc,title={Bibliografia}]

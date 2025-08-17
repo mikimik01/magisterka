@@ -1,0 +1,24 @@
+\chapter{Architektura rozwiązania}
+
+\section{Przegląd komponentów}
+Opis modułów: przechwytywanie, ekstrakcja, normalizacja, klasyfikacja, agregacja, wizualizacja.
+
+\section{Diagram wysokopoziomowy}
+\begin{figure}[H]
+  \centering
+  % (Możesz wstawić diagram TikZ lub grafikę.)
+  \caption{Architektura modułowa środowiska analitycznego (schemat).}
+  \label{fig:architektura}
+\end{figure}
+
+\section{Przepływ danych (ETL)}
+Kolejne etapy: capture -> parse -> enrich -> store -> stats.
+
+\section{Struktura repozytorium}
+Opis katalogów (np. scripts/, data/, analysis/).
+
+\section{Model normalizacji}
+Mapowanie surowych atrybutów mitmproxy na ujednolicony rekord JSON/CSV.
+
+\section{Rozszerzalność}
+Dodanie nowego klasyfikatora domen lub obsługa innego proxy.

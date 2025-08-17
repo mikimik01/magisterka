@@ -1,0 +1,22 @@
+\chapter{Metodyka badawcza}
+
+\section{Kryteria doboru aplikacji}
+Popularność (rankingi store), kategorie (komunikacja, multimedia, finanse), aktualność wersji.
+
+\section{Środowisko testowe}
+Sprzęt (model urządzenia), wersja Android, konfiguracja sieci (oddzielony SSID), kontrola tła (tryb samolotowy przed startem sesji).
+
+\section{Procedura przechwytywania}
+Instalacja certyfikatu CA dla mitmproxy, konfiguracja proxy systemowego, ograniczenia w wypadku pinningu.
+
+\section{Automatyzacja interakcji}
+Skrypty ADB / uiautomator generujące sekwencje działań, logowanie timestampów.
+
+\section{Model danych i metryki}
+Pola: timestamp, host, ścieżka, metoda, kod statusu, rozmiary (request/response), protokół (HTTP/2 / QUIC), kategoria domeny, czas odpowiedzi.
+
+\section{Anonimizacja i etyka}
+Hashowanie identyfikatorów, odrzucanie payloadów binarnych zawierających potencjalne dane osobowe, brak logowania treści formularzy.
+
+\section{Walidacja}
+Losowa weryfikacja spójności liczby pakietów vs liczby zarejestrowanych żądań; test powtarzalności (2 przebiegi).
