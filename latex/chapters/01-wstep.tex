@@ -1,22 +1,63 @@
 \chapter{Wstęp}
 
 \section{Motywacja}
-Ekosystem aplikacji mobilnych rozwija się dynamicznie: rośnie złożoność warstw komunikacyjnych (HTTP/2, QUIC), wzmacnia się szyfrowanie (TLS~1.3) i presja regulacyjna dotycząca prywatności. Użytkownicy mają ograniczoną widoczność tego, jakie dane i do jakich domen są wysyłane.
+Rynek aplikacji mobilnych stał się dominującym kanałem konsumpcji treści i usług cyfrowych. Według danych branżowych dotyczących penetracji dostępu mobilnego (71\% globalnej populacji z subskrypcją mobilną do 2023 r.) \cite{CiscoAIRWhitepaper2023} oraz aktualnych statystyk udziału ruchu WWW (ponad 50\% globalnych page views pochodzi z urządzeń mobilnych) \cite{StatCounterPlatformShare2025} środowisko mobilne stanowi kluczowy obszar analizy zachowań komunikacyjnych i ryzyk prywatności. W ekosystemie Androida współistnieją tysiące bibliotek firm trzecich (analityka, reklama, personalizacja, antyfraud), które wprowadzają dodatkowe warstwy komunikacji sieciowej – często poza świadomością użytkownika i częściowo także poza kontrolą dewelopera końcowej aplikacji (zależności łańcuchowe). Ta rosnąca heterogeniczność przekłada się na trudności w:
+\begin{enumerate}[label=\alph*)]
+  \item uzyskaniu przejrzystości jakie protokoły i domeny są wykorzystywane,
+  \item ocenie ryzyka ekspozycji metadanych (host, czas, wielkości transferów) mimo powszechnego szyfrowania treści,
+  \item porównywalności zachowań komunikacyjnych między kategoriami aplikacji (komunikatory, multimedia, finanse, gry),
+  \item tworzeniu powtarzalnych narzędzi badawczych radzących sobie z ewolucją protokołów (HTTP/2, HTTP/3/QUIC) i mechanizmami obronnymi (certificate pinning).
+\end{enumerate}
+
+Drugi wektor motywacyjny stanowi szybka adopcja nowych protokołów transportowych i warstw aplikacyjnych. QUIC (standaryzowany jako HTTP/3 \cite{RFC9114}) przenosi część logiki transportu do przestrzeni użytkownika (UDP + TLS 1.3 \cite{RFC8446}), co zmienia charakterystykę obserwowalnych cech przepływów: klasyczne estymatory opóźnień i retransmisji z poziomu TCP stają się mniej bezpośrednie, a analiza pakietów jest utrudniona przez szyfrowanie większej liczby pól. W konsekwencji wcześniejsze proporcje protokołów publikowane w literaturze mogą być nieaktualne dla obecnych wersji popularnych aplikacji.
+
+Kolejnym aspektem jest prywatność i otoczenie regulacyjne. RODO (GDPR), a także DMA/DSA w UE akcentują minimalizację i przejrzystość przetwarzania. Architektura „multi-endpoint” (API własne + analityka + reklamy + antyfraud + CDN/edge) prowadzi do gęstych, równoległych zestawów połączeń tuż po interakcji użytkownika. Nawet przy pełnym szyfrowaniu treści korelacja metadanych (częstotliwość, rozmiary odpowiedzi, domeny) może ujawniać wzorce użycia funkcji (pattern-of-life). Transparentność takich wzorców jest ograniczona zarówno dla użytkownika, jak i audytorów; narzędzia systemowe dają uogólniony obraz, a techniki inwazyjne (hooking, dynamic instrumentation) bywają blokowane przez mechanizmy anty‑tampering.
+
+Istnieje także motywacja praktyczna stworzenia lekkiego, powtarzalnego środowiska badawczego balansującego między:
+\begin{itemize}
+  \item \textbf{Zasięgiem obserwacji} (kompletność metadanych HTTP[S]),
+  \item \textbf{Inwazyjnością} (brak konieczności rootowania, minimalne modyfikacje),
+  \item \textbf{Zgodnością prawną i etyczną} (anonimizacja identyfikatorów, brak utrwalania treści wrażliwych).
+\end{itemize}
+Istniejące narzędzia (np. \emph{mitmproxy}) zapewniają bazowy przechwyt, ale wymagają rozszerzeń o: (i) normalizację do spójnego formatu, (ii) klasyfikację domen (funkcjonalna / tracking / infrastrukturalna), (iii) agregację metryk (udział protokołów, rozkłady czasów), (iv) automatyzację interakcji (ADB/UI scripting), (v) politykę anonimizacji.
+
+Z naukowego punktu widzenia identyfikowane luki obejmują:
+\begin{description}
+  \item[L1] Brak bieżących, empirycznych pomiarów dystrybucji HTTP/1.1 vs HTTP/2 vs QUIC w popularnych aplikacjach.
+  \item[L2] Ograniczone porównania między kategoriami aplikacji a zachowaniami komunikacyjnymi.
+  \item[L3] Niedostatek jawnych metryk ryzyka prywatności bazujących wyłącznie na metadanych.
+  \item[L4] Fragmentaryczne dane o wpływie certificate pinning na pokrycie przechwytu.
+\end{description}
+
+Interesariusze:
+\begin{itemize}
+  \item \textbf{Użytkownik} – zyskuje pośrednio poprzez privacy-by-design.
+  \item \textbf{Deweloper} – możliwość audytu nadmiarowych zależności.
+  \item \textbf{Audytor bezpieczeństwa} – metryki priorytetyzacji ryzyka.
+  \item \textbf{Społeczność naukowa} – powtarzalny pipeline do dalszych badań.
+\end{itemize}
+
+Kluczowe osie motywacji:
+\begin{enumerate}
+  \item \textbf{Ewolucja protokołów i szyfrowania}
+  \item \textbf{Prywatność i regulacje}
+  \item \textbf{Złożoność komponentów trzecich}
+  \item \textbf{Replikowalność i standaryzacja}
+\end{enumerate}
 
 \section{Cel i zakres pracy}
 \cel{Opracowanie oraz ewaluacja środowiska do systematycznej analizy ruchu sieciowego aplikacji Android i identyfikacji wzorców komunikacyjnych oraz ryzyk prywatności.}
-
-Zakres obejmuje: (i) przygotowanie środowiska do przechwytywania, (ii) normalizację i klasyfikację ruchu, (iii) zdefiniowanie metryk, (iv) eksperymenty na wybranym zbiorze aplikacji, (v) analizę protokołów i domen trackingowych.
+Zakres obejmuje: (i) środowisko przechwytywania, (ii) normalizację i klasyfikację ruchu, (iii) definicję metryk, (iv) eksperymenty na wybranym zbiorze aplikacji, (v) analizę protokołów i domen trackingowych.
 
 \section{Pytania badawcze i hipotezy}
 \pytanie{Jakie protokoły transportowe dominują w ruchu popularnych aplikacji?}\\
 \hipoteza{Ponad 60\% żądań wykorzystuje HTTP/2 lub QUIC.}
 
 \pytanie{Czy aplikacje multimedialne kierują większy odsetek ruchu do domen analitycznych niż komunikatory?}\\
-\hipoteza{Aplikacje multimedialne wykazują wyższy udział żądań do domen trackingowych.}
+\hipoteza{Aplikacje multimedialne mają wyższy udział żądań do domen trackingowych.}
 
 \section{Metody i podejście}
-Krótki opis strategii: obserwacja black-box, przechwytywanie TLS z wstrzykniętym CA, heurystyki klasyfikacji domen, pomiar i agregacje.
+Obserwacja black-box: przechwytywanie TLS z własnym CA, heurystyki klasyfikacji domen, agregacja metryk i analiza.
 
 \section{Struktura pracy}
-Opis zawartości kolejnych rozdziałów (skrót).
+Rozdział 2: literatura i kontekst; 3: metodyka; 4: architektura; 5: implementacja; 6: eksperymenty i wyniki; 7: bezpieczeństwo i prywatność; 8: dyskusja; 9: wnioski; Aneksy.
