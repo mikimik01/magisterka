@@ -1,13 +1,21 @@
 \chapter{Wstęp}
 
 \section{Motywacja}
-Rynek aplikacji mobilnych stał się dominującym kanałem konsumpcji treści i usług cyfrowych. Według danych branżowych dotyczących penetracji dostępu mobilnego (71\% globalnej populacji z subskrypcją mobilną do 2023 r.) \cite{CiscoAIRWhitepaper2023} oraz aktualnych statystyk udziału ruchu WWW (ponad 50\% globalnych page views pochodzi z urządzeń mobilnych) \cite{StatCounterPlatformShare2025} środowisko mobilne stanowi kluczowy obszar analizy zachowań komunikacyjnych i ryzyk prywatności. W ekosystemie Androida współistnieją tysiące bibliotek firm trzecich (analityka, reklama, personalizacja, antyfraud), które wprowadzają dodatkowe warstwy komunikacji sieciowej – często poza świadomością użytkownika i częściowo także poza kontrolą dewelopera końcowej aplikacji. Ta rosnąca heterogeniczność przekłada się na trudności w:
+
+Rynek aplikacji mobilnych stał się dominującym kanałem konsumpcji treści i usług cyfrowych. Dane o penetracji dostępu mobilnego (ok.\ 71\% globalnej populacji posiada subskrypcję mobilną do 2023 r.) \cite{CiscoAIRWhitepaper2023} oraz statystyki udziału ruchu WWW (ponad 50\% globalnych \emph{page views} pochodzi z urządzeń mobilnych) \cite{StatCounterPlatformShare2025} pokazują, że to właśnie środowisko mobilne jest dziś kluczowym miejscem, w którym kształtują się wzorce komunikacji sieciowej i materializują ryzyka dla prywatności.
+
+W ekosystemie Androida współistnieje wiele bibliotek i zestawów SDK firm trzecich — od analityki i reklam, przez personalizację, po rozwiązania antyfraudowe. Każda z tych warstw wnosi własne punkty końcowe, protokoły i mechanizmy telemetrii, często działające poza świadomością użytkownika, a niekiedy również poza pełną kontrolą zespołów deweloperskich aplikacji. W efekcie rośnie złożoność oraz nieprzejrzystość przepływów danych.
+
+Konsekwencją tego stanu rzeczy są konkretne wyzwania badawcze:
 \begin{enumerate}[label=\alph*)]
-  \item uzyskaniu przejrzystości jakie protokoły i domeny są wykorzystywane,
-  \item ocenie ryzyka ekspozycji metadanych (host, czas, wielkości transferów) mimo powszechnego szyfrowania treści,
-  \item porównywalności zachowań komunikacyjnych między kategoriami aplikacji (komunikatory, multimedia, finanse, gry),
-  \item tworzeniu powtarzalnych narzędzi badawczych radzących sobie z ewolucją protokołów (HTTP/2, HTTP/3/QUIC) i mechanizmami obronnymi (certificate pinning).
+  \item uzyskanie przejrzystości, \emph{jakie} protokoły, domeny i dostawcy są realnie wykorzystywani przez aplikacje,
+  \item ocena ryzyka ekspozycji metadanych (np.\ hosty, czasy, rozmiary transferów) mimo powszechnego szyfrowania treści,
+  \item porównywalność zachowań komunikacyjnych między kategoriami aplikacji (komunikatory, multimedia, finanse, gry),
+  \item budowa powtarzalnych narzędzi i procedur, które nadążą za ewolucją protokołów (HTTP/2, HTTP/3/QUIC) oraz mechanizmami obronnymi (np.\ \emph{certificate pinning}).
 \end{enumerate}
+
+Wobec powyższego potrzebne jest uporządkowane, możliwie obiektywne podejście do \emph{systematycznej} obserwacji i oceny ruchu sieciowego aplikacji: środowisko pomiarowe, które pozwala porównywać różne aplikacje i kategorie, zdefiniowany zestaw metryk (zarówno ilościowych, jak i jakościowych) oraz protokoły postępowania uwzględniające ograniczenia współczesnych technologii transportowych i zabezpieczeń. Tak rozumiana ramka badawcza stanowi bezpośrednią motywację dla niniejszej pracy.
+
 
 Drugi wektor motywacyjny stanowi szybka adopcja nowych protokołów transportowych i warstw aplikacyjnych. QUIC (standaryzowany jako HTTP/3 \cite{RFC9114}) przenosi część logiki transportu do przestrzeni użytkownika (UDP + TLS 1.3 \cite{RFC8446}), co zmienia charakterystykę obserwowalnych cech przepływów: klasyczne estymatory opóźnień i retransmisji z poziomu TCP stają się mniej bezpośrednie, a analiza pakietów jest utrudniona przez szyfrowanie większej liczby pól. W konsekwencji wcześniejsze proporcje protokołów publikowane w literaturze mogą być nieaktualne dla obecnych wersji popularnych aplikacji.
 
@@ -44,24 +52,16 @@ Interesariusze:
   \item \textbf{Społeczność naukowa} – powtarzalny pipeline do dalszych badań.
 \end{itemize}
 
-Kluczowe osie motywacji:
-\begin{enumerate}
-  \item \textbf{Ewolucja protokołów i szyfrowania}
-  \item \textbf{Prywatność i regulacje}
-  \item \textbf{Złożoność komponentów trzecich}
-  \item \textbf{Replikowalność i standaryzacja}
-\end{enumerate}
-
 \section{Stan wiedzy}
 
 \subsection{Analiza ruchu sieciowego}
-Badania pokazują, że ruch generowany przez aplikacje mobilne niesie znaczące wyzwania dla prywatności – nawet konfiguracje TLS nie chronią całkowicie, bo analizę można przeprowadzać na metadanych lub kanałach bocznych. W przeglądzie literatury poświęconym analizie ruchu mobilnego autorzy klasyfikują cele, miejsca przechwytywania oraz metody wykorzystania danych sieciowych do profilowania użytkowników \cite{Conti2017TrafficAnalysis}. Inne prace demonstrują, jak sieć może zostać wykorzystana do identyfikacji konkretnej aplikacji, nawet przy szyfrowaniu, wykorzystując uczenie maszynowe na podstawie cech pakietów \cite{Taylor2016AppFingerprinting}. Przykłady wykorzystania narzędzi takich jak \textit{mitmproxy} i \textit{tcpdump} pokazują, jak można wychwycić i analizować zarówno HTTP jak i inne kanały sieciowe \cite{mitmproxy,tcpdump}.
+Badania pokazują, że ruch generowany przez aplikacje mobilne niesie znaczące wyzwania dla prywatności – nawet konfiguracje TLS nie chronią całkowicie, bo analizę można przeprowadzać na metadanych lub kanałach bocznych. W przeglądzie literatury poświęconym analizie ruchu mobilnego autorzy klasyfikują cele, miejsca przechwytywania oraz metody wykorzystania danych sieciowych do profilowania użytkowników \cite{Conti2017TrafficAnalysis}. Inne prace demonstrują, jak sieć może zostać wykorzystana do identyfikacji konkretnej aplikacji, nawet przy szyfrowaniu, wykorzystując uczenie maszynowe na podstawie cech pakietów \cite{Taylor2017AppFingerprinting}. Przykłady wykorzystania narzędzi takich jak \textit{mitmproxy} i \textit{tcpdump} pokazują, jak można wychwycić i analizować zarówno HTTP jak i inne kanały sieciowe \cite{mitmproxy,tcpdump}.
 
 \subsection{Inżynieria wsteczna i testy penetracyjne}
-Inżynieria wsteczna aplikacji mobilnych, ułatwiająca badanie mechanizmów takich jak SSL pinning, jest szeroko stosowana. Badania przedstawiają różne metody obchodzenia tej ochrony \cite{Husain2024SSLPinningBypass}. Wczesne prace wskazują na powszechne błędy konfiguracji SSL w aplikacjach Androidowych — ponad połowa analizowanych aplikacji korzystających z SSL miała błędne wdrożenia lub brak obsługi poprawnego pinningu \cite{Fahl2012WhyEve}. W celu przeprowadzania dynamicznych testów bezpieczeństwa wykorzystuje się narzędzia takie jak \textit{Frida}, \textit{Drozer} czy \textit{MobSF}, które wspierają zarówno analizę dynamiczną, jak i automatyzację \cite{MobSF,Frida}.
+Inżynieria wsteczna aplikacji mobilnych, ułatwiająca badanie mechanizmów takich jak SSL pinning, jest szeroko stosowana. Wczesne prace wskazują na powszechne błędy konfiguracji SSL w aplikacjach Androidowych — ponad połowa analizowanych aplikacji korzystających z SSL miała błędne wdrożenia lub brak obsługi poprawnego pinningu \cite{Fahl2012WhyEve}. W celu przeprowadzania dynamicznych testów bezpieczeństwa wykorzystuje się narzędzia takie jak \textit{Frida}, \textit{Drozer} czy \textit{MobSF}, które wspierają zarówno analizę dynamiczną, jak i automatyzację \cite{MobSF,Frida}.
 
 \subsection{Prywatność, uprawnienia i trackery}
-Coraz więcej badań zwraca uwagę na skalę gromadzenia danych przez aplikacje mobilne. Jedno z systematycznych opracowań analizujących prywatność w aplikacjach Android zwraca uwagę na różnorodność technik (statycznych, dynamicznych i hybrydowych) oraz wskazuje na luki w zgodności z regulacjami prawnymi \cite{Alazam2021PrivacySurvey}. Narzędzia takie jak \textit{Exodus Privacy} umożliwiają analizę APK pod kątem wbudowanych trackerów i uprawnień \cite{ExodusPrivacy}. Wyniki badań praktycznych pokazują, że aplikacje często żądają nadmiarowych uprawnień lub integrują zewnętrzne trackery reklamowe \cite{Razaghpanah2018AppsPrivacy}.
+Coraz więcej badań zwraca uwagę na skalę gromadzenia danych przez aplikacje mobilne. Systematyczne opracowania przeglądowe pokazują spektrum metod oceny prywatności (statycznych, dynamicznych i hybrydowych) oraz wskazują luki w zgodności z regulacjami \cite{DelAlamo2021PrivacyMapping}. Narzędzia takie jak \textit{Exodus Privacy} umożliwiają analizę APK pod kątem wbudowanych trackerów i żądanych uprawnień \cite{ExodusPrivacy}. Wyniki badań empirycznych pokazują, że aplikacje często żądają nadmiarowych uprawnień lub integrują zewnętrzne trackery reklamowe \cite{Razaghpanah2018AppsPrivacy}.
 
 \subsection{Zużycie zasobów i kontekst behawioralny}
 Nadmierne użycie zasobów (np. bateria, CPU) może wskazywać na obecność komponentów śledzących lub brak optymalizacji. Do pomiarów wykorzystuje się m.in. \textit{Battery Historian} oraz \textit{Android Profiler} \cite{BatteryHistorian,AndroidProfiler}. Chociaż ten aspekt jest rzadziej eksplorowany w literaturze naukowej, podkreśla się jego znaczenie w identyfikacji ukrytych mechanizmów aplikacji \cite{Pathak2012BatteryDrain}.

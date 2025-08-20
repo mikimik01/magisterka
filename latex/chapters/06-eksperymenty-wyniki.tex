@@ -1,19 +1,115 @@
-\chapter{Eksperymenty i wyniki}
+% --- jeśli nie masz w preambule, dodaj:
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% \usepackage{siunitx} % ładne jednostki, np. MiB, %; opcjonalnie
+% \sisetup{detect-weight=true, detect-family=true}
 
-\section{Plan eksperymentalny}
-Opis serii sesji, długość, liczba powtórzeń.
+\chapter{Eksperyment: analiza ruchu aplikacji Instagram z użyciem PCAPdroid}
+\label{chap:eksperyment-instagram}
 
-\section{Charakterystyka próbek}
-Liczba aplikacji, łączna liczba żądań, udział kategorii.
+\section{Cel i założenia}
+Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej popularnej aplikacji mobilnej (Instagram) pod kątem:
+(i) wykorzystywanych protokołów i transportu (HTTP/1.1, HTTP/2, HTTP/3/QUIC, TLS) \cite{RFC8446,RFC9114,RFC9000},
+(ii) wzorców zachowania (bursty podczas interakcji vs.\ aktywność w tle),
+(iii) rozproszenia docelowych usług (domen/IP/portów) oraz
+(iv) ograniczeń obserwowalności wynikających z QUIC/HTTP/3 i ewentualnego \emph{certificate pinning}.
+Rejestracji dokonano narzędziem PCAPdroid (no-root, tryb PCAPNG z kluczami) i poddano obróbce wg metodyki z Rozdz.\ \ref{chap:metodyka}; do inspekcji \texttt{pcapng} wykorzystywano również Wireshark \cite{WiresharkDocs}.
 
-\section{Wykorzystanie protokołów}
-Tabela i wykres udziału HTTP/1.1 vs HTTP/2 vs QUIC.
+\section{Środowisko i narzędzia}
+\begin{itemize}
+  \item Urządzenie z Androidem, konto testowe; sieć laboratoryjna (AP na Linuxie).
+  \item \textbf{PCAPdroid}: lokalny VPN (bez roota), \emph{TLS Decryption} aktywne, zapis do \texttt{.pcapng} (z kluczami sesji).
+  \item Analiza \texttt{pcapng}: Wireshark/tshark (ALPN, SNI, QUIC/UDP~443, identyfikacja HTTP/1.1/2/3) \cite{WiresharkDocs,RFC9114,RFC9000}.
+\end{itemize}
 
-\section{Analiza domen trackingowych}
-Odsetek żądań do trackerów per kategoria.
+\section{Procedura (pojedyncza iteracja)}
+Zgodnie z metodyką, jedna iteracja (≈ 30–34 min) składa się z: 
+\begin{enumerate}
+  \item \textbf{Baseline OS (2 min)} – app nieuruchomiona; punkt odniesienia dla tła.
+  \item \textbf{Cold start (1 min)} – uruchomienie i ustabilizowanie ekranu głównego.
+  \item \textbf{Logowanie (3 min, jeśli dotyczy)} – ścieżki auth/token.
+  \item \textbf{Nawigacja (5 min)} – główne ekrany (feed, profil, wyszukiwarka).
+  \item \textbf{Media/operacja (3 min)} – krótkie odtwarzanie/przewijanie, wymuszenie większych transferów.
+  \item \textbf{Offline/online (4 min)} – 2 min offline + 2 min po reconnect; obserwacja retry/backoff.
+  \item \textbf{Zamknięcie (1 min)} – wylogowanie/zamknięcie.
+  \item \textbf{Tło (15 min)} – 5 min tuż po zejściu do tła + 10 min dalszej obserwacji.
+\end{enumerate}
+Motywacja czasów i uzasadnienia znajdują się w Rozdz.\ \ref{chap:metodyka}. QUIC/HTTP/3 (UDP) z natury ogranicza klasyczny MITM; analiza treści HTTP możliwa jest przede wszystkim w wariancie porównawczym z wymuszeniem \emph{fallbacku} do HTTP/2/TCP (blokada UDP/443) \cite{RFC9114}.
 
-\section{Czasy odpowiedzi i rozmiary}
-Rozkłady, mediany, percentyle.
+\section{Zebrane dane (ta sesja)}
+Eksperyment wykonano w dniu 2025-08-18 w oknie \textbf{17{:}56{:}33–18{:}10{:}14} (≈ \SI{13.7}{\minute}). Zarejestrowano \textbf{302} przepływy (\emph{flows}) o łącznym wolumenie \textbf{≈\,28.0 MiB}; \textbf{RX ≈\,27.2 MiB}, \textbf{TX ≈\,0.85 MiB}.
 
-\section{Ograniczenia}
-Próbkowanie krótkich okien użycia, brak tła push/pull w długim horyzoncie.
+\paragraph{Udział protokołów (liczba flow):}
+QUIC \textbf{61.9\%}, DNS 16.2\%, TLS 11.9\%, TCP 4.0\%, HTTP 2.6\%, HTTPS 1.7\%, UDP 1.7\%.
+Dominującym portem docelowym był \textbf{443} (HTTPS/QUIC; 233 flow), dalej \textbf{53} (DNS; 49 flow), \textbf{5222} (TCP; 12 flow) i \textbf{80} (HTTP; 8 flow).
+
+\section{Wyniki ilościowe}
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[htbp]
+  \centering
+  \caption{Podsumowanie wg protokołu (Instagram, ta sesja)}
+  \label{tab:insta-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    QUIC  & 187 & 27.99 & 855{,}220 & 28{,}500{,}436 \\
+    HTTPS & 5   & 0.02  & 12{,}180  & 9{,}063 \\
+    TCP   & 12  & 0.02  & 15{,}384  & 3{,}699 \\
+    DNS   & 49  & 0.00  & 1{,}475   & 2{,}441 \\
+    TLS   & 36  & 0.00  & 2{,}160   & 1{,}440 \\
+    UDP   & 5   & 0.00  & 837       & 346 \\
+    HTTP  & 8   & 0.00  & 480       & 320 \\
+    \midrule
+    \textbf{Razem} & \textbf{302} & \textbf{28.04} & \textbf{888{,}736} & \textbf{28{,}517{,}745} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[htbp]
+  \centering
+  \caption{Największe kierunki ruchu (wolumen; Instagram, ta sesja)}
+  \label{tab:insta-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB (total)} \\
+    \midrule
+    185.60.217.63  & 443  & QUIC  & 137 & 27.52 \\
+    157.240.251.63 & 443  & QUIC  & 1   & 0.33 \\
+    185.60.217.3   & 443  & QUIC  & 35  & 0.08 \\
+    185.60.217.20  & 443  & QUIC  & 2   & 0.02 \\
+    185.60.217.175 & 5222 & TCP   & 11  & 0.02 \\
+    157.240.251.11 & 443  & QUIC  & 1   & 0.02 \\
+    185.60.217.28  & 443  & QUIC  & 1   & 0.01 \\
+    157.240.0.63   & 443  & QUIC  & 1   & 0.01 \\
+    185.60.217.13  & 443  & HTTPS & 2   & 0.01 \\
+    157.240.253.17 & 443  & HTTPS & 1   & 0.01 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Dominacja HTTP/3/QUIC.} Zdecydowana większość ruchu (liczebnie i wolumenowo) to QUIC na 443/UDP, co jest zgodne z trendem migracji warstwy mediów do HTTP/3 \cite{RFC9114,RFC9000}.
+  \item \textbf{Kanał utrzymania sesji.} Występuje równoległy kanał na \textbf{TCP/5222} (11--12 flows, mały wolumen), prawdopodobnie do komunikacji w czasie rzeczywistym/utrzymania połączenia.
+  \item \textbf{Burst podczas interakcji, potem „oddech”.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle (≈ 18{:}05–18{:}06).
+  \item \textbf{Niewielki ślad HTTP/1.1/HTTPS.} Jedynie kilka żądań; główna komunikacja i zasoby idą ścieżką QUIC.
+\end{itemize}
+
+\section{Dyskusja i ograniczenia}
+\paragraph{Obserwowalność treści.}
+Ze względu na transport QUIC/UDP, klasyczny MITM dla TLS (po TCP) nie ma zastosowania; nawet z certyfikatem użytkownika wgląd w treści HTTP jest ograniczony \cite{RFC9114}. Analiza opiera się na metadanych (ALPN, SNI, strumienie, wolumeny, czasy) i korelacji zachowania.
+\paragraph{Pinning.}
+Nawet przy braku aktywnie zaimplementowanego pinningu, wybór QUIC ogranicza możliwość przechwycenia semantyki HTTP. W aplikacjach z rygorystycznym \emph{certificate pinning} obserwowalność jest dodatkowo zawężona do metadanych (zob.\ \cite{OWASPMASTGPinning}).
+\paragraph{Replikowalność i zmienność.}
+Wyniki dotyczą konkretnych wersji aplikacji i backendu, daty 2025-08-18, okna ~13.7 min i scenariusza przewijania feedu.
+
+\section{Wariant porównawczy (HTTP/3 $\rightarrow$ HTTP/2)}
+Aby uzyskać wgląd w semantykę HTTP, zaplanowano wariant kontrolny z wymuszeniem \emph{fallbacku} z QUIC na HTTP/2/TCP (blokada UDP/443 w sieci labowej) \cite{RFC9114}. Porównywane będą: liczba żądań, rozkład kodów i metod HTTP (gdy odszyfrowalne), TTFB/czasy transferu, liczba i rola domen docelowych.
+
+\section{Artefakty i replikowalność}
+Zachowano \texttt{.pcapng} (plik zawiera zarówno pakiety, jak i klucze sesji), dziennik przebiegu (czas kroków), listę wersji aplikacji/OS oraz wyciągi agregatów (tabele \ref{tab:insta-proto} i \ref{tab:insta-topdst}). Schemat nazewnictwa plików: \texttt{YYYYMMDD\_HHMM\_Instagram\_runN\_net=\{default|udp443\_blocked\}\_vApp\_vAndroid.pcapng}.
+
+\section{Podsumowanie}
+Eksperyment pokazuje typowy dla nowoczesnych aplikacji wzorzec: dominację HTTP/3/QUIC dla treści (media), lekki kanał sterujący po TCP/5222 oraz okresowe aktywności w tle. W kontekście prywatności i bezpieczeństwa oznacza to, że analiza semantyczna wymaga wariantów kontrolnych (H3$\rightarrow$H2) lub metod instrumentacyjnych; jednocześnie metadane ruchu pozwalają na wiarygodną charakterystykę wzorców komunikacyjnych i rozproszenia dostawców.

@@ -1,0 +1,149 @@
+\chapter{Pierwsze spostrzeżenia przed badaniem właściwym}
+
+\section{Inwentaryzacja aplikacji po resecie}
+
+\textbf{Cel:} uzyskanie stanu wyjściowego urządzeń po przywróceniu ustawień fabrycznych oraz zebranie metadanych o aplikacjach zainstalowanych domyślnie, ze szczególnym uwzględnieniem możliwości kontroli wykorzystania danych sieciowych w tle.
+
+\textbf{Sprzęt:} dwa telefony Samsung Galaxy S7 (po resecie do ustawień fabrycznych).
+
+Po oczyszczeniu zrzutów z urządzeń uzyskano spójny zbiór \textbf{53} aplikacji domyślnych na każdym z telefonów.
+
+\textbf{Wyniki zbiorcze:}
+\begin{table}[htbp]
+  \centering
+  \caption{Podsumowanie ustawień korzystania z danych sieciowych w tle (po resecie)}
+  \label{tab:default-apps-summary}
+  \begin{tabular}{lrr}
+    \toprule
+    \textbf{Kategoria} & \textbf{Liczba} & \textbf{Udział} \\
+    \midrule
+    Łączna liczba aplikacji      & 53 & 100\% \\
+    Można zablokować dane w tle  & 44 & 83{,}0\% \\
+    Nie można zablokować         & 9  & 17{,}0\% \\
+    Domyślnie aktywny transfer   & 53 & 100\% \\
+    Domyślnie zablokowany        & 0  & 0\% \\
+    \bottomrule
+  \end{tabular}
+  \captionsetup{justification=raggedright,singlelinecheck=false}
+  \caption*{\footnotesize
+  \textbf{Legenda:} 
+  „Można zablokować dane w tle” – aplikacje, dla których system Android udostępnia opcję ograniczenia transmisji danych w tle; 
+  „Nie można zablokować” – aplikacje i komponenty systemowe zachowujące dostęp do sieci w tle niezależnie od użytkownika; 
+  „Domyślnie aktywny transfer/zablokowany” – stan tuż po resecie fabrycznym; 
+  „Udział” – procent względem wszystkich zidentyfikowanych aplikacji ($N=53$).
+  }
+\end{table}
+
+\textbf{Aplikacje z nieograniczonym dostępem do danych w tle:}
+\begin{longtable}{@{}l@{}}
+\caption{Lista aplikacji, dla których nie można zablokować danych sieciowych w tle (po resecie)}\label{tab:default-apps-non-disablable}\\
+\toprule
+\textbf{Nazwa aplikacji} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Nazwa aplikacji} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Konserwacja urządzenia \\
+Samsung Cloud \\
+Samsung Members \\
+Sim AT \\
+SmartThings \\
+Udostępnianie łącza \\
+Ustawienia \\
+Workspace \\
+% (W CSV znajdowała się duplikacja „Sim AT”; po deduplikacji pozostaje jedna pozycja.)
+\end{longtable}
+
+\textbf{Wniosek:} stan „po resecie” obejmuje wyłącznie aplikacje \emph{domyślnie aktywne}, z których zdecydowaną większość (83\%) można ręcznie ograniczyć pod kątem wykorzystania danych w tle. Około \emph{17\%} stanowią jednak komponenty, które zachowują pełny dostęp do sieci w tle i nie podlegają tej kontroli.
+
+\medskip
+\noindent\emph{Uwaga replikacyjna:} powyższe wyniki pochodzą z pojedynczego zrzutu po resecie na tym samym systemie operacyjnym w obu urządzeniach.
+
+\vspace{1ex}
+
+\section{Przechwytywanie radiowe Wiresharkiem w trybie monitorowania (niepowodzenie)}
+\textbf{Cel:} pasywna obserwacja ruchu bez konfigurowania proxy na urządzeniu.
+
+\textbf{Sprzęt:} laptop z Linuksem; karta Wi-Fi w trybie monitorowania; dwa Galaxy S7.
+
+\textbf{Metoda:} nasłuch (monitor mode) podczas korzystania z Wi-Fi zabezpieczonego (WPA2), próba późniejszej dekrypcji ramek i analizy ruchu aplikacji.
+
+\textbf{Wynik:} \textit{niepowodzenie metody} w kontekście pełnej analizy treści: kluczowy ruch pozostaje szyfrowany (WPA2), brak materiału do bezstratnej dekrypcji (m.in. konieczność złapania handshake i posiadania parametrów sieci). Metoda okazała się niewspółmiernie pracochłonna i ograniczona względem celów projektu; zrezygnowano na rzecz podejścia proxy/pcap.
+
+\textbf{Wnioski:} przy analizie aplikacji mobilnych efektywniejsze jest środowisko kontrolowane (AP + proxy/pcap) niż sniffing radiowy na produkcyjnej sieci.
+
+% \section{MITM przez proxy}
+% \textbf{Cel:} przechwytywanie i inspekcja HTTP(S) w ruchu badanych aplikacji.
+
+% \textbf{Narzędzia:} \textit{mitmproxy}, \textit{tcpdump}.
+
+% \textbf{Sprzęt i sieć:} laptop z Debianem pełniący rolę AP (hostapd + dnsmasq), dwa Galaxy S7 po resecie.
+
+% \textbf{Metoda:}
+% \begin{enumerate}
+%   \item Konfiguracja AP i routingu; uruchomienie \textit{mitmproxy} w trybie intercept i \textit{tcpdump} na interfejsach.
+%   \item Instalacja certyfikatu użytkownika \textit{mitmproxy} na urządzeniach; próby uruchomienia i użycia aplikacji z listy.
+% \end{enumerate}
+
+% \textbf{Wynik:} 
+% Dla metody "1.", przechwytywanie ruchu sieciowego było niemożliwe. Każda aplikacja odmawiała działania wykrywając proxy.
+% Metoda "2." zakończyła się niepowodzeniem, poniewaz telefony odrzuciły wstrzykiwanie certyfikatu podczas runtimeu za pomocą fridy.
+% Metoda "2." spowodowała uszkodzenie jednego z telefonów, przy próbie uzyskania uprawnień roota i zainstalowania certyfikatu, co wymusiło poszukiwanie innych metod przechwytywania ruchu sieciowego.
+
+% \textbf{Wnioski:} samo proxy MITM daje ograniczoną obserwowalność wobec pinningu i/lub transportu QUIC; potrzebne są alternatywy (instrumentacja, pcap, wariant H3$\to$H2).
+
+% \section{MITM + instrumentacja (Frida) wobec pinningu (niepowodzenie)}
+% \textbf{Cel:} obejście pinningu i odzyskanie wglądu w treść żądań.
+
+% \textbf{Narzędzia:} \textit{Frida} (frida-server + gotowe skrypty hookujące API).
+
+% \textbf{Metoda:} uruchomienie \textit{frida-server} na urządzeniu i wstrzyknięcie skryptów omijających pinning.
+
+% \textbf{Wynik:} \textit{niepowodzenie} — skrypty nieskuteczne na analizowanej aplikacji; prawdopodobne przyczyny: brak uprawnień \textit{root}, SELinux, natywne weryfikacje certyfikatu/niestandardowi \texttt{TrustManager}.
+
+% \textbf{Wnioski:} dla części nowoczesnych aplikacji obejście pinningu bez \textit{roota} jest nierealne lub kosztowne; alternatywą jest emulator/root lub analiza ograniczona do metadanych.
+\section{MITM przez proxy}
+
+\textbf{Cel:} przechwytywanie i inspekcja ruchu HTTP(S) generowanego przez badane aplikacje.
+
+\textbf{Narzędzia:} \textit{mitmproxy}, \textit{tcpdump}.
+
+\textbf{Sprzęt i sieć:} laptop z systemem Debian skonfigurowany jako punkt dostępowy (hostapd + dnsmasq) oraz dwa telefony Samsung Galaxy S7 po resecie do ustawień fabrycznych.
+
+\textbf{Metoda:}
+\begin{enumerate}
+  \item Konfiguracja AP i routingu; uruchomienie \textit{mitmproxy} w trybie przechwytującym oraz równoległe rejestrowanie pakietów za pomocą \textit{tcpdump}.
+  \item Instalacja certyfikatu użytkownika \textit{mitmproxy} na urządzeniach oraz próby uruchomienia i obsługi wybranych aplikacji.
+\end{enumerate}
+
+\textbf{Wynik:} 
+Przy podejściu pierwszym aplikacje odmawiały działania, wykrywając obecność proxy i blokując komunikację. Próba drugiego wariantu (instalacja certyfikatu i obejście pinningu) również zakończyła się niepowodzeniem: telefony odrzucały certyfikat podczas pracy, a dodatkowo podczas próby uzyskania uprawnień \emph{root} w celu głębszej ingerencji doszło do uszkodzenia jednego z urządzeń. Sytuacja ta wymusiła zmianę metodologii i poszukiwanie alternatywnych rozwiązań.
+
+\textbf{Wnioski:} samo zastosowanie proxy MITM daje bardzo ograniczoną obserwowalność wobec aplikacji stosujących pinning i/lub protokół QUIC. Niezbędne są inne podejścia, np.\ instrumentacja, przechwytywanie ruchu na poziomie systemowym (pcap) lub konwersja ruchu HTTP/3 na HTTP/2.
+
+\section{MITM z instrumentacją (Frida) wobec pinningu — próba nieudana}
+
+\textbf{Cel:} obejście mechanizmu \emph{certificate pinning} i przywrócenie możliwości inspekcji treści żądań.
+
+\textbf{Narzędzia:} \textit{Frida} (\textit{frida-server} oraz gotowe skrypty hookujące interfejsy API związane z walidacją certyfikatów).
+
+\textbf{Metoda:} uruchomiono \textit{frida-server} na urządzeniu i wstrzyknięto skrypty mające na celu przechwycenie wywołań metod weryfikujących certyfikaty oraz ich dynamiczne obejście.
+
+\textbf{Wynik:} próba zakończyła się \textit{niepowodzeniem}. Wstrzyknięte skrypty nie zadziałały w przypadku analizowanej aplikacji. Prawdopodobnymi przyczynami były: brak uprawnień \emph{root}, aktywne mechanizmy SELinux oraz natywne implementacje weryfikacji certyfikatów (np.\ niestandardowe \texttt{TrustManager}), których nie obejmowały standardowe hooki.
+
+\textbf{Wnioski:} w wielu nowoczesnych aplikacjach obejście pinningu bez dostępu do uprawnień \emph{root} jest nierealne lub bardzo trudne. Alternatywami pozostają uruchamianie aplikacji w środowisku z pełnym dostępem administracyjnym (emulator, urządzenie z \emph{root}) lub analiza ograniczona do metadanych transportowych (hosty, porty, czasy, wolumen danych), bez wglądu w same treści komunikatów.
+
+
+% ----------
+\section{Rejestracja ruchu po stronie urządzenia (PCAP/PCAPNG) — przykład Instagram (sukces)}
+\textbf{Cel:} charakterystyka ruchu bez naruszania zabezpieczeń aplikacji (rejestracja na urządzeniu).
+
+\textbf{Metoda:} rejestracja ruchu i analiza strumieni; w tej próbie dominował HTTP/3/QUIC (UDP/443) z kanałem utrzymania sesji po TCP/5222, a ruch HTTP/1.1/HTTPS był śladowy.
+% Liczby i wykresy trzymamy w rozdziale z wynikami – tu tylko krótkie streszczenie
+
+\textbf{Wynik:} metoda skuteczna do obserwacji protokołów, kierunków i aktywności w tle; semantyka HTTP ograniczona przez QUIC/pinning. 
+\textbf{Artefakty:} patrz rozdział z eksperymentem głównym (plik .pcapng i agregaty).

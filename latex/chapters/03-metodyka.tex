@@ -1,22 +1,211 @@
-\chapter{Metodyka badawcza}
+\chapter{Metodyka badań}
 
-\section{Kryteria doboru aplikacji}
-Popularność (rankingi store), kategorie (komunikacja, multimedia, finanse), aktualność wersji.
+\section{Pytania badawcze i hipotezy}
+Celem metodyki jest rzetelne porównanie praktyk komunikacyjnych i mechanizmów ochrony prywatności w wybranych aplikacjach mobilnych na Androidzie. Odpowiadamy na pytania:
+\begin{enumerate}
+  \item Jakie protokoły i wersje (HTTP/1.1, HTTP/2, HTTP/3/QUIC, TLS) wykorzystują badane aplikacje i czy połączenia są odpowiednio chronione \cite{RFC8446,RFC9113,RFC9114,RFC9000}?
+  \item Czy możliwy jest pasywny lub aktywny podsłuch ruchu z użyciem proxy/interceptora i jakie bariery występują (np.\ certificate pinning) \cite{OWASPMASTGIntercept,OWASPMASTGPinning,MitmproxyDocs}?
+  \item Jakie wzorce prywatności występują (trackery, punkty końcowe stron trzecich, zakres uprawnień) i jak korespondują z politykami platformy \cite{ExodusPrivacy,AndroidPermissionsOverview,PrivacySandboxAndroid}?
+  \item Jaki jest profil zużycia zasobów (energia/CPU) w typowych scenariuszach użycia \cite{BatteryHistorian,AndroidProfiler}?
+\end{enumerate}
 
-\section{Środowisko testowe}
-Sprzęt (model urządzenia), wersja Android, konfiguracja sieci (oddzielony SSID), kontrola tła (tryb samolotowy przed startem sesji).
+\section{Zakres i dobór próby}
+Analizie podlegają popularne aplikacje z różnych kategorii (komunikacja, rozrywka, finanse, usługi publiczne). Dla każdej aplikacji realizujemy powtarzalne, zdefiniowane niżej scenariusze: uruchomienie, rejestracja/logowanie (jeśli dotyczy), przeglądanie treści, praca w tle (okno obserwacji), wylogowanie. Zakres nie obejmuje łamania zabezpieczeń serwerowych ani naruszeń regulaminów usług.
 
-\section{Procedura przechwytywania}
-Instalacja certyfikatu CA dla mitmproxy, konfiguracja proxy systemowego, ograniczenia w wypadku pinningu.
+\section{Próba badawcza: lista aplikacji}
+Na potrzeby badań przyjęto celowo dobraną próbę aplikacji mobilnych na Androidzie, obejmującą popularne kategorie (media społecznościowe, finanse, usługi publiczne, edukacja, handel/retail, rozrywka). Zestaw wyjściowy:
+\begin{itemize}
+  \item \textbf{TikTok}, \textbf{Instagram}, \textbf{Facebook} — media społecznościowe;
+  \item \textbf{Spotify} — streaming audio;
+  \item \textbf{XTB} — finanse/inwestycje;
+  \item \textbf{mObywatel} — usługi publiczne;
+  \item \textbf{USOS} — system uczelniany/edukacja;
+  \item \textbf{Posnania} — handel/galeria (aplikacja obiektu handlowego);
+  \item \textbf{Voronoi}, \textbf{Gazet} — aplikacje lokalne/utility.
+\end{itemize}
 
-\section{Automatyzacja interakcji}
-Skrypty ADB / uiautomator generujące sekwencje działań, logowanie timestampów.
+\section{Badane elementy (checklista/metryki)}
+Ocena każdej aplikacji opiera się na zunifikowanej liście elementów, łączącej analizę ruchu, prywatności oraz zachowania w tle i zużycia zasobów:
+\subsection{Komunikacja i protokoły}
+\begin{itemize}
+  \item wersja protokołu aplikacyjnego i transportowego: HTTP/1.1, HTTP/2, HTTP/3/QUIC; identyfikacja po ALPN i charakterystyce strumieni;
+  \item bezpieczeństwo transmisji: obecność TLS, wersja (w szczególności TLS~1.3), parametry sesji, błędy weryfikacji certyfikatu;
+  \item \emph{certificate pinning}: objawowa detekcja (odrzucenia łańcucha, brak wglądu w treść po zainstalowaniu CA użytkownika); próby obejścia tylko w granicach zgodnych z zaleceniami badawczymi (instrumentacja, emulator/środowisko z własnym trust store);
+  \item profil ruchu: liczność żądań, kody odpowiedzi, rozmiary, timingi; rozróżnienie pierwszego planu vs.\ tło; bursty i pory największej aktywności.
+\end{itemize}
 
-\section{Model danych i metryki}
-Pola: timestamp, host, ścieżka, metoda, kod statusu, rozmiary (request/response), protokół (HTTP/2 / QUIC), kategoria domeny, czas odpowiedzi.
+\subsection{Prywatność i strony trzecie}
+\begin{itemize}
+  \item mapowanie domen/punktów końcowych i liczba unikalnych hostów/AS (proksy dla rozproszenia danych);
+  \item identyfikacja trackerów/SDK reklamowych (analiza statyczna APK + weryfikacja dynamiczna w ruchu);
+  \item korelacja uprawnień z obserwowanym zachowaniem (np.\ żądanie lokalizacji vs.\ transmisje geodanych); zgodność z dobrymi praktykami platformy;
+  \item praktyki sesyjne: przechowywanie tokenów/ID, rotacja, wysyłka wrażliwych parametrów; ewentualne użycie plików cookie w komponentach webview.
+\end{itemize}
 
-\section{Anonimizacja i etyka}
-Hashowanie identyfikatorów, odrzucanie payloadów binarnych zawierających potencjalne dane osobowe, brak logowania treści formularzy.
+\subsection{Zachowanie w tle i zużycie zasobów}
+\begin{itemize}
+  \item aktywność sieciowa w tle (po zamknięciu/wylogowaniu, w oknie obserwacji);
+  \item energia/CPU: metryki z narzędzi deweloperskich (timeline, wakelocki, sieć vs.\ czas) oraz anomalia energetyczne w korelacji ze zdarzeniami sieciowymi;
+  \item scenariusze szczególne: tryb offline/online (spójność i bezpieczeństwo synchronizacji), zmiana łączności, restart aplikacji/urządzenia.
+\end{itemize}
 
-\section{Walidacja}
-Losowa weryfikacja spójności liczby pakietów vs liczby zarejestrowanych żądań; test powtarzalności (2 przebiegi).
+\subsection{Logi i artefakty}
+\begin{itemize}
+  \item występowanie wrażliwych danych w logach/plikach tymczasowych; format i ochrona (szyfrowanie/dostępy);
+  \item zgodność z zasadą minimalizacji (tylko niezbędne dane w logach oraz telemetrii).
+\end{itemize}
+
+\subsection{Powiązanie z narzędziami}
+\begin{itemize}
+  \item przechwyt i inspekcja: mitmproxy (CA użytkownika), tcpdump/Wireshark (pcap);
+  \item analiza statyczna/dynamiczna: Exodus Privacy, Frida/MobSF (w razie potrzeby);
+  \item pomiary zasobów: Battery Historian, Android Profiler.
+\end{itemize}
+
+
+\section{Środowisko badawcze}
+
+\subsection{Sprzęt i oprogramowanie}
+Badania realizowane są w kontrolowanym labie z wydzieloną siecią bez dostępu osób trzecich. Jako urządzenia testowe wykorzystywane są telefony z Androidem (konfiguracje opisane w dzienniku badań) oraz host linuksowy pełniący rolę punktu dostępowego i kolektora ruchu. Intercepcję i rejestrację realizują: \textit{mitmproxy} (CA użytkownika), \textit{tcpdump}/\textit{Wireshark}; infrastruktura sieciowa: \textit{hostapd}, \textit{dnsmasq} \cite{MitmproxyDocs,WiresharkDocs}. 
+\vspace{2mm}
+
+\noindent Konfiguracja labu odzwierciedla praktyki rekomendowane przez OWASP MASTG dla przechwytywania ruchu HTTP(S) oraz alternatyw nie-HTTP \cite{OWASPMASTGIntercept}. W przypadkach aplikacji stosujących pinning rozważana jest instrumentacja dynamiczna (np.\ \textit{Frida}) oraz uruchomienie w środowisku z większą kontrolą nad trust store (emulator, urządzenie z dostępem \textit{root}) \cite{Frida,OWASPMASTGPinning}.
+
+\subsection{Bezpieczeństwo, etyka i zgodność}
+Badania prowadzone są na własnych kontach testowych; nie gromadzimy wrażliwych danych osób trzecich. Zachowana jest minimalizacja danych oraz separacja środowisk. Wszelkie obserwacje interpretujemy przez pryzmat zasad ochrony danych (np.\ zgodność z wymogami RODO pozostaje poza zakresem eksperymentalnym, ale motywuje ocenę prywatności).
+
+\section{Procedura zbierania danych}
+
+\subsection{Przechwytywanie przez proxy}
+Główną ścieżką jest ruch przez \textit{mitmproxy} z zainstalowanym zaufanym CA użytkownika na urządzeniu. Dla każdej aplikacji rejestrujemy strumienie żądań i odpowiedzi, metadane (czas, metoda, kody, rozmiary), informacje o ALPN/SNI i właściwości połączenia TLS \cite{MitmproxyDocs,OWASPMASTGIntercept}. Zwracamy uwagę na przypadki odrzucenia łańcucha certyfikatu (typowy objaw pinningu).
+
+\subsection{Rejestracja pakietów}
+Równolegle pozyskujemy zrzuty pakietów (\textit{pcap}) z interfejsów sieciowych (\textit{tcpdump}/\textit{Wireshark}) dla analizy niskopoziomowej, klasyfikacji protokołów i weryfikacji QUIC/HTTP/3 na podstawie ALPN i charakterystyki strumieni \cite{WiresharkDocs,RFC9000,RFC9114}.
+
+\subsection{Postępowanie z pinningiem}
+Jeżeli aplikacja implementuje certificate pinning poprawnie, atak MITM z CA użytkownika powinien się nie powieść \cite{OWASPMASTGPinning}. W takich przypadkach dokumentujemy objawy (np.\ brak ruchu odszyfrowanego, błędy połączeń), a dalsze badanie może wymagać instrumentacji (hooking wybranych API) lub środowiska z modyfikowalnym trust store/emulacji \cite{OWASPMASTGPinning,OWASPMASTGIntercept}. Zgodnie z MASTG, obejście pinningu bywa możliwe, ale zależy od konkretnych implementacji i nie zawsze jest wykonalne bez głębszych modyfikacji aplikacji/OS \cite{OWASPMASTGPinning}.
+
+\section{Normalizacja i klasyfikacja ruchu}
+Po zebraniu danych normalizujemy je do poziomu \emph{flow} (5-tuple + kierunek + ALPN) i \emph{transakcji HTTP}. Ekstrahujemy następujące cechy:
+\begin{itemize}
+  \item protokół transportowy i aplikacyjny (TCP/UDP; HTTP/1.1, HTTP/2, HTTP/3), wersja TLS, wynik weryfikacji certyfikatu \cite{RFC8446,RFC9113,RFC9114};
+  \item metryki ruchu (liczba żądań, kody odpowiedzi, rozmiary, czasy, bursty w tle/na pierwszym planie);
+  \item informacje o domenach i dostawcach (SNI/Host), liczba unikalnych hostów/AS (proxymalna miara rozproszenia danych);
+  \item sygnały prywatności (wywołania do znanych domen analitycznych/reklamowych, parametry identyfikatorów), triangulowane z wynikami analizy statycznej \cite{ExodusPrivacy}.
+\end{itemize}
+
+\section{Metryki i kryteria oceny}
+
+\subsection{Bezpieczeństwo transmisji}
+\begin{itemize}
+  \item udział ruchu szyfrowanego (TLS) i nieszyfrowanego (HTTP bez TLS);
+  \item wersje TLS i negocjacje ALPN; wykrycie HTTP/3/QUIC \cite{RFC8446,RFC9114,RFC9000};
+  \item wskaźnik pinningu (objawowy): odsetek żądań, których nie udało się zdeszyfrować przy poprawnej konfiguracji CA użytkownika, z adnotacją o przyczynie \cite{OWASPMASTGPinning,OWASPMASTGIntercept}.
+\end{itemize}
+
+\subsection{Prywatność i uprawnienia}
+\begin{itemize}
+  \item obecność trackerów i domen stron trzecich wskazana przez analizę statyczną APK (\textit{Exodus Privacy}) oraz potwierdzona w ruchu dynamicznym \cite{ExodusPrivacy};
+  \item zakres i częstotliwość wywołań w tle do zewnętrznych punktów końcowych (okno obserwacji);
+  \item mapowanie żądanych uprawnień na obserwowane zachowania sieciowe (np.\ dostęp do lokalizacji vs.\ transmisje geodanych) \cite{AndroidPermissionsOverview,PrivacySandboxAndroid}.
+\end{itemize}
+
+\subsection{Zużycie zasobów}
+\begin{itemize}
+  \item metryki z \textit{Battery Historian}: aktywność komponentów, zdarzenia wakelock, sieć vs.\ czas, korelacje ze scenariuszami \cite{BatteryHistorian};
+  \item metryki z \textit{Android Profiler}: ślady CPU/pamięci/sieci w trakcie scenariuszy i pracy w tle \cite{AndroidProfiler}.
+\end{itemize}
+
+\section{Plan eksperymentów}
+Dla każdej aplikacji wykonujemy sekwencję:
+\begin{enumerate}
+  \item \textbf{Przygotowanie}: czyste uruchomienie, weryfikacja uprawnień, instalacja CA użytkownika (jeśli dotyczy), reset liczników energii.
+  \item \textbf{Scenariusz interakcji}: rejestracja/logowanie, nawigacja po kluczowych widokach, generowanie typowego ruchu (pobieranie treści, wyszukiwanie), a następnie wyjście.
+  \item \textbf{Okno tła}: urządzenie pozostaje bez interakcji przez $N$ minut w tej samej sieci; rejestrujemy ruch i zdarzenia energetyczne.
+  \item \textbf{Wylogowanie i zamknięcie}: kończymy sesję, sporządzamy checksumy artefaktów, archiwizujemy logi/profilery.
+\end{enumerate}
+Każdy scenariusz powtarzamy co najmniej trzykrotnie i o różnych porach dnia, aby ograniczyć wpływ zmienności sieci i backendu.
+
+\section{Analiza danych}
+Zastosujemy statystyki opisowe (medianą i IQR dla zmiennych skośnych), wykresy czasowe i heatmapy przepływów. Dla wybranych porównań (np.\ porównanie intensywności wywołań w tle między kategoriami) stosujemy nieparametryczne testy różnic (np.\ Mann–Whitney/Kruskal–Wallis) z poprawką na wielokrotność, o ile rozkłady i liczebności na to pozwalają.
+
+\section{Ograniczenia}
+Ograniczenia obejmują: (i) zależność od wersji aplikacji i backendu w czasie pomiaru; (ii) niepełną obserwowalność w aplikacjach z rygorystycznym pinningiem/ochronami anty-tamper (\emph{Play Integrity}, niestandardowi \emph{trust managerzy}) \cite{OWASPMASTGPinning}; (iii) wpływ środowiska (emulator vs.\ urządzenie fizyczne) na zachowanie \cite{OWASPMASTGIntercept}. Wyniki nie są uogólnieniem na całe kategorie, lecz charakterystyką zbadanych wersji.
+
+\section{Replikowalność}
+Zapewniamy spójne wersjonowanie artefaktów: konfiguracji \textit{mitmproxy}, skryptów ekstrakcji cech, próbek \texttt{pcap} (zanonimizowanych) i raportów z \textit{Battery Historian}. Tam, gdzie to możliwe, udostępniamy parametry komend i hashe binariów narzędzi (bez udostępniania samych APK). Dokumentujemy wersje protokołów i bibliotek (ALPN/TLS) \cite{RFC8446,RFC9114,RFC9000}.
+
+
+% -- jeśli nie masz, dodaj w preambule: \usepackage{booktabs} \usepackage{longtable}
+\begingroup
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}p{0.27\textwidth}p{0.23\textwidth}p{0.50\textwidth}@{}}
+\caption{Mapa elementów badania do narzędzi i metryk}
+\label{tab:mapa-elementow-compat}\\
+\toprule
+\multicolumn{1}{l}{\textbf{Element badania}} &
+\multicolumn{1}{l}{\textbf{Narzędzie / źródło}} &
+\multicolumn{1}{l}{\textbf{Przykładowe metryki / artefakty}} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{l}{\textbf{Element badania}} &
+\multicolumn{1}{l}{\textbf{Narzędzie / źródło}} &
+\multicolumn{1}{l}{\textbf{Przykładowe metryki / artefakty}} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+Protokoły i wersje (HTTP/1.1, HTTP/2, HTTP/3/QUIC) &
+\textit{tcpdump}, \textit{Wireshark} \cite{tcpdump,WiresharkDocs} &
+ALPN/SNI; rozróżnienie HTTP/1.1 vs HTTP/2 vs HTTP/3; cechy QUIC (DCID/SCID), liczba strumieni \cite{RFC9113,RFC9114,RFC9000}. \\[2pt]
+
+Bezpieczeństwo transmisji (TLS) &
+\textit{Wireshark}, \textit{mitmproxy} \cite{WiresharkDocs,MitmproxyDocs} &
+wersja TLS (1.2/1.3), zestaw szyfrów, wynik walidacji certyfikatu, renegocjacje, 0-RTT (jeśli występuje) \cite{RFC8446}. \\[2pt]
+
+Intercepcja HTTPS (proxy) &
+\textit{mitmproxy}, MASTG \cite{MitmproxyDocs,OWASPMASTGIntercept} &
+odsetek żądań odszyfrowanych; metody, kody HTTP, rozmiary, nagłówki (\texttt{Authorization}, \texttt{Set-Cookie}); TTFB i czas całkowity. \\[2pt]
+
+Certificate pinning (objawowo) &
+\textit{mitmproxy} + logi; opcj. \textit{Frida} \cite{Frida,OWASPMASTGPinning} &
+odsetek połączeń odrzuconych mimo zaufanego CA użytkownika; wzorce błędów/wyjątków; klasy API do hookowania. \\[2pt]
+
+Ruch w tle / bez interakcji &
+\textit{mitmproxy}, \textit{tcpdump} \cite{MitmproxyDocs,tcpdump} &
+żądania/min w tle; rozkład czasowy (bursty), domeny docelowe, interwały retry/backoff. \\[2pt]
+
+Semantyka HTTP &
+\textit{mitmproxy} \cite{MitmproxyDocs} &
+metody (GET/POST/PUT…), kody odpowiedzi, rozmiary, kolejność/priorytetyzacja strumieni (H2/H3). \\[2pt]
+
+Trackery / strony trzecie &
+Exodus Privacy + korelacja w PCAP \cite{ExodusPrivacy} &
+lista trackerów/SDK; mapowanie domen→dostawcy; identyfikatory/parametry telemetryczne w żądaniach. \\[2pt]
+
+Uprawnienia a zachowanie &
+manifest + Android Docs \cite{AndroidPermissionsOverview} &
+zestaw żądanych uprawnień; mapowanie uprawnienie→zachowanie (np. lokalizacja→transmisje geodanych); spójność deklaracji. \\[2pt]
+
+Zużycie energii &
+Battery Historian \cite{BatteryHistorian} &
+wakelocki, aktywność sieć↔czas, top procesy, zdarzenia radiowe; korelacje ze szczytami ruchu. \\[2pt]
+
+CPU / pamięć / sieć &
+Android Profiler \cite{AndroidProfiler} &
+\%CPU, zdarzenia GC, użycie pamięci, throughput sieci; ślady w scenariuszach i w tle. \\[2pt]
+
+Scenariusze offline/online i degradacje &
+\textit{mitmproxy}, \textit{tcpdump} \cite{MitmproxyDocs,tcpdump} &
+retry, błędy synchronizacji, fallback protokołu/transportu, spójność danych po reconnect. \\[2pt]
+
+Logi i artefakty lokalne &
+\texttt{adb logcat}, inspekcja plików &
+obecność wrażliwych danych w logach/plikach tymczasowych; rotacja i ochrona (szyfrowanie/dostępy). \\
+\end{longtable}
+\endgroup
