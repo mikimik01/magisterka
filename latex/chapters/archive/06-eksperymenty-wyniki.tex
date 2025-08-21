@@ -23,16 +23,14 @@ Rejestracji dokonano narzędziem PCAPdroid (no-root, tryb PCAPNG z kluczami) i p
 \end{itemize}
 
 \section{Procedura (pojedyncza iteracja)}
-Zgodnie z metodyką, jedna iteracja (≈ 30–34 min) składa się z: 
+Zgodnie z metodyką, jedna iteracja (≈ 15 min) składa się z: 
 \begin{enumerate}
   \item \textbf{Baseline OS (2 min)} – app nieuruchomiona; punkt odniesienia dla tła.
   \item \textbf{Cold start (1 min)} – uruchomienie i ustabilizowanie ekranu głównego.
-  \item \textbf{Logowanie (3 min, jeśli dotyczy)} – ścieżki auth/token.
-  \item \textbf{Nawigacja (5 min)} – główne ekrany (feed, profil, wyszukiwarka).
-  \item \textbf{Media/operacja (3 min)} – krótkie odtwarzanie/przewijanie, wymuszenie większych transferów.
+  \item \textbf{Nawigacja (2 min)} – główne ekrany (feed, profil, wyszukiwarka).
+  \item \textbf{Media/operacja (1 min)} – krótkie odtwarzanie/przewijanie, wymuszenie większych transferów.
   \item \textbf{Offline/online (4 min)} – 2 min offline + 2 min po reconnect; obserwacja retry/backoff.
-  \item \textbf{Zamknięcie (1 min)} – wylogowanie/zamknięcie.
-  \item \textbf{Tło (15 min)} – 5 min tuż po zejściu do tła + 10 min dalszej obserwacji.
+  \item \textbf{Tło (10 min)} –  obserwacja po zamknięciu aplikacji.
 \end{enumerate}
 Motywacja czasów i uzasadnienia znajdują się w Rozdz.\ \ref{chap:metodyka}. QUIC/HTTP/3 (UDP) z natury ogranicza klasyczny MITM; analiza treści HTTP możliwa jest przede wszystkim w wariancie porównawczym z wymuszeniem \emph{fallbacku} do HTTP/2/TCP (blokada UDP/443) \cite{RFC9114}.
 

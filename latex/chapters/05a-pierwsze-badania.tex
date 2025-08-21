@@ -75,37 +75,7 @@ Workspace \\
 \textbf{Wynik:} \textit{niepowodzenie metody} w kontekście pełnej analizy treści: kluczowy ruch pozostaje szyfrowany (WPA2), brak materiału do bezstratnej dekrypcji (m.in. konieczność złapania handshake i posiadania parametrów sieci). Metoda okazała się niewspółmiernie pracochłonna i ograniczona względem celów projektu; zrezygnowano na rzecz podejścia proxy/pcap.
 
 \textbf{Wnioski:} przy analizie aplikacji mobilnych efektywniejsze jest środowisko kontrolowane (AP + proxy/pcap) niż sniffing radiowy na produkcyjnej sieci.
-
-% \section{MITM przez proxy}
-% \textbf{Cel:} przechwytywanie i inspekcja HTTP(S) w ruchu badanych aplikacji.
-
-% \textbf{Narzędzia:} \textit{mitmproxy}, \textit{tcpdump}.
-
-% \textbf{Sprzęt i sieć:} laptop z Debianem pełniący rolę AP (hostapd + dnsmasq), dwa Galaxy S7 po resecie.
-
-% \textbf{Metoda:}
-% \begin{enumerate}
-%   \item Konfiguracja AP i routingu; uruchomienie \textit{mitmproxy} w trybie intercept i \textit{tcpdump} na interfejsach.
-%   \item Instalacja certyfikatu użytkownika \textit{mitmproxy} na urządzeniach; próby uruchomienia i użycia aplikacji z listy.
-% \end{enumerate}
-
-% \textbf{Wynik:} 
-% Dla metody "1.", przechwytywanie ruchu sieciowego było niemożliwe. Każda aplikacja odmawiała działania wykrywając proxy.
-% Metoda "2." zakończyła się niepowodzeniem, poniewaz telefony odrzuciły wstrzykiwanie certyfikatu podczas runtimeu za pomocą fridy.
-% Metoda "2." spowodowała uszkodzenie jednego z telefonów, przy próbie uzyskania uprawnień roota i zainstalowania certyfikatu, co wymusiło poszukiwanie innych metod przechwytywania ruchu sieciowego.
-
-% \textbf{Wnioski:} samo proxy MITM daje ograniczoną obserwowalność wobec pinningu i/lub transportu QUIC; potrzebne są alternatywy (instrumentacja, pcap, wariant H3$\to$H2).
-
-% \section{MITM + instrumentacja (Frida) wobec pinningu (niepowodzenie)}
-% \textbf{Cel:} obejście pinningu i odzyskanie wglądu w treść żądań.
-
-% \textbf{Narzędzia:} \textit{Frida} (frida-server + gotowe skrypty hookujące API).
-
-% \textbf{Metoda:} uruchomienie \textit{frida-server} na urządzeniu i wstrzyknięcie skryptów omijających pinning.
-
-% \textbf{Wynik:} \textit{niepowodzenie} — skrypty nieskuteczne na analizowanej aplikacji; prawdopodobne przyczyny: brak uprawnień \textit{root}, SELinux, natywne weryfikacje certyfikatu/niestandardowi \texttt{TrustManager}.
-
-% \textbf{Wnioski:} dla części nowoczesnych aplikacji obejście pinningu bez \textit{roota} jest nierealne lub kosztowne; alternatywą jest emulator/root lub analiza ograniczona do metadanych.
+% ----------
 \section{MITM przez proxy}
 
 \textbf{Cel:} przechwytywanie i inspekcja ruchu HTTP(S) generowanego przez badane aplikacje.
@@ -138,12 +108,12 @@ Przy podejściu pierwszym aplikacje odmawiały działania, wykrywając obecnoś�
 \textbf{Wnioski:} w wielu nowoczesnych aplikacjach obejście pinningu bez dostępu do uprawnień \emph{root} jest nierealne lub bardzo trudne. Alternatywami pozostają uruchamianie aplikacji w środowisku z pełnym dostępem administracyjnym (emulator, urządzenie z \emph{root}) lub analiza ograniczona do metadanych transportowych (hosty, porty, czasy, wolumen danych), bez wglądu w same treści komunikatów.
 
 
-% ----------
-\section{Rejestracja ruchu po stronie urządzenia (PCAP/PCAPNG) — przykład Instagram (sukces)}
-\textbf{Cel:} charakterystyka ruchu bez naruszania zabezpieczeń aplikacji (rejestracja na urządzeniu).
+% % ----------
+% \section{Rejestracja ruchu po stronie urządzenia (PCAP/PCAPNG) — przykład Instagram (sukces)}
+% \textbf{Cel:} charakterystyka ruchu bez naruszania zabezpieczeń aplikacji (rejestracja na urządzeniu).
 
-\textbf{Metoda:} rejestracja ruchu i analiza strumieni; w tej próbie dominował HTTP/3/QUIC (UDP/443) z kanałem utrzymania sesji po TCP/5222, a ruch HTTP/1.1/HTTPS był śladowy.
-% Liczby i wykresy trzymamy w rozdziale z wynikami – tu tylko krótkie streszczenie
+% \textbf{Metoda:} rejestracja ruchu i analiza strumieni; w tej próbie dominował HTTP/3/QUIC (UDP/443) z kanałem utrzymania sesji po TCP/5222, a ruch HTTP/1.1/HTTPS był śladowy.
+% % Liczby i wykresy trzymamy w rozdziale z wynikami – tu tylko krótkie streszczenie
 
-\textbf{Wynik:} metoda skuteczna do obserwacji protokołów, kierunków i aktywności w tle; semantyka HTTP ograniczona przez QUIC/pinning. 
-\textbf{Artefakty:} patrz rozdział z eksperymentem głównym (plik .pcapng i agregaty).
+% \textbf{Wynik:} metoda skuteczna do obserwacji protokołów, kierunków i aktywności w tle; semantyka HTTP ograniczona przez QUIC/pinning. 
+% \textbf{Artefakty:} patrz rozdział z eksperymentem głównym (plik .pcapng i agregaty).

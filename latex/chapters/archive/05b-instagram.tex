@@ -1,0 +1,132 @@
+\section{Instagram (wersja 394.0.0.46.81)}
+\label{sec:instagram}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-18 17{:}55{:}47–18{:}08{:}00} ($\approx$ \SI{12.2}{\minute}). 
+Zarejestrowano \textbf{302} przepływy, wolumen $\approx$ \textbf{28.04 MiB} 
+(\textbf{RX $\approx$ 27.20 MiB}, \textbf{TX $\approx$ 0.85 MiB}).  
+Stosunek RX/TX wyniósł $\approx$ 32:1, co wskazuje, że w badanej sesji użytkownik głównie konsumował treści, a nie je publikował.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (Instagram, ta sesja)}
+  \label{tab:ig-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{\% flows} & \textbf{MiB} & \textbf{\% wolumenu} \\
+    \midrule
+    QUIC  & 187 & 61{,}9\% & 27.99 & 99{,}8\% \\
+    HTTPS & 5   & 1{,}7\%  & 0.02  & 0{,}07\% \\
+    TCP   & 12  & 4{,}0\%  & 0.02  & 0{,}06\% \\
+    DNS   & 49  & 16{,}2\% & 0.00  & 0{,}01\% \\
+    TLS   & 36  & 11{,}9\% & 0.00  & 0{,}01\% \\
+    UDP   & 5   & 1{,}7\%  & 0.00  & 0{,}00\% \\
+    HTTP  & 8   & 2{,}6\%  & 0.00  & 0{,}00\% \\
+    \midrule
+    \textbf{Razem} & \textbf{302} & \textbf{100\%} & \textbf{28.04} & \textbf{100\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Ruch Instagrama jest jeszcze silniej zdominowany przez QUIC/HTTP/3 niż w przypadku Facebooka (≈99,8\% wolumenu vs.\ 98,5\%). 
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (Instagram, ta sesja)}
+  \label{tab:ig-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    185.60.217.63   & 443 & QUIC  & 137 & 27.52 \\
+    157.240.251.63  & 443 & QUIC  & 1   & 0.33 \\
+    185.60.217.3    & 443 & QUIC  & 35  & 0.08 \\
+    185.60.217.20   & 443 & QUIC  & 2   & 0.02 \\
+    185.60.217.175  & 5222 & TCP  & 11  & 0.02 \\
+    157.240.251.11  & 443 & QUIC  & 1   & 0.02 \\
+    185.60.217.28   & 443 & QUIC  & 1   & 0.01 \\
+    157.240.0.63    & 443 & QUIC  & 1   & 0.01 \\
+    185.60.217.13   & 443 & HTTPS & 2   & 0.01 \\
+    157.240.253.17  & 443 & HTTPS & 1   & 0.01 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin), co sugeruje wykorzystanie pobliskich CDN. Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane z powiadomieniami/czatem.
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (Instagram, liczba przepływów)}
+  \label{tab:ig-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{graph.instagram.com} & 138 \\
+    \texttt{gateway.instagram.com} & 64 \\
+    \texttt{z-p42-chat-e2ee-ig.facebook.com} & 35 \\
+    \texttt{edge-mqtt.facebook.com} & 17 \\
+    \texttt{i.instagram.com} & 10 \\
+    \texttt{graph.facebook.com} & 5 \\
+    \texttt{i-fallback.instagram.com} & 5 \\
+    \texttt{scontent-ber1-1.cdninstagram.com} & 2 \\
+    \texttt{static.xx.fbcdn.net} & 2 \\
+    \texttt{lookaside.facebook.com} & 1 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama (\texttt{graph}, \texttt{gateway}, \texttt{i.instagram.com}) występują też hosty facebookowe (\texttt{edge-mqtt}, \texttt{graph.facebook.com}, \texttt{lookaside}).  
+
+\subsection{Dodatkowe charakterystyki ruchu}
+\begin{itemize}
+  \item \textbf{Rozkład w czasie:} ruch miał charakter burstowy podczas aktywnego scrollowania feedu, natomiast po przejściu aplikacji do tła obserwowano niską, ale stałą aktywność (MQTT keep-alive).
+  \item \textbf{Asymetria protokołów:} QUIC odpowiadał prawie wyłącznie za download (RX), natomiast TCP/5222 (MQTT) miał bardziej zbalansowany stosunek RX/TX.
+  \item \textbf{Czas trwania przepływów:} połączenia QUIC były krótkotrwałe, natomiast MQTT utrzymywało stabilne sesje kilkuminutowe — co odpowiada architekturze powiadomień.
+  \item \textbf{Fallback:} w sesji pojawiły się adresy \texttt{i-fallback.instagram.com}, co wskazuje na stosowanie alternatywnych ścieżek w przypadku problemów z podstawowym API.
+  \item \textbf{Geolokalizacja IP:} dominują adresy należące do Meta Platforms Ireland Ltd. (185.60.217.*), co sugeruje lokalne routowanie dla użytkownika w Europie.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy (aplikacja)}
+\textbf{Metoda.} \emph{Exodus Privacy} raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81) wykazał obecność \textbf{4 trackerów} oraz \textbf{69 uprawnień}.
+
+\textbf{Trackery.}
+\begin{itemize}
+  \item Facebook Flipper (analiza, debugging),
+  \item Facebook Login (identyfikacja konta),
+  \item Facebook Notifications,
+  \item Google Analytics.
+\end{itemize}
+
+\textbf{Uprawnienia — kategorie kluczowe:}
+\begin{itemize}
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION},
+  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO},
+  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_CALL\_LOG}, \texttt{READ\_PHONE\_STATE}, \texttt{ANSWER\_PHONE\_CALLS},
+  \item \textbf{Sieć i praca w tle:} \texttt{ACCESS\_NETWORK\_STATE}, \texttt{WAKE\_LOCK}, \texttt{RECEIVE\_BOOT\_COMPLETED}, \texttt{FOREGROUND\_SERVICE}.
+\end{itemize}
+
+\emph{Uwaga:} pełna lista 69 uprawnień znajduje się w raporcie Exodusa (załącznik PDF/HTML).
+
+\subsection{Dyskusja i ograniczenia}
+\paragraph{Obserwowalność treści.}
+Podobnie jak w przypadku Facebooka, dominacja QUIC/HTTP/3 (≈99,8\% wolumenu) uniemożliwia analizę zawartości HTTP; możliwa jest jedynie analiza metadanych (hosty, czasy, wolumeny).
+
+\paragraph{Zmienność wersji.}
+Instagram jest aplikacją o wysokiej dynamice wydawniczej. Udział QUIC, hosty i zestaw uprawnień mogą różnić się między wersjami i regionami. Wyniki dotyczą wersji 394.0.0.46.81.
+
+\subsection{Podsumowanie}
+W badanej sesji Instagram wykazuje:
+\begin{enumerate}
+\item niemal całkowitą dominację QUIC/HTTP/3 w wolumenie (≈99,8\%),
+\item silną integrację z infrastrukturą Meta (występowanie hostów facebookowych obok instagramowych),
+\item asymetrię RX/TX (27.2 vs 0.85 MiB), wskazującą na konsumpcję treści,
+\item różne wzorce protokołów: krótkie sesje QUIC (content delivery) vs długie sesje MQTT (utrzymanie czatu/powiadomień),
+\item bogaty zestaw uprawnień aplikacji (69) obejmujących lokalizację, multimedia, kontakty i telefon, oraz obecność 4 trackerów.
+\end{enumerate}

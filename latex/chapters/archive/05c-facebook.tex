@@ -1,0 +1,126 @@
+\chapter{Eksperyment: analiza ruchu aplikacji Facebook z użyciem PCAPdroid}
+\label{chap:eksperyment-facebook}
+
+\section{Cel i założenia}
+Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej aplikacji \textbf{Facebook} (\texttt{com.facebook.katana}) oraz zestawienie obserwacji z danymi o uprawnieniach i trackerach (metodologia \emph{Exodus Privacy}). Interesują nas:
+\begin{enumerate}
+  \item wykorzystywane protokoły i transport (HTTP/1.1, HTTP/2, HTTP/3/QUIC, TLS),
+  \item wzorce zachowania (piki aktywności vs.\ praca w tle),
+  \item rozproszenie docelowych usług (IP/port/host),
+  \item ograniczenia obserwowalności wynikające z QUIC/HTTP/3 i ewentualnego \emph{certificate pinning}.
+\end{enumerate}
+
+\section{Środowisko i narzędzia}
+\begin{itemize}
+  \item Urządzenie z Androidem, konto testowe; sieć laboratoryjna (AP na Linuxie).
+  \item \textbf{PCAPdroid}: lokalny VPN (bez roota), zapis do CSV/\texttt{pcapng}; filtrowanie po \emph{Facebook}.
+  \item Analiza: agregacje z CSV (pakiety/bajty/proto/host), weryfikacja w Wireshark/tshark; interpretacja protokołów (ALPN, QUIC/UDP~443).
+\end{itemize}
+
+\section{Procedura (pojedyncza iteracja)}
+Jedna iteracja (≈ 12{,}3 min) składała się z: (1) zimnego startu i krótkiej nawigacji (feed, profil, wyszukiwanie), (2) krótkiej interakcji multimedialnej, (3) przejścia do tła i obserwacji w tle. Szczegóły i uzasadnienia czasów — patrz Rozdz.\ \ref{chap:metodyka}.
+
+\section{Zebrane dane (ta sesja)}
+Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} (≈ \SI{12.28}{\minute}). Zarejestrowano \textbf{305} przepływów (\emph{flows}) o łącznym wolumenie \textbf{≈\,29.75 MiB}; \textbf{RX ≈\,28.30 MiB}, \textbf{TX ≈\,1.45 MiB}.
+
+\section{Wyniki ilościowe}
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (Facebook, ta sesja)}
+  \label{tab:fb-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{\% flows} & \textbf{MiB} & \textbf{\% wolumenu} \\
+    \midrule
+    QUIC  & 132 & 43{,}3\% & 29.29 & 98{,}5\% \\
+    TLS   & 93  & 30{,}5\% & 0.01  & 0{,}0\% \\
+    DNS   & 46  & 15{,}1\% & 0.00  & 0{,}0\% \\
+    HTTPS & 19  & 6{,}2\%  & 0.43  & 1{,}5\% \\
+    TCP   & 10  & 3{,}3\%  & 0.01  & 0{,}0\% \\
+    HTTP  & 5   & 1{,}6\%  & 0.00  & 0{,}0\% \\
+    \midrule
+    \textbf{Razem} & \textbf{305} & \textbf{100\%} & \textbf{29.75} & \textbf{100\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (Facebook, ta sesja)}
+  \label{tab:fb-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    185.60.217.28  & 443 & QUIC  & 50 & 25.46 \\
+    157.240.210.14 & 443 & QUIC  & 1  & 2.01 \\
+    185.60.217.20  & 443 & QUIC  & 79 & 1.79 \\
+    185.60.217.3   & 443 & HTTPS & 2  & 0.20 \\
+    157.240.210.16 & 443 & HTTPS & 8  & 0.15 \\
+    157.240.210.3  & 443 & HTTPS & 3  & 0.03 \\
+    185.60.217.13  & 443 & HTTPS & 2  & 0.02 \\
+    185.60.217.28  & 443 & HTTPS & 1  & 0.02 \\
+    157.240.0.13   & 443 & QUIC  & 1  & 0.01 \\
+    31.13.91.40    & 443 & QUIC  & 1  & 0.01 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (Facebook, liczba przepływów)}
+  \label{tab:fb-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{graph.facebook.com} & 85 \\
+    \texttt{lookaside.facebook.com} & 54 \\
+    \texttt{chat-e2ee-mini.facebook.com} & 25 \\
+    \texttt{gateway.instagram.com} & 24 \\
+    \texttt{gateway.facebook.com} & 19 \\
+    \texttt{edge-mqtt.facebook.com} & 14 \\
+    \texttt{graph-fallback.facebook.com} & 14 \\
+    \texttt{gateway-fallback.facebook.com} & 9 \\
+    \texttt{edge-mqtt-fallback.facebook.com} & 2 \\
+    \texttt{*.fbcdn.net} (różne) & 5 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacje:}
+\begin{itemize}
+  \item \textbf{Dominacja QUIC/HTTP/3:} niemal cały wolumen (≈98{,}5\%) to QUIC na 443/UDP; obecne są też śladowe HTTPS/TCP na 443 (np.\ fallback, zasoby pomocnicze).
+  \item \textbf{Kanały usługowe:} widoczne hosty typu \texttt{edge-mqtt.facebook.com}, \texttt{gateway.facebook.com}/\texttt{instagram.com} (utrzymanie sesji, powiadomienia, API graficzne).
+  \item \textbf{Wzorzec ruchu:} wyraźny \emph{burst} około 19{:}26 (większość nowych i kończących się flow), po czym aktywność w tle spada do sporadycznych wywołań.
+\end{itemize}
+
+\section{Wyniki z Exodus Privacy (aplikacja)}
+\textbf{Metoda.} \emph{Exodus Privacy} wykonuje statyczną analizę pakietu APK i raportuje wykryte biblioteki śledzące (trackery) oraz zadeklarowane uprawnienia aplikacji. Wnioski z takiej analizy należy zestawiać z obserwacjami dynamicznymi z ruchu sieciowego (PCAPdroid), co robimy w niniejszej pracy.
+
+\textbf{Uprawnienia — kategorie kluczowe.} Dla Facebooka istotne z perspektywy prywatności są zwłaszcza:
+\begin{itemize}
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_COARSE\_LOCATION} (precyzyjna/przybliżona lokacja).
+  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, dostęp do pamięci (\texttt{READ/WRITE\_EXTERNAL\_STORAGE} — jeśli występują w używanej wersji).
+  \item \textbf{Tożsamość/konta/książka adresowa:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}.
+  \item \textbf{Sieć/telefonia i praca w tle:} \texttt{ACCESS\_NETWORK\_STATE}, \texttt{WAKE\_LOCK}, \texttt{RECEIVE\_BOOT\_COMPLETED}.
+\end{itemize}
+\emph{Uwaga:} dokładny zestaw i liczba uprawnień zależą od wersji aplikacji i kanału dystrybucji; w raporcie Exodusa dla \texttt{com.facebook.katana} należy je cytować dla konkretnej wersji aplikacji poddanej badaniu.
+
+\textbf{Trackery.} Raporty Exodusa wskazują obecność/nieobecność znanych bibliotek śledzących na podstawie reguł detekcji kodu/sieci. Wartościowe jest porównanie z hostami z Tabeli~\ref{tab:fb-hosts} (np.\ korespondencja \textit{Audience/Analytics} \(\leftrightarrow\) \texttt{graph.facebook.com}, \texttt{fbcdn.net}). 
+
+\section{Dyskusja i ograniczenia}
+\paragraph{Obserwowalność treści.}
+Transport QUIC/UDP ogranicza klasyczne MITM/TLS-over-TCP; wgląd w semantykę HTTP jest bardzo ograniczony, dlatego opieramy się na metadanych (hosty, czasy, wolumeny) i korelacji zachowań.
+
+\paragraph{Zmienność wersji.}
+Facebook to aplikacja o wysokiej dynamice wydawniczej; zestaw hostów, udział QUIC/H2 oraz uprawnienia mogą różnić się między wersjami i regionami. Liczby w tym rozdziale odnoszą się do konkretnej sesji i wersji aplikacji użytej w eksperymencie.
+
+\section{Artefakty i replikowalność}
+Udostępniamy CSV/PCAPNG z sesji (nazewnictwo: \texttt{YYYYMMDD\_HHMM\_Facebook\_runN\_net=default\_vApp\_vAndroid\{.csv,.pcapng\}}) oraz skrypty agregujące. W przypadku sekcji \emph{Exodus Privacy} zaleca się dołączenie PDF/HTML raportu dla użytej wersji \texttt{com.facebook.katana}.
+
+\section{Podsumowanie}
+W badanej sesji Facebook wykazuje: (i) dominację QUIC/HTTP/3 w wolumenie (≈98{,}5\%), (ii) charakterystyczne kanały usługowe (\texttt{graph}/\texttt{gateway}/\texttt{edge-mqtt}), (iii) krótkotrwałe piki transferów związane z interakcjami użytkownika oraz ograniczoną aktywność w tle. Z perspektywy prywatności kluczowe są uprawnienia do lokalizacji, multimediów i pracy w tle oraz obecność komponentów analityczno-reklamowych — ich interpretację należy zawsze osadzać w kontekście wersji aplikacji i potwierdzać obserwacjami dynamicznymi.
