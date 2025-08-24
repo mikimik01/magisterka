@@ -25,3 +25,55 @@ Wybór między emulatorem a urządzeniem fizycznym wpływa na wierność zachowa
 
 \section{Prywatność i tracking}
 Problem prywatności w aplikacjach mobilnych obejmuje zarówno zakres i uzasadnienie uprawnień, jak i obecność komponentów stron trzecich (SDK analityczne/reklamowe). Do statycznego wykrywania trackerów i przeglądu uprawnień w APK wykorzystywane są m.in.\ \textit{Exodus Privacy} oraz narzędzia deweloperskie Androida \cite{ExodusPrivacy,AndroidPermissionsOverview}. Równolegle platforma rozwija rozwiązania mające ograniczyć śledzenie międzyaplikacyjne (np.\ \emph{Privacy Sandbox on Android}) \cite{PrivacySandboxAndroid}. W praktyce ocena prywatności powinna łączyć analizę statyczną i dynamiczną (ruch sieciowy, zachowanie w tle), a także kontrolować zużycie zasobów (bateria/CPU) – symptomy nadmiernej telemetrii mogą ujawniać się jako wzrost aktywności sieciowej w tle czy anomalia energetyczne.
+
+\section{Narzędzia}
+
+W badaniach wykorzystano zestaw narzędzi do przechwytywania, inspekcji i korelacji ruchu sieciowego oraz do analizy statycznej aplikacji. Poniżej opisano ich rolę, wytwarzane artefakty i ograniczenia.
+
+\subsection*{PCAPdroid (Android, tryb VPN)}
+\begin{itemize}
+  \item \textbf{Rola:} podstawowe narzędzie rejestracji ruchu \emph{na urządzeniu} w badaniach właściwych; działa w oparciu o \texttt{VpnService} i przechwytuje pakiety bez rootowania.
+  \item \textbf{Zastosowanie w pracy:} każda sesja aplikacji była rejestrowana do plików \texttt{PCAPNG} oraz agregowana do \texttt{CSV} (metryki: protokół, host, port, flows, wolumen RX/TX).
+  \item \textbf{Artefakty:} pliki \texttt{.pcapng}, \texttt{.csv}; metryki per protokół/host/port wykorzystywane w tabelach i podsumowaniach.
+  \item \textbf{Ograniczenia:} brak dostępu do treści szyfrowanych (TLS/QUIC); metryki oparte o metadane.
+\end{itemize}
+
+\subsection*{Wireshark (analiza i próby radiowe)}
+\begin{itemize}
+  \item \textbf{Rola:} inspekcja \texttt{PCAP/PCAPNG} oraz wstępne próby przechwytywania ramek w trybie \emph{monitor}.
+  \item \textbf{Zastosowanie w pracy:} manualna weryfikacja strumieni, klasyfikacja hostów i protokołów; podejście radiowe porzucono z uwagi na małą skuteczność w warunkach produkcyjnych.
+  \item \textbf{Artefakty:} zrzuty ekranów/wnioski jakościowe; brak dodatkowych danych liczbowych poza tymi z PCAPdroida.
+  \item \textbf{Ograniczenia:} trudności z dekrypcją WPA2/SAE (rotacja kluczy, brak materiału kryptograficznego); wysoki koszt operacyjny przy niskiej wartości poznawczej dla aplikacji mobilnych.
+\end{itemize}
+
+\subsection*{tcpdump (host/AP)}
+\begin{itemize}
+  \item \textbf{Rola:} uzupełniające przechwytywanie ruchu po stronie hosta lub punktu dostępowego (AP), szczególnie podczas konfiguracji środowiska i testów.
+  \item \textbf{Zastosowanie w pracy:} weryfikacja, że ruch przechodzi przez kontrolowany węzeł; pomocnicze ślady do szybkiego podglądu (\texttt{tcpdump -i <iface> -w file.pcap}).
+  \item \textbf{Artefakty:} \texttt{.pcap} do inspekcji w Wiresharku.
+  \item \textbf{Ograniczenia:} jak wyżej — brak wglądu w treść TLS/QUIC; zależność od topologii sieci.
+\end{itemize}
+
+\subsection*{mitmproxy (HTTP(S) proxy, MITM)}
+\begin{itemize}
+  \item \textbf{Rola:} próby aktywnego \emph{MITM} na HTTP/TLS-over-TCP (inspekcja nagłówków HTTP, mapowanie żądań).
+  \item \textbf{Zastosowanie w pracy:} etap wstępny — klasyfikacja ruchu, kontrola DNS/trasowania przez własny węzeł.
+  \item \textbf{Artefakty:} logi \texttt{mitmproxy}, ewentualne ślady żądań HTTP(S) dla aplikacji bez pinningu i bez HTTP/3.
+  \item \textbf{Ograniczenia:} nieskuteczne wobec \textbf{HTTP/3/QUIC} oraz aplikacji z \textbf{pinningiem certyfikatów}; w badaniach właściwych kluczowe było przejście na rejestrację \emph{on-device}.
+\end{itemize}
+
+\subsection*{Exodus Privacy (analiza statyczna APK)}
+\begin{itemize}
+  \item \textbf{Rola:} zewnętrzna analiza statyczna paczek aplikacji (sygnatury bibliotek \emph{trackerów}, lista \emph{uprawnień}).
+  \item \textbf{Zastosowanie w pracy:} dla każdej aplikacji zestawiono liczbę trackerów i zakres uprawnień w badanej wersji; dane skorelowano z obserwacjami sieciowymi.
+  \item \textbf{Artefakty:} wyniki (raporty WWW/PDF) cytowane w podrozdziałach; liczby w tabeli zbiorczej podsumowania.
+  \item \textbf{Ograniczenia:} detekcja oparta o \emph{sygnatury statyczne}; obecność biblioteki nie jest dowodem \emph{aktywności} trackera w czasie sesji.
+\end{itemize}
+
+\subsection*{Frida (instrumentacja dynamiczna)}
+\begin{itemize}
+  \item \textbf{Rola:} próba obejścia niestandardowych weryfikacji TLS/pinningu w wybranych aplikacjach.
+  \item \textbf{Zastosowanie w pracy:} etap wstępny — eksperymenty z hookami; próba nieudana ze względu na rozproszone ścieżki walidacji i ochrony anty-tamper.
+  \item \textbf{Artefakty:} wnioski metodologiczne (ograniczona skuteczność bez głębokiej personalizacji skryptów).
+  \item \textbf{Ograniczenia:} wysoka złożoność, podatność na mechanizmy anty-debug/anti-root; nie stosowano w badaniach właściwych.
+\end{itemize}

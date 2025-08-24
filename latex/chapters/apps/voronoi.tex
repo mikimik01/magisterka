@@ -84,7 +84,7 @@ Dominują domeny aplikacji (\texttt{api.voronoiapp.com}, \texttt{cdn.voronoiapp.
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
   \item \textbf{Brak QUIC/HTTP/3} — transport klasyczny TLS/TCP po 443.
-  \item \textbf{Brak HTTP w klarze} — w badanym oknie nie zaobserwowano nieszyfrowanych żądań.
+  \item \textbf{Brak HTTP w badanym oknie czasowym} — w badanym oknie nie zaobserwowano nieszyfrowanych żądań.
   \item \textbf{Integracje zewnętrzne} — logowanie/konfiguracja przez \texttt{cognito-identity}/\texttt{cognito-idp}; telemetria do \texttt{crashlytics}; logowanie zdarzeń do \texttt{firebaselogging}.
 \end{itemize}
 
@@ -124,5 +124,5 @@ W badanej sesji Voronoi wykazuje:
 \begin{enumerate}
 \item dominację HTTPS ($\approx 9.61$ MiB) w \textbf{465} flow, okno \SI{5.6}{\minute},
 \item koncentrację na hostach aplikacji (\texttt{api.voronoiapp.com}, \texttt{cdn.voronoiapp.com}) i usługach Google/AWS (Firebase, Crashlytics, Cognito),
-\item brak śladów QUIC i HTTP w klarze.
+\item brak śladów QUIC i HTTP w badanym oknie czasowym.
 \end{enumerate}

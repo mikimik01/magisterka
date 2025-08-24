@@ -148,7 +148,7 @@
 
   \medskip
   \if@pppolish
-    Sk{\l}ad przy u{\.z}yciu systemu \LaTeX{} (Overleaf).
+    Sk{\l}ad przy u{\.z}yciu systemu \LaTeX{}.
   \else
     Typeset using \LaTeX.
   \fi

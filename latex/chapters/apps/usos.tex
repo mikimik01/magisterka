@@ -29,7 +29,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch USOS w tej sesji jest zdominowany przez \textbf{HTTPS/TLS} (brak QUIC i brak HTTP w klarze).
+Ruch USOS w tej sesji jest zdominowany przez \textbf{HTTPS/TLS} (brak QUIC i brak HTTP w badanym oknie czasowym).
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -95,10 +95,7 @@ Raport dla \texttt{pl.edu.usos.mobilny} (wersja 2.0.3, Google Play) wskazuje obe
   \item \textbf{Inne:} \texttt{CHECK\_LICENSE}, \texttt{RECEIVE} (FCM), \nolinkurl{pl.edu.usos.mobilny.DYNAMIC\_RECEIVER\_NOT\_EXPORTED\_PERMISSION}.
 \end{itemize}
 \emph{Spostrzeżenia:} 
-\begin{itemize}
-  \item Exodus wykrywa sygnatury statyczne trackerów — nie jest to dowód ich aktywności w czasie działania.
-  \item Jedyny tracker ma charakter czysto diagnostyczny; zestaw uprawnień obejmuje zarówno funkcje systemowe (NFC, notyfikacje), jak i elementy fakultatywne (kalendarz).
-\end{itemize}
+Jedyny tracker ma charakter czysto diagnostyczny; zestaw uprawnień obejmuje zarówno funkcje systemowe (NFC, notyfikacje), jak i elementy fakultatywne (kalendarz).
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
@@ -112,5 +109,5 @@ W badanej sesji USOS wykazuje:
 \begin{enumerate}
 \item dominację TLS/HTTPS; wolumen ($\approx 2.88$ MiB), \textbf{200} przepływów w $\sim$\SI{4.3}{\minute},
 \item koncentrację ruchu na hostach uczelnianych (\texttt{usosapps.put.poznan.pl}, \texttt{ppulse.put.poznan.pl}) oraz niewielką telemetrię do usług Google,
-\item brak śladów HTTP w klarze oraz brak QUIC/HTTP/3 w zarejestrowanym oknie.
+\item brak śladów HTTP w badanym oknie czasowym oraz brak QUIC/HTTP/3 w zarejestrowanym oknie.
 \end{enumerate}

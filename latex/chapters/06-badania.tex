@@ -9,6 +9,10 @@ Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej wybrany
   \item korelacja z analizą statyczną \textbf{Exodus Privacy} (trackery i uprawnienia).
 \end{enumerate}
 
+\emph{Uwaga:} 
+Exodus wykrywa sygnatury statyczne trackerów — nie jest to dowód ich aktywności w czasie działania.
+
+
 \section{Procedura (pojedyncza iteracja)}
 Zgodnie z metodyką, jedna iteracja ($\approx$ 15 min) składa się z: 
 \begin{enumerate}
@@ -39,3 +43,42 @@ Zgodnie z metodyką, jedna iteracja ($\approx$ 15 min) składa się z:
 \clearpage
 \input{chapters/apps/tiktok}
 % --------------------------------
+
+% \section{Podsumowanie i wnioski zbiorcze}
+
+% Analiza ruchu sieciowego dziesięciu wybranych aplikacji mobilnych pozwoliła na sformułowanie kilku ogólnych obserwacji oraz porównań między kategoriami oprogramowania.
+
+% \subsection*{Protokoły i wolumen ruchu}
+% Zarejestrowane sesje pokazały wyraźny podział:
+% \begin{itemize}
+%   \item aplikacje społecznościowe (Instagram, Facebook, TikTok) generowały największe wolumeny danych (28--125 MiB) i intensywnie korzystały z QUIC/HTTP/3, co jest spójne z ich multimediowym charakterem,
+%   \item aplikacje instytucjonalne (mObywatel, Mobile USOS) oraz biznesowe (Posnania, Voronoi) przesyłały znacznie mniejsze ilości danych (0.08--9.6 MiB) i ograniczały się do klasycznego HTTPS/TLS,
+%   \item aplikacje multimedialne (Spotify) charakteryzowały się dużym wolumenem, jednak dominował tu HTTPS/TCP zamiast QUIC.
+% \end{itemize}
+
+% \subsection*{Hosty docelowe i integracje}
+% Ruch społecznościowych gigantów był skoncentrowany w infrastrukturze Meta (Instagram, Facebook) i ByteDance (TikTok), natomiast aplikacje instytucjonalne komunikowały się głównie z hostami państwowymi i uczelnianymi. W aplikacjach komercyjnych często widoczna była integracja zewnętrzna (Stripe, Sentry, Firebase, AWS Cognito).
+
+% \subsection*{Trackery i uprawnienia}
+% \begin{itemize}
+%   \item Aplikacje społecznościowe i multimedialne wykazywały obecność wielu trackerów (4--8) oraz szeroki zestaw uprawnień (44--90), w tym dotyczących lokalizacji, multimediów, telefonu i identyfikatorów reklamowych.
+%   \item Aplikacje instytucjonalne cechowały się ograniczoną telemetrią (najczęściej wyłącznie diagnostyczny Sentry lub CrashLytics) i umiarkowaną liczbą uprawnień (13--20), zwykle adekwatnych do funkcji.
+%   \item Aplikacje biznesowe (Posnania, Voronoi) znajdowały się pomiędzy tymi skrajnościami: obecne były 1--3 trackery oraz kilkanaście do kilkudziesięciu uprawnień, przy czym część z nich mogła być postrzegana jako nadmiarowa.
+% \end{itemize}
+
+% \subsection*{Aspekty prywatności i bezpieczeństwa}
+% \begin{itemize}
+%   \item We wszystkich badanych aplikacjach nie zaobserwowano przesyłania treści w jawnej postaci (HTTP), a dominującym mechanizmem było szyfrowanie TLS.
+%   \item Aplikacje społecznościowe wyróżniały się bardzo szerokim zakresem uprawnień i integracji reklamowo-analitycznych, co stanowi istotne ryzyko dla prywatności użytkowników.
+%   \item Aplikacje instytucjonalne zachowywały wysoki poziom spójności i minimalizacji ruchu do domen trzecich, co pozytywnie odróżnia je na tle aplikacji komercyjnych.
+%   \item W aplikacjach biznesowych zidentyfikowano potencjalne obszary ryzyka (np. możliwość śledzenia tablic rejestracyjnych w Posnanii), które wymagają dalszej weryfikacji na poziomie kodu źródłowego i analizy dynamicznej.
+% \end{itemize}
+
+% \subsection*{Wnioski końcowe}
+% Przeprowadzone badania pokazują, że:
+% \begin{enumerate}
+%   \item aplikacje społecznościowe generują znacząco większy i bardziej złożony ruch sieciowy niż aplikacje instytucjonalne i biznesowe,
+%   \item wybór protokołu (QUIC vs HTTPS) jest silnie związany z kategorią aplikacji i profilem użytkowania (media strumieniowe kontra aplikacje transakcyjne/urzędowe),
+%   \item analiza metadanych pozwala na wykrycie zarówno zgodnych z funkcjonalnością integracji, jak i potencjalnie nadmiarowych uprawnień lub ryzykownych praktyk,
+%   \item konsekwentne stosowanie szyfrowania transportowego we wszystkich badanych aplikacjach potwierdza rosnące znaczenie bezpieczeństwa warstwy sieciowej, jednak kwestia prywatności użytkownika zależy przede wszystkim od zakresu uprawnień i użytych bibliotek.
+% \end{enumerate}

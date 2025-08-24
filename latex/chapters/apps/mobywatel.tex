@@ -30,7 +30,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Dominuje \textbf{HTTPS/TLS}; pojedynczy ślad \textbf{HTTP/80} dotyczy hosta Google (prawdopodobnie kontrola łączności/zasób systemowy) i nie wskazuje na przesyłanie treści aplikacyjnych w klarze.
+Dominuje \textbf{HTTPS/TLS}; pojedynczy ślad \textbf{HTTP/80} dotyczy hosta Google (prawdopodobnie kontrola łączności/zasób systemowy) i nie wskazuje na przesyłanie treści aplikacyjnych w badanym oknie czasowym.
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -73,10 +73,10 @@ Ruch koncentruje się na 443/TCP do usług państwowych; widoczny jest także ka
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Szyfrowanie transportowe:} właściwa komunikacja aplikacji po TLS/443; brak treści w klarze.
+  \item \textbf{Szyfrowanie transportowe:} właściwa komunikacja aplikacji po TLS/443; brak treści w badanym oknie czasowym.
   \item \textbf{Brak QUIC/HTTP/3} w zarejestrowanym wycinku — kanał klasyczny TLS/TCP.
   \item \textbf{Telemetria:} obecność endpointu \texttt{sentry.puch.coi.gov.pl} (raportowanie błędów); wolumen niewielki.
-  \item \textbf{HTTP/80 do Google:} pojedynczy flow (Google), typowy dla sprawdzeń łączności; brak wskazań na transfer danych aplikacji w klarze.
+  \item \textbf{HTTP/80 do Google:} pojedynczy flow (Google), typowy dla sprawdzeń łączności; brak wskazań na transfer danych aplikacji w badanym oknie czasowym.
 \end{itemize}
 
 \subsection{Wyniki z Exodus Privacy  \cite{ExodusPrivacy}}
@@ -96,7 +96,7 @@ Raport dla \texttt{pl.nask.mobywatel} (wersja 4.64.0 \,(4899), źródło Google 
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.} 
-Ze względu na TLS treści zapytań/odpowiedzi nie są dostępne; nie widać przesyłania danych wrażliwych w klarze.
+Ze względu na TLS treści zapytań/odpowiedzi nie są dostępne; nie widać przesyłania danych wrażliwych w badanym oknie czasowym.
 
 \paragraph{Praktyki bezpieczeństwa.}
 W analizowanym wycinku widać konsekwentne użycie HTTPS/TLS do usług \texttt{*.gov.pl}, brak nietypowych punktów końcowych poza kanałem telemetrycznym (TLS/3000) i brak szerokich odwołań do domen trzecich. To zachowanie spójne z wysokim standardem bezpieczeństwa na warstwie transportowej. Pełna ocena (np. pinning certyfikatów, mechanizmy anti-tamper/anti-root, magazyn kluczy, ochrona ekranu) wymaga analizy APK oraz testów dynamicznych.
