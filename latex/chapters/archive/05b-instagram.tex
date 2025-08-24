@@ -30,7 +30,7 @@ Stosunek RX/TX wyniósł $\approx$ 32:1, co wskazuje, że w badanej sesji użytk
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch Instagrama jest jeszcze silniej zdominowany przez QUIC/HTTP/3 niż w przypadku Facebooka (≈99,8\% wolumenu vs.\ 98,5\%). 
+Ruch Instagrama jest jeszcze silniej zdominowany przez QUIC/HTTP/3 niż w przypadku Facebooka ($\approx$99,8\% wolumenu vs.\ 98,5\%). 
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -56,7 +56,7 @@ Ruch Instagrama jest jeszcze silniej zdominowany przez QUIC/HTTP/3 niż w przypa
 \end{table}
 
 \paragraph{Obserwacja:}
-Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin), co sugeruje wykorzystanie pobliskich CDN. Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane z powiadomieniami/czatem.
+Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin). Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane z powiadomieniami/czatem.
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -86,15 +86,15 @@ Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama 
 
 \subsection{Dodatkowe charakterystyki ruchu}
 \begin{itemize}
-  \item \textbf{Rozkład w czasie:} ruch miał charakter burstowy podczas aktywnego scrollowania feedu, natomiast po przejściu aplikacji do tła obserwowano niską, ale stałą aktywność (MQTT keep-alive).
+  \item \textbf{Rozkład w czasie:} ruch miał charakter impulsowy podczas aktywnego scrollowania feedu, natomiast po przejściu aplikacji do tła obserwowano niską, ale stałą aktywność (MQTT keep-alive).
   \item \textbf{Asymetria protokołów:} QUIC odpowiadał prawie wyłącznie za download (RX), natomiast TCP/5222 (MQTT) miał bardziej zbalansowany stosunek RX/TX.
   \item \textbf{Czas trwania przepływów:} połączenia QUIC były krótkotrwałe, natomiast MQTT utrzymywało stabilne sesje kilkuminutowe — co odpowiada architekturze powiadomień.
   \item \textbf{Fallback:} w sesji pojawiły się adresy \texttt{i-fallback.instagram.com}, co wskazuje na stosowanie alternatywnych ścieżek w przypadku problemów z podstawowym API.
   \item \textbf{Geolokalizacja IP:} dominują adresy należące do Meta Platforms Ireland Ltd. (185.60.217.*), co sugeruje lokalne routowanie dla użytkownika w Europie.
 \end{itemize}
 
-\subsection{Wyniki z Exodus Privacy (aplikacja)}
-\textbf{Metoda.} \emph{Exodus Privacy} raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81) wykazał obecność \textbf{4 trackerów} oraz \textbf{69 uprawnień}.
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+\textbf{Metoda.} Raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81) wykazał obecność \textbf{4 trackerów} oraz \textbf{69 uprawnień}.
 
 \textbf{Trackery.}
 \begin{itemize}
@@ -114,9 +114,9 @@ Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama 
 
 \emph{Uwaga:} pełna lista 69 uprawnień znajduje się w raporcie Exodusa (załącznik PDF/HTML).
 
-\subsection{Dyskusja i ograniczenia}
+\subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
-Podobnie jak w przypadku Facebooka, dominacja QUIC/HTTP/3 (≈99,8\% wolumenu) uniemożliwia analizę zawartości HTTP; możliwa jest jedynie analiza metadanych (hosty, czasy, wolumeny).
+Podobnie jak w przypadku Facebooka, dominacja QUIC/HTTP/3 ($\approx$99,8\% wolumenu) uniemożliwia analizę zawartości HTTP; możliwa jest jedynie analiza metadanych (hosty, czasy, wolumeny).
 
 \paragraph{Zmienność wersji.}
 Instagram jest aplikacją o wysokiej dynamice wydawniczej. Udział QUIC, hosty i zestaw uprawnień mogą różnić się między wersjami i regionami. Wyniki dotyczą wersji 394.0.0.46.81.
@@ -124,7 +124,7 @@ Instagram jest aplikacją o wysokiej dynamice wydawniczej. Udział QUIC, hosty i
 \subsection{Podsumowanie}
 W badanej sesji Instagram wykazuje:
 \begin{enumerate}
-\item niemal całkowitą dominację QUIC/HTTP/3 w wolumenie (≈99,8\%),
+\item niemal całkowitą dominację QUIC/HTTP/3 w wolumenie ($\approx$99,8\%),
 \item silną integrację z infrastrukturą Meta (występowanie hostów facebookowych obok instagramowych),
 \item asymetrię RX/TX (27.2 vs 0.85 MiB), wskazującą na konsumpcję treści,
 \item różne wzorce protokołów: krótkie sesje QUIC (content delivery) vs długie sesje MQTT (utrzymanie czatu/powiadomień),

@@ -31,7 +31,7 @@ Ocena każdej aplikacji opiera się na zunifikowanej liście elementów, łącz�
   \item wersja protokołu aplikacyjnego i transportowego: HTTP/1.1, HTTP/2, HTTP/3/QUIC; identyfikacja po ALPN i charakterystyce strumieni;
   \item bezpieczeństwo transmisji: obecność TLS, wersja (w szczególności TLS~1.3), parametry sesji, błędy weryfikacji certyfikatu;
   \item \emph{certificate pinning}: objawowa detekcja (odrzucenia łańcucha, brak wglądu w treść po zainstalowaniu CA użytkownika); próby obejścia tylko w granicach zgodnych z zaleceniami badawczymi (instrumentacja, emulator/środowisko z własnym trust store);
-  \item profil ruchu: liczność żądań, kody odpowiedzi, rozmiary, timingi; rozróżnienie pierwszego planu vs.\ tło; bursty i pory największej aktywności.
+  \item profil ruchu: liczność żądań, kody odpowiedzi, rozmiary, timingi; rozróżnienie pierwszego planu vs.\ tło; intensyfikacja przepływów po interakcji i pory największej aktywności.
 \end{itemize}
 
 \subsection{Prywatność i strony trzecie}
@@ -89,7 +89,7 @@ Jeżeli aplikacja implementuje certificate pinning poprawnie, atak MITM z CA uż
 Po zebraniu danych normalizujemy je do poziomu \emph{flow} (5-tuple + kierunek + ALPN) i \emph{transakcji HTTP}. Ekstrahujemy następujące cechy:
 \begin{itemize}
   \item protokół transportowy i aplikacyjny (TCP/UDP; HTTP/1.1, HTTP/2, HTTP/3), wersja TLS, wynik weryfikacji certyfikatu \cite{RFC8446,RFC9113,RFC9114};
-  \item metryki ruchu (liczba żądań, kody odpowiedzi, rozmiary, czasy, bursty w tle/na pierwszym planie);
+  \item metryki ruchu (liczba żądań, kody odpowiedzi, rozmiary, czasy, intensyfikacje przepływów w tle/na pierwszym planie);
   \item informacje o domenach i dostawcach (SNI/Host), liczba unikalnych hostów/AS (proxymalna miara rozproszenia danych);
   \item sygnały prywatności (wywołania do znanych domen analitycznych/reklamowych, parametry identyfikatorów), triangulowane z wynikami analizy statycznej \cite{ExodusPrivacy}.
 \end{itemize}
@@ -178,7 +178,7 @@ odsetek połączeń odrzuconych mimo zaufanego CA użytkownika; wzorce błędów
 
 Ruch w tle / bez interakcji &
 \textit{mitmproxy}, \textit{tcpdump} \cite{MitmproxyDocs,tcpdump} &
-żądania/min w tle; rozkład czasowy (bursty), domeny docelowe, interwały retry/backoff. \\[2pt]
+żądania/min w tle; rozkład czasowy (intensyfikacje przepływów), domeny docelowe, interwały retry/backoff. \\[2pt]
 
 Semantyka HTTP &
 \textit{mitmproxy} \cite{MitmproxyDocs} &

@@ -11,19 +11,22 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \S
   \label{tab:fb-proto}
   \begin{tabular}{lrrrr}
     \toprule
-    \textbf{Protokół} & \textbf{Flows} & \textbf{\% flows} & \textbf{MiB} & \textbf{\% wolumenu} \\
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
     \midrule
-    QUIC  & 132 & 43{,}3\% & 29.29 & 98{,}5\% \\
-    TLS   & 93  & 30{,}5\% & 0.01  & 0{,}0\% \\
-    DNS   & 46  & 15{,}1\% & 0.00  & 0{,}0\% \\
-    HTTPS & 19  & 6{,}2\%  & 0.43  & 1{,}5\% \\
-    TCP   & 10  & 3{,}3\%  & 0.01  & 0{,}0\% \\
-    HTTP  & 5   & 1{,}6\%  & 0.00  & 0{,}0\% \\
+    QUIC  & 132 & 29.29 & 1{,}189{,}171 & 29{,}522{,}102 \\
+    TLS   & 93  & 0.01 & 5{,}620   & 3{,}768 \\
+    DNS   & 46  & 0.00 & 1{,}137   & 1{,}778 \\
+    HTTPS & 19  & 0.43 & 312{,}835 & 142{,}702 \\
+    TCP   & 10  & 0.01 & 9{,}111   & 2{,}899 \\
+    HTTP  & 5   & 0.00 & 300       & 200 \\
     \midrule
-    \textbf{Razem} & \textbf{305} & \textbf{100\%} & \textbf{29.75} & \textbf{100\%} \\
+    \textbf{Razem} & \textbf{305} & \textbf{29.75} & \textbf{1{,}518{,}174} & \textbf{29{,}673{,}449} \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+\paragraph{Obserwacja:} 
+Ruch Facebooka jest silnie zdominowany przez QUIC/HTTP/3 (jak u Instagrama). 
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -48,6 +51,9 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \S
   \end{tabular}
 \end{table}
 
+\paragraph{Obserwacja:}
+Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin - jak u Instagrama).
+
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
   \centering
@@ -71,8 +77,39 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \S
   \end{tabular}
 \end{table}
 
+\paragraph{Obserwacja:} 
+Analiza hostów pokazuje silną koncentrację ruchu na \texttt{graph.facebook.com} oraz powiązanych usługach (\texttt{lookaside}, \texttt{chat-e2ee-mini}, \texttt{gateway}). Wskazuje to na dominującą rolę centralnego API (\texttt{graph}) i serwisów pomocniczych (logowanie, czat, integracja z Instagramem). Dodatkowa obecność hostów typu \texttt{*-fallback} oraz \texttt{*.fbcdn.net} sugeruje stosowanie mechanizmów redundancji i serwerów CDN do dystrybucji treści multimedialnych.
+
 \subsection{Wyniki z Exodus Privacy (aplikacja)}
-\textbf{Metoda.} \emph{Exodus Privacy} wykonuje statyczną analizę pakietu APK i raportuje wykryte biblioteki śledzące (trackery) oraz zadeklarowane uprawnienia aplikacji. Wnioski z takiej analizy należy zestawiać z obserwacjami dynamicznymi z ruchu sieciowego (PCAPdroid), co robimy w niniejszej pracy.
+Raport dla \texttt{com.facebook.katana} (wersja 525.0.0.53.51, Google Play) wskazuje obecność \textbf{8 trackerów} oraz \textbf{90 uprawnień}.
+
+\textbf{Trackery.}
+\begin{itemize}
+  \item Facebook Ads (advertisement),
+  \item Facebook Audience (analytics),
+  \item Facebook Flipper (analytics),
+  \item Facebook Notifications,
+  \item Facebook Places,
+  \item Facebook Share,
+  \item Google Analytics (analytics),
+  \item Mapbox.
+\end{itemize}
+
+\textbf{Uprawnienia — przykłady kluczowe:}
+\begin{itemize}
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION},
+  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO},
+  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_PHONE\_STATE}, \texttt{MANAGE\_ACCOUNTS},
+  \item \textbf{Sieć i system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{NFC}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW},
+  \item \textbf{Biometria i powiadomienia:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT}, \texttt{POST\_NOTIFICATIONS}.
+\end{itemize}
+
+\emph{Spostrzeżenia:} 
+\begin{itemize}
+  \item Zidentyfikowano szerokie spektrum trackerów, głównie od samego Facebooka, a także Google i Mapbox.
+  \item Zakres uprawnień jest bardzo szeroki (90), obejmując zarówno krytyczne elementy systemowe (kamera, mikrofon, kontakty, lokalizacja), jak i dodatkowe funkcje (NFC, kalendarz).
+  \item Liczba i charakter uprawnień odpowiada aplikacji działającej jako główna platforma społecznościowa, ale równocześnie rodzi poważne obawy o prywatność użytkowników.
+\end{itemize}
 
 \textbf{Uprawnienia — kategorie kluczowe.} Dla Facebooka istotne z perspektywy prywatności są zwłaszcza:
 \begin{itemize}
@@ -83,7 +120,7 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \S
 \end{itemize}
 \emph{Uwaga:} dokładny zestaw i liczba uprawnień zależą od wersji aplikacji i kanału dystrybucji; w raporcie Exodusa dla \texttt{com.facebook.katana} należy je cytować dla konkretnej wersji aplikacji poddanej badaniu.
 
-\subsection{Dyskusja i ograniczenia}
+\subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
 Transport QUIC/UDP ogranicza klasyczne MITM/TLS-over-TCP; wgląd w semantykę HTTP jest bardzo ograniczony.
 
@@ -93,7 +130,7 @@ Facebook to aplikacja o wysokiej dynamice wydawniczej; zestaw hostów, udział Q
 \subsection{Podsumowanie}
 W badanej sesji Facebook wykazuje: 
 \begin{enumerate}
-\item dominację QUIC/HTTP/3 w wolumenie (≈98{,}5\%), 
+\item dominację QUIC/HTTP/3 w wolumenie ($\approx$98{,}5\%), 
 \item charakterystyczne kanały usługowe (\texttt{graph}/\texttt{gateway}/\texttt{edge-mqtt}), 
 \item krótkotrwałe piki transferów związane z interakcjami użytkownika oraz ograniczoną aktywność w tle. Z perspektywy prywatności kluczowe są uprawnienia do lokalizacji, multimediów i pracy w tle oraz obecność komponentów analityczno-reklamowych.
 \end{enumerate}

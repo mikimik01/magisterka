@@ -1,0 +1,120 @@
+\section{TikTok (wersja 34.8.4)}
+\label{sec:tiktok}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-24 16{:}40{:}55–2025-08-24 16{:}45{:}00} ($\approx$ \SI{4.1}{\minute}). 
+Zarejestrowano \textbf{649} przepływy, wolumen $\approx$ \textbf{125.30 MiB} 
+(\textbf{RX $\approx$ 123.71 MiB}, \textbf{TX $\approx$ 1.59 MiB}).
+
+\paragraph{Przebieg badania:} 
+Scenariusz obejmował: \emph{2 min nasłuchu tła, tworzenie konta, logowanie, wylogowanie, nawigację po głównych stronach, lajkowanie, zmianę personalizacji treści, wyłączenie aplikacji oraz 10 min nasłuchu tła}.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (TikTok, ta sesja)}
+  \label{tab:tiktok-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    QUIC  & 62  & 2.97  & 674{,}032  & 2{,}442{,}153 \\
+    HTTPS & 156 & 122.24 & 960{,}142 & 127{,}220{,}147 \\
+    TCP   & 1   & 0.00  & 100       & 88 \\
+    DNS   & 238 & 0.07  & 17{,}189  & 52{,}366 \\
+    TLS   & 190 & 0.02  & 12{,}237  & 7{,}919 \\
+    UDP   & 2   & 0.00  & 2{,}696   & 140 \\
+    \midrule
+    \textbf{Razem} & \textbf{649} & \textbf{125.30} & \textbf{1{,}666{,}396} & \textbf{129{,}722{,}813} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Wolumen dominuje \textbf{QUIC/HTTP/3} (media po UDP/443); dodatkowo widoczne są \textbf{HTTPS}/TCP dla API oraz standardowe \textbf{DNS}. Brak jawnego HTTP.
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (TikTok, ta sesja)}
+  \label{tab:tiktok-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    95.101.61.17   & 443 & HTTPS & 3  & 38.58 \\
+    2.16.168.49    & 443 & HTTPS & 7  & 28.50 \\
+    213.158.199.80 & 443 & HTTPS & 1  & 21.62 \\
+    95.101.61.29   & 443 & HTTPS & 2  & 9.48 \\
+    213.158.199.81 & 443 & HTTPS & 9  & 6.04 \\
+    23.64.12.178   & 443 & HTTPS & 3  & 3.87 \\
+    139.177.245.196& 443 & QUIC  & 62 & 2.97 \\
+    213.158.203.201& 443 & HTTPS & 9  & 2.74 \\
+    146.75.118.73  & 443 & HTTPS & 5  & 2.70 \\
+    18.66.112.33   & 443 & HTTPS & 4  & 1.71 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Największy wolumen kierowany jest do CDN/edge ByteDance i Google (443/UDP i 443/TCP).
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (TikTok, liczba przepływów)}
+  \label{tab:tiktok-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{aggr32-normal.tiktokv.eu} & 132 \\
+    \texttt{libra16-normal-no1a.tiktokv.eu} & 41 \\
+    \texttt{p16-common-sign-useastred.tiktokcdn-eu.com} & 40 \\
+    \texttt{v16m.tiktokcdn-eu.com} & 32 \\
+    \texttt{v19.tiktokcdn-eu.com} & 20 \\
+    \texttt{frontier16-normal-no1a.tiktokv.eu} & 20 \\
+    \texttt{(brak)} & 19 \\
+    \texttt{api16-normal-no1a.tiktokv.eu} & 16 \\
+    \texttt{lf16-pitaya-pkg-sign.tiktokcdn-eu.com} & 13 \\
+    \texttt{p77-sg.tiktokcdn.com} & 10 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Typowe domeny: \texttt{*.tiktokv.eu/com}, \texttt{*.tiktokcdn-eu.com}, \texttt{*.byteoversea.com}, \texttt{*.ibytedtos.com} (media/CDN, API), \texttt{mcs-*/mon} (telemetria), \texttt{*.googleapis.com} (usługi pomocnicze).
+
+\subsection{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Dominacja HTTP/3/QUIC} — strumienie wideo po UDP/443; niskie RTT ustanawiania i dobra tolerancja strat.
+  \item \textbf{Asymetria RX/TX} — silna przewaga danych odbieranych, zgodna z autoplay/scroll feedu.
+  \item \textbf{Telemetria} — połączenia do hostów \texttt{mcs-*}/\texttt{mon-*}; wolumen niewielki względem mediów.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+Raport dla \texttt{com.ss.android.ugc.trill} (wersja 34.8.4, Google Play) wskazuje obecność \textbf{5 trackerów} — \emph{AppsFlyer} (analityka/atrybucja), \emph{Facebook Login} (identyfikacja), \emph{Facebook Share} (udostępnianie), \emph{Google Firebase Analytics} (analityka) oraz \emph{Pangle} (reklama) — oraz \textbf{44 uprawnienia}.
+
+\textbf{Uprawnienia — przykłady kluczowe:}
+\begin{itemize}
+  \item \textbf{Lokalizacja i łączność:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{BLUETOOTH\_CONNECT},
+  \item \textbf{Multimedia:} \texttt{RECORD\_AUDIO}, \texttt{CAMERA}, \texttt{READ\_MEDIA\_AUDIO/IMAGES/VIDEO},
+  \item \textbf{Powiadomienia/system:} \texttt{POST\_NOTIFICATIONS}, \texttt{FOREGROUND\_SERVICE}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW},
+  \item \textbf{Reklama/identyfikacja:} \texttt{ACCESS\_ADSERVICES\_AD\_ID}, \texttt{AD\_ID},
+  \item \textbf{Pamięć:} \texttt{READ/WRITE\_EXTERNAL\_STORAGE}.
+\end{itemize}
+
+\subsection{Subiektywne spostrzeżenia}
+\paragraph{Obserwowalność treści.} 
+Ze względu na QUIC/TLS treści żądań/odpowiedzi nie są widoczne; analiza dotyczy metadanych (hosty, porty, wolumeny).
+
+\paragraph{Uwagi dot. bezpieczeństwa.}
+Zachowanie sieciowe (HTTP/3 dla mediów, HTTPS/TCP dla API) jest typowe dla aplikacji wideo. Ocena pinningu certyfikatów, DRM i mechanizmów anti-tamper wymaga analizy APK oraz testów dynamicznych.
+
+\subsection{Podsumowanie}
+W badanej sesji TikTok wykazuje:
+\begin{enumerate}
+\item dominację QUIC/HTTP/3 w wolumenie (media po UDP/443), przy API po HTTPS/TCP,
+\item silną asymetrię RX/TX typową dla streamingu i przewijania feedu,
+\item zestaw trackerów i szeroki zakres uprawnień zgodny z raportem Exodusa (5/44).
+\end{enumerate}

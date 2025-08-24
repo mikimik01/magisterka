@@ -1,0 +1,127 @@
+\section{Spotify (wersja 9.0.72.967)}
+\label{sec:spotify}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-24 14{:}09{:}43–2025-08-24 14{:}11{:}57} ($\approx$ \SI{2.2}{\minute}). 
+Zarejestrowano \textbf{72} przepływy, wolumen $\approx$ \textbf{12.42 MiB} 
+(\textbf{RX $\approx$ 11.85 MiB}, \textbf{TX $\approx$ 0.58 MiB}).
+
+\paragraph{Przebieg badania:} 
+Scenariusz obejmował: \emph{logowanie, odtwarzanie kilku różnych utworów, przewijanie/seek, nawigację po ekranach głównych, wyszukiwanie, przeglądanie i edycję playlist (dodawanie utworów), wylogowanie}.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (Spotify, ta sesja)}
+  \label{tab:spotify-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    HTTPS & 42 & 12.36 & 589{,}260 & 12{,}367{,}835 \\
+    TCP   & 5  & 0.06  & 10{,}391  & 49{,}839 \\
+    DNS   & 23 & 0.01  & 1{,}563   & 4{,}299 \\
+    MDNS  & 1  & 0.00  & 730       & 0 \\
+    SSDP  & 1  & 0.00  & 1{,}530   & 0 \\
+    \midrule
+    \textbf{Razem} & \textbf{72} & \textbf{12.42} & \textbf{603{,}474} & \textbf{12{,}421{,}973} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Ruch Spotify jest zdominowany przez \textbf{HTTPS} (strumienie audio i zasoby CDN). W tym wycinku nie zaobserwowano QUIC; widoczny jest niewielki ślad \textbf{TCP} (kontrola/utrzymanie) oraz \textbf{DNS}, \textbf{mDNS} i \textbf{SSDP} (integracje urządzeń domowych).
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (Spotify, ta sesja)}
+  \label{tab:spotify-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    213.158.203.250 & 443  & HTTPS & 1  & 5.93 \\
+    146.75.118.248  & 443  & HTTPS & 1  & 2.30 \\
+    146.75.118.250  & 443  & HTTPS & 2  & 1.87 \\
+    35.186.224.28   & 443  & HTTPS & 2  & 1.48 \\
+    35.186.224.24   & 443  & HTTPS & 17 & 0.42 \\
+    213.158.203.240 & 443  & HTTPS & 8  & 0.18 \\
+    213.158.203.200 & 443  & HTTPS & 1  & 0.11 \\
+    35.186.224.44   & 443  & HTTPS & 5  & 0.04 \\
+    34.158.1.133    & 4070 & TCP   & 1  & 0.02 \\
+    34.158.255.62   & 443  & TCP   & 1  & 0.01 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Największy wolumen trafia do adresów \texttt{*.spotify.com}/\texttt{*.spotifycdn.com} na 443/TCP (CDN i API).
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (Spotify, liczba przepływów)}
+  \label{tab:spotify-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{spclient.wg.spotify.com} & 17 \\
+    \texttt{image-cdn-ak.spotifycdn.com} & 9 \\
+    \texttt{gew4-dealer.spotify.com} & 6 \\
+    \texttt{ap-gew4.spotify.com} & 4 \\
+    \texttt{image-cdn-fa.spotifycdn.com} & 3 \\
+    \texttt{gew4-spclient.spotify.com} & 3 \\
+    \texttt{pickasso.spotifycdn.com} & 3 \\
+    \texttt{ap-gue1.spotify.com} & 2 \\
+    \texttt{ap-guc3.spotify.com} & 2 \\
+    \texttt{firebaselogging-pa.googleapis.com} & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Widoczne są typowe domeny Spotify: \texttt{spclient.wg.spotify.com} (API/sterowanie), \texttt{spotifycdn.com} (okładki/zasoby), regionalne \texttt{gew*}/\texttt{ap-*} (dealery API). Okazjonalne żądania do \texttt{firebaselogging-pa.googleapis.com} wskazują na niewielką telemetrię.
+
+\subsection{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Strumień audio po HTTPS} — w tym zrzucie brak QUIC/HTTP/3; transport realizowany klasycznym TLS/TCP.
+  \item \textbf{Integracje urządzeń} — obecność \textbf{mDNS/SSDP} sugeruje wykrywanie urządzeń w sieci lokalnej (Cast/AirPlay/Connect).
+  \item \textbf{Asymetria RX/TX} — przewaga danych odbieranych (\(~11.85\) MiB) nad wysyłanymi (\(~0.58\) MiB), typowa dla odtwarzania multimediów.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+Raport dla \texttt{com.spotify.music} (wersja 9.0.72.967, Google Play) ujawnił \textbf{4 trackery} oraz \textbf{48 uprawnień}.
+
+\textbf{Trackery:}
+\begin{itemize}
+  \item \textbf{Branch} — atrybucja i linki dynamiczne,
+  \item \textbf{ComScore} — pomiar oglądalności i statystyk,
+  \item \textbf{Google CrashLytics} — diagnostyka i stabilność aplikacji,
+  \item \textbf{Google Firebase Analytics} — analityka użycia.
+\end{itemize}
+
+\textbf{Uprawnienia (wybrane):}
+\begin{itemize}
+  \item \textbf{Multimedia:} \texttt{RECORD\_AUDIO}, \texttt{READ\_MEDIA\_AUDIO}, \texttt{WRITE\_EXTERNAL\_STORAGE},
+  \item \textbf{Łączność:} \texttt{BLUETOOTH\_*}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{CHANGE\_NETWORK\_STATE},
+  \item \textbf{Reklama i identyfikacja:} \texttt{AD\_ID}, \texttt{ACCESS\_ADSERVICES\_AD\_ID}.
+\end{itemize}
+
+\emph{Spostrzeżenia:} obecność czterech trackerów odpowiada modelowi biznesowemu aplikacji muzycznej opartej na reklamie i analityce. Zakres uprawnień jest bardzo szeroki, obejmujący zarówno multimedia, jak i identyfikatory reklamowe.
+
+\subsection{Subiektywne spostrzeżenia}
+\paragraph{Obserwowalność treści.}
+Zaszyfrowany strumień HTTPS uniemożliwia wgląd w treść audio lub zapytania API; analiza ogranicza się do metadanych (hosty, porty, wolumen).
+
+\paragraph{Uwagi dot. bezpieczeństwa.}
+Zachowanie sieciowe (TLS/443, brak jawnego HTTP, ograniczona telemetria) jest spójne z dojrzałą aplikacją medialną. Ocena pinningu certyfikatów, DRM czy mechanizmów anty-tamper wymaga analizy APK/testów dynamicznych.
+
+\subsection{Podsumowanie}
+W badanej sesji Spotify wykazuje:
+\begin{enumerate}
+\item dominację HTTPS ($\approx 12.42$ MiB w \textbf{72} flow, okno \SI{2.2}{\minute}),
+\item koncentrację na hostach \texttt{*.spotify.com}/\texttt{*.spotifycdn.com} oraz aktywność mDNS/SSDP (urządzenia w sieci lokalnej),
+\item zestaw trackerów i uprawnień zgodny z raportem Exodusa (4/48).
+\end{enumerate}

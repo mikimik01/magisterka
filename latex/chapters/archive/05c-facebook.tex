@@ -18,10 +18,10 @@ Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej aplikac
 \end{itemize}
 
 \section{Procedura (pojedyncza iteracja)}
-Jedna iteracja (≈ 12{,}3 min) składała się z: (1) zimnego startu i krótkiej nawigacji (feed, profil, wyszukiwanie), (2) krótkiej interakcji multimedialnej, (3) przejścia do tła i obserwacji w tle. Szczegóły i uzasadnienia czasów — patrz Rozdz.\ \ref{chap:metodyka}.
+Jedna iteracja ($\approx$ 12{,}3 min) składała się z: (1) zimnego startu i krótkiej nawigacji (feed, profil, wyszukiwanie), (2) krótkiej interakcji multimedialnej, (3) przejścia do tła i obserwacji w tle. Szczegóły i uzasadnienia czasów — patrz Rozdz.\ \ref{chap:metodyka}.
 
 \section{Zebrane dane (ta sesja)}
-Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} (≈ \SI{12.28}{\minute}). Zarejestrowano \textbf{305} przepływów (\emph{flows}) o łącznym wolumenie \textbf{≈\,29.75 MiB}; \textbf{RX ≈\,28.30 MiB}, \textbf{TX ≈\,1.45 MiB}.
+Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \SI{12.28}{\minute}). Zarejestrowano \textbf{305} przepływów (\emph{flows}) o łącznym wolumenie \textbf{$\approx$\,29.75 MiB}; \textbf{RX $\approx$\,28.30 MiB}, \textbf{TX $\approx$\,1.45 MiB}.
 
 \section{Wyniki ilościowe}
 \subsection{Wolumen i liczność wg protokołu}
@@ -93,9 +93,9 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} (≈ \SI{12.2
 
 \paragraph{Obserwacje:}
 \begin{itemize}
-  \item \textbf{Dominacja QUIC/HTTP/3:} niemal cały wolumen (≈98{,}5\%) to QUIC na 443/UDP; obecne są też śladowe HTTPS/TCP na 443 (np.\ fallback, zasoby pomocnicze).
+  \item \textbf{Dominacja QUIC/HTTP/3:} niemal cały wolumen ($\approx$98{,}5\%) to QUIC na 443/UDP; obecne są też śladowe HTTPS/TCP na 443 (np.\ fallback, zasoby pomocnicze).
   \item \textbf{Kanały usługowe:} widoczne hosty typu \texttt{edge-mqtt.facebook.com}, \texttt{gateway.facebook.com}/\texttt{instagram.com} (utrzymanie sesji, powiadomienia, API graficzne).
-  \item \textbf{Wzorzec ruchu:} wyraźny \emph{burst} około 19{:}26 (większość nowych i kończących się flow), po czym aktywność w tle spada do sporadycznych wywołań.
+  \item \textbf{Wzorzec ruchu:} wyraźny \emph{impuls} około 19{:}26 (większość nowych i kończących się flow), po czym aktywność w tle spada do sporadycznych wywołań.
 \end{itemize}
 
 \section{Wyniki z Exodus Privacy (aplikacja)}
@@ -112,7 +112,7 @@ Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} (≈ \SI{12.2
 
 \textbf{Trackery.} Raporty Exodusa wskazują obecność/nieobecność znanych bibliotek śledzących na podstawie reguł detekcji kodu/sieci. Wartościowe jest porównanie z hostami z Tabeli~\ref{tab:fb-hosts} (np.\ korespondencja \textit{Audience/Analytics} \(\leftrightarrow\) \texttt{graph.facebook.com}, \texttt{fbcdn.net}). 
 
-\section{Dyskusja i ograniczenia}
+\subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
 Transport QUIC/UDP ogranicza klasyczne MITM/TLS-over-TCP; wgląd w semantykę HTTP jest bardzo ograniczony, dlatego opieramy się na metadanych (hosty, czasy, wolumeny) i korelacji zachowań.
 
@@ -123,4 +123,4 @@ Facebook to aplikacja o wysokiej dynamice wydawniczej; zestaw hostów, udział Q
 Udostępniamy CSV/PCAPNG z sesji (nazewnictwo: \texttt{YYYYMMDD\_HHMM\_Facebook\_runN\_net=default\_vApp\_vAndroid\{.csv,.pcapng\}}) oraz skrypty agregujące. W przypadku sekcji \emph{Exodus Privacy} zaleca się dołączenie PDF/HTML raportu dla użytej wersji \texttt{com.facebook.katana}.
 
 \section{Podsumowanie}
-W badanej sesji Facebook wykazuje: (i) dominację QUIC/HTTP/3 w wolumenie (≈98{,}5\%), (ii) charakterystyczne kanały usługowe (\texttt{graph}/\texttt{gateway}/\texttt{edge-mqtt}), (iii) krótkotrwałe piki transferów związane z interakcjami użytkownika oraz ograniczoną aktywność w tle. Z perspektywy prywatności kluczowe są uprawnienia do lokalizacji, multimediów i pracy w tle oraz obecność komponentów analityczno-reklamowych — ich interpretację należy zawsze osadzać w kontekście wersji aplikacji i potwierdzać obserwacjami dynamicznymi.
+W badanej sesji Facebook wykazuje: (i) dominację QUIC/HTTP/3 w wolumenie ($\approx$98{,}5\%), (ii) charakterystyczne kanały usługowe (\texttt{graph}/\texttt{gateway}/\texttt{edge-mqtt}), (iii) krótkotrwałe piki transferów związane z interakcjami użytkownika oraz ograniczoną aktywność w tle. Z perspektywy prywatności kluczowe są uprawnienia do lokalizacji, multimediów i pracy w tle oraz obecność komponentów analityczno-reklamowych — ich interpretację należy zawsze osadzać w kontekście wersji aplikacji i potwierdzać obserwacjami dynamicznymi.

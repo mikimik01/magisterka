@@ -1,0 +1,116 @@
+\section{Mobile USOS (wersja 2.0.3)}
+\label{sec:usos}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-24 13{:}43{:}09–13{:}47{:}29} ($\approx$ \SI{4.3}{\minute}). 
+Zarejestrowano \textbf{200} przepływów, wolumen $\approx$ \textbf{2.88 MiB} 
+(\textbf{RX $\approx$ 2.47 MiB}, \textbf{TX $\approx$ 0.40 MiB}).
+
+\paragraph{Przebieg badania:} 
+Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
+\emph{nasłuch tła (2 min), logowanie, wyświetlenie numeru PESEL, wgląd w dane wrażliwe (PESEL, numer albumu), wysłanie maila, nawigację po głównych ekranach (offline i online), zamknięcie aplikacji (wylogowanie) oraz nasłuch tła (ok. 10 min)}.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (USOS, ta sesja)}
+  \label{tab:usos-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    HTTPS & 173 & 2.87 & 421{,}868 & 2{,}592{,}198 \\
+    TLS   & 22  & 0.00 & 1{,}320   & 880 \\
+    DNS   & 5   & 0.00 & 360       & 725 \\
+    \midrule
+    \textbf{Razem} & \textbf{200} & \textbf{2.88} & \textbf{423{,}548} & \textbf{2{,}593{,}803} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Ruch USOS w tej sesji jest zdominowany przez \textbf{HTTPS/TLS} (brak QUIC i brak HTTP w klarze).
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (USOS, ta sesja)}
+  \label{tab:usos-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    150.254.5.110   & 443  & HTTPS & 25  & 0.91 \\
+    216.58.208.206  & 443  & HTTPS & 5   & 0.90 \\
+    142.250.186.196 & 443  & HTTPS & 14  & 0.54 \\
+    150.254.5.52    & 443  & HTTPS & 126 & 0.51 \\
+    142.250.186.42  & 443  & HTTPS & 2   & 0.01 \\
+    142.250.203.131 & 443  & HTTPS & 1   & 0.01 \\
+    150.254.5.52    & 3000 & TLS   & 20  & 0.00 \\
+    150.254.5.110   & 3000 & TLS   & 2   & 0.00 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Największy wolumen kierowany jest do hostów na porcie \textbf{443/TCP} (HTTPS); widoczny jest też kanał \textbf{TLS/3000} o znikomym wolumenie (telemetria/błędy).
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (USOS, liczba przepływów)}
+  \label{tab:usos-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{usosapps.put.poznan.pl} & 147 \\
+    \texttt{ppulse.put.poznan.pl} & 28 \\
+    \texttt{www.google.com} & 14 \\
+    \texttt{clients4.google.com} & 6 \\
+    \texttt{firebaseinstallations.googleapis.com} & 3 \\
+    \texttt{firebase-settings.crashlytics.com} & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Dominują hosty uczelniane (\texttt{usosapps.put.poznan.pl}, \texttt{ppulse.put.poznan.pl}); obecne są też serwisy Google (instalacje Firebase, Crashlytics) oraz \texttt{www.google.com} (zasoby/kontrola łączności).
+
+\subsection{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Brak QUIC/HTTP/3.} Komunikacja aplikacyjna po TLS/443; treść niedostępna.
+  \item \textbf{Brak HTTP.} Nie odnotowano żądań nieszyfrowanych.
+  \item \textbf{Integracje zewnętrzne.} Połączenia do usług Google (Firebase/Crashlytics) o małym wolumenie są zgodne z diagnostyką/aplikacyjną telemetrią.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+Raport dla \texttt{pl.edu.usos.mobilny} (wersja 2.0.3, Google Play) wskazuje obecność \textbf{1 trackera} — \emph{Google CrashLytics} (crash reporting) oraz \textbf{13 uprawnień}.
+
+\textbf{Uprawnienia — przykłady kluczowe:}
+\begin{itemize}
+  \item \textbf{Kamera/kalendarium:} \texttt{CAMERA}, \texttt{READ\_CALENDAR}, \texttt{WRITE\_CALENDAR},
+  \item \textbf{Biometria:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT},
+  \item \textbf{Sieć/system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{NFC}, \texttt{POST\_NOTIFICATIONS}, \texttt{WAKE\_LOCK},
+  \item \textbf{Inne:} \texttt{CHECK\_LICENSE}, \texttt{RECEIVE} (FCM), \nolinkurl{pl.edu.usos.mobilny.DYNAMIC\_RECEIVER\_NOT\_EXPORTED\_PERMISSION}.
+\end{itemize}
+\emph{Spostrzeżenia:} 
+\begin{itemize}
+  \item Exodus wykrywa sygnatury statyczne trackerów — nie jest to dowód ich aktywności w czasie działania.
+  \item Jedyny tracker ma charakter czysto diagnostyczny; zestaw uprawnień obejmuje zarówno funkcje systemowe (NFC, notyfikacje), jak i elementy fakultatywne (kalendarz).
+\end{itemize}
+
+\subsection{Subiektywne spostrzeżenia}
+\paragraph{Obserwowalność treści.}
+Warstwa transportowa jest poprawnie szyfrowana (TLS); brak widoczności treści żądań/odpowiedzi oraz brak jawnego HTTP.
+
+\paragraph{Praktyki bezpieczeństwa.}
+W analizowanej sesji widać konsekwentne użycie \textbf{HTTPS/TLS} do hostów uczelnianych oraz ograniczoną telemetrię (Crashlytics/Firebase). Dalsza ocena (pinning certyfikatów, mechanizmy anti-root/anti-tamper, magazyn kluczy) wymaga analizy APK i testów dynamicznych.
+
+\subsection{Podsumowanie}
+W badanej sesji USOS wykazuje:
+\begin{enumerate}
+\item dominację TLS/HTTPS; wolumen ($\approx 2.88$ MiB), \textbf{200} przepływów w $\sim$\SI{4.3}{\minute},
+\item koncentrację ruchu na hostach uczelnianych (\texttt{usosapps.put.poznan.pl}, \texttt{ppulse.put.poznan.pl}) oraz niewielką telemetrię do usług Google,
+\item brak śladów HTTP w klarze oraz brak QUIC/HTTP/3 w zarejestrowanym oknie.
+\end{enumerate}

@@ -10,7 +10,7 @@
 \section{Cel i założenia}
 Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej popularnej aplikacji mobilnej (Instagram) pod kątem:
 (i) wykorzystywanych protokołów i transportu (HTTP/1.1, HTTP/2, HTTP/3/QUIC, TLS) \cite{RFC8446,RFC9114,RFC9000},
-(ii) wzorców zachowania (bursty podczas interakcji vs.\ aktywność w tle),
+(ii) wzorców zachowania (impulsy podczas interakcji vs.\ aktywność w tle),
 (iii) rozproszenia docelowych usług (domen/IP/portów) oraz
 (iv) ograniczeń obserwowalności wynikających z QUIC/HTTP/3 i ewentualnego \emph{certificate pinning}.
 Rejestracji dokonano narzędziem PCAPdroid (no-root, tryb PCAPNG z kluczami) i poddano obróbce wg metodyki z Rozdz.\ \ref{chap:metodyka}; do inspekcji \texttt{pcapng} wykorzystywano również Wireshark \cite{WiresharkDocs}.
@@ -23,7 +23,7 @@ Rejestracji dokonano narzędziem PCAPdroid (no-root, tryb PCAPNG z kluczami) i p
 \end{itemize}
 
 \section{Procedura (pojedyncza iteracja)}
-Zgodnie z metodyką, jedna iteracja (≈ 15 min) składa się z: 
+Zgodnie z metodyką, jedna iteracja ($\approx$ 15 min) składa się z: 
 \begin{enumerate}
   \item \textbf{Baseline OS (2 min)} – app nieuruchomiona; punkt odniesienia dla tła.
   \item \textbf{Cold start (1 min)} – uruchomienie i ustabilizowanie ekranu głównego.
@@ -35,7 +35,7 @@ Zgodnie z metodyką, jedna iteracja (≈ 15 min) składa się z:
 Motywacja czasów i uzasadnienia znajdują się w Rozdz.\ \ref{chap:metodyka}. QUIC/HTTP/3 (UDP) z natury ogranicza klasyczny MITM; analiza treści HTTP możliwa jest przede wszystkim w wariancie porównawczym z wymuszeniem \emph{fallbacku} do HTTP/2/TCP (blokada UDP/443) \cite{RFC9114}.
 
 \section{Zebrane dane (ta sesja)}
-Eksperyment wykonano w dniu 2025-08-18 w oknie \textbf{17{:}56{:}33–18{:}10{:}14} (≈ \SI{13.7}{\minute}). Zarejestrowano \textbf{302} przepływy (\emph{flows}) o łącznym wolumenie \textbf{≈\,28.0 MiB}; \textbf{RX ≈\,27.2 MiB}, \textbf{TX ≈\,0.85 MiB}.
+Eksperyment wykonano w dniu 2025-08-18 w oknie \textbf{17{:}56{:}33–18{:}10{:}14} ($\approx$ \SI{13.7}{\minute}). Zarejestrowano \textbf{302} przepływy (\emph{flows}) o łącznym wolumenie \textbf{$\approx$\,28.0 MiB}; \textbf{RX $\approx$\,27.2 MiB}, \textbf{TX $\approx$\,0.85 MiB}.
 
 \paragraph{Udział protokołów (liczba flow):}
 QUIC \textbf{61.9\%}, DNS 16.2\%, TLS 11.9\%, TCP 4.0\%, HTTP 2.6\%, HTTPS 1.7\%, UDP 1.7\%.
@@ -91,11 +91,11 @@ Dominującym portem docelowym był \textbf{443} (HTTPS/QUIC; 233 flow), dalej \t
 \begin{itemize}
   \item \textbf{Dominacja HTTP/3/QUIC.} Zdecydowana większość ruchu (liczebnie i wolumenowo) to QUIC na 443/UDP, co jest zgodne z trendem migracji warstwy mediów do HTTP/3 \cite{RFC9114,RFC9000}.
   \item \textbf{Kanał utrzymania sesji.} Występuje równoległy kanał na \textbf{TCP/5222} (11--12 flows, mały wolumen), prawdopodobnie do komunikacji w czasie rzeczywistym/utrzymania połączenia.
-  \item \textbf{Burst podczas interakcji, potem „oddech”.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle (≈ 18{:}05–18{:}06).
+  \item \textbf{Intensyfikacja przepływów po interakcji, następnie spadek aktywności.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle ($\approx$ 18{:}05–18{:}06).
   \item \textbf{Niewielki ślad HTTP/1.1/HTTPS.} Jedynie kilka żądań; główna komunikacja i zasoby idą ścieżką QUIC.
 \end{itemize}
 
-\section{Dyskusja i ograniczenia}
+\subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
 Ze względu na transport QUIC/UDP, klasyczny MITM dla TLS (po TCP) nie ma zastosowania; nawet z certyfikatem użytkownika wgląd w treści HTTP jest ograniczony \cite{RFC9114}. Analiza opiera się na metadanych (ALPN, SNI, strumienie, wolumeny, czasy) i korelacji zachowania.
 \paragraph{Pinning.}

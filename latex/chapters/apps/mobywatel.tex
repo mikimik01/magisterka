@@ -1,0 +1,110 @@
+\section{mObywatel (wersja 4.64.0 \,(4899))}
+\label{sec:mobywatel}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-24 13{:}23{:}03–13{:}26{:}00} ($\approx$ \SI{2.9}{\minute}). 
+Zarejestrowano \textbf{13} przepływy, wolumen $\approx$ \textbf{0.21 MiB} 
+(\textbf{RX $\approx$ 0.15 MiB}, \textbf{TX $\approx$ 0.06 MiB}).
+
+\paragraph{Przebieg badania:} 
+Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym: 
+\emph{nasłuch tła (2 min), logowanie (biometria + hasło), wyświetlenie numeru PESEL, wgląd w dane wrażliwe (dowód, prawo jazdy, legitymacja studencka, dane pojazdu), nawigacja po głównych ekranach (offline i online), zamknięcie aplikacji oraz nasłuch tła (ok. 10 min)}.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (mObywatel, ta sesja)}
+  \label{tab:mobywatel-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    HTTPS & 3  & 0.18 & 51{,}439 & 134{,}763 \\
+    TLS   & 4  & 0.02 & 13{,}802 & 10{,}017 \\
+    HTTP  & 1  & 0.01 & 630      & 8{,}157 \\
+    DNS   & 5  & 0.00 & 327      & 407 \\
+    \midrule
+    \textbf{Razem} & \textbf{13} & \textbf{0.21} & \textbf{66{,}198} & \textbf{153{,}344} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Dominuje \textbf{HTTPS/TLS}; pojedynczy ślad \textbf{HTTP/80} dotyczy hosta Google (prawdopodobnie kontrola łączności/zasób systemowy) i nie wskazuje na przesyłanie treści aplikacyjnych w klarze.
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (mObywatel, ta sesja)}
+  \label{tab:mobywatel-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    185.41.93.206  & 443  & HTTPS & 3 & 0.18 \\
+    185.32.48.239  & 3000 & TLS   & 4 & 0.02 \\
+    142.250.203.195 & 80  & HTTP  & 1 & 0.01 \\
+    10.215.173.2   & 53   & DNS   & 5 & 0.00 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Ruch koncentruje się na 443/TCP do usług państwowych; widoczny jest także kanał TLS na nietypowym porcie \textbf{3000} (telemetria/błędy).
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (mObywatel, liczba przepływów)}
+  \label{tab:mobywatel-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{api.mobywatel.gov.pl} & 6 \\
+    \texttt{sentry.puch.coi.gov.pl} & 5 \\
+    \texttt{www.gstatic.com} & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+\texttt{api.mobywatel.gov.pl} dominuje; \texttt{sentry.puch.coi.gov.pl} wskazuje na wewnętrzny system raportowania błędów; \texttt{www.gstatic.com} występuje pomocniczo (zasoby/kontrola łączności).
+
+\subsection{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Szyfrowanie transportowe:} właściwa komunikacja aplikacji po TLS/443; brak treści w klarze.
+  \item \textbf{Brak QUIC/HTTP/3} w zarejestrowanym wycinku — kanał klasyczny TLS/TCP.
+  \item \textbf{Telemetria:} obecność endpointu \texttt{sentry.puch.coi.gov.pl} (raportowanie błędów); wolumen niewielki.
+  \item \textbf{HTTP/80 do Google:} pojedynczy flow (Google), typowy dla sprawdzeń łączności; brak wskazań na transfer danych aplikacji w klarze.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy  \cite{ExodusPrivacy}}
+Raport dla \texttt{pl.nask.mobywatel} (wersja 4.64.0 \,(4899), źródło Google Play) wskazuje \textbf{1 tracker} (\emph{Sentry} — crash reporting) oraz \textbf{20 uprawnień}. 
+
+\textbf{Uprawnienia — przykłady kluczowe:}
+\begin{itemize}
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_FINE\_LOCATION},
+  \item \textbf{Multimedia/kamera/pamięć:} \texttt{CAMERA}, \texttt{READ\_EXTERNAL\_STORAGE}, \texttt{WRITE\_EXTERNAL\_STORAGE},
+  \item \textbf{Biometria:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT},
+  \item \textbf{Telefonia/tożsamość:} \texttt{READ\_PHONE\_STATE},
+  \item \textbf{Sieć i usługi:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{FOREGROUND\_SERVICE}, \texttt{RECEIVE\_BOOT\_COMPLETED}, \texttt{WAKE\_LOCK}, \texttt{NFC}, \texttt{POST\_NOTIFICATIONS}, \texttt{GET\_TASKS},
+  \item \textbf{Powiadomienia/FCM:} \texttt{RECEIVE}, \texttt{pl.nask.mobywatel.DYNAMIC\_RECEIVER\_NOT\_EXPORTED\_PERMISSION}.
+\end{itemize}
+
+\emph{Spostrzeżenia:} brak większej ilości trackerów potwierdza szczególną wagę, jaką aplikacja przykłada do prywatności. Zestaw uprawnień jest szeroki, ale adekwatny do funkcji (obsługa dokumentów tożsamości, NFC, biometria).
+
+\subsection{Subiektywne spostrzeżenia}
+\paragraph{Obserwowalność treści.} 
+Ze względu na TLS treści zapytań/odpowiedzi nie są dostępne; nie widać przesyłania danych wrażliwych w klarze.
+
+\paragraph{Praktyki bezpieczeństwa.}
+W analizowanym wycinku widać konsekwentne użycie HTTPS/TLS do usług \texttt{*.gov.pl}, brak nietypowych punktów końcowych poza kanałem telemetrycznym (TLS/3000) i brak szerokich odwołań do domen trzecich. To zachowanie spójne z wysokim standardem bezpieczeństwa na warstwie transportowej. Pełna ocena (np. pinning certyfikatów, mechanizmy anti-tamper/anti-root, magazyn kluczy, ochrona ekranu) wymaga analizy APK oraz testów dynamicznych.
+
+\subsection{Podsumowanie}
+W badanej sesji mObywatel wykazuje:
+\begin{enumerate}
+\item dominację TLS/HTTPS; wolumen ($\approx 0.21$ MiB), \textbf{13} przepływów w $\sim$\SI{2.9}{\minute},
+\item koncentrację ruchu na \texttt{api.mobywatel.gov.pl} oraz wewnętrzną telemetrię \texttt{sentry.puch.coi.gov.pl},
+\item pojedynczy flow HTTP/80 do zasobów Google (nie dotyczy danych wrażliwych aplikacji).
+\end{enumerate}

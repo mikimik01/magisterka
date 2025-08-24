@@ -55,7 +55,7 @@ Ruch Instagrama jest silnie zdominowany przez QUIC/HTTP/3.
 \end{table}
 
 \paragraph{Obserwacja:}
-Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin), co sugeruje wykorzystanie pobliskich CDN. Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane najprawdopodobniej z powiadomieniami/czatem.
+Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin). Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane najprawdopodobniej z powiadomieniami/czatem.
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -87,12 +87,12 @@ Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama 
 \begin{itemize}
   \item \textbf{Dominacja HTTP/3/QUIC.} Zdecydowana większość ruchu (liczebnie i wolumenowo) to QUIC na 443/UDP, co jest zgodne z trendem migracji warstwy mediów do HTTP/3 \cite{RFC9114,RFC9000}.
   \item \textbf{Kanał utrzymania sesji.} Występuje równoległy kanał na \textbf{TCP/5222} (11--12 flows, mały wolumen), prawdopodobnie do komunikacji w czasie rzeczywistym/utrzymania połączenia.
-  \item \textbf{Burst podczas interakcji, potem „oddech”.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle (≈ 18{:}05–18{:}06).
+  \item \textbf{Intensyfikacja przepływów po interakcji, następnie spadek aktywności.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle ($\approx$ 18{:}05–18{:}06).
   \item \textbf{Niewielki ślad HTTP/1.1/HTTPS.} Jedynie kilka żądań; główna komunikacja i zasoby idą ścieżką QUIC.
 \end{itemize}
 
-\subsection{Wyniki z Exodus Privacy (aplikacja)}
-\textbf{Metoda.} \emph{Exodus Privacy} raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81, źródło Google Play) wykazał obecność \textbf{4 trackerów} oraz \textbf{69 uprawnień}.
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+Raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81, źródło Google Play) wykazał obecność \textbf{4 trackerów} oraz \textbf{69 uprawnień}.
 
 \textbf{Trackery.}
 \begin{itemize}
@@ -112,9 +112,9 @@ Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama 
 
 \emph{Uwaga:} pełna lista 69 uprawnień znajduje się w raporcie Exodusa (załącznik PDF/HTML).
 
-\subsection{Dyskusja i ograniczenia}
+\subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
-Podobnie jak w przypadku Facebooka, dominacja QUIC/HTTP/3 (≈99,8\% wolumenu) mocno ogranicza możliwość wglądu w treść ruchu.
+Podobnie jak w przypadku Facebooka, dominacja QUIC/HTTP/3 ($\approx$99,8\% wolumenu) mocno ogranicza możliwość wglądu w treść ruchu.
 
 \paragraph{Zmienność wersji.}
 Instagram, podobnie jak Facebook, jest często aktualizowany. Hosty, udział QUIC i zestaw uprawnień mogą różnić się między wersjami i regionami. Wyniki dotyczą wersji 394.0.0.46.81.
@@ -122,7 +122,7 @@ Instagram, podobnie jak Facebook, jest często aktualizowany. Hosty, udział QUI
 \subsection{Podsumowanie}
 W badanej sesji Instagram wykazuje:
 \begin{enumerate}
-\item niemal całkowitą dominację QUIC/HTTP/3 w wolumenie (≈99,8\%),
+\item niemal całkowitą dominację QUIC/HTTP/3 w wolumenie ($\approx$99,8\%),
 \item intensywne użycie hostów \texttt{graph.instagram.com}, \texttt{gateway.instagram.com}, \texttt{chat-e2ee} (komunikacja, API, czat),
 \item asymetrię RX/TX (27.2 vs 0.85 MiB) – użytkownik konsumował treści,
 \item szerokie spektrum uprawnień (w tym lokalizacja, multimedia, telefonia) i obecność trackerów analitycznych.

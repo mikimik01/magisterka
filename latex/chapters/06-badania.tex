@@ -1,10 +1,3 @@
-% --- jeśli nie masz w preambule:
-% \usepackage{booktabs}
-% \usepackage{longtable}
-% \usepackage{siunitx}
-% \usepackage{float}
-% \usepackage[section]{placeins}
-
 \chapter{Eksperymenty: studia przypadków (PCAPdroid + Exodus)}
 \label{chap:case-studies}
 
@@ -16,23 +9,33 @@ Celem eksperymentu jest empiryczna charakterystyka komunikacji sieciowej wybrany
   \item korelacja z analizą statyczną \textbf{Exodus Privacy} (trackery i uprawnienia).
 \end{enumerate}
 
-
-% Procedura pojedynczej iteracji: zimny start aplikacji, krótka nawigacja/operacje multimedialne, następnie obserwacja w tle. Ograniczenia obserwowalności wynikają z użycia HTTP/3/QUIC i ewentualnego \emph{certificate pinning}; interpretacja treści HTTP jest zatem ograniczona, a wnioski oparte są głównie na metadanych (ALPN, SNI, kierunki, wolumeny).
-
 \section{Procedura (pojedyncza iteracja)}
 Zgodnie z metodyką, jedna iteracja ($\approx$ 15 min) składa się z: 
 \begin{enumerate}
-  \item \textbf{Baseline OS (2 min)} – app nieuruchomiona; punkt odniesienia dla tła.
+  \item \textbf{Baseline OS (2 min)} – aplikacja nieuruchomiona - punkt odniesienia dla tła.
   \item \textbf{Cold start (1 min)} – uruchomienie i ustabilizowanie ekranu głównego.
   \item \textbf{Nawigacja (2 min)} – główne ekrany (feed, profil, wyszukiwarka).
   \item \textbf{Media/operacja (1 min)} – krótkie odtwarzanie/przewijanie, wymuszenie większych transferów.
   \item \textbf{Offline/online (4 min)} – 2 min offline + 2 min po reconnect; obserwacja retry/backoff.
   \item \textbf{Tło (10 min)} –  obserwacja po zamknięciu aplikacji.
 \end{enumerate}
+
 % --------------------------------
 % APLIKACJE
 \clearpage
 \input{chapters/apps/instagram}
 \clearpage
 \input{chapters/apps/facebook}
+\clearpage
+\input{chapters/apps/posnania}
+\clearpage
+\input{chapters/apps/mobywatel}
+\clearpage
+\input{chapters/apps/usos}
+\clearpage
+\input{chapters/apps/spotify}
+\clearpage
+\input{chapters/apps/voronoi}
+\clearpage
+\input{chapters/apps/tiktok}
 % --------------------------------

@@ -1,0 +1,109 @@
+\section{Posnania (wersja 1.1.1)}
+\label{sec:posnania}
+
+\subsection*{Okno i wolumen}
+Okno eksperymentu: \textbf{2025-08-23 17{:}54{:}14–17{:}57{:}08} ($\approx$ \SI{2.9}{\minute}). 
+Zarejestrowano \textbf{21} przepływy, wolumen $\approx$ \textbf{0.08 MiB} 
+(\textbf{RX $\approx$ 0.06 MiB}, \textbf{TX $\approx$ 0.03 MiB}).
+
+\paragraph{Przebieg badania:} 
+Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym: 
+\emph{start aplikacji, zmianę hasła, logowanie, dodanie rejestracji, nawigację po menu, wylogowanie, próbę błędnego logowania, ponowne logowanie, krótką pracę w trybie offline i online, ponowne wylogowanie oraz około 10 minut działania aplikacji w tle}.
+
+\subsection{Wolumen i liczność wg protokołu}
+\begin{table}[H]
+  \centering
+  \caption{Podsumowanie wg protokołu (Posnania, ta sesja)}
+  \label{tab:posnania-proto}
+  \begin{tabular}{lrrrr}
+    \toprule
+    \textbf{Protokół} & \textbf{Flows} & \textbf{MiB (total)} & \textbf{B wysłane} & \textbf{B odebrane} \\
+    \midrule
+    HTTPS & 9  & 0.08 & 27{,}627 & 57{,}363 \\
+    DNS   & 12 & 0.00 & 260      & 468 \\
+    \midrule
+    \textbf{Razem} & \textbf{21} & \textbf{0.08} & \textbf{27{,}887} & \textbf{57{,}831} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:} 
+Ruch aplikacji jest w całości oparty o \textbf{HTTPS} (brak QUIC oraz HTTP w klarze).
+
+\subsection{Największe cele (IP/port) wg wolumenu}
+\begin{table}[H]
+  \centering
+  \caption{Największe kierunki ruchu (Posnania, ta sesja)}
+  \label{tab:posnania-topdst}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{IP docelowe} & \textbf{Port} & \textbf{Proto} & \textbf{Flows} & \textbf{MiB} \\
+    \midrule
+    104.21.42.187  & 443 & HTTPS & 1  & 0.04 \\
+    34.120.195.249 & 443 & HTTPS & 5  & 0.02 \\
+    52.26.132.221  & 443 & HTTPS & 2  & 0.01 \\
+    172.67.208.92  & 443 & HTTPS & 1  & 0.01 \\
+    10.215.173.2   & 53  & DNS   & 12 & 0.00 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Cele to wyłącznie port \textbf{443/TCP} (HTTPS) oraz standardowe \textbf{DNS/53}. Brak nietypowych portów.
+
+\subsection{Najczęstsze hosty (liczba przepływów)}
+\begin{table}[H]
+  \centering
+  \caption{Top hosty (Posnania, liczba przepływów)}
+  \label{tab:posnania-hosts}
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Host} & \textbf{Flows} \\
+    \midrule
+    \texttt{api.yourb.app} & 10 \\
+    \texttt{o4505784913690624.ingest.sentry.io} & 6 \\
+    \texttt{m.stripe.com} & 3 \\
+    \texttt{updates.yourb.app} & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Obserwacja:}
+Widoczne są domeny \texttt{yourb.app} (API/aktualizacje), \texttt{sentry.io} (raportowanie błędów) oraz \texttt{stripe.com} (płatności).
+
+\subsection{Obserwacje jakościowe}
+\begin{itemize}
+  \item \textbf{Brak QUIC/HTTP/3.} Cała komunikacja po 443/TCP (TLS).
+  \item \textbf{Brak HTTP.} W badanej sesji nie obserwowano niezaszyfrowanych żądań HTTP.
+  \item \textbf{Integracje zewnętrzne.} Ruch do \texttt{sentry.io} (crash reporting) i \texttt{stripe.com} (płatności) jest zgodny z funkcjonalnością aplikacji.
+\end{itemize}
+
+\subsection{Wyniki z Exodus Privacy \cite{ExodusPrivacy}}
+Raport dla \texttt{com.yourbuildingapp.app.posnania} (wersja 1.1.1, Google Play) wskazuje obecność \textbf{1 trackera} (\emph{Sentry} — crash reporting) oraz \textbf{18 uprawnień}. 
+
+\textbf{Uprawnienia — przykłady kluczowe:}
+\begin{itemize}
+  \item \textbf{Kamera i multimedia:} \texttt{CAMERA}, \texttt{READ\_EXTERNAL\_STORAGE}, \texttt{WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES}, \texttt{READ\_MEDIA\_VIDEO}.
+  \item \textbf{Tożsamość/telefonia:} \texttt{READ\_PHONE\_STATE}.
+  \item \textbf{Interfejs/system:} \texttt{SYSTEM\_ALERT\_WINDOW}, \texttt{RECEIVE\_BOOT\_COMPLETED}, \texttt{SCHEDULE\_EXACT\_ALARM}, \texttt{POST\_NOTIFICATIONS}.
+  \item \textbf{Sieć:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}.
+  \item \textbf{Biometria:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT}.
+\end{itemize}
+
+\emph{Spostrzeżenia:} integracja z Sentry jest zgodna z profilem aplikacji, jednak szeroki zestaw uprawnień (kamera, biometria, alarmy systemowe) może być postrzegany jako nadmiarowy względem prostej funkcji aplikacji centrum handlowego.
+
+\subsection{Subiektywne spostrzeżenia}
+\paragraph{Obserwowalność treści.}
+Ze względu na TLS treści żądań/odpowiedzi nie są dostępne; brak oznak jawnego przesyłania danych.
+
+\paragraph{Hipotezy dot. bezpieczeństwa.}
+Podczas korzystania z aplikacji spostrzeżono możliwość wycieku informacji danych wrażliwych. Dodawanie tablic rejestracyjnych pojazdów nie wymaga wykazania własności samochodu. Dodać można każdą rejestrację, a następnie śledzić zarejestrowane na nią wjazdy i wyjazdy z parkingu.
+Na podstawie samego ruchu sieciowego \emph{nie można} potwierdzić „otwartej”/słabo szyfrowanej bazy danych — wymaga to analizy on-device (np. \texttt{SQLite/Room}, manifest, reverse engineering APK) oraz testów dynamicznych (np. \texttt{Frida}, \texttt{mitmproxy}, sprawdzenie pinu certyfikatu).
+
+\subsection{Podsumowanie}
+W badanej sesji Posnania wykazuje:
+\begin{enumerate}
+\item ruch wyłącznie po HTTPS (bez QUIC), niewielki wolumen ($\approx 0.08$ MiB) i zapytania DNS,
+\item integrację z \texttt{sentry.io} (telemetria błędów) i \texttt{stripe.com} (płatności),
+\item brak śladów HTTP w klarze; dalsze badania wymagane, by ocenić bezpieczeństwo lokalnej bazy danych.
+\end{enumerate}
