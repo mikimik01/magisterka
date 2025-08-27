@@ -1,0 +1,531 @@
+IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen
+17,10.215.173.1,16309,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-19T19:23:32.263+02:00,2025-08-19T19:23:32.283+02:00
+6,10.215.173.1,40366,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1972,7934,14,14,2025-08-19T19:23:32.288+02:00,2025-08-19T19:23:32.688+02:00
+17,10.215.173.1,52111,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:23:33.586+02:00,2025-08-19T19:23:33.603+02:00
+6,10.215.173.1,45596,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1408,7307,12,12,2025-08-19T19:23:33.610+02:00,2025-08-19T19:23:33.936+02:00
+17,10.215.173.1,13920,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-19T19:23:33.688+02:00,2025-08-19T19:23:33.712+02:00
+6,10.215.173.1,32892,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2981,4470,21,15,2025-08-19T19:23:33.715+02:00,2025-08-19T19:26:09.127+02:00
+6,10.215.173.1,51848,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:23:33.878+02:00,2025-08-19T19:24:38.013+02:00
+6,10.215.173.1,35050,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1381,7630,9,9,2025-08-19T19:23:39.679+02:00,2025-08-19T19:24:43.213+02:00
+17,10.215.173.1,31849,10.215.173.2,53,10028,PCAPdroid,com.emanuelef.remote_capture,DNS,Zamknij,firebaselogging.googleapis.com,76,220,1,1,2025-08-19T19:24:04.591+02:00,2025-08-19T19:24:04.745+02:00
+6,10.215.173.1,40936,216.58.208.202,443,10028,PCAPdroid,com.emanuelef.remote_capture,HTTPS,Zamknij,firebaselogging.googleapis.com,1924,5078,8,8,2025-08-19T19:24:04.752+02:00,2025-08-19T19:25:08.807+02:00
+17,10.215.173.1,17952,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-19T19:24:12.312+02:00,2025-08-19T19:24:12.340+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,,548789,1025824,804,1298,2025-08-19T19:24:12.318+02:00,2025-08-19T19:26:10.514+02:00
+6,10.215.173.1,43398,185.60.217.20,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph.facebook.com,788,753,7,7,2025-08-19T19:24:12.323+02:00,2025-08-19T19:25:13.999+02:00
+6,10.215.173.1,51714,185.60.217.3,443,10274,Facebook,com.facebook.katana,HTTPS,Błąd,gateway.facebook.com,175846,11275,111,126,2025-08-19T19:24:12.466+02:00,2025-08-19T19:26:09.127+02:00
+17,10.215.173.1,49133,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,gateway.facebook.com,66,105,1,1,2025-08-19T19:24:12.486+02:00,2025-08-19T19:24:12.500+02:00
+6,10.215.173.1,46918,185.60.217.13,443,10274,Facebook,com.facebook.katana,HTTPS,Błąd,edge-mqtt.facebook.com,5502,6495,53,45,2025-08-19T19:24:13.052+02:00,2025-08-19T19:26:09.127+02:00
+17,10.215.173.1,39931,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-19T19:24:13.055+02:00,2025-08-19T19:24:13.072+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,,353552,26320615,2032,21418,2025-08-19T19:24:15.561+02:00,2025-08-19T19:26:17.943+02:00
+17,10.215.173.1,19120,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,scontent-ber1-1.xx.fbcdn.net,74,90,1,1,2025-08-19T19:24:15.565+02:00,2025-08-19T19:24:15.592+02:00
+6,10.215.173.1,59984,185.60.217.28,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,lookaside.facebook.com,3406,18661,22,22,2025-08-19T19:24:21.408+02:00,2025-08-19T19:25:29.315+02:00
+17,10.215.173.1,38709,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,lookaside.facebook.com,68,119,1,1,2025-08-19T19:24:21.420+02:00,2025-08-19T19:24:21.438+02:00
+17,10.215.173.1,29944,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:24:39.250+02:00,2025-08-19T19:24:39.285+02:00
+6,10.215.173.1,34354,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-19T19:24:39.305+02:00,2025-08-19T19:24:39.668+02:00
+6,10.215.173.1,44454,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:24:39.642+02:00,2025-08-19T19:25:39.467+02:00
+6,10.215.173.1,44456,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1359,1184,8,8,2025-08-19T19:24:57.308+02:00,2025-08-19T19:25:59.810+02:00
+17,10.215.173.1,44783,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:25:40.943+02:00,2025-08-19T19:25:40.959+02:00
+6,10.215.173.1,34662,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-19T19:25:40.972+02:00,2025-08-19T19:25:41.290+02:00
+6,10.215.173.1,46542,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,752,4,4,2025-08-19T19:25:41.231+02:00,2025-08-19T19:26:09.128+02:00
+17,10.215.173.1,62602,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-19T19:25:48.074+02:00,2025-08-19T19:25:48.116+02:00
+6,10.215.173.1,54254,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Błąd,,3005,901,16,14,2025-08-19T19:25:48.097+02:00,2025-08-19T19:26:09.128+02:00
+6,10.215.173.1,38970,185.60.217.63,443,10542,Instagram,com.instagram.android,HTTPS,Błąd,i.instagram.com,4199,8329,23,21,2025-08-19T19:25:49.447+02:00,2025-08-19T19:25:52.329+02:00
+6,10.215.173.1,38980,185.60.217.63,443,10542,Instagram,com.instagram.android,HTTPS,Błąd,i.instagram.com,1248,899,14,10,2025-08-19T19:25:49.637+02:00,2025-08-19T19:25:52.301+02:00
+6,10.215.173.1,44746,185.60.217.13,443,10542,Instagram,com.instagram.android,HTTPS,Błąd,edge-mqtt.facebook.com,2865,1029,11,10,2025-08-19T19:25:50.735+02:00,2025-08-19T19:26:09.128+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.facebook.com,5457,6393,17,21,2025-08-19T19:25:50.758+02:00,2025-08-19T19:26:15.986+02:00
+17,10.215.173.1,9781,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-19T19:25:50.769+02:00,2025-08-19T19:25:50.805+02:00
+17,10.215.173.1,45252,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-19T19:25:50.778+02:00,2025-08-19T19:25:50.806+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,5712,12329,17,22,2025-08-19T19:25:52.273+02:00,2025-08-19T19:25:53.913+02:00
+17,10.215.173.1,45274,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-19T19:25:52.278+02:00,2025-08-19T19:25:52.296+02:00
+17,10.215.173.1,60286,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-19T19:26:03.525+02:00,2025-08-19T19:26:03.556+02:00
+17,10.215.173.1,55684,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.facebook.com,3888,2970,8,10,2025-08-19T19:26:03.529+02:00,2025-08-19T19:26:03.759+02:00
+6,10.215.173.1,39830,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:09.150+02:00,2025-08-19T19:26:09.162+02:00
+6,10.215.173.1,39846,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:09.165+02:00,2025-08-19T19:26:09.168+02:00
+6,10.215.173.1,39856,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:09.177+02:00,2025-08-19T19:26:09.205+02:00
+17,10.215.173.1,1511,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:09.229+02:00,2025-08-19T19:26:09.229+02:00
+6,10.215.173.1,54156,185.60.217.13,443,-1,Nieznany,unknown,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:09.242+02:00,2025-08-19T19:26:09.269+02:00
+6,10.215.173.1,54160,185.60.217.13,443,-1,Nieznany,unknown,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:09.271+02:00,2025-08-19T19:26:09.295+02:00
+6,10.215.173.1,57862,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:09.296+02:00,2025-08-19T19:26:09.301+02:00
+6,10.215.173.1,39866,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:09.303+02:00,2025-08-19T19:26:09.306+02:00
+6,10.215.173.1,36316,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:09.307+02:00,2025-08-19T19:26:09.310+02:00
+6,10.215.173.1,33360,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:09.467+02:00,2025-08-19T19:26:09.469+02:00
+6,10.215.173.1,39856,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:10.185+02:00,2025-08-19T19:26:10.188+02:00
+6,10.215.173.1,39846,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:10.189+02:00,2025-08-19T19:26:10.193+02:00
+6,10.215.173.1,39830,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:10.195+02:00,2025-08-19T19:26:10.198+02:00
+6,10.215.173.1,54164,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:10.232+02:00,2025-08-19T19:26:10.235+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:10.247+02:00,2025-08-19T19:26:10.255+02:00
+6,10.215.173.1,39866,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:10.256+02:00,2025-08-19T19:26:10.262+02:00
+6,10.215.173.1,57862,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:10.263+02:00,2025-08-19T19:26:10.265+02:00
+6,10.215.173.1,36316,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:10.309+02:00,2025-08-19T19:26:10.311+02:00
+6,10.215.173.1,33360,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:10.469+02:00,2025-08-19T19:26:10.471+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:10.515+02:00,2025-08-19T19:26:10.515+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:10.605+02:00,2025-08-19T19:26:10.605+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:10.613+02:00,2025-08-19T19:26:10.613+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:10.778+02:00,2025-08-19T19:26:10.778+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:10.785+02:00,2025-08-19T19:26:10.785+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:11.120+02:00,2025-08-19T19:26:11.120+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:11.124+02:00,2025-08-19T19:26:11.124+02:00
+6,10.215.173.1,54164,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:11.238+02:00,2025-08-19T19:26:11.240+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:11.273+02:00,2025-08-19T19:26:11.275+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:11.802+02:00,2025-08-19T19:26:11.802+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:11.806+02:00,2025-08-19T19:26:11.806+02:00
+17,10.215.173.1,1511,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:12.174+02:00,2025-08-19T19:26:12.174+02:00
+6,10.215.173.1,39830,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:12.197+02:00,2025-08-19T19:26:12.200+02:00
+6,10.215.173.1,39846,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:12.201+02:00,2025-08-19T19:26:12.205+02:00
+6,10.215.173.1,39856,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:12.206+02:00,2025-08-19T19:26:12.208+02:00
+6,10.215.173.1,57862,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:12.261+02:00,2025-08-19T19:26:12.265+02:00
+6,10.215.173.1,39866,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:12.266+02:00,2025-08-19T19:26:12.268+02:00
+6,10.215.173.1,36316,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:12.329+02:00,2025-08-19T19:26:12.332+02:00
+6,10.215.173.1,33360,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:12.485+02:00,2025-08-19T19:26:12.487+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:13.155+02:00,2025-08-19T19:26:13.155+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:13.162+02:00,2025-08-19T19:26:13.162+02:00
+6,10.215.173.1,54164,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:13.254+02:00,2025-08-19T19:26:13.256+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:13.288+02:00,2025-08-19T19:26:13.296+02:00
+17,10.215.173.1,51273,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:15.186+02:00,2025-08-19T19:26:15.186+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:15.849+02:00,2025-08-19T19:26:15.849+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:15.860+02:00,2025-08-19T19:26:15.860+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:16.134+02:00,2025-08-19T19:26:16.134+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.224+02:00,2025-08-19T19:26:16.224+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.238+02:00,2025-08-19T19:26:16.238+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.246+02:00,2025-08-19T19:26:16.246+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.256+02:00,2025-08-19T19:26:16.256+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.274+02:00,2025-08-19T19:26:16.274+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.283+02:00,2025-08-19T19:26:16.283+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.297+02:00,2025-08-19T19:26:16.297+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.301+02:00,2025-08-19T19:26:16.301+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.308+02:00,2025-08-19T19:26:16.308+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.311+02:00,2025-08-19T19:26:16.311+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.315+02:00,2025-08-19T19:26:16.315+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.320+02:00,2025-08-19T19:26:16.320+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.324+02:00,2025-08-19T19:26:16.324+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.330+02:00,2025-08-19T19:26:16.330+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.333+02:00,2025-08-19T19:26:16.333+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.338+02:00,2025-08-19T19:26:16.338+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:16.340+02:00,2025-08-19T19:26:16.340+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:16.403+02:00,2025-08-19T19:26:16.403+02:00
+6,10.215.173.1,36316,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:16.421+02:00,2025-08-19T19:26:16.424+02:00
+6,10.215.173.1,39866,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:16.426+02:00,2025-08-19T19:26:16.431+02:00
+6,10.215.173.1,57862,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:16.433+02:00,2025-08-19T19:26:16.435+02:00
+6,10.215.173.1,39856,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:16.437+02:00,2025-08-19T19:26:16.439+02:00
+6,10.215.173.1,39846,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:16.440+02:00,2025-08-19T19:26:16.442+02:00
+6,10.215.173.1,39830,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:16.444+02:00,2025-08-19T19:26:16.446+02:00
+6,10.215.173.1,33360,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:16.681+02:00,2025-08-19T19:26:16.687+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:16.956+02:00,2025-08-19T19:26:16.956+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.008+02:00,2025-08-19T19:26:17.008+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.014+02:00,2025-08-19T19:26:17.014+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.300+02:00,2025-08-19T19:26:17.300+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.306+02:00,2025-08-19T19:26:17.306+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.309+02:00,2025-08-19T19:26:17.309+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.312+02:00,2025-08-19T19:26:17.312+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.315+02:00,2025-08-19T19:26:17.315+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.318+02:00,2025-08-19T19:26:17.318+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.320+02:00,2025-08-19T19:26:17.320+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.323+02:00,2025-08-19T19:26:17.323+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.325+02:00,2025-08-19T19:26:17.325+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.327+02:00,2025-08-19T19:26:17.327+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.330+02:00,2025-08-19T19:26:17.330+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.332+02:00,2025-08-19T19:26:17.332+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.334+02:00,2025-08-19T19:26:17.334+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.336+02:00,2025-08-19T19:26:17.336+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.338+02:00,2025-08-19T19:26:17.338+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.340+02:00,2025-08-19T19:26:17.340+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.342+02:00,2025-08-19T19:26:17.342+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.344+02:00,2025-08-19T19:26:17.344+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.346+02:00,2025-08-19T19:26:17.346+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.348+02:00,2025-08-19T19:26:17.348+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.350+02:00,2025-08-19T19:26:17.350+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.353+02:00,2025-08-19T19:26:17.353+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.355+02:00,2025-08-19T19:26:17.355+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.357+02:00,2025-08-19T19:26:17.357+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.359+02:00,2025-08-19T19:26:17.359+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.361+02:00,2025-08-19T19:26:17.361+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.363+02:00,2025-08-19T19:26:17.363+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.365+02:00,2025-08-19T19:26:17.365+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.367+02:00,2025-08-19T19:26:17.367+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.370+02:00,2025-08-19T19:26:17.370+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:17.446+02:00,2025-08-19T19:26:17.449+02:00
+6,10.215.173.1,54164,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:17.450+02:00,2025-08-19T19:26:17.452+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:17.631+02:00,2025-08-19T19:26:17.631+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:17.817+02:00,2025-08-19T19:26:17.817+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:17.992+02:00,2025-08-19T19:26:17.992+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.066+02:00,2025-08-19T19:26:18.066+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.070+02:00,2025-08-19T19:26:18.070+02:00
+17,10.215.173.1,51273,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:18.190+02:00,2025-08-19T19:26:18.190+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.217+02:00,2025-08-19T19:26:18.217+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.220+02:00,2025-08-19T19:26:18.220+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.518+02:00,2025-08-19T19:26:18.518+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.522+02:00,2025-08-19T19:26:18.522+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:18.735+02:00,2025-08-19T19:26:18.735+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:18.741+02:00,2025-08-19T19:26:18.741+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:18.930+02:00,2025-08-19T19:26:18.930+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:19.077+02:00,2025-08-19T19:26:19.077+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:19.085+02:00,2025-08-19T19:26:19.085+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.127+02:00,2025-08-19T19:26:19.127+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.150+02:00,2025-08-19T19:26:19.150+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.162+02:00,2025-08-19T19:26:19.162+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.166+02:00,2025-08-19T19:26:19.166+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.502+02:00,2025-08-19T19:26:19.502+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:19.992+02:00,2025-08-19T19:26:19.992+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.010+02:00,2025-08-19T19:26:20.010+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.036+02:00,2025-08-19T19:26:20.036+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.046+02:00,2025-08-19T19:26:20.046+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.050+02:00,2025-08-19T19:26:20.050+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.603+02:00,2025-08-19T19:26:20.603+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:20.609+02:00,2025-08-19T19:26:20.609+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:20.760+02:00,2025-08-19T19:26:20.760+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:20.942+02:00,2025-08-19T19:26:20.942+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:20.950+02:00,2025-08-19T19:26:20.950+02:00
+17,10.215.173.1,50385,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:21.198+02:00,2025-08-19T19:26:21.198+02:00
+6,10.215.173.1,49596,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:21.240+02:00,2025-08-19T19:26:21.242+02:00
+17,10.215.173.1,14624,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-19T19:26:21.249+02:00,2025-08-19T19:26:21.249+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:21.796+02:00,2025-08-19T19:26:21.796+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:21.804+02:00,2025-08-19T19:26:21.804+02:00
+6,10.215.173.1,49596,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:22.249+02:00,2025-08-19T19:26:22.255+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:22.871+02:00,2025-08-19T19:26:22.871+02:00
+17,10.215.173.1,50385,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:24.201+02:00,2025-08-19T19:26:24.201+02:00
+17,10.215.173.1,14624,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-19T19:26:24.245+02:00,2025-08-19T19:26:24.245+02:00
+6,10.215.173.1,49596,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:24.261+02:00,2025-08-19T19:26:24.264+02:00
+6,10.215.173.1,36316,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:24.613+02:00,2025-08-19T19:26:24.616+02:00
+6,10.215.173.1,39830,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:24.617+02:00,2025-08-19T19:26:24.620+02:00
+6,10.215.173.1,39846,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:24.621+02:00,2025-08-19T19:26:24.624+02:00
+6,10.215.173.1,39856,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:24.625+02:00,2025-08-19T19:26:24.628+02:00
+6,10.215.173.1,57862,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:24.629+02:00,2025-08-19T19:26:24.630+02:00
+6,10.215.173.1,39866,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:24.632+02:00,2025-08-19T19:26:24.634+02:00
+6,10.215.173.1,33360,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:24.868+02:00,2025-08-19T19:26:24.871+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:25.248+02:00,2025-08-19T19:26:25.248+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:25.252+02:00,2025-08-19T19:26:25.252+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:25.357+02:00,2025-08-19T19:26:25.357+02:00
+17,10.215.173.1,59462,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:25.362+02:00,2025-08-19T19:26:25.362+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:25.638+02:00,2025-08-19T19:26:25.640+02:00
+17,10.215.173.1,59462,185.60.217.3,443,-1,Nieznany,unknown,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:25.990+02:00,2025-08-19T19:26:25.990+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:26.004+02:00,2025-08-19T19:26:26.004+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:26.096+02:00,2025-08-19T19:26:26.096+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:26.139+02:00,2025-08-19T19:26:26.139+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:26.142+02:00,2025-08-19T19:26:26.142+02:00
+6,10.215.173.1,41792,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:26.197+02:00,2025-08-19T19:26:26.201+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:26.296+02:00,2025-08-19T19:26:26.296+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:26.697+02:00,2025-08-19T19:26:26.697+02:00
+6,10.215.173.1,41804,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:27.003+02:00,2025-08-19T19:26:27.006+02:00
+6,10.215.173.1,41792,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:27.206+02:00,2025-08-19T19:26:27.208+02:00
+17,10.215.173.1,13405,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:27.210+02:00,2025-08-19T19:26:27.210+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:27.496+02:00,2025-08-19T19:26:27.496+02:00
+6,10.215.173.1,41804,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:28.009+02:00,2025-08-19T19:26:28.012+02:00
+6,10.215.173.1,49596,185.60.217.13,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:28.458+02:00,2025-08-19T19:26:28.463+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:29.097+02:00,2025-08-19T19:26:29.097+02:00
+6,10.215.173.1,41792,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:29.222+02:00,2025-08-19T19:26:29.225+02:00
+6,10.215.173.1,58230,185.60.217.33,80,10274,Facebook,com.facebook.katana,HTTP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:29.252+02:00,2025-08-19T19:26:29.260+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:30.012+02:00,2025-08-19T19:26:30.012+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:30.016+02:00,2025-08-19T19:26:30.016+02:00
+6,10.215.173.1,41804,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:30.021+02:00,2025-08-19T19:26:30.025+02:00
+17,10.215.173.1,13405,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:30.214+02:00,2025-08-19T19:26:30.214+02:00
+6,10.215.173.1,58230,185.60.217.33,80,10274,Facebook,com.facebook.katana,HTTP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:30.277+02:00,2025-08-19T19:26:30.280+02:00
+6,10.215.173.1,58230,185.60.217.33,80,10274,Facebook,com.facebook.katana,HTTP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:32.299+02:00,2025-08-19T19:26:32.310+02:00
+17,10.215.173.1,45888,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:32.321+02:00,2025-08-19T19:26:32.321+02:00
+17,10.215.173.1,47718,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:33.231+02:00,2025-08-19T19:26:33.231+02:00
+6,10.215.173.1,53122,157.240.210.23,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:35.245+02:00,2025-08-19T19:26:35.250+02:00
+17,10.215.173.1,58161,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,edge-mqtt-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:35.251+02:00,2025-08-19T19:26:35.251+02:00
+17,10.215.173.1,47718,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:36.234+02:00,2025-08-19T19:26:36.234+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:36.250+02:00,2025-08-19T19:26:36.250+02:00
+6,10.215.173.1,53122,157.240.210.23,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:36.285+02:00,2025-08-19T19:26:36.302+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:36.320+02:00,2025-08-19T19:26:36.320+02:00
+6,10.215.173.1,58230,185.60.217.33,80,10274,Facebook,com.facebook.katana,HTTP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:36.390+02:00,2025-08-19T19:26:36.417+02:00
+6,10.215.173.1,58126,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:36.444+02:00,2025-08-19T19:26:36.451+02:00
+6,10.215.173.1,58136,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:36.455+02:00,2025-08-19T19:26:36.462+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:36.518+02:00,2025-08-19T19:26:36.518+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:36.900+02:00,2025-08-19T19:26:36.900+02:00
+17,10.215.173.1,45036,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:36.928+02:00,2025-08-19T19:26:36.928+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:36.948+02:00,2025-08-19T19:26:36.948+02:00
+6,10.215.173.1,58136,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:37.452+02:00,2025-08-19T19:26:37.482+02:00
+6,10.215.173.1,58126,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:37.488+02:00,2025-08-19T19:26:37.511+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:37.716+02:00,2025-08-19T19:26:37.716+02:00
+17,10.215.173.1,58161,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,edge-mqtt-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:38.250+02:00,2025-08-19T19:26:38.250+02:00
+6,10.215.173.1,53122,157.240.210.23,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:38.278+02:00,2025-08-19T19:26:38.285+02:00
+6,10.215.173.1,58138,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:39.192+02:00,2025-08-19T19:26:39.201+02:00
+17,10.215.173.1,51391,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:39.241+02:00,2025-08-19T19:26:39.241+02:00
+6,10.215.173.1,38872,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:39.268+02:00,2025-08-19T19:26:39.272+02:00
+17,10.215.173.1,28769,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:39.276+02:00,2025-08-19T19:26:39.276+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:39.322+02:00,2025-08-19T19:26:39.322+02:00
+6,10.215.173.1,52242,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:39.436+02:00,2025-08-19T19:26:39.455+02:00
+6,10.215.173.1,58136,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:39.464+02:00,2025-08-19T19:26:39.473+02:00
+6,10.215.173.1,58126,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:39.478+02:00,2025-08-19T19:26:39.491+02:00
+6,10.215.173.1,38880,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:39.494+02:00,2025-08-19T19:26:39.498+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:39.533+02:00,2025-08-19T19:26:39.533+02:00
+17,10.215.173.1,34692,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:39.553+02:00,2025-08-19T19:26:39.553+02:00
+6,10.215.173.1,38892,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.037+02:00,2025-08-19T19:26:40.045+02:00
+6,10.215.173.1,58138,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:40.201+02:00,2025-08-19T19:26:40.207+02:00
+6,10.215.173.1,38872,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.302+02:00,2025-08-19T19:26:40.312+02:00
+6,10.215.173.1,52242,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:40.462+02:00,2025-08-19T19:26:40.471+02:00
+6,10.215.173.1,38880,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.487+02:00,2025-08-19T19:26:40.493+02:00
+6,10.215.173.1,42128,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.564+02:00,2025-08-19T19:26:40.573+02:00
+6,10.215.173.1,42134,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.576+02:00,2025-08-19T19:26:40.582+02:00
+17,10.215.173.1,53541,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,graph-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:40.583+02:00,2025-08-19T19:26:40.583+02:00
+6,10.215.173.1,42150,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.594+02:00,2025-08-19T19:26:40.599+02:00
+6,10.215.173.1,42158,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.602+02:00,2025-08-19T19:26:40.605+02:00
+6,10.215.173.1,42166,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.607+02:00,2025-08-19T19:26:40.611+02:00
+6,10.215.173.1,42168,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.614+02:00,2025-08-19T19:26:40.618+02:00
+6,10.215.173.1,42180,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.620+02:00,2025-08-19T19:26:40.623+02:00
+6,10.215.173.1,42190,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:40.630+02:00,2025-08-19T19:26:40.638+02:00
+6,10.215.173.1,38892,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.063+02:00,2025-08-19T19:26:41.071+02:00
+6,10.215.173.1,42166,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.578+02:00,2025-08-19T19:26:41.600+02:00
+6,10.215.173.1,42158,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.603+02:00,2025-08-19T19:26:41.615+02:00
+6,10.215.173.1,42150,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.618+02:00,2025-08-19T19:26:41.639+02:00
+6,10.215.173.1,42134,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.644+02:00,2025-08-19T19:26:41.657+02:00
+6,10.215.173.1,42128,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.668+02:00,2025-08-19T19:26:41.673+02:00
+6,10.215.173.1,42180,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.676+02:00,2025-08-19T19:26:41.682+02:00
+6,10.215.173.1,42190,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.686+02:00,2025-08-19T19:26:41.694+02:00
+6,10.215.173.1,42168,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:41.698+02:00,2025-08-19T19:26:41.703+02:00
+6,10.215.173.1,54168,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-19T19:26:41.770+02:00,2025-08-19T19:26:41.775+02:00
+6,10.215.173.1,58138,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:42.217+02:00,2025-08-19T19:26:42.226+02:00
+17,10.215.173.1,51391,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:42.238+02:00,2025-08-19T19:26:42.238+02:00
+17,10.215.173.1,28769,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:42.274+02:00,2025-08-19T19:26:42.274+02:00
+6,10.215.173.1,38872,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:42.314+02:00,2025-08-19T19:26:42.321+02:00
+6,10.215.173.1,52242,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:42.473+02:00,2025-08-19T19:26:42.488+02:00
+6,10.215.173.1,38880,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:42.506+02:00,2025-08-19T19:26:42.517+02:00
+17,10.215.173.1,59882,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:42.520+02:00,2025-08-19T19:26:42.520+02:00
+6,10.215.173.1,53122,157.240.210.23,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:42.536+02:00,2025-08-19T19:26:42.540+02:00
+6,10.215.173.1,38892,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.078+02:00,2025-08-19T19:26:43.103+02:00
+17,10.215.173.1,53541,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,graph-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:43.569+02:00,2025-08-19T19:26:43.569+02:00
+6,10.215.173.1,42128,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.600+02:00,2025-08-19T19:26:43.639+02:00
+6,10.215.173.1,42134,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.651+02:00,2025-08-19T19:26:43.657+02:00
+6,10.215.173.1,42150,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.664+02:00,2025-08-19T19:26:43.680+02:00
+6,10.215.173.1,42158,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.685+02:00,2025-08-19T19:26:43.691+02:00
+6,10.215.173.1,42166,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.694+02:00,2025-08-19T19:26:43.708+02:00
+6,10.215.173.1,42168,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.716+02:00,2025-08-19T19:26:43.724+02:00
+6,10.215.173.1,42180,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.727+02:00,2025-08-19T19:26:43.732+02:00
+6,10.215.173.1,42190,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:43.735+02:00,2025-08-19T19:26:43.745+02:00
+6,10.215.173.1,58230,185.60.217.33,80,10274,Facebook,com.facebook.katana,HTTP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:44.591+02:00,2025-08-19T19:26:44.611+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:44.942+02:00,2025-08-19T19:26:44.942+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:45.022+02:00,2025-08-19T19:26:45.022+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:45.192+02:00,2025-08-19T19:26:45.192+02:00
+17,10.215.173.1,14962,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:45.254+02:00,2025-08-19T19:26:45.254+02:00
+17,10.215.173.1,61957,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:45.288+02:00,2025-08-19T19:26:45.288+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:45.524+02:00,2025-08-19T19:26:45.524+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:46.193+02:00,2025-08-19T19:26:46.193+02:00
+6,10.215.173.1,38872,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:46.374+02:00,2025-08-19T19:26:46.378+02:00
+6,10.215.173.1,58138,185.60.217.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:46.388+02:00,2025-08-19T19:26:46.393+02:00
+17,10.215.173.1,46684,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:46.524+02:00,2025-08-19T19:26:46.524+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:46.534+02:00,2025-08-19T19:26:46.534+02:00
+17,10.215.173.1,24858,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,graph-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:46.576+02:00,2025-08-19T19:26:46.576+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:46.617+02:00,2025-08-19T19:26:46.617+02:00
+6,10.215.173.1,38880,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:46.631+02:00,2025-08-19T19:26:46.644+02:00
+6,10.215.173.1,52242,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-19T19:26:46.647+02:00,2025-08-19T19:26:46.654+02:00
+17,10.215.173.1,8399,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:46.729+02:00,2025-08-19T19:26:46.729+02:00
+6,10.215.173.1,39492,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:46.748+02:00,2025-08-19T19:26:46.773+02:00
+6,10.215.173.1,39496,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:46.777+02:00,2025-08-19T19:26:46.781+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:46.821+02:00,2025-08-19T19:26:46.821+02:00
+6,10.215.173.1,38892,157.240.210.3,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.143+02:00,2025-08-19T19:26:47.150+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:47.220+02:00,2025-08-19T19:26:47.220+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:47.525+02:00,2025-08-19T19:26:47.525+02:00
+6,10.215.173.1,42190,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.659+02:00,2025-08-19T19:26:47.665+02:00
+6,10.215.173.1,42180,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.668+02:00,2025-08-19T19:26:47.677+02:00
+6,10.215.173.1,42168,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.680+02:00,2025-08-19T19:26:47.686+02:00
+6,10.215.173.1,42166,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.692+02:00,2025-08-19T19:26:47.703+02:00
+6,10.215.173.1,42158,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.712+02:00,2025-08-19T19:26:47.723+02:00
+6,10.215.173.1,42150,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.725+02:00,2025-08-19T19:26:47.730+02:00
+6,10.215.173.1,42134,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.731+02:00,2025-08-19T19:26:47.736+02:00
+6,10.215.173.1,42128,157.240.210.16,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,,60,40,1,1,2025-08-19T19:26:47.739+02:00,2025-08-19T19:26:47.743+02:00
+6,10.215.173.1,39492,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:47.751+02:00,2025-08-19T19:26:47.759+02:00
+6,10.215.173.1,39496,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:47.761+02:00,2025-08-19T19:26:47.763+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:47.996+02:00,2025-08-19T19:26:47.996+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.011+02:00,2025-08-19T19:26:48.011+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.027+02:00,2025-08-19T19:26:48.027+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.036+02:00,2025-08-19T19:26:48.036+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.046+02:00,2025-08-19T19:26:48.046+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.053+02:00,2025-08-19T19:26:48.053+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:48.060+02:00,2025-08-19T19:26:48.060+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.064+02:00,2025-08-19T19:26:48.064+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.073+02:00,2025-08-19T19:26:48.073+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.079+02:00,2025-08-19T19:26:48.079+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.090+02:00,2025-08-19T19:26:48.090+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.099+02:00,2025-08-19T19:26:48.099+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.113+02:00,2025-08-19T19:26:48.113+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.128+02:00,2025-08-19T19:26:48.128+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.137+02:00,2025-08-19T19:26:48.137+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.148+02:00,2025-08-19T19:26:48.148+02:00
+6,10.215.173.1,41220,185.60.217.28,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,lookaside.facebook.com,60,40,1,1,2025-08-19T19:26:48.202+02:00,2025-08-19T19:26:48.215+02:00
+17,10.215.173.1,14962,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:48.254+02:00,2025-08-19T19:26:48.254+02:00
+17,10.215.173.1,61957,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:48.285+02:00,2025-08-19T19:26:48.285+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.364+02:00,2025-08-19T19:26:48.364+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:48.762+02:00,2025-08-19T19:26:48.762+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:48.782+02:00,2025-08-19T19:26:48.782+02:00
+6,10.215.173.1,41220,185.60.217.28,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,lookaside.facebook.com,60,40,1,1,2025-08-19T19:26:49.227+02:00,2025-08-19T19:26:49.233+02:00
+17,10.215.173.1,46684,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:49.526+02:00,2025-08-19T19:26:49.526+02:00
+17,10.215.173.1,24858,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,graph-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:49.579+02:00,2025-08-19T19:26:49.579+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:49.591+02:00,2025-08-19T19:26:49.591+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:49.622+02:00,2025-08-19T19:26:49.622+02:00
+17,10.215.173.1,8399,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:49.728+02:00,2025-08-19T19:26:49.728+02:00
+6,10.215.173.1,39496,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:49.767+02:00,2025-08-19T19:26:49.778+02:00
+6,10.215.173.1,39492,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-19T19:26:49.788+02:00,2025-08-19T19:26:49.800+02:00
+17,10.215.173.1,33859,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-19T19:26:50.149+02:00,2025-08-19T19:26:50.149+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:50.167+02:00,2025-08-19T19:26:50.167+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:50.245+02:00,2025-08-19T19:26:50.245+02:00
+6,10.215.173.1,45878,185.60.217.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,i.instagram.com,60,40,1,1,2025-08-19T19:26:50.344+02:00,2025-08-19T19:26:50.348+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:50.446+02:00,2025-08-19T19:26:50.446+02:00
+17,10.215.173.1,53231,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,chat-e2ee-mini.facebook.com,0,0,0,0,2025-08-19T19:26:50.501+02:00,2025-08-19T19:26:50.501+02:00
+6,10.215.173.1,44864,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:50.516+02:00,2025-08-19T19:26:50.528+02:00
+6,10.215.173.1,54492,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:50.752+02:00,2025-08-19T19:26:50.768+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:50.836+02:00,2025-08-19T19:26:50.836+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:51.074+02:00,2025-08-19T19:26:51.074+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:51.082+02:00,2025-08-19T19:26:51.082+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,lookaside.facebook.com,0,0,0,0,2025-08-19T19:26:51.183+02:00,2025-08-19T19:26:51.183+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:51.190+02:00,2025-08-19T19:26:51.190+02:00
+6,10.215.173.1,41220,185.60.217.28,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,lookaside.facebook.com,60,40,1,1,2025-08-19T19:26:51.238+02:00,2025-08-19T19:26:51.254+02:00
+17,10.215.173.1,30550,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway.facebook.com,0,0,0,0,2025-08-19T19:26:51.261+02:00,2025-08-19T19:26:51.261+02:00
+6,10.215.173.1,57628,185.60.217.20,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,graph.facebook.com,60,40,1,1,2025-08-19T19:26:51.284+02:00,2025-08-19T19:26:51.293+02:00
+17,10.215.173.1,5857,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,gateway-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:51.295+02:00,2025-08-19T19:26:51.295+02:00
+6,10.215.173.1,45878,185.60.217.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,i.instagram.com,60,40,1,1,2025-08-19T19:26:51.365+02:00,2025-08-19T19:26:51.367+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:51.384+02:00,2025-08-19T19:26:51.384+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:51.425+02:00,2025-08-19T19:26:51.425+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:51.431+02:00,2025-08-19T19:26:51.431+02:00
+6,10.215.173.1,44864,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:51.525+02:00,2025-08-19T19:26:51.531+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:51.635+02:00,2025-08-19T19:26:51.635+02:00
+6,10.215.173.1,54492,185.60.217.33,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,chat-e2ee-mini.facebook.com,60,40,1,1,2025-08-19T19:26:51.781+02:00,2025-08-19T19:26:51.785+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:51.797+02:00,2025-08-19T19:26:51.797+02:00
+6,10.215.173.1,57628,185.60.217.20,443,10274,Facebook,com.facebook.katana,TLS,Nieosiągalny,graph.facebook.com,60,40,1,1,2025-08-19T19:26:52.296+02:00,2025-08-19T19:26:52.309+02:00
+17,10.215.173.1,16396,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:52.528+02:00,2025-08-19T19:26:52.528+02:00
+17,10.215.173.1,6900,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Nieosiągalny,graph-fallback.facebook.com,0,0,0,0,2025-08-19T19:26:52.586+02:00,2025-08-19T19:26:52.586+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-19T19:26:52.618+02:00,2025-08-19T19:26:52.618+02:00
+17,10.215.173.1,42664,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-19T19:26:52.820+02:00,2025-08-19T19:26:52.820+02:00
+17,10.215.173.1,33859,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-19T19:26:53.148+02:00,2025-08-19T19:26:53.148+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,0,0,0,0,2025-08-19T19:26:53.239+02:00,2025-08-19T19:26:53.239+02:00
+6,10.215.173.1,42842,185.60.217.13,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,edge-mqtt.facebook.com,5717,4720,73,26,2025-08-19T19:26:53.400+02:00,2025-08-19T19:28:29.264+02:00
+17,10.215.173.1,36035,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-19T19:26:53.420+02:00,2025-08-19T19:26:53.483+02:00
+6,10.215.173.1,45878,185.60.217.63,443,10542,Instagram,com.instagram.android,HTTPS,Błąd,graph.instagram.com,8962,4546,16,12,2025-08-19T19:26:53.432+02:00,2025-08-19T19:26:56.488+02:00
+17,10.215.173.1,50087,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-19T19:26:53.470+02:00,2025-08-19T19:26:53.571+02:00
+17,10.215.173.1,59149,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:26:53.478+02:00,2025-08-19T19:26:53.572+02:00
+6,10.215.173.1,60858,157.240.251.33,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,3203,4734,25,19,2025-08-19T19:26:53.527+02:00,2025-08-19T19:31:54.441+02:00
+17,10.215.173.1,53231,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-19T19:26:53.543+02:00,2025-08-19T19:26:53.579+02:00
+6,10.215.173.1,44864,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2888,859,15,14,2025-08-19T19:26:53.562+02:00,2025-08-19T19:28:22.302+02:00
+6,10.215.173.1,32940,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7228,10,10,2025-08-19T19:26:53.584+02:00,2025-08-19T19:26:53.887+02:00
+6,10.215.173.1,48958,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:26:53.844+02:00,2025-08-19T19:27:57.093+02:00
+17,10.215.173.1,53047,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,graph.facebook.com,207736,77783,243,182,2025-08-19T19:26:54.220+02:00,2025-08-19T19:27:08.548+02:00
+17,10.215.173.1,30550,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,gateway.facebook.com,66,105,1,1,2025-08-19T19:26:54.261+02:00,2025-08-19T19:26:54.309+02:00
+17,10.215.173.1,5857,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,gateway-fallback.facebook.com,75,123,1,1,2025-08-19T19:26:54.301+02:00,2025-08-19T19:26:54.339+02:00
+17,10.215.173.1,60820,185.60.217.28,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,lookaside.facebook.com,21831,4966,34,21,2025-08-19T19:26:54.388+02:00,2025-08-19T19:27:34.715+02:00
+6,10.215.173.1,58138,185.60.217.3,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,gateway.facebook.com,21320,2593,31,28,2025-08-19T19:26:54.566+02:00,2025-08-19T19:28:02.124+02:00
+6,10.215.173.1,38872,157.240.210.3,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,gateway-fallback.facebook.com,25872,6461,33,40,2025-08-19T19:26:54.584+02:00,2025-08-19T19:28:07.125+02:00
+17,10.215.173.1,55684,185.60.217.20,443,10542,Instagram,com.instagram.android,UDP,Zamknij,graph.facebook.com,163,66,2,1,2025-08-19T19:26:54.762+02:00,2025-08-19T19:26:54.929+02:00
+6,10.215.173.1,38880,157.240.210.3,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,gateway-fallback.facebook.com,759,713,6,6,2025-08-19T19:26:54.821+02:00,2025-08-19T19:27:57.094+02:00
+6,10.215.173.1,52242,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1378,1184,8,8,2025-08-19T19:26:54.824+02:00,2025-08-19T19:27:57.094+02:00
+6,10.215.173.1,38892,157.240.210.3,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,gateway-fallback.facebook.com,799,753,7,7,2025-08-19T19:26:55.335+02:00,2025-08-19T19:27:57.094+02:00
+17,10.215.173.1,16396,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-19T19:26:55.531+02:00,2025-08-19T19:26:55.572+02:00
+17,10.215.173.1,6900,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,graph-fallback.facebook.com,73,122,1,1,2025-08-19T19:26:55.595+02:00,2025-08-19T19:26:55.629+02:00
+6,10.215.173.1,42180,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,66657,75052,52,48,2025-08-19T19:26:55.846+02:00,2025-08-19T19:28:01.120+02:00
+6,10.215.173.1,42128,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,757,713,6,6,2025-08-19T19:26:55.857+02:00,2025-08-19T19:27:57.094+02:00
+6,10.215.173.1,42134,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,757,713,6,6,2025-08-19T19:26:55.865+02:00,2025-08-19T19:27:57.094+02:00
+6,10.215.173.1,42150,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,757,713,6,6,2025-08-19T19:26:55.872+02:00,2025-08-19T19:27:57.094+02:00
+6,10.215.173.1,42158,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,578,2910,6,6,2025-08-19T19:26:55.882+02:00,2025-08-19T19:27:57.095+02:00
+6,10.215.173.1,42166,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,757,713,6,6,2025-08-19T19:26:55.889+02:00,2025-08-19T19:27:57.095+02:00
+6,10.215.173.1,42168,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,578,2901,6,6,2025-08-19T19:26:55.893+02:00,2025-08-19T19:27:57.095+02:00
+6,10.215.173.1,42190,157.240.210.16,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph-fallback.facebook.com,578,2901,6,6,2025-08-19T19:26:55.899+02:00,2025-08-19T19:27:57.095+02:00
+17,10.215.173.1,2112,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-19T19:26:56.149+02:00,2025-08-19T19:26:56.191+02:00
+17,10.215.173.1,34022,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,1681,2198,5,7,2025-08-19T19:26:56.439+02:00,2025-08-19T19:26:56.522+02:00
+17,10.215.173.1,54773,185.60.217.63,443,10542,Instagram,com.instagram.android,UDP,Zamknij,i.instagram.com,134,132,2,2,2025-08-19T19:26:56.749+02:00,2025-08-19T19:26:56.781+02:00
+17,10.215.173.1,34826,157.240.252.17,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,gateway.instagram.com,5136,6208,13,19,2025-08-19T19:26:58.665+02:00,2025-08-19T19:26:59.171+02:00
+17,10.215.173.1,34998,31.13.91.40,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,,3385,5517,10,14,2025-08-19T19:27:00.162+02:00,2025-08-19T19:27:01.000+02:00
+17,10.215.173.1,25839,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,traffic-nts-ip-assoc.xz.fbcdn.net,79,95,1,1,2025-08-19T19:27:00.180+02:00,2025-08-19T19:27:00.221+02:00
+17,10.215.173.1,25102,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,traffic-nts-ip-assoc.xy.fbcdn.net,79,136,1,1,2025-08-19T19:27:00.195+02:00,2025-08-19T19:27:00.242+02:00
+6,10.215.173.1,57320,31.13.90.38,443,10274,Facebook,com.facebook.katana,TLS,Zamknij,traffic-nts-ip-assoc.xz.fbcdn.net,100,88,2,2,2025-08-19T19:27:00.362+02:00,2025-08-19T19:27:00.618+02:00
+17,10.215.173.1,54410,157.240.210.14,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,,36065,2070637,169,1673,2025-08-19T19:27:06.021+02:00,2025-08-19T19:27:35.126+02:00
+17,10.215.173.1,8342,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,scontent-ham3-1.xx.fbcdn.net,74,90,1,1,2025-08-19T19:27:06.031+02:00,2025-08-19T19:27:06.081+02:00
+6,10.215.173.1,59842,157.240.210.14,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,scontent-ham3-1.xx.fbcdn.net,579,2909,6,6,2025-08-19T19:27:06.038+02:00,2025-08-19T19:28:07.125+02:00
+17,10.215.173.1,56868,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Zamknij,api.weather.com,61,283,1,1,2025-08-19T19:27:29.630+02:00,2025-08-19T19:27:29.672+02:00
+6,10.215.173.1,40108,2.21.22.106,443,10162,Pogoda,com.sec.android.daemonapp,HTTPS,Zamknij,api.weather.com,2243,8713,13,13,2025-08-19T19:27:29.677+02:00,2025-08-19T19:28:32.550+02:00
+6,10.215.173.1,40118,2.21.22.106,443,10162,Pogoda,com.sec.android.daemonapp,HTTPS,Zamknij,api.weather.com,1448,10757,9,9,2025-08-19T19:27:29.679+02:00,2025-08-19T19:28:32.550+02:00
+17,10.215.173.1,51274,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:27:58.116+02:00,2025-08-19T19:27:58.166+02:00
+6,10.215.173.1,37188,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-19T19:27:58.189+02:00,2025-08-19T19:27:58.533+02:00
+6,10.215.173.1,44874,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:27:58.472+02:00,2025-08-19T19:29:02.647+02:00
+17,10.215.173.1,26823,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-19T19:28:02.128+02:00,2025-08-19T19:28:02.166+02:00
+6,10.215.173.1,60548,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1400,7631,9,9,2025-08-19T19:28:02.175+02:00,2025-08-19T19:29:02.647+02:00
+17,10.215.173.1,19924,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-19T19:28:22.343+02:00,2025-08-19T19:28:22.449+02:00
+6,10.215.173.1,46934,157.240.253.38,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2798,859,14,14,2025-08-19T19:28:22.353+02:00,2025-08-19T19:28:29.292+02:00
+17,10.215.173.1,19989,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:29:03.744+02:00,2025-08-19T19:29:03.810+02:00
+6,10.215.173.1,58406,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-19T19:29:03.849+02:00,2025-08-19T19:29:04.174+02:00
+6,10.215.173.1,53068,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:29:04.128+02:00,2025-08-19T19:30:08.063+02:00
+6,10.215.173.1,47828,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1400,7631,9,9,2025-08-19T19:29:09.684+02:00,2025-08-19T19:30:13.229+02:00
+17,10.215.173.1,11536,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:30:09.415+02:00,2025-08-19T19:30:09.459+02:00
+6,10.215.173.1,48444,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7227,10,10,2025-08-19T19:30:09.492+02:00,2025-08-19T19:30:09.825+02:00
+6,10.215.173.1,47288,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:30:09.784+02:00,2025-08-19T19:31:13.627+02:00
+6,10.215.173.1,53592,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1355,7589,8,8,2025-08-19T19:30:27.268+02:00,2025-08-19T19:31:28.965+02:00
+17,10.215.173.1,47621,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:31:15.065+02:00,2025-08-19T19:31:15.109+02:00
+6,10.215.173.1,55186,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7266,11,11,2025-08-19T19:31:15.144+02:00,2025-08-19T19:31:15.474+02:00
+6,10.215.173.1,39256,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:31:15.427+02:00,2025-08-19T19:32:19.714+02:00
+17,10.215.173.1,51668,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-19T19:31:17.705+02:00,2025-08-19T19:31:17.739+02:00
+17,10.215.173.1,40822,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,graph.facebook.com,7677,11454,18,35,2025-08-19T19:31:17.714+02:00,2025-08-19T19:31:45.921+02:00
+6,10.215.173.1,60992,185.60.217.20,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph.facebook.com,828,753,8,7,2025-08-19T19:31:17.726+02:00,2025-08-19T19:31:23.956+02:00
+17,10.215.173.1,17939,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Zamknij,www.linkedin.com,62,164,1,1,2025-08-19T19:31:18.351+02:00,2025-08-19T19:31:18.387+02:00
+6,10.215.173.1,42432,104.18.41.41,443,10432,LinkedIn,com.linkedin.android,HTTPS,Zamknij,www.linkedin.com,5673,7112,15,13,2025-08-19T19:31:18.391+02:00,2025-08-19T19:31:23.317+02:00
+17,10.215.173.1,40659,10.215.173.2,53,10131,Reddit,com.reddit.frontpage,DNS,Zamknij,gql-fed.reddit.com,64,163,1,1,2025-08-19T19:31:24.729+02:00,2025-08-19T19:31:24.766+02:00
+6,10.215.173.1,48452,151.101.1.140,443,10131,Reddit,com.reddit.frontpage,HTTPS,Zamknij,gql-fed.reddit.com,3721,33460,20,19,2025-08-19T19:31:24.779+02:00,2025-08-19T19:31:30.308+02:00
+17,10.215.173.1,26072,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-19T19:31:37.005+02:00,2025-08-19T19:31:37.044+02:00
+6,10.215.173.1,36046,74.125.206.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1396,7630,9,9,2025-08-19T19:31:37.064+02:00,2025-08-19T19:32:39.818+02:00
+17,10.215.173.1,26393,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-19T19:31:55.958+02:00,2025-08-19T19:31:55.999+02:00
+6,10.215.173.1,47732,157.240.251.33,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,5729,8785,36,31,2025-08-19T19:31:56.008+02:00,2025-08-19T19:36:19.596+02:00
+17,10.215.173.1,23493,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:32:21.211+02:00,2025-08-19T19:32:21.254+02:00
+6,10.215.173.1,44196,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7226,10,10,2025-08-19T19:32:21.287+02:00,2025-08-19T19:32:21.684+02:00
+6,10.215.173.1,50968,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:32:21.632+02:00,2025-08-19T19:33:25.130+02:00
+17,10.215.173.1,58252,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-19T19:32:45.852+02:00,2025-08-19T19:32:45.888+02:00
+6,10.215.173.1,44230,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1356,1184,8,8,2025-08-19T19:32:45.900+02:00,2025-08-19T19:33:50.232+02:00
+17,10.215.173.1,29965,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:33:26.416+02:00,2025-08-19T19:33:26.460+02:00
+6,10.215.173.1,56790,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-19T19:33:26.493+02:00,2025-08-19T19:33:26.814+02:00
+6,10.215.173.1,43914,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:33:26.767+02:00,2025-08-19T19:34:30.426+02:00
+17,10.215.173.1,2219,10.215.173.2,53,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,DNS,Zamknij,notifications-pa.googleapis.com,77,333,1,1,2025-08-19T19:33:29.421+02:00,2025-08-19T19:33:29.484+02:00
+6,10.215.173.1,59938,142.250.185.74,443,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,TLS,Zamknij,notifications-pa.googleapis.com,4046,5011,14,14,2025-08-19T19:33:29.496+02:00,2025-08-19T19:34:30.428+02:00
+17,10.215.173.1,52870,10.215.173.2,53,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,DNS,Zamknij,www.googleapis.com,64,320,1,1,2025-08-19T19:33:29.522+02:00,2025-08-19T19:33:29.559+02:00
+6,10.215.173.1,56614,172.217.23.106,443,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,HTTPS,Zamknij,www.googleapis.com,4196,7439,12,12,2025-08-19T19:33:29.568+02:00,2025-08-19T19:34:30.428+02:00
+6,10.215.173.1,45692,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1361,1184,8,8,2025-08-19T19:33:55.277+02:00,2025-08-19T19:34:55.546+02:00
+17,10.215.173.1,28114,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,firebaselogging.googleapis.com,76,332,1,1,2025-08-19T19:34:31.182+02:00,2025-08-19T19:34:31.213+02:00
+6,10.215.173.1,45520,142.250.186.74,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,firebaselogging.googleapis.com,1882,5166,8,7,2025-08-19T19:34:31.222+02:00,2025-08-19T19:34:39.006+02:00
+17,10.215.173.1,40815,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,youtubei.googleapis.com,69,325,1,1,2025-08-19T19:34:31.411+02:00,2025-08-19T19:34:31.454+02:00
+17,10.215.173.1,34321,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,i.ytimg.com,57,313,1,1,2025-08-19T19:34:31.416+02:00,2025-08-19T19:34:31.466+02:00
+17,10.215.173.1,34385,142.250.74.202,443,10253,YouTube,com.google.android.youtube,QUIC,Zamknij,youtubei.googleapis.com,9584,26064,24,30,2025-08-19T19:34:31.481+02:00,2025-08-19T19:34:31.934+02:00
+17,10.215.173.1,35344,172.217.18.22,443,10253,YouTube,com.google.android.youtube,QUIC,Zamknij,i.ytimg.com,4568,9614,11,12,2025-08-19T19:34:31.497+02:00,2025-08-19T19:34:31.889+02:00
+17,10.215.173.1,57060,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:34:31.534+02:00,2025-08-19T19:34:31.570+02:00
+6,10.215.173.1,42822,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-19T19:34:31.575+02:00,2025-08-19T19:34:31.883+02:00
+17,10.215.173.1,57697,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,youtubei.googleapis.com,69,325,1,1,2025-08-19T19:34:31.578+02:00,2025-08-19T19:34:31.613+02:00
+17,10.215.173.1,33491,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,i.ytimg.com,57,313,1,1,2025-08-19T19:34:31.654+02:00,2025-08-19T19:34:31.700+02:00
+6,10.215.173.1,59140,142.250.74.202,443,10253,YouTube,com.google.android.youtube,HTTPS,Zamknij,youtubei.googleapis.com,2243,5715,8,7,2025-08-19T19:34:31.670+02:00,2025-08-19T19:34:38.450+02:00
+6,10.215.173.1,44810,142.250.185.86,443,10253,YouTube,com.google.android.youtube,HTTPS,Zamknij,i.ytimg.com,2311,7090,10,8,2025-08-19T19:34:31.718+02:00,2025-08-19T19:34:38.449+02:00
+6,10.215.173.1,39092,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:34:31.836+02:00,2025-08-19T19:35:35.862+02:00
+17,10.215.173.1,23826,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,api.amazon.com,60,188,1,1,2025-08-19T19:34:31.845+02:00,2025-08-19T19:34:31.876+02:00
+17,10.215.173.1,40229,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,abxc3apcastp.zaz.api.amazonvideo.com,82,303,1,1,2025-08-19T19:34:31.849+02:00,2025-08-19T19:34:31.925+02:00
+6,10.215.173.1,51514,98.82.160.102,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,api.amazon.com,2119,6829,10,9,2025-08-19T19:34:31.879+02:00,2025-08-19T19:34:39.005+02:00
+6,10.215.173.1,52672,18.245.60.11,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,abxc3apcastp.zaz.api.amazonvideo.com,17681,56724,29,28,2025-08-19T19:34:31.930+02:00,2025-08-19T19:34:39.005+02:00
+17,10.215.173.1,44585,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,33a188227507da97b8ecc05eb8beace6.us-east-1.prod.service.minerva.devices.a2z.com,156,284,1,1,2025-08-19T19:34:32.399+02:00,2025-08-19T19:34:32.443+02:00
+6,10.215.173.1,48502,52.55.140.109,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,33a188227507da97b8ecc05eb8beace6.us-east-1.prod.service.minerva.devices.a2z.com,17598,5213,12,11,2025-08-19T19:34:32.449+02:00,2025-08-19T19:34:39.004+02:00
+17,10.215.173.1,35987,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,msh.amazon.co.uk,62,78,1,1,2025-08-19T19:34:33.935+02:00,2025-08-19T19:34:33.982+02:00
+6,10.215.173.1,42850,3.253.170.154,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,msh.amazon.co.uk,8062,10530,14,13,2025-08-19T19:34:33.988+02:00,2025-08-19T19:34:39.003+02:00
+17,10.215.173.1,11012,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,s.amazon-adsystem.com,67,83,1,1,2025-08-19T19:34:34.117+02:00,2025-08-19T19:34:34.182+02:00
+17,10.215.173.1,46703,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-fe.googleapis.com,68,84,1,1,2025-08-19T19:34:34.179+02:00,2025-08-19T19:34:34.224+02:00
+6,10.215.173.1,53180,98.82.156.107,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,HTTPS,Zamknij,s.amazon-adsystem.com,1737,7049,10,9,2025-08-19T19:34:34.187+02:00,2025-08-19T19:34:39.005+02:00
+17,10.215.173.1,50632,172.217.18.14,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play-fe.googleapis.com,7848,7201,14,16,2025-08-19T19:34:34.243+02:00,2025-08-19T19:34:34.485+02:00
+17,10.215.173.1,37594,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,api.eu-west-1.aiv-delivery.net,76,283,1,1,2025-08-19T19:34:34.703+02:00,2025-08-19T19:34:34.750+02:00
+6,10.215.173.1,51776,3.120.110.252,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,TLS,Zamknij,api.eu-west-1.aiv-delivery.net,1369,5863,14,13,2025-08-19T19:34:34.759+02:00,2025-08-19T19:34:39.006+02:00
+17,10.215.173.1,35556,10.215.173.2,53,10453,Prime Video,com.amazon.avod.thirdpartyclient,DNS,Zamknij,prod.us-east-1.sonar.prime-video.amazon.dev,89,217,1,1,2025-08-19T19:34:34.848+02:00,2025-08-19T19:34:34.882+02:00
+6,10.215.173.1,47786,44.213.55.209,443,10453,Prime Video,com.amazon.avod.thirdpartyclient,TLS,Zamknij,prod.us-east-1.sonar.prime-video.amazon.dev,1461,5525,14,13,2025-08-19T19:34:34.890+02:00,2025-08-19T19:34:39.006+02:00
+6,10.215.173.1,47096,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1361,1184,8,8,2025-08-19T19:35:01.595+02:00,2025-08-19T19:36:01.319+02:00
+17,10.215.173.1,49583,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,spot-pa.googleapis.com,68,324,1,1,2025-08-19T19:35:36.005+02:00,2025-08-19T19:35:36.047+02:00
+17,10.215.173.1,58150,216.58.206.42,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,spot-pa.googleapis.com,5925,9566,14,20,2025-08-19T19:35:36.087+02:00,2025-08-19T19:35:36.725+02:00
+17,10.215.173.1,4699,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:35:37.107+02:00,2025-08-19T19:35:37.149+02:00
+6,10.215.173.1,40548,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-19T19:35:37.177+02:00,2025-08-19T19:35:37.518+02:00
+6,10.215.173.1,56814,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-19T19:35:37.469+02:00,2025-08-19T19:36:42.046+02:00
+17,10.215.173.1,25606,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-19T19:36:05.447+02:00,2025-08-19T19:36:05.497+02:00
+17,10.215.173.1,44228,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,4496,15093,12,23,2025-08-19T19:36:05.470+02:00,2025-08-19T19:36:05.998+02:00
+6,10.215.173.1,43670,185.60.217.13,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,edge-mqtt.facebook.com,3116,3175,17,16,2025-08-19T19:36:05.510+02:00,2025-08-19T19:36:38.787+02:00
+17,10.215.173.1,18805,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-19T19:36:05.521+02:00,2025-08-19T19:36:05.559+02:00
+17,10.215.173.1,33686,157.240.253.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,4528,6044,9,12,2025-08-19T19:36:05.525+02:00,2025-08-19T19:36:05.761+02:00
+17,10.215.173.1,18801,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-19T19:36:05.529+02:00,2025-08-19T19:36:05.568+02:00
+17,10.215.173.1,55096,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-19T19:36:05.717+02:00,2025-08-19T19:36:05.764+02:00
+17,10.215.173.1,45076,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.facebook.com,3857,2970,8,10,2025-08-19T19:36:05.722+02:00,2025-08-19T19:36:05.875+02:00
+17,10.215.173.1,41480,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-19T19:36:06.967+02:00,2025-08-19T19:36:07.008+02:00
+17,10.215.173.1,58135,157.240.252.17,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,gateway.instagram.com,5713,3714,20,24,2025-08-19T19:36:06.974+02:00,2025-08-19T19:36:32.807+02:00
+17,10.215.173.1,60633,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-19T19:36:11.359+02:00,2025-08-19T19:36:11.399+02:00
+6,10.215.173.1,58980,173.194.76.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1434,1714,9,8,2025-08-19T19:36:11.410+02:00,2025-08-19T19:36:11.923+02:00
+17,10.215.173.1,61776,10.215.173.2,53,10389,cda.pl,pl.cda,DNS,Zamknij,icdn.cda.pl,57,89,1,1,2025-08-19T19:36:12.281+02:00,2025-08-19T19:36:12.314+02:00
+17,10.215.173.1,52252,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,android.apis.google.com,69,109,1,1,2025-08-19T19:36:12.305+02:00,2025-08-19T19:36:12.344+02:00
+6,10.215.173.1,42802,104.20.5.187,443,10389,cda.pl,pl.cda,HTTPS,Zamknij,icdn.cda.pl,1461,33506,15,14,2025-08-19T19:36:12.317+02:00,2025-08-19T19:36:32.294+02:00
+17,10.215.173.1,43217,142.250.74.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,android.apis.google.com,5291,6755,12,13,2025-08-19T19:36:12.348+02:00,2025-08-19T19:36:12.561+02:00
+17,10.215.173.1,59510,157.240.0.13,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,graph.facebook.com,10136,5306,13,10,2025-08-19T19:36:28.716+02:00,2025-08-19T19:36:29.015+02:00
+17,10.215.173.1,31679,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-19T19:36:43.252+02:00,2025-08-19T19:36:43.313+02:00
+6,10.215.173.1,40740,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7227,10,10,2025-08-19T19:36:43.327+02:00,2025-08-19T19:36:43.676+02:00
+6,10.215.173.1,53630,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,712,4,3,2025-08-19T19:36:43.628+02:00,2025-08-19T19:36:43.764+02:00

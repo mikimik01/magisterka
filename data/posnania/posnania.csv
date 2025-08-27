@@ -1,0 +1,260 @@
+IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen
+17,10.215.173.1,58489,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-23T17:51:56.575+02:00,2025-08-23T17:51:56.649+02:00
+6,10.215.173.1,45244,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,,2790,739,14,11,2025-08-23T17:51:56.603+02:00,2025-08-23T17:52:00.221+02:00
+17,10.215.173.1,61795,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-23T17:51:56.640+02:00,2025-08-23T17:51:56.661+02:00
+17,10.215.173.1,43234,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-23T17:51:56.642+02:00,2025-08-23T17:51:56.686+02:00
+6,10.215.173.1,51270,185.60.217.13,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,edge-mqtt.facebook.com,2796,964,11,9,2025-08-23T17:51:56.645+02:00,2025-08-23T17:52:52.649+02:00
+6,10.215.173.1,51284,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2009,738,9,8,2025-08-23T17:51:56.684+02:00,2025-08-23T17:52:00.227+02:00
+6,10.215.173.1,56402,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1479,1682,10,10,2025-08-23T17:51:56.693+02:00,2025-08-23T17:53:38.227+02:00
+17,10.215.173.1,62258,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-23T17:51:56.818+02:00,2025-08-23T17:51:56.840+02:00
+6,10.215.173.1,33404,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,,3003,1033,16,15,2025-08-23T17:51:56.820+02:00,2025-08-23T17:52:00.227+02:00
+6,10.215.173.1,49442,185.60.217.33,443,-1,Nieznany,unknown,TLS,Zamknij,chat-e2ee-mini.facebook.com,100,88,2,2,2025-08-23T17:51:56.830+02:00,2025-08-23T17:51:56.850+02:00
+6,10.215.173.1,51298,185.60.217.13,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,edge-mqtt.facebook.com,3232,3988,29,26,2025-08-23T17:51:56.836+02:00,2025-08-23T17:52:00.222+02:00
+17,10.110.10.69,42298,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,UDP,Zamknij,,63,52,1,1,2025-08-23T17:51:56.885+02:00,2025-08-23T17:51:56.932+02:00
+17,10.215.173.1,4967,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:51:57.944+02:00,2025-08-23T17:51:57.981+02:00
+6,10.215.173.1,47024,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7269,11,11,2025-08-23T17:51:58.012+02:00,2025-08-23T17:51:58.348+02:00
+17,10.215.173.1,59630,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-23T17:51:58.198+02:00,2025-08-23T17:51:58.223+02:00
+6,10.215.173.1,59104,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,2772,4304,16,13,2025-08-23T17:51:58.228+02:00,2025-08-23T17:52:58.083+02:00
+6,10.215.173.1,52590,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:51:58.297+02:00,2025-08-23T17:52:58.084+02:00
+17,10.215.173.1,46572,185.60.217.3,443,10542,Instagram,com.instagram.android,UDP,Zamknij,,165,68,2,1,2025-08-23T17:52:00.805+02:00,2025-08-23T17:52:00.855+02:00
+17,10.215.173.1,44373,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-23T17:52:00.847+02:00,2025-08-23T17:52:00.864+02:00
+17,10.215.173.1,45818,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,6032,4018,25,28,2025-08-23T17:52:00.850+02:00,2025-08-23T17:52:52.247+02:00
+17,10.215.173.1,37434,185.60.217.63,443,10542,Instagram,com.instagram.android,UDP,Zamknij,,165,68,2,1,2025-08-23T17:52:31.714+02:00,2025-08-23T17:52:31.773+02:00
+17,10.215.173.1,53638,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-23T17:52:35.546+02:00,2025-08-23T17:52:35.579+02:00
+17,10.215.173.1,50831,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,3472,5061,8,11,2025-08-23T17:52:35.556+02:00,2025-08-23T17:52:35.868+02:00
+17,10.215.173.1,49563,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-23T17:52:36.057+02:00,2025-08-23T17:52:36.089+02:00
+17,10.215.173.1,39359,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,14768,3034,17,10,2025-08-23T17:52:36.063+02:00,2025-08-23T17:52:36.413+02:00
+17,10.215.173.1,16785,10.215.173.2,53,10028,PCAPdroid,com.emanuelef.remote_capture,DNS,Zamknij,firebaselogging.googleapis.com,76,204,1,1,2025-08-23T17:52:38.411+02:00,2025-08-23T17:52:38.435+02:00
+6,10.215.173.1,37506,142.250.203.202,443,10028,PCAPdroid,com.emanuelef.remote_capture,HTTPS,Zamknij,firebaselogging.googleapis.com,1843,5133,7,7,2025-08-23T17:52:38.443+02:00,2025-08-23T17:53:38.228+02:00
+17,10.215.173.1,58146,185.60.217.20,443,10542,Instagram,com.instagram.android,UDP,Zamknij,,165,68,2,1,2025-08-23T17:52:41.594+02:00,2025-08-23T17:52:41.665+02:00
+17,10.215.173.1,23188,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:52:59.565+02:00,2025-08-23T17:52:59.593+02:00
+17,10.215.173.1,51309,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-23T17:52:59.598+02:00,2025-08-23T17:52:59.620+02:00
+6,10.215.173.1,46376,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7269,11,11,2025-08-23T17:52:59.615+02:00,2025-08-23T17:52:59.943+02:00
+6,10.215.173.1,56656,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,2905,4346,18,13,2025-08-23T17:52:59.625+02:00,2025-08-23T17:54:59.660+02:00
+6,10.215.173.1,45392,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:52:59.904+02:00,2025-08-23T17:54:03.653+02:00
+17,10.215.173.1,41701,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-23T17:53:02.780+02:00,2025-08-23T17:53:02.798+02:00
+6,10.215.173.1,39028,216.239.34.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3793,6611,13,13,2025-08-23T17:53:02.806+02:00,2025-08-23T17:53:03.112+02:00
+17,10.215.173.1,29653,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,spot-pa.googleapis.com,68,196,1,1,2025-08-23T17:53:38.356+02:00,2025-08-23T17:53:38.379+02:00
+17,10.215.173.1,54385,142.250.203.138,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,spot-pa.googleapis.com,5659,4681,11,12,2025-08-23T17:53:38.400+02:00,2025-08-23T17:53:38.953+02:00
+6,10.215.173.1,56204,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1399,1184,8,8,2025-08-23T17:53:50.281+02:00,2025-08-23T17:54:54.492+02:00
+17,10.215.173.1,36967,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:54:05.167+02:00,2025-08-23T17:54:05.196+02:00
+6,10.215.173.1,47774,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7229,10,10,2025-08-23T17:54:05.217+02:00,2025-08-23T17:54:05.561+02:00
+6,10.215.173.1,45814,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:54:05.502+02:00,2025-08-23T17:55:09.929+02:00
+17,10.215.173.1,31889,10.215.173.2,53,10138,Ekran startowy One UI,com.sec.android.app.launcher,DNS,Zamknij,www.google.com,60,76,1,1,2025-08-23T17:54:12.202+02:00,2025-08-23T17:54:12.228+02:00
+6,10.215.173.1,35738,142.250.186.196,443,10138,Ekran startowy One UI,com.sec.android.app.launcher,HTTPS,Zamknij,www.google.com,2640,6588,16,17,2025-08-23T17:54:12.238+02:00,2025-08-23T17:55:14.961+02:00
+6,10.215.173.1,35748,142.250.186.196,443,10138,Ekran startowy One UI,com.sec.android.app.launcher,HTTPS,Zamknij,www.google.com,1304,2541,8,8,2025-08-23T17:54:12.303+02:00,2025-08-23T17:55:14.962+02:00
+17,10.215.173.1,5108,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Zamknij,o4505784913690624.ingest.sentry.io,80,96,1,1,2025-08-23T17:54:14.187+02:00,2025-08-23T17:54:14.228+02:00
+17,10.215.173.1,30713,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Zamknij,updates.yourb.app,63,95,1,1,2025-08-23T17:54:14.208+02:00,2025-08-23T17:54:14.228+02:00
+17,10.215.173.1,12254,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Zamknij,m.stripe.com,58,186,1,1,2025-08-23T17:54:14.225+02:00,2025-08-23T17:54:14.240+02:00
+6,10.215.173.1,45568,34.120.195.249,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,o4505784913690624.ingest.sentry.io,1943,5029,9,9,2025-08-23T17:54:14.234+02:00,2025-08-23T17:54:14.371+02:00
+6,10.215.173.1,50216,172.67.208.92,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,updates.yourb.app,1685,4617,12,12,2025-08-23T17:54:14.238+02:00,2025-08-23T17:55:14.962+02:00
+6,10.215.173.1,34538,52.26.132.221,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,m.stripe.com,1814,4761,9,8,2025-08-23T17:54:14.246+02:00,2025-08-23T17:55:14.210+02:00
+6,10.215.173.1,34550,52.26.132.221,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,m.stripe.com,1814,4761,9,8,2025-08-23T17:54:14.251+02:00,2025-08-23T17:55:14.210+02:00
+6,10.215.173.1,45582,34.120.195.249,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,o4505784913690624.ingest.sentry.io,1987,1701,9,9,2025-08-23T17:54:14.376+02:00,2025-08-23T17:54:14.491+02:00
+6,10.215.173.1,39642,34.120.195.249,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,o4505784913690624.ingest.sentry.io,2009,1701,9,9,2025-08-23T17:54:14.497+02:00,2025-08-23T17:54:14.636+02:00
+6,10.215.173.1,39650,34.120.195.249,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,o4505784913690624.ingest.sentry.io,1988,1701,9,9,2025-08-23T17:54:14.648+02:00,2025-08-23T17:54:14.789+02:00
+6,10.215.173.1,39656,34.120.195.249,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Zamknij,o4505784913690624.ingest.sentry.io,3959,1741,9,9,2025-08-23T17:54:15.252+02:00,2025-08-23T17:54:15.396+02:00
+17,10.215.173.1,31090,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Zamknij,api.yourb.app,59,91,1,1,2025-08-23T17:54:43.270+02:00,2025-08-23T17:54:43.431+02:00
+6,10.215.173.1,58056,104.21.42.187,443,10333,Posnania,com.yourbuildingapp.app.posnania,HTTPS,Błąd,api.yourb.app,10428,31351,85,85,2025-08-23T17:54:43.436+02:00,2025-08-23T17:56:56.643+02:00
+17,10.215.173.1,34065,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,gew4-dealer.spotify.com,69,115,1,1,2025-08-23T17:54:52.156+02:00,2025-08-23T17:54:52.171+02:00
+17,10.215.173.1,47179,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,spclient.wg.spotify.com,69,118,1,1,2025-08-23T17:54:52.163+02:00,2025-08-23T17:54:52.202+02:00
+17,10.215.173.1,12180,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,ap-gew4.spotify.com,65,81,1,1,2025-08-23T17:54:52.168+02:00,2025-08-23T17:54:52.203+02:00
+6,10.215.173.1,55978,35.186.224.44,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-dealer.spotify.com,1752,6847,10,9,2025-08-23T17:54:52.178+02:00,2025-08-23T17:54:55.466+02:00
+6,10.215.173.1,56316,35.186.224.24,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,spclient.wg.spotify.com,11498,1659,17,11,2025-08-23T17:54:52.211+02:00,2025-08-23T17:54:55.466+02:00
+6,10.215.173.1,54540,34.158.1.133,443,10304,Spotify,com.spotify.music,TCP,Zamknij,ap-gew4.spotify.com,1198,8829,11,10,2025-08-23T17:54:52.217+02:00,2025-08-23T17:54:55.465+02:00
+17,10.215.173.1,51983,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,gew4-spclient.spotify.com,71,125,1,1,2025-08-23T17:54:52.442+02:00,2025-08-23T17:54:52.477+02:00
+6,10.215.173.1,42264,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1183,3749,11,7,2025-08-23T17:54:52.485+02:00,2025-08-23T17:54:52.882+02:00
+6,10.215.173.1,42274,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,460,10,6,2025-08-23T17:54:52.507+02:00,2025-08-23T17:54:52.778+02:00
+6,10.215.173.1,42290,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,4932,12341,28,19,2025-08-23T17:54:52.513+02:00,2025-08-23T17:54:55.466+02:00
+6,10.215.173.1,42296,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,1183,4558,11,11,2025-08-23T17:54:52.516+02:00,2025-08-23T17:54:52.782+02:00
+6,10.215.173.1,42308,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3669,10,5,2025-08-23T17:54:52.524+02:00,2025-08-23T17:54:52.866+02:00
+6,10.215.173.1,42316,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,540,10,8,2025-08-23T17:54:52.559+02:00,2025-08-23T17:54:52.764+02:00
+6,10.215.173.1,42334,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3669,10,5,2025-08-23T17:54:52.575+02:00,2025-08-23T17:54:52.781+02:00
+6,10.215.173.1,42318,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3669,10,5,2025-08-23T17:54:52.586+02:00,2025-08-23T17:54:52.764+02:00
+6,10.215.173.1,42340,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,420,10,5,2025-08-23T17:54:52.598+02:00,2025-08-23T17:54:52.765+02:00
+6,10.215.173.1,42342,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,420,10,5,2025-08-23T17:54:52.621+02:00,2025-08-23T17:54:52.765+02:00
+6,10.215.173.1,42346,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1183,3709,11,6,2025-08-23T17:54:52.640+02:00,2025-08-23T17:54:52.781+02:00
+6,10.215.173.1,42358,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3789,10,8,2025-08-23T17:54:52.669+02:00,2025-08-23T17:54:52.791+02:00
+17,10.215.173.1,22710,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-23T17:55:01.190+02:00,2025-08-23T17:55:01.211+02:00
+6,10.215.173.1,54986,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2865,4283,17,12,2025-08-23T17:55:01.222+02:00,2025-08-23T17:56:56.651+02:00
+6,10.215.173.1,50804,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1523,2863,11,11,2025-08-23T17:55:01.552+02:00,2025-08-23T17:56:05.346+02:00
+17,10.215.173.1,7805,10.215.173.2,53,10254,Gmail,com.google.android.gm,DNS,Zamknij,taskassist-pa.googleapis.com,148,436,2,2,2025-08-23T17:55:04.097+02:00,2025-08-23T17:55:08.056+02:00
+17,10.215.173.1,60563,10.215.173.2,53,10254,Gmail,com.google.android.gm,DNS,Zamknij,inbox.google.com,124,156,2,2,2025-08-23T17:55:04.103+02:00,2025-08-23T17:55:08.149+02:00
+6,10.215.173.1,48572,142.250.203.202,443,10254,Gmail,com.google.android.gm,HTTPS,Zamknij,taskassist-pa.googleapis.com,3468,6630,15,13,2025-08-23T17:55:07.620+02:00,2025-08-23T17:55:23.557+02:00
+6,10.215.173.1,58040,216.58.209.5,443,10254,Gmail,com.google.android.gm,HTTPS,Zamknij,inbox.google.com,6158,14039,20,18,2025-08-23T17:55:07.672+02:00,2025-08-23T17:55:23.558+02:00
+17,10.215.173.1,3764,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:55:11.279+02:00,2025-08-23T17:55:11.305+02:00
+6,10.215.173.1,46980,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7229,10,10,2025-08-23T17:55:11.329+02:00,2025-08-23T17:55:11.635+02:00
+6,10.215.173.1,46870,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:55:11.596+02:00,2025-08-23T17:56:15.618+02:00
+6,10.215.173.1,46146,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Błąd,mtalk.google.com,1552,2043,10,10,2025-08-23T17:56:13.395+02:00,2025-08-23T17:56:56.651+02:00
+17,10.215.173.1,7273,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:56:16.855+02:00,2025-08-23T17:56:16.872+02:00
+6,10.215.173.1,56704,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7229,10,10,2025-08-23T17:56:16.877+02:00,2025-08-23T17:56:17.187+02:00
+6,10.215.173.1,42798,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,768,4,4,2025-08-23T17:56:17.140+02:00,2025-08-23T17:56:56.651+02:00
+17,10.215.173.1,40724,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-23T17:56:56.917+02:00,2025-08-23T17:56:56.917+02:00
+6,10.215.173.1,52630,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:56:58.682+02:00,2025-08-23T17:56:58.690+02:00
+6,10.215.173.1,52634,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:56:58.698+02:00,2025-08-23T17:56:58.700+02:00
+17,10.215.173.1,9358,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,apresolve.spotify.com,0,0,0,0,2025-08-23T17:56:58.760+02:00,2025-08-23T17:56:58.760+02:00
+6,10.215.173.1,38194,35.186.224.44,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,gew4-dealer.spotify.com,60,40,1,1,2025-08-23T17:56:58.803+02:00,2025-08-23T17:56:58.811+02:00
+17,10.215.173.1,10952,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,gew4-spclient.spotify.com,0,0,0,0,2025-08-23T17:56:58.816+02:00,2025-08-23T17:56:58.816+02:00
+17,10.215.173.1,44731,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,gew4-spclient.spotify.com,0,0,0,0,2025-08-23T17:56:58.819+02:00,2025-08-23T17:56:58.819+02:00
+17,10.215.173.1,32162,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt-fallback.facebook.com,0,0,0,0,2025-08-23T17:56:58.848+02:00,2025-08-23T17:56:58.848+02:00
+6,10.215.173.1,32974,157.240.210.23,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:56:58.868+02:00,2025-08-23T17:56:58.875+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:56:58.877+02:00,2025-08-23T17:56:58.877+02:00
+17,10.215.173.1,11637,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-23T17:56:58.889+02:00,2025-08-23T17:56:58.889+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:56:58.967+02:00,2025-08-23T17:56:58.967+02:00
+6,10.215.173.1,54006,185.60.217.20,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:56:59.069+02:00,2025-08-23T17:56:59.073+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:56:59.158+02:00,2025-08-23T17:56:59.158+02:00
+17,10.215.173.1,49736,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:56:59.419+02:00,2025-08-23T17:56:59.419+02:00
+17,10.215.173.1,2121,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:56:59.428+02:00,2025-08-23T17:56:59.428+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:56:59.559+02:00,2025-08-23T17:56:59.559+02:00
+6,10.215.173.1,52634,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:56:59.692+02:00,2025-08-23T17:56:59.694+02:00
+6,10.215.173.1,52630,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:56:59.696+02:00,2025-08-23T17:56:59.701+02:00
+6,10.215.173.1,38194,35.186.224.44,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,gew4-dealer.spotify.com,60,40,1,1,2025-08-23T17:56:59.820+02:00,2025-08-23T17:56:59.824+02:00
+6,10.215.173.1,32974,157.240.210.23,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:56:59.884+02:00,2025-08-23T17:56:59.887+02:00
+17,10.215.173.1,40724,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-23T17:56:59.919+02:00,2025-08-23T17:56:59.919+02:00
+6,10.215.173.1,54006,185.60.217.20,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:57:00.076+02:00,2025-08-23T17:57:00.078+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:57:00.359+02:00,2025-08-23T17:57:00.359+02:00
+17,10.215.173.1,64137,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.106+02:00,2025-08-23T17:57:01.106+02:00
+17,10.215.173.1,41761,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.109+02:00,2025-08-23T17:57:01.109+02:00
+17,10.215.173.1,41761,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.203+02:00,2025-08-23T17:57:01.203+02:00
+6,10.215.173.1,49890,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-23T17:57:01.306+02:00,2025-08-23T17:57:01.308+02:00
+17,10.215.173.1,14941,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.309+02:00,2025-08-23T17:57:01.309+02:00
+6,10.215.173.1,49900,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-23T17:57:01.312+02:00,2025-08-23T17:57:01.315+02:00
+17,10.215.173.1,41761,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.409+02:00,2025-08-23T17:57:01.409+02:00
+6,10.215.173.1,52630,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:57:01.714+02:00,2025-08-23T17:57:01.719+02:00
+6,10.215.173.1,52634,35.186.224.24,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,spclient.wg.spotify.com,60,40,1,1,2025-08-23T17:57:01.721+02:00,2025-08-23T17:57:01.725+02:00
+17,10.215.173.1,9358,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,apresolve.spotify.com,0,0,0,0,2025-08-23T17:57:01.765+02:00,2025-08-23T17:57:01.765+02:00
+17,10.215.173.1,41761,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:01.805+02:00,2025-08-23T17:57:01.805+02:00
+17,10.215.173.1,10952,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,gew4-spclient.spotify.com,0,0,0,0,2025-08-23T17:57:01.810+02:00,2025-08-23T17:57:01.810+02:00
+17,10.215.173.1,44731,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Nieosiągalny,gew4-spclient.spotify.com,0,0,0,0,2025-08-23T17:57:01.815+02:00,2025-08-23T17:57:01.815+02:00
+6,10.215.173.1,38194,35.186.224.44,443,10304,Spotify,com.spotify.music,TLS,Nieosiągalny,gew4-dealer.spotify.com,60,40,1,1,2025-08-23T17:57:01.835+02:00,2025-08-23T17:57:01.839+02:00
+17,10.215.173.1,32162,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt-fallback.facebook.com,0,0,0,0,2025-08-23T17:57:01.856+02:00,2025-08-23T17:57:01.856+02:00
+17,10.215.173.1,11637,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,graph.facebook.com,0,0,0,0,2025-08-23T17:57:01.879+02:00,2025-08-23T17:57:01.879+02:00
+6,10.215.173.1,32974,157.240.210.23,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:57:01.904+02:00,2025-08-23T17:57:01.909+02:00
+17,10.215.173.1,38382,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-23T17:57:01.961+02:00,2025-08-23T17:57:01.961+02:00
+6,10.215.173.1,54006,185.60.217.20,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-23T17:57:02.099+02:00,2025-08-23T17:57:02.108+02:00
+6,10.215.173.1,49890,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-23T17:57:02.319+02:00,2025-08-23T17:57:02.328+02:00
+6,10.215.173.1,49900,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-23T17:57:02.330+02:00,2025-08-23T17:57:02.334+02:00
+17,10.215.173.1,49736,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:02.424+02:00,2025-08-23T17:57:02.424+02:00
+17,10.215.173.1,2121,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:02.430+02:00,2025-08-23T17:57:02.430+02:00
+17,10.215.173.1,41761,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-23T17:57:02.603+02:00,2025-08-23T17:57:02.603+02:00
+17,10.215.173.1,44519,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:05.428+02:00,2025-08-23T17:57:05.428+02:00
+17,10.215.173.1,1070,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:05.432+02:00,2025-08-23T17:57:05.432+02:00
+17,10.215.173.1,28703,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-23T17:57:07.716+02:00,2025-08-23T17:57:07.716+02:00
+17,10.215.173.1,1070,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:08.433+02:00,2025-08-23T17:57:08.433+02:00
+17,10.215.173.1,44519,10.215.173.2,53,10333,Posnania,com.yourbuildingapp.app.posnania,DNS,Nieosiągalny,api.yourb.app,0,0,0,0,2025-08-23T17:57:08.442+02:00,2025-08-23T17:57:08.442+02:00
+17,10.215.173.1,55321,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-23T17:57:10.158+02:00,2025-08-23T17:57:10.202+02:00
+6,10.215.173.1,49930,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7268,11,11,2025-08-23T17:57:10.186+02:00,2025-08-23T17:57:10.578+02:00
+6,10.215.173.1,49632,157.240.252.37,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,5648,6979,42,37,2025-08-23T17:57:10.209+02:00,2025-08-23T18:06:28.276+02:00
+6,10.215.173.1,54876,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:57:10.537+02:00,2025-08-23T17:58:11.959+02:00
+17,10.215.173.1,28703,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-23T17:57:10.722+02:00,2025-08-23T17:57:10.757+02:00
+6,10.215.173.1,58936,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1455,7629,9,9,2025-08-23T17:57:10.769+02:00,2025-08-23T17:58:11.960+02:00
+17,10.215.173.1,43818,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,mobile-ap.spotify.com,67,112,1,1,2025-08-23T17:57:13.369+02:00,2025-08-23T17:57:13.423+02:00
+6,10.215.173.1,52452,34.158.1.133,443,10304,Spotify,com.spotify.music,TCP,Zamknij,mobile-ap.spotify.com,1164,8651,11,10,2025-08-23T17:57:13.441+02:00,2025-08-23T17:57:24.379+02:00
+6,10.215.173.1,46448,35.186.224.44,443,10304,Spotify,com.spotify.music,TLS,Zamknij,gew4-dealer.spotify.com,100,88,2,2,2025-08-23T17:57:13.447+02:00,2025-08-23T17:57:13.476+02:00
+6,10.215.173.1,46454,35.186.224.44,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-dealer.spotify.com,1672,1724,8,7,2025-08-23T17:57:13.466+02:00,2025-08-23T17:57:24.380+02:00
+17,10.215.173.1,30119,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,gew4-spclient.spotify.com,71,125,1,1,2025-08-23T17:57:16.376+02:00,2025-08-23T17:57:16.423+02:00
+6,10.215.173.1,55974,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,2317,1757,15,14,2025-08-23T17:57:16.430+02:00,2025-08-23T17:57:24.380+02:00
+6,10.215.173.1,46930,34.158.1.133,4070,10304,Spotify,com.spotify.music,TCP,Zamknij,mobile-ap.spotify.com,1242,8786,10,9,2025-08-23T17:57:27.071+02:00,2025-08-23T17:57:29.430+02:00
+17,10.215.173.1,14229,10.215.173.2,53,10304,Spotify,com.spotify.music,DNS,Zamknij,gew4-dealer.spotify.com,69,115,1,1,2025-08-23T17:57:27.596+02:00,2025-08-23T17:57:27.643+02:00
+6,10.215.173.1,41698,35.186.224.44,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-dealer.spotify.com,1792,6887,11,10,2025-08-23T17:57:27.647+02:00,2025-08-23T17:57:29.430+02:00
+6,10.215.173.1,58548,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,4686,8380,28,24,2025-08-23T17:57:27.783+02:00,2025-08-23T17:57:29.430+02:00
+6,10.215.173.1,58554,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,460,10,6,2025-08-23T17:57:27.785+02:00,2025-08-23T17:57:27.882+02:00
+6,10.215.173.1,58568,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1203,460,10,6,2025-08-23T17:57:27.786+02:00,2025-08-23T17:57:27.886+02:00
+6,10.215.173.1,58576,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3669,10,5,2025-08-23T17:57:27.788+02:00,2025-08-23T17:57:27.872+02:00
+6,10.215.173.1,58586,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,1183,4407,11,8,2025-08-23T17:57:27.790+02:00,2025-08-23T17:57:27.900+02:00
+6,10.215.173.1,58600,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1183,3749,11,7,2025-08-23T17:57:27.791+02:00,2025-08-23T17:57:27.879+02:00
+6,10.215.173.1,58610,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3749,10,7,2025-08-23T17:57:27.792+02:00,2025-08-23T17:57:27.894+02:00
+6,10.215.173.1,58616,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3709,10,6,2025-08-23T17:57:27.793+02:00,2025-08-23T17:57:27.896+02:00
+6,10.215.173.1,58620,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3749,10,7,2025-08-23T17:57:27.794+02:00,2025-08-23T17:57:27.899+02:00
+6,10.215.173.1,58636,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Zamknij,gew4-spclient.spotify.com,1183,4478,11,9,2025-08-23T17:57:27.795+02:00,2025-08-23T17:57:27.923+02:00
+6,10.215.173.1,58646,35.186.224.28,443,10304,Spotify,com.spotify.music,HTTPS,Błąd,gew4-spclient.spotify.com,1143,3709,10,6,2025-08-23T17:57:27.796+02:00,2025-08-23T17:57:27.894+02:00
+17,10.215.173.1,28790,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:58:13.297+02:00,2025-08-23T17:58:13.344+02:00
+6,10.215.173.1,56266,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-23T17:58:13.374+02:00,2025-08-23T17:58:13.709+02:00
+6,10.215.173.1,54500,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:58:13.660+02:00,2025-08-23T17:59:17.892+02:00
+6,10.215.173.1,45962,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1360,7591,8,8,2025-08-23T17:58:23.006+02:00,2025-08-23T17:59:22.961+02:00
+17,10.215.173.1,61658,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Zamknij,www.linkedin.com,62,164,1,1,2025-08-23T17:58:52.057+02:00,2025-08-23T17:58:52.204+02:00
+17,10.215.173.1,38271,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,,5957,5258,16,16,2025-08-23T17:58:52.130+02:00,2025-08-23T17:58:53.565+02:00
+6,10.215.173.1,44380,185.60.217.20,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,graph.facebook.com,788,713,7,6,2025-08-23T17:58:52.135+02:00,2025-08-23T17:58:56.457+02:00
+17,10.215.173.1,9483,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-23T17:58:52.152+02:00,2025-08-23T17:58:52.229+02:00
+6,10.215.173.1,35964,172.64.146.215,443,10432,LinkedIn,com.linkedin.android,HTTPS,Zamknij,www.linkedin.com,5423,6719,14,12,2025-08-23T17:58:52.211+02:00,2025-08-23T17:58:58.631+02:00
+17,10.215.173.1,60068,10.215.173.2,53,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,DNS,Zamknij,notifications-pa.googleapis.com,77,333,1,1,2025-08-23T17:58:52.498+02:00,2025-08-23T17:58:52.638+02:00
+6,10.215.173.1,50004,142.250.184.202,443,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,TLS,Zamknij,notifications-pa.googleapis.com,4015,5036,13,13,2025-08-23T17:58:52.647+02:00,2025-08-23T17:59:53.046+02:00
+17,10.215.173.1,47352,10.215.173.2,53,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,DNS,Zamknij,calendarpushsubscription-pa.googleapis.com,88,344,1,1,2025-08-23T17:58:53.178+02:00,2025-08-23T17:58:53.209+02:00
+6,10.215.173.1,34492,142.250.186.42,443,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,HTTPS,Zamknij,calendarpushsubscription-pa.googleapis.com,3499,6456,14,13,2025-08-23T17:58:53.226+02:00,2025-08-23T17:59:53.048+02:00
+17,10.215.173.1,34338,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,android.clients.google.com,72,352,1,1,2025-08-23T17:58:53.561+02:00,2025-08-23T17:58:53.598+02:00
+17,10.215.173.1,48517,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-fe.googleapis.com,68,84,1,1,2025-08-23T17:58:53.615+02:00,2025-08-23T17:58:53.653+02:00
+17,10.215.173.1,5230,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-23T17:58:53.659+02:00,2025-08-23T17:58:53.688+02:00
+17,10.215.173.1,6523,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,playstoregatewayadapter-pa.googleapis.com,87,343,1,1,2025-08-23T17:58:53.724+02:00,2025-08-23T17:58:53.762+02:00
+17,10.215.173.1,38003,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,prod-lt-playstoregatewayadapter-pa.googleapis.com,95,351,1,1,2025-08-23T17:58:53.774+02:00,2025-08-23T17:58:53.810+02:00
+17,10.215.173.1,43918,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-lh.googleusercontent.com,75,91,1,1,2025-08-23T17:58:53.827+02:00,2025-08-23T17:58:53.858+02:00
+17,10.215.173.1,45340,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,i.ytimg.com,57,313,1,1,2025-08-23T17:58:53.881+02:00,2025-08-23T17:58:53.923+02:00
+17,10.215.173.1,57458,142.250.185.142,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play-fe.googleapis.com,7075,8242,13,15,2025-08-23T17:58:53.910+02:00,2025-08-23T17:58:54.145+02:00
+6,10.215.173.1,49396,142.250.185.142,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play-fe.googleapis.com,2138,5673,7,6,2025-08-23T17:58:53.916+02:00,2025-08-23T17:59:58.059+02:00
+17,10.215.173.1,39924,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,connectivitycheck.gstatic.com,75,91,1,1,2025-08-23T17:58:54.358+02:00,2025-08-23T17:58:54.386+02:00
+6,10.215.173.1,48078,142.250.185.227,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,connectivitycheck.gstatic.com,1135,3895,7,7,2025-08-23T17:58:54.404+02:00,2025-08-23T17:59:58.059+02:00
+17,10.215.173.1,35270,10.215.173.2,53,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,DNS,Zamknij,www.googleapis.com,64,320,1,1,2025-08-23T17:58:54.557+02:00,2025-08-23T17:58:54.602+02:00
+6,10.215.173.1,35402,142.250.185.202,443,10246,Synchronizacja Kalendarza Google,com.google.android.syncadapters.calendar,HTTPS,Zamknij,www.googleapis.com,4167,7232,11,11,2025-08-23T17:58:54.613+02:00,2025-08-23T17:59:58.059+02:00
+17,10.215.173.1,7554,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T17:59:18.956+02:00,2025-08-23T17:59:18.994+02:00
+6,10.215.173.1,58836,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-23T17:59:19.005+02:00,2025-08-23T17:59:19.364+02:00
+6,10.215.173.1,57852,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T17:59:19.323+02:00,2025-08-23T18:00:23.335+02:00
+6,10.215.173.1,57068,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1399,7631,9,9,2025-08-23T17:59:29.011+02:00,2025-08-23T18:00:33.407+02:00
+6,10.215.173.1,52676,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3125,6549,14,14,2025-08-23T18:00:00.779+02:00,2025-08-23T18:00:01.129+02:00
+17,10.215.173.1,4958,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:00:24.604+02:00,2025-08-23T18:00:24.648+02:00
+6,10.215.173.1,38890,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7229,10,10,2025-08-23T18:00:24.680+02:00,2025-08-23T18:00:25.039+02:00
+6,10.215.173.1,51922,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:00:24.995+02:00,2025-08-23T18:01:28.737+02:00
+6,10.215.173.1,50018,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1401,7630,9,9,2025-08-23T18:00:43.454+02:00,2025-08-23T18:01:44.212+02:00
+17,10.215.173.1,47826,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,gateway.facebook.com,66,105,1,1,2025-08-23T18:01:26.224+02:00,2025-08-23T18:01:26.259+02:00
+17,10.215.173.1,53799,185.60.217.3,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,gateway.instagram.com,9329,10713,35,42,2025-08-23T18:01:26.234+02:00,2025-08-23T18:01:32.420+02:00
+6,10.215.173.1,39788,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2050,738,10,8,2025-08-23T18:01:26.283+02:00,2025-08-23T18:01:36.835+02:00
+17,10.215.173.1,62586,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-23T18:01:26.285+02:00,2025-08-23T18:01:26.318+02:00
+6,10.215.173.1,38992,185.60.217.33,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee-mini.facebook.com,3426,2188,22,21,2025-08-23T18:01:26.582+02:00,2025-08-23T18:01:36.836+02:00
+17,10.215.173.1,5655,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:01:28.757+02:00,2025-08-23T18:01:28.799+02:00
+6,10.215.173.1,34958,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7227,10,10,2025-08-23T18:01:28.805+02:00,2025-08-23T18:01:29.117+02:00
+6,10.215.173.1,34966,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:01:29.074+02:00,2025-08-23T18:02:29.416+02:00
+17,10.215.173.1,31102,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-23T18:01:58.255+02:00,2025-08-23T18:01:58.417+02:00
+6,10.215.173.1,48026,64.233.184.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1479,1682,10,10,2025-08-23T18:01:58.426+02:00,2025-08-23T18:02:59.651+02:00
+17,10.215.173.1,53258,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:02:30.847+02:00,2025-08-23T18:02:30.884+02:00
+6,10.215.173.1,50474,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7229,10,10,2025-08-23T18:02:30.895+02:00,2025-08-23T18:02:31.259+02:00
+6,10.215.173.1,32998,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:02:31.203+02:00,2025-08-23T18:03:34.737+02:00
+6,10.215.173.1,55250,64.233.184.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1398,1184,8,8,2025-08-23T18:03:04.708+02:00,2025-08-23T18:04:05.358+02:00
+17,10.215.173.1,5636,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:03:35.971+02:00,2025-08-23T18:03:36.012+02:00
+6,10.215.173.1,59294,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-23T18:03:36.019+02:00,2025-08-23T18:03:36.347+02:00
+6,10.215.173.1,35498,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:03:36.299+02:00,2025-08-23T18:04:40.770+02:00
+6,10.215.173.1,49052,157.240.253.17,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,18124,9832,56,55,2025-08-23T18:03:39.113+02:00,2025-08-23T18:05:16.050+02:00
+17,10.215.173.1,1304,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-23T18:03:39.132+02:00,2025-08-23T18:03:39.172+02:00
+17,10.215.173.1,26755,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-23T18:03:39.141+02:00,2025-08-23T18:03:39.171+02:00
+6,10.215.173.1,55448,185.60.217.33,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee-mini.facebook.com,2726,436,11,8,2025-08-23T18:03:39.149+02:00,2025-08-23T18:03:39.640+02:00
+17,10.215.173.1,29013,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,www.facebook.com,62,107,1,1,2025-08-23T18:03:39.259+02:00,2025-08-23T18:03:39.293+02:00
+6,10.215.173.1,50846,185.60.217.35,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,www.facebook.com,3698,8562,14,14,2025-08-23T18:03:39.263+02:00,2025-08-23T18:04:40.771+02:00
+17,10.215.173.1,59802,157.240.252.17,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,gateway.facebook.com,11226,15051,59,70,2025-08-23T18:03:39.306+02:00,2025-08-23T18:06:51.755+02:00
+17,10.215.173.1,33284,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,gateway.facebook.com,66,105,1,1,2025-08-23T18:03:39.310+02:00,2025-08-23T18:03:39.346+02:00
+17,10.215.173.1,56516,185.60.217.20,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,,115450,49007,168,160,2025-08-23T18:03:39.322+02:00,2025-08-23T18:04:39.516+02:00
+17,10.215.173.1,16932,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-23T18:03:39.325+02:00,2025-08-23T18:03:39.363+02:00
+6,10.215.173.1,33480,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,8019,2512,36,34,2025-08-23T18:03:39.702+02:00,2025-08-23T18:05:31.359+02:00
+17,10.215.173.1,58901,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-23T18:03:39.719+02:00,2025-08-23T18:03:39.753+02:00
+6,10.215.173.1,51688,185.60.217.20,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,payments-graph.facebook.com,3221,2589,13,13,2025-08-23T18:03:39.782+02:00,2025-08-23T18:04:40.771+02:00
+17,10.215.173.1,18047,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,payments-graph.facebook.com,73,113,1,1,2025-08-23T18:03:39.783+02:00,2025-08-23T18:03:39.819+02:00
+6,10.215.173.1,43880,185.60.217.3,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,gateway.facebook.com,2104,1338,13,13,2025-08-23T18:03:49.570+02:00,2025-08-23T18:04:55.896+02:00
+17,10.215.173.1,2197,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-23T18:03:53.745+02:00,2025-08-23T18:03:53.778+02:00
+6,10.215.173.1,39210,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3349,6751,13,13,2025-08-23T18:03:53.786+02:00,2025-08-23T18:03:54.096+02:00
+17,10.215.173.1,24520,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-23T18:04:13.396+02:00,2025-08-23T18:04:13.445+02:00
+6,10.215.173.1,43078,142.250.110.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1184,8,8,2025-08-23T18:04:13.457+02:00,2025-08-23T18:05:16.050+02:00
+17,10.215.173.1,2074,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:04:42.094+02:00,2025-08-23T18:04:42.178+02:00
+6,10.215.173.1,42718,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7229,10,10,2025-08-23T18:04:42.196+02:00,2025-08-23T18:04:42.527+02:00
+6,10.215.173.1,34206,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:04:42.485+02:00,2025-08-23T18:05:46.629+02:00
+17,10.215.173.1,10354,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-23T18:05:16.099+02:00,2025-08-23T18:05:16.133+02:00
+6,10.215.173.1,48826,157.240.252.3,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,3056,1440,25,19,2025-08-23T18:05:16.107+02:00,2025-08-23T18:07:03.884+02:00
+6,10.215.173.1,46356,142.250.110.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1184,8,8,2025-08-23T18:05:24.092+02:00,2025-08-23T18:06:27.090+02:00
+17,10.215.173.1,21684,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-23T18:05:31.385+02:00,2025-08-23T18:05:31.418+02:00
+6,10.215.173.1,44170,157.240.251.18,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2867,779,14,12,2025-08-23T18:05:31.389+02:00,2025-08-23T18:06:32.286+02:00
+17,10.215.173.1,58225,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:05:47.749+02:00,2025-08-23T18:05:47.783+02:00
+6,10.215.173.1,54716,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7229,10,10,2025-08-23T18:05:47.801+02:00,2025-08-23T18:05:48.132+02:00
+6,10.215.173.1,53032,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-23T18:05:48.087+02:00,2025-08-23T18:06:52.508+02:00
+17,10.215.173.1,22653,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-23T18:06:25.570+02:00,2025-08-23T18:06:25.727+02:00
+6,10.215.173.1,49026,157.240.0.13,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,graph.facebook.com,2098,4768,10,10,2025-08-23T18:06:25.737+02:00,2025-08-23T18:06:26.107+02:00
+17,10.215.173.1,36712,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-23T18:06:32.311+02:00,2025-08-23T18:06:32.358+02:00
+6,10.215.173.1,33470,157.240.253.5,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,3043,1033,17,15,2025-08-23T18:06:32.318+02:00,2025-08-23T18:07:03.885+02:00
+6,10.215.173.1,45280,142.250.110.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1144,8,7,2025-08-23T18:06:34.126+02:00,2025-08-23T18:06:34.309+02:00
+17,10.215.173.1,27338,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-23T18:06:53.853+02:00,2025-08-23T18:06:53.894+02:00
+6,10.215.173.1,55830,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7229,10,10,2025-08-23T18:06:53.901+02:00,2025-08-23T18:06:54.245+02:00
+6,10.215.173.1,50670,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,728,4,3,2025-08-23T18:06:54.192+02:00,2025-08-23T18:06:54.326+02:00

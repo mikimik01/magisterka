@@ -1,0 +1,407 @@
+IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen
+17,10.215.173.1,11766,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-18T17:55:47.594+02:00,2025-08-18T17:55:47.631+02:00
+6,10.215.173.1,57186,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1380,7630,9,9,2025-08-18T17:55:47.650+02:00,2025-08-18T17:56:48.179+02:00
+17,10.215.173.1,65103,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T17:55:49.052+02:00,2025-08-18T17:55:49.067+02:00
+6,10.215.173.1,60944,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7267,11,11,2025-08-18T17:55:49.075+02:00,2025-08-18T17:55:49.422+02:00
+17,10.215.173.1,25048,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-18T17:55:49.081+02:00,2025-08-18T17:55:49.104+02:00
+6,10.215.173.1,39500,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,2825,4309,18,12,2025-08-18T17:55:49.109+02:00,2025-08-18T17:57:49.051+02:00
+6,10.215.173.1,37616,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T17:55:49.386+02:00,2025-08-18T17:56:53.178+02:00
+6,10.215.173.1,54244,185.60.217.63,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,i.instagram.com,596,420,5,5,2025-08-18T17:56:33.032+02:00,2025-08-18T17:56:33.189+02:00
+17,10.215.173.1,2253,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-18T17:56:33.036+02:00,2025-08-18T17:56:33.155+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,240785,1172359,622,1402,2025-08-18T17:56:33.043+02:00,2025-08-18T17:58:22.943+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,44113,27139,142,166,2025-08-18T17:56:33.460+02:00,2025-08-18T17:59:04.531+02:00
+17,10.215.173.1,3724,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-18T17:56:33.472+02:00,2025-08-18T17:56:33.564+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,i.instagram.com,172976,26552653,1014,21519,2025-08-18T17:56:33.927+02:00,2025-08-18T17:58:58.173+02:00
+17,10.215.173.1,56444,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,scontent-ber1-1.cdninstagram.com,78,94,1,1,2025-08-18T17:56:33.951+02:00,2025-08-18T17:56:33.982+02:00
+6,10.215.173.1,49592,185.60.217.13,443,10542,Instagram,com.instagram.android,HTTPS,Błąd,edge-mqtt.facebook.com,3490,3149,22,21,2025-08-18T17:56:34.526+02:00,2025-08-18T17:58:55.887+02:00
+17,10.215.173.1,63957,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-18T17:56:34.537+02:00,2025-08-18T17:56:34.561+02:00
+6,10.215.173.1,52632,157.240.210.23,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,edge-mqtt-fallback.facebook.com,2643,991,16,11,2025-08-18T17:56:38.770+02:00,2025-08-18T17:56:49.973+02:00
+17,10.215.173.1,11160,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,edge-mqtt-fallback.facebook.com,77,126,1,1,2025-08-18T17:56:38.795+02:00,2025-08-18T17:56:38.890+02:00
+17,10.215.173.1,21864,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-18T17:56:38.857+02:00,2025-08-18T17:56:38.895+02:00
+6,10.215.173.1,52362,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,,2798,819,14,13,2025-08-18T17:56:38.881+02:00,2025-08-18T17:56:49.973+02:00
+6,10.215.173.1,56472,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Zamknij,,5044,1061,28,18,2025-08-18T17:56:39.293+02:00,2025-08-18T17:57:43.869+02:00
+17,10.215.173.1,32512,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,z-p42-chat-e2ee-ig.facebook.com,77,129,1,1,2025-08-18T17:56:39.302+02:00,2025-08-18T17:56:39.329+02:00
+17,10.215.173.1,60565,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-18T17:56:40.427+02:00,2025-08-18T17:56:40.463+02:00
+17,10.215.173.1,49975,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,scontent-ber1-1.cdninstagram.com,132529,6881,125,40,2025-08-18T17:56:40.442+02:00,2025-08-18T17:57:37.558+02:00
+17,10.215.173.1,52447,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-18T17:56:42.486+02:00,2025-08-18T17:56:42.537+02:00
+6,10.215.173.1,49788,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3523,6537,14,14,2025-08-18T17:56:42.550+02:00,2025-08-18T17:56:42.900+02:00
+17,10.215.173.1,10490,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,static.xx.fbcdn.net,65,104,1,1,2025-08-18T17:56:43.579+02:00,2025-08-18T17:56:43.601+02:00
+17,10.215.173.1,37243,185.60.217.28,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,2757,9821,7,15,2025-08-18T17:56:43.587+02:00,2025-08-18T17:56:43.718+02:00
+17,10.215.173.1,54475,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,5008,2970,9,10,2025-08-18T17:56:48.127+02:00,2025-08-18T17:56:48.368+02:00
+17,10.215.173.1,33725,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-18T17:56:48.130+02:00,2025-08-18T17:56:48.178+02:00
+17,10.215.173.1,58306,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T17:56:53.198+02:00,2025-08-18T17:56:53.219+02:00
+6,10.215.173.1,60860,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7266,11,11,2025-08-18T17:56:53.244+02:00,2025-08-18T17:56:53.568+02:00
+6,10.215.173.1,40658,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T17:56:53.510+02:00,2025-08-18T17:57:54.202+02:00
+17,10.215.173.1,11461,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-18T17:56:58.226+02:00,2025-08-18T17:56:58.258+02:00
+6,10.215.173.1,37672,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1355,1184,8,8,2025-08-18T17:56:58.270+02:00,2025-08-18T17:57:59.416+02:00
+6,10.215.173.1,33774,185.60.217.20,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,graph.facebook.com,1930,1704,9,9,2025-08-18T17:57:17.060+02:00,2025-08-18T17:57:17.304+02:00
+17,10.215.173.1,37243,185.60.217.28,443,10542,Instagram,com.instagram.android,UDP,Zamknij,static.xx.fbcdn.net,185,82,2,1,2025-08-18T17:57:34.724+02:00,2025-08-18T17:57:34.864+02:00
+17,10.215.173.1,54475,185.60.217.20,443,10542,Instagram,com.instagram.android,UDP,Zamknij,graph.facebook.com,163,66,2,1,2025-08-18T17:57:39.371+02:00,2025-08-18T17:57:39.584+02:00
+6,10.215.173.1,44564,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,2928,2372,10,10,2025-08-18T17:57:40.254+02:00,2025-08-18T17:57:40.472+02:00
+6,10.215.173.1,56542,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Zamknij,z-p42-chat-e2ee-ig.facebook.com,4860,1219,26,23,2025-08-18T17:57:43.887+02:00,2025-08-18T17:58:45.362+02:00
+17,10.215.173.1,11947,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,z-p42-chat-e2ee-ig.facebook.com,77,129,1,1,2025-08-18T17:57:43.893+02:00,2025-08-18T17:57:43.917+02:00
+17,10.215.173.1,28298,10.215.173.2,53,10028,PCAPdroid,com.emanuelef.remote_capture,DNS,Zamknij,firebaselogging.googleapis.com,76,204,1,1,2025-08-18T17:57:45.060+02:00,2025-08-18T17:57:45.090+02:00
+6,10.215.173.1,45578,142.250.186.202,443,10028,PCAPdroid,com.emanuelef.remote_capture,HTTPS,Zamknij,firebaselogging.googleapis.com,2141,2173,8,8,2025-08-18T17:57:45.100+02:00,2025-08-18T17:58:45.363+02:00
+17,10.215.173.1,37274,157.240.210.14,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,2640,6042,8,12,2025-08-18T17:57:45.587+02:00,2025-08-18T17:57:45.850+02:00
+17,10.215.173.1,14640,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,lookaside.facebook.com,68,119,1,1,2025-08-18T17:57:45.593+02:00,2025-08-18T17:57:45.624+02:00
+17,10.215.173.1,64622,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-18T17:57:50.578+02:00,2025-08-18T17:57:50.602+02:00
+6,10.215.173.1,49126,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2866,4410,19,14,2025-08-18T17:57:50.611+02:00,2025-08-18T17:58:55.887+02:00
+17,10.215.173.1,6054,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T17:57:55.282+02:00,2025-08-18T17:57:55.329+02:00
+6,10.215.173.1,36216,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7227,10,10,2025-08-18T17:57:55.353+02:00,2025-08-18T17:57:55.824+02:00
+6,10.215.173.1,36312,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,752,4,4,2025-08-18T17:57:55.770+02:00,2025-08-18T17:58:55.879+02:00
+6,10.215.173.1,59374,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Błąd,mtalk.google.com,1355,1184,8,8,2025-08-18T17:58:04.526+02:00,2025-08-18T17:58:55.887+02:00
+17,10.215.173.1,49975,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.instagram.com,34656,20290,28,27,2025-08-18T17:58:15.972+02:00,2025-08-18T17:58:16.046+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,82640,5514,82,30,2025-08-18T17:58:16.033+02:00,2025-08-18T17:59:09.593+02:00
+17,10.215.173.1,39653,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-18T17:58:16.039+02:00,2025-08-18T17:58:16.064+02:00
+17,10.215.173.1,37274,157.240.210.14,443,10542,Instagram,com.instagram.android,UDP,Zamknij,,163,66,2,1,2025-08-18T17:58:36.854+02:00,2025-08-18T17:58:37.015+02:00
+6,10.215.173.1,40538,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Błąd,z-p42-chat-e2ee-ig.facebook.com,4940,1059,28,19,2025-08-18T17:58:45.400+02:00,2025-08-18T17:58:55.887+02:00
+17,10.215.173.1,21306,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,z-p42-chat-e2ee-ig.facebook.com,77,129,1,1,2025-08-18T17:58:45.425+02:00,2025-08-18T17:58:45.455+02:00
+6,10.215.173.1,59128,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:58:55.936+02:00,2025-08-18T17:58:55.948+02:00
+17,10.215.173.1,42612,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-18T17:58:55.950+02:00,2025-08-18T17:58:55.950+02:00
+6,10.215.173.1,41026,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:58:55.966+02:00,2025-08-18T17:58:55.978+02:00
+6,10.215.173.1,39076,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:58:56.271+02:00,2025-08-18T17:58:56.277+02:00
+6,10.215.173.1,41026,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:58:57.000+02:00,2025-08-18T17:58:57.003+02:00
+6,10.215.173.1,39076,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:58:57.287+02:00,2025-08-18T17:58:57.292+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.180+02:00,2025-08-18T17:58:58.180+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.244+02:00,2025-08-18T17:58:58.244+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.248+02:00,2025-08-18T17:58:58.248+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.379+02:00,2025-08-18T17:58:58.379+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.384+02:00,2025-08-18T17:58:58.384+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.649+02:00,2025-08-18T17:58:58.649+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:58.654+02:00,2025-08-18T17:58:58.654+02:00
+17,10.215.173.1,42612,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-18T17:58:58.948+02:00,2025-08-18T17:58:58.948+02:00
+6,10.215.173.1,41026,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:58:59.016+02:00,2025-08-18T17:58:59.019+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:59.188+02:00,2025-08-18T17:58:59.188+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:58:59.193+02:00,2025-08-18T17:58:59.193+02:00
+6,10.215.173.1,39076,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:58:59.299+02:00,2025-08-18T17:58:59.303+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:00.265+02:00,2025-08-18T17:59:00.265+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:00.276+02:00,2025-08-18T17:59:00.276+02:00
+6,10.215.173.1,60016,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:01.976+02:00,2025-08-18T17:59:02.000+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:02.436+02:00,2025-08-18T17:59:02.436+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:02.449+02:00,2025-08-18T17:59:02.449+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:02.979+02:00,2025-08-18T17:59:02.989+02:00
+6,10.215.173.1,60016,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:02.998+02:00,2025-08-18T17:59:03.025+02:00
+17,10.215.173.1,42221,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-18T17:59:03.035+02:00,2025-08-18T17:59:03.035+02:00
+6,10.215.173.1,41026,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:03.268+02:00,2025-08-18T17:59:03.292+02:00
+6,10.215.173.1,39076,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:03.529+02:00,2025-08-18T17:59:03.544+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:04.009+02:00,2025-08-18T17:59:04.020+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.112+02:00,2025-08-18T17:59:04.112+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.127+02:00,2025-08-18T17:59:04.127+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.131+02:00,2025-08-18T17:59:04.131+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.134+02:00,2025-08-18T17:59:04.134+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.138+02:00,2025-08-18T17:59:04.138+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.213+02:00,2025-08-18T17:59:04.213+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.216+02:00,2025-08-18T17:59:04.216+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.242+02:00,2025-08-18T17:59:04.242+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.394+02:00,2025-08-18T17:59:04.394+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.404+02:00,2025-08-18T17:59:04.404+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.534+02:00,2025-08-18T17:59:04.534+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.540+02:00,2025-08-18T17:59:04.540+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.544+02:00,2025-08-18T17:59:04.544+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.547+02:00,2025-08-18T17:59:04.547+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.642+02:00,2025-08-18T17:59:04.642+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.647+02:00,2025-08-18T17:59:04.647+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.766+02:00,2025-08-18T17:59:04.766+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:04.773+02:00,2025-08-18T17:59:04.773+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.863+02:00,2025-08-18T17:59:04.863+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:04.868+02:00,2025-08-18T17:59:04.868+02:00
+6,10.215.173.1,60016,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:04.997+02:00,2025-08-18T17:59:05.000+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:05.308+02:00,2025-08-18T17:59:05.308+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:05.333+02:00,2025-08-18T17:59:05.333+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:05.516+02:00,2025-08-18T17:59:05.516+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:05.520+02:00,2025-08-18T17:59:05.520+02:00
+6,10.215.173.1,45818,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:05.982+02:00,2025-08-18T17:59:05.984+02:00
+17,10.215.173.1,42221,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,edge-mqtt.facebook.com,0,0,0,0,2025-08-18T17:59:05.987+02:00,2025-08-18T17:59:05.987+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:06.023+02:00,2025-08-18T17:59:06.026+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:06.175+02:00,2025-08-18T17:59:06.175+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:06.179+02:00,2025-08-18T17:59:06.179+02:00
+6,10.215.173.1,45818,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:07.015+02:00,2025-08-18T17:59:07.021+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:07.023+02:00,2025-08-18T17:59:07.023+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:07.030+02:00,2025-08-18T17:59:07.030+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:07.929+02:00,2025-08-18T17:59:07.929+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:07.945+02:00,2025-08-18T17:59:07.945+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:08.545+02:00,2025-08-18T17:59:08.545+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:08.553+02:00,2025-08-18T17:59:08.553+02:00
+6,10.215.173.1,45818,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:09.026+02:00,2025-08-18T17:59:09.028+02:00
+6,10.215.173.1,60016,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:09.155+02:00,2025-08-18T17:59:09.160+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.594+02:00,2025-08-18T17:59:09.594+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.597+02:00,2025-08-18T17:59:09.597+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.600+02:00,2025-08-18T17:59:09.600+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.602+02:00,2025-08-18T17:59:09.602+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.605+02:00,2025-08-18T17:59:09.605+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.608+02:00,2025-08-18T17:59:09.608+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.610+02:00,2025-08-18T17:59:09.610+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.613+02:00,2025-08-18T17:59:09.613+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.616+02:00,2025-08-18T17:59:09.616+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.618+02:00,2025-08-18T17:59:09.618+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.622+02:00,2025-08-18T17:59:09.622+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.626+02:00,2025-08-18T17:59:09.626+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.629+02:00,2025-08-18T17:59:09.629+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.632+02:00,2025-08-18T17:59:09.632+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.635+02:00,2025-08-18T17:59:09.635+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.640+02:00,2025-08-18T17:59:09.640+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.643+02:00,2025-08-18T17:59:09.643+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.702+02:00,2025-08-18T17:59:09.702+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.705+02:00,2025-08-18T17:59:09.705+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.921+02:00,2025-08-18T17:59:09.921+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:09.925+02:00,2025-08-18T17:59:09.925+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:10.013+02:00,2025-08-18T17:59:10.013+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:10.016+02:00,2025-08-18T17:59:10.016+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:10.182+02:00,2025-08-18T17:59:10.204+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:10.359+02:00,2025-08-18T17:59:10.359+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:10.367+02:00,2025-08-18T17:59:10.367+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:11.231+02:00,2025-08-18T17:59:11.231+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:11.242+02:00,2025-08-18T17:59:11.242+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:11.429+02:00,2025-08-18T17:59:11.429+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:11.438+02:00,2025-08-18T17:59:11.438+02:00
+6,10.215.173.1,39076,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:11.715+02:00,2025-08-18T17:59:11.718+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.077+02:00,2025-08-18T17:59:12.077+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.089+02:00,2025-08-18T17:59:12.089+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.974+02:00,2025-08-18T17:59:12.974+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.981+02:00,2025-08-18T17:59:12.981+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.990+02:00,2025-08-18T17:59:12.990+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:12.995+02:00,2025-08-18T17:59:12.995+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.003+02:00,2025-08-18T17:59:13.003+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.009+02:00,2025-08-18T17:59:13.009+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.020+02:00,2025-08-18T17:59:13.020+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.025+02:00,2025-08-18T17:59:13.025+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.029+02:00,2025-08-18T17:59:13.029+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:13.032+02:00,2025-08-18T17:59:13.032+02:00
+6,10.215.173.1,45818,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:13.251+02:00,2025-08-18T17:59:13.254+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.139+02:00,2025-08-18T17:59:15.139+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.145+02:00,2025-08-18T17:59:15.145+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.148+02:00,2025-08-18T17:59:15.148+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.266+02:00,2025-08-18T17:59:15.266+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.269+02:00,2025-08-18T17:59:15.269+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:15.274+02:00,2025-08-18T17:59:15.274+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:16.459+02:00,2025-08-18T17:59:16.459+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:16.468+02:00,2025-08-18T17:59:16.468+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:16.767+02:00,2025-08-18T17:59:16.767+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:17.111+02:00,2025-08-18T17:59:17.111+02:00
+6,10.215.173.1,58506,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:17.132+02:00,2025-08-18T17:59:17.134+02:00
+17,10.215.173.1,52540,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:17.140+02:00,2025-08-18T17:59:17.140+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:17.161+02:00,2025-08-18T17:59:17.161+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:17.164+02:00,2025-08-18T17:59:17.164+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:17.235+02:00,2025-08-18T17:59:17.235+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:17.272+02:00,2025-08-18T17:59:17.272+02:00
+6,10.215.173.1,34682,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:17.386+02:00,2025-08-18T17:59:17.396+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:17.449+02:00,2025-08-18T17:59:17.449+02:00
+6,10.215.173.1,58506,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:18.147+02:00,2025-08-18T17:59:18.151+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:18.283+02:00,2025-08-18T17:59:18.283+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:18.291+02:00,2025-08-18T17:59:18.291+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:18.373+02:00,2025-08-18T17:59:18.385+02:00
+6,10.215.173.1,34682,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:18.406+02:00,2025-08-18T17:59:18.417+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:18.691+02:00,2025-08-18T17:59:18.691+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:18.694+02:00,2025-08-18T17:59:18.694+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:18.813+02:00,2025-08-18T17:59:18.813+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:19.498+02:00,2025-08-18T17:59:19.498+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:19.502+02:00,2025-08-18T17:59:19.502+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:19.578+02:00,2025-08-18T17:59:19.578+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:19.584+02:00,2025-08-18T17:59:19.584+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:20.078+02:00,2025-08-18T17:59:20.078+02:00
+17,10.215.173.1,52540,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:20.135+02:00,2025-08-18T17:59:20.135+02:00
+6,10.215.173.1,58506,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:20.163+02:00,2025-08-18T17:59:20.167+02:00
+6,10.215.173.1,34682,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:20.422+02:00,2025-08-18T17:59:20.428+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.214+02:00,2025-08-18T17:59:21.214+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.217+02:00,2025-08-18T17:59:21.217+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.279+02:00,2025-08-18T17:59:21.279+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.294+02:00,2025-08-18T17:59:21.294+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.303+02:00,2025-08-18T17:59:21.303+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.323+02:00,2025-08-18T17:59:21.323+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.328+02:00,2025-08-18T17:59:21.328+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:21.389+02:00,2025-08-18T17:59:21.389+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.405+02:00,2025-08-18T17:59:21.405+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.416+02:00,2025-08-18T17:59:21.416+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.424+02:00,2025-08-18T17:59:21.424+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.428+02:00,2025-08-18T17:59:21.428+02:00
+6,10.215.173.1,43104,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:21.433+02:00,2025-08-18T17:59:21.436+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.441+02:00,2025-08-18T17:59:21.441+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.450+02:00,2025-08-18T17:59:21.450+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.458+02:00,2025-08-18T17:59:21.458+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.465+02:00,2025-08-18T17:59:21.465+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.860+02:00,2025-08-18T17:59:21.860+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.867+02:00,2025-08-18T17:59:21.867+02:00
+17,10.215.173.1,56020,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:21.872+02:00,2025-08-18T17:59:21.872+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.878+02:00,2025-08-18T17:59:21.878+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.881+02:00,2025-08-18T17:59:21.881+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.885+02:00,2025-08-18T17:59:21.885+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.891+02:00,2025-08-18T17:59:21.891+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.897+02:00,2025-08-18T17:59:21.897+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:21.904+02:00,2025-08-18T17:59:21.904+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:22.002+02:00,2025-08-18T17:59:22.002+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:22.012+02:00,2025-08-18T17:59:22.012+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:22.158+02:00,2025-08-18T17:59:22.158+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:22.162+02:00,2025-08-18T17:59:22.162+02:00
+6,10.215.173.1,43104,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:22.436+02:00,2025-08-18T17:59:22.439+02:00
+17,10.215.173.1,50425,8.8.8.8,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:23.145+02:00,2025-08-18T17:59:23.145+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:23.424+02:00,2025-08-18T17:59:23.424+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:23.427+02:00,2025-08-18T17:59:23.427+02:00
+6,10.215.173.1,58506,185.60.217.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:24.258+02:00,2025-08-18T17:59:24.260+02:00
+6,10.215.173.1,43104,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:24.455+02:00,2025-08-18T17:59:24.458+02:00
+6,10.215.173.1,34682,185.60.217.175,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:24.516+02:00,2025-08-18T17:59:24.518+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:26.378+02:00,2025-08-18T17:59:26.378+02:00
+17,10.215.173.1,41056,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,i-fallback.instagram.com,0,0,0,0,2025-08-18T17:59:26.384+02:00,2025-08-18T17:59:26.384+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:26.474+02:00,2025-08-18T17:59:26.474+02:00
+6,10.215.173.1,35980,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:26.576+02:00,2025-08-18T17:59:26.578+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:26.674+02:00,2025-08-18T17:59:26.674+02:00
+17,10.215.173.1,56020,185.60.217.3,443,-1,Nieznany,unknown,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:26.770+02:00,2025-08-18T17:59:26.770+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:26.774+02:00,2025-08-18T17:59:26.774+02:00
+17,10.215.173.1,9416,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:26.777+02:00,2025-08-18T17:59:26.777+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:26.875+02:00,2025-08-18T17:59:26.875+02:00
+6,10.215.173.1,58890,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:26.977+02:00,2025-08-18T17:59:26.982+02:00
+17,10.215.173.1,59502,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:26.985+02:00,2025-08-18T17:59:26.985+02:00
+6,10.215.173.1,58894,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:26.994+02:00,2025-08-18T17:59:26.998+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:27.078+02:00,2025-08-18T17:59:27.078+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:27.087+02:00,2025-08-18T17:59:27.087+02:00
+6,10.215.173.1,33318,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:27.151+02:00,2025-08-18T17:59:27.158+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:27.478+02:00,2025-08-18T17:59:27.478+02:00
+6,10.215.173.1,35980,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:27.591+02:00,2025-08-18T17:59:27.598+02:00
+6,10.215.173.1,58898,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:27.786+02:00,2025-08-18T17:59:27.789+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:27.882+02:00,2025-08-18T17:59:27.882+02:00
+6,10.215.173.1,58890,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:28.004+02:00,2025-08-18T17:59:28.008+02:00
+6,10.215.173.1,58894,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:28.010+02:00,2025-08-18T17:59:28.013+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:28.156+02:00,2025-08-18T17:59:28.156+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:28.165+02:00,2025-08-18T17:59:28.165+02:00
+6,10.215.173.1,33318,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:28.175+02:00,2025-08-18T17:59:28.183+02:00
+17,10.215.173.1,47284,8.8.4.4,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:28.186+02:00,2025-08-18T17:59:28.186+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:28.276+02:00,2025-08-18T17:59:28.276+02:00
+6,10.215.173.1,43104,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:28.612+02:00,2025-08-18T17:59:28.618+02:00
+6,10.215.173.1,58898,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:28.810+02:00,2025-08-18T17:59:28.815+02:00
+17,10.215.173.1,41056,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,i-fallback.instagram.com,0,0,0,0,2025-08-18T17:59:29.386+02:00,2025-08-18T17:59:29.386+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:29.482+02:00,2025-08-18T17:59:29.482+02:00
+6,10.215.173.1,35980,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:29.606+02:00,2025-08-18T17:59:29.616+02:00
+17,10.215.173.1,9416,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:29.782+02:00,2025-08-18T17:59:29.782+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:29.875+02:00,2025-08-18T17:59:29.875+02:00
+17,10.215.173.1,59502,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:29.986+02:00,2025-08-18T17:59:29.986+02:00
+6,10.215.173.1,58890,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:30.022+02:00,2025-08-18T17:59:30.031+02:00
+6,10.215.173.1,58894,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:30.036+02:00,2025-08-18T17:59:30.043+02:00
+6,10.215.173.1,33318,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:30.184+02:00,2025-08-18T17:59:30.193+02:00
+6,10.215.173.1,58898,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:30.824+02:00,2025-08-18T17:59:30.833+02:00
+17,10.215.173.1,59615,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,i-fallback.instagram.com,0,0,0,0,2025-08-18T17:59:32.394+02:00,2025-08-18T17:59:32.394+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:32.680+02:00,2025-08-18T17:59:32.680+02:00
+17,10.215.173.1,47070,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:32.787+02:00,2025-08-18T17:59:32.787+02:00
+17,10.215.173.1,56545,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:32.797+02:00,2025-08-18T17:59:32.797+02:00
+17,10.215.173.1,41157,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:33.077+02:00,2025-08-18T17:59:33.077+02:00
+17,10.215.173.1,34263,8.8.8.8,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:33.214+02:00,2025-08-18T17:59:33.214+02:00
+6,10.215.173.1,35980,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:33.737+02:00,2025-08-18T17:59:33.751+02:00
+6,10.215.173.1,33318,185.60.217.175,80,10542,Instagram,com.instagram.android,HTTP,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,60,40,1,1,2025-08-18T17:59:34.250+02:00,2025-08-18T17:59:34.259+02:00
+6,10.215.173.1,58928,185.60.217.13,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,edge-mqtt.facebook.com,60,40,1,1,2025-08-18T17:59:34.502+02:00,2025-08-18T17:59:34.526+02:00
+17,10.215.173.1,59615,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,i-fallback.instagram.com,0,0,0,0,2025-08-18T17:59:35.394+02:00,2025-08-18T17:59:35.394+02:00
+17,10.215.173.1,56545,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:35.792+02:00,2025-08-18T17:59:35.792+02:00
+17,10.215.173.1,47070,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:35.805+02:00,2025-08-18T17:59:35.805+02:00
+6,10.215.173.1,43104,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:36.811+02:00,2025-08-18T17:59:36.824+02:00
+6,10.215.173.1,51002,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:37.006+02:00,2025-08-18T17:59:37.015+02:00
+17,10.215.173.1,6863,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,i-fallback.instagram.com,0,0,0,0,2025-08-18T17:59:37.017+02:00,2025-08-18T17:59:37.017+02:00
+17,10.215.173.1,60899,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:37.101+02:00,2025-08-18T17:59:37.101+02:00
+17,10.215.173.1,64956,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:37.121+02:00,2025-08-18T17:59:37.121+02:00
+17,10.215.173.1,60899,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:37.188+02:00,2025-08-18T17:59:37.188+02:00
+6,10.215.173.1,43048,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:37.289+02:00,2025-08-18T17:59:37.296+02:00
+6,10.215.173.1,43062,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:37.301+02:00,2025-08-18T17:59:37.309+02:00
+6,10.215.173.1,43070,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:37.311+02:00,2025-08-18T17:59:37.315+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:37.368+02:00,2025-08-18T17:59:37.368+02:00
+17,10.215.173.1,39411,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:37.379+02:00,2025-08-18T17:59:37.379+02:00
+17,10.215.173.1,60899,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:37.387+02:00,2025-08-18T17:59:37.387+02:00
+17,10.215.173.1,60899,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:37.792+02:00,2025-08-18T17:59:37.792+02:00
+6,10.215.173.1,51002,157.240.210.63,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:38.022+02:00,2025-08-18T17:59:38.035+02:00
+17,10.215.173.1,57920,8.8.4.4,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig.facebook.com,0,0,0,0,2025-08-18T17:59:38.247+02:00,2025-08-18T17:59:38.247+02:00
+6,10.215.173.1,43070,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:38.309+02:00,2025-08-18T17:59:38.322+02:00
+6,10.215.173.1,43062,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:38.323+02:00,2025-08-18T17:59:38.325+02:00
+6,10.215.173.1,43048,185.60.217.3,443,10542,Instagram,com.instagram.android,TLS,Nieosiągalny,gateway.instagram.com,60,40,1,1,2025-08-18T17:59:38.327+02:00,2025-08-18T17:59:38.330+02:00
+17,10.215.173.1,60899,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:38.583+02:00,2025-08-18T17:59:38.583+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:38.664+02:00,2025-08-18T17:59:38.664+02:00
+17,10.215.173.1,53304,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:38.666+02:00,2025-08-18T17:59:38.666+02:00
+17,10.215.173.1,19210,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:38.792+02:00,2025-08-18T17:59:38.792+02:00
+17,10.215.173.1,20156,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,gateway.instagram.com,0,0,0,0,2025-08-18T17:59:38.798+02:00,2025-08-18T17:59:38.798+02:00
+17,10.215.173.1,46207,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,,0,0,0,0,2025-08-18T17:59:39.077+02:00,2025-08-18T17:59:39.077+02:00
+6,10.215.173.1,43482,157.240.210.175,5222,10542,Instagram,com.instagram.android,TCP,Nieosiągalny,,60,40,1,1,2025-08-18T17:59:39.519+02:00,2025-08-18T17:59:39.523+02:00
+17,10.215.173.1,32381,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Nieosiągalny,z-p42-chat-e2ee-ig-fallback.facebook.com,0,0,0,0,2025-08-18T17:59:39.525+02:00,2025-08-18T17:59:39.525+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:39.645+02:00,2025-08-18T17:59:39.645+02:00
+17,10.215.173.1,51618,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Nieosiągalny,graph.instagram.com,0,0,0,0,2025-08-18T17:59:39.648+02:00,2025-08-18T17:59:39.648+02:00
+6,10.215.173.1,35626,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:51.543+02:00,2025-08-18T17:59:51.551+02:00
+6,10.215.173.1,35626,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:52.554+02:00,2025-08-18T17:59:52.567+02:00
+6,10.215.173.1,35626,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:54.571+02:00,2025-08-18T17:59:54.584+02:00
+6,10.215.173.1,35626,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T17:59:58.826+02:00,2025-08-18T17:59:58.845+02:00
+6,10.215.173.1,35626,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:07.017+02:00,2025-08-18T18:00:07.025+02:00
+6,10.215.173.1,58464,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:31.675+02:00,2025-08-18T18:00:31.679+02:00
+6,10.215.173.1,58464,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:32.709+02:00,2025-08-18T18:00:32.720+02:00
+6,10.215.173.1,58464,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:34.728+02:00,2025-08-18T18:00:34.740+02:00
+6,10.215.173.1,58464,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:38.757+02:00,2025-08-18T18:00:38.764+02:00
+6,10.215.173.1,58464,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-18T18:00:46.947+02:00,2025-08-18T18:00:46.950+02:00
+17,10.215.173.1,24529,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-18T18:01:31.812+02:00,2025-08-18T18:01:31.812+02:00
+17,10.215.173.1,24529,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-18T18:01:34.820+02:00,2025-08-18T18:01:34.820+02:00
+17,10.215.173.1,42072,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Nieosiągalny,api.weather.com,0,0,0,0,2025-08-18T18:02:46.294+02:00,2025-08-18T18:02:46.294+02:00
+17,10.215.173.1,42072,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Nieosiągalny,api.weather.com,0,0,0,0,2025-08-18T18:02:49.296+02:00,2025-08-18T18:02:49.296+02:00
+17,10.215.173.1,21237,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Nieosiągalny,api.weather.com,0,0,0,0,2025-08-18T18:02:52.296+02:00,2025-08-18T18:02:52.296+02:00
+17,10.215.173.1,21237,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Nieosiągalny,api.weather.com,0,0,0,0,2025-08-18T18:02:55.301+02:00,2025-08-18T18:02:55.301+02:00
+17,10.215.173.1,38064,10.215.173.2,53,10186,Samsung News,com.samsung.android.app.spage,DNS,Nieosiągalny,api.mop.apps.samsung.com,0,0,0,0,2025-08-18T18:02:55.933+02:00,2025-08-18T18:02:55.933+02:00
+17,10.215.173.1,12814,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-18T18:02:57.882+02:00,2025-08-18T18:02:57.882+02:00
+17,10.215.173.1,12814,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-18T18:03:00.888+02:00,2025-08-18T18:03:00.888+02:00
+17,10.215.173.1,29805,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:01.660+02:00,2025-08-18T18:03:01.660+02:00
+17,10.215.173.1,29805,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:04.664+02:00,2025-08-18T18:03:04.664+02:00
+17,10.215.173.1,62443,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:07.675+02:00,2025-08-18T18:03:07.675+02:00
+17,10.215.173.1,62443,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:10.682+02:00,2025-08-18T18:03:10.682+02:00
+17,10.215.173.1,29200,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:13.680+02:00,2025-08-18T18:03:13.680+02:00
+17,10.215.173.1,26441,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:13.685+02:00,2025-08-18T18:03:13.685+02:00
+17,10.215.173.1,29200,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:16.686+02:00,2025-08-18T18:03:16.686+02:00
+17,10.215.173.1,26441,10.215.173.2,53,10432,LinkedIn,com.linkedin.android,DNS,Nieosiągalny,www.linkedin.com,0,0,0,0,2025-08-18T18:03:16.725+02:00,2025-08-18T18:03:16.725+02:00
+17,10.215.173.1,40695,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-18T18:03:16.868+02:00,2025-08-18T18:03:16.915+02:00
+17,10.215.173.1,55228,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:03:16.883+02:00,2025-08-18T18:03:16.949+02:00
+6,10.215.173.1,57202,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1838,10106,14,14,2025-08-18T18:03:16.932+02:00,2025-08-18T18:04:30.466+02:00
+6,10.215.173.1,52628,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7228,10,10,2025-08-18T18:03:16.974+02:00,2025-08-18T18:03:17.421+02:00
+17,10.215.173.1,33415,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,spot-pa.googleapis.com,68,324,1,1,2025-08-18T18:03:17.043+02:00,2025-08-18T18:03:17.151+02:00
+17,10.215.173.1,35992,142.250.185.74,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,spot-pa.googleapis.com,5777,7289,12,14,2025-08-18T18:03:17.265+02:00,2025-08-18T18:03:17.846+02:00
+6,10.215.173.1,39296,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:03:17.376+02:00,2025-08-18T18:04:20.241+02:00
+17,10.215.173.1,11542,10.215.173.2,53,10051,Fun Run 4,com.dirtybit.fire,DNS,Zamknij,firebasestorage.googleapis.com,76,332,1,1,2025-08-18T18:03:18.242+02:00,2025-08-18T18:03:18.295+02:00
+6,10.215.173.1,58572,142.250.185.202,443,10051,Fun Run 4,com.dirtybit.fire,HTTPS,Zamknij,firebasestorage.googleapis.com,4065,175557,79,78,2025-08-18T18:03:18.303+02:00,2025-08-18T18:03:38.147+02:00
+17,10.215.173.1,24250,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-18T18:03:18.310+02:00,2025-08-18T18:03:18.341+02:00
+6,10.215.173.1,45816,157.240.252.37,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,3387,4936,28,22,2025-08-18T18:03:18.345+02:00,2025-08-18T18:09:20.101+02:00
+17,10.215.173.1,48884,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:04:21.700+02:00,2025-08-18T18:04:21.747+02:00
+6,10.215.173.1,40284,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7227,10,10,2025-08-18T18:04:21.775+02:00,2025-08-18T18:04:22.103+02:00
+6,10.215.173.1,34010,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:04:22.062+02:00,2025-08-18T18:05:26.111+02:00
+6,10.215.173.1,38732,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1435,7590,8,8,2025-08-18T18:04:36.508+02:00,2025-08-18T18:05:36.326+02:00
+17,10.215.173.1,23217,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-18T18:05:19.489+02:00,2025-08-18T18:05:19.533+02:00
+6,10.215.173.1,36886,185.60.217.63,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,i.instagram.com,596,420,5,5,2025-08-18T18:05:19.494+02:00,2025-08-18T18:05:19.550+02:00
+17,10.215.173.1,5682,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-18T18:05:19.499+02:00,2025-08-18T18:05:19.532+02:00
+17,10.215.173.1,48297,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.instagram.com,10992,18306,31,40,2025-08-18T18:05:19.501+02:00,2025-08-18T18:05:24.545+02:00
+6,10.215.173.1,36834,185.60.217.13,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,edge-mqtt.facebook.com,2780,1043,11,11,2025-08-18T18:05:21.601+02:00,2025-08-18T18:06:21.732+02:00
+17,10.215.173.1,15048,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-18T18:05:21.607+02:00,2025-08-18T18:05:21.649+02:00
+17,10.215.173.1,53732,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-18T18:05:21.613+02:00,2025-08-18T18:05:21.653+02:00
+17,10.215.173.1,47568,185.60.217.3,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,gateway.instagram.com,5913,3898,24,26,2025-08-18T18:05:21.615+02:00,2025-08-18T18:06:14.679+02:00
+17,10.215.173.1,59900,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:05:27.427+02:00,2025-08-18T18:05:27.463+02:00
+6,10.215.173.1,39700,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7226,10,10,2025-08-18T18:05:27.479+02:00,2025-08-18T18:05:27.838+02:00
+6,10.215.173.1,39722,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:05:27.795+02:00,2025-08-18T18:06:31.781+02:00
+17,10.215.173.1,37197,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-18T18:05:34.281+02:00,2025-08-18T18:05:34.347+02:00
+17,10.215.173.1,51421,185.60.217.20,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.facebook.com,8496,2969,12,10,2025-08-18T18:05:34.286+02:00,2025-08-18T18:05:34.568+02:00
+6,10.215.173.1,35384,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1402,7629,9,9,2025-08-18T18:05:49.358+02:00,2025-08-18T18:06:52.074+02:00
+17,10.215.173.1,48297,185.60.217.63,443,10542,Instagram,com.instagram.android,UDP,Zamknij,graph.instagram.com,163,66,2,1,2025-08-18T18:06:15.578+02:00,2025-08-18T18:06:15.679+02:00
+17,10.215.173.1,1370,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-18T18:06:19.384+02:00,2025-08-18T18:06:19.423+02:00
+17,10.215.173.1,36228,157.240.0.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,3569,8059,8,13,2025-08-18T18:06:19.390+02:00,2025-08-18T18:06:19.723+02:00
+6,10.215.173.1,50580,157.240.253.17,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,edge-mqtt.facebook.com,4718,4031,13,10,2025-08-18T18:06:21.770+02:00,2025-08-18T18:06:36.518+02:00
+17,10.215.173.1,48568,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-18T18:06:21.777+02:00,2025-08-18T18:06:21.825+02:00
+17,10.215.173.1,26393,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,graph.instagram.com,65,110,1,1,2025-08-18T18:06:22.396+02:00,2025-08-18T18:06:22.442+02:00
+17,10.215.173.1,44278,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.instagram.com,60112,3898,54,18,2025-08-18T18:06:22.409+02:00,2025-08-18T18:06:22.789+02:00
+17,10.215.173.1,51421,185.60.217.20,443,10542,Instagram,com.instagram.android,UDP,Zamknij,graph.facebook.com,163,66,2,1,2025-08-18T18:06:25.576+02:00,2025-08-18T18:06:25.756+02:00
+17,10.215.173.1,42741,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:06:33.134+02:00,2025-08-18T18:06:33.174+02:00
+6,10.215.173.1,56344,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1329,7228,10,10,2025-08-18T18:06:33.208+02:00,2025-08-18T18:06:33.544+02:00
+6,10.215.173.1,33802,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:06:33.502+02:00,2025-08-18T18:07:37.231+02:00
+6,10.215.173.1,36216,108.177.15.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1362,7590,8,8,2025-08-18T18:07:02.113+02:00,2025-08-18T18:08:02.457+02:00
+17,10.215.173.1,53013,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:07:38.327+02:00,2025-08-18T18:07:38.371+02:00
+6,10.215.173.1,43314,52.48.27.121,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7268,11,11,2025-08-18T18:07:38.406+02:00,2025-08-18T18:07:38.778+02:00
+6,10.215.173.1,50636,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:07:38.728+02:00,2025-08-18T18:08:42.800+02:00
+17,10.215.173.1,6992,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-18T18:08:08.493+02:00,2025-08-18T18:08:08.530+02:00
+6,10.215.173.1,58718,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1357,1184,8,8,2025-08-18T18:08:08.539+02:00,2025-08-18T18:09:07.945+02:00
+17,10.215.173.1,9644,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:08:44.073+02:00,2025-08-18T18:08:44.107+02:00
+6,10.215.173.1,38152,46.137.163.97,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-18T18:08:44.121+02:00,2025-08-18T18:08:44.492+02:00
+6,10.215.173.1,40304,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,752,4,4,2025-08-18T18:08:44.436+02:00,2025-08-18T18:09:48.313+02:00
+17,10.215.173.1,31900,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,googleads.g.doubleclick.net,73,89,1,1,2025-08-18T18:09:01.613+02:00,2025-08-18T18:09:01.779+02:00
+17,10.215.173.1,45927,142.250.185.226,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,googleads.g.doubleclick.net,5600,11225,16,19,2025-08-18T18:09:01.808+02:00,2025-08-18T18:09:02.678+02:00
+6,10.215.173.1,41004,142.250.185.226,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Zamknij,googleads.g.doubleclick.net,2183,5579,8,7,2025-08-18T18:09:01.813+02:00,2025-08-18T18:09:17.437+02:00
+6,10.215.173.1,40958,66.102.1.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1357,1144,8,7,2025-08-18T18:09:19.997+02:00,2025-08-18T18:09:20.192+02:00
+17,10.215.173.1,52325,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-18T18:09:49.779+02:00,2025-08-18T18:09:49.835+02:00
+6,10.215.173.1,53288,54.155.148.19,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7268,11,11,2025-08-18T18:09:49.855+02:00,2025-08-18T18:09:50.173+02:00
+6,10.215.173.1,42904,99.81.66.188,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,712,4,3,2025-08-18T18:09:50.136+02:00,2025-08-18T18:09:50.279+02:00
+17,10.215.173.1,60776,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i.instagram.com,61,106,1,1,2025-08-18T18:10:09.903+02:00,2025-08-18T18:10:10.036+02:00
+17,10.215.173.1,49586,157.240.251.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,i.instagram.com,34001,316993,80,312,2025-08-18T18:10:09.906+02:00,2025-08-18T18:10:14.307+02:00
+17,10.215.173.1,44307,185.60.217.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,graph.instagram.com,5601,335253,20,275,2025-08-18T18:10:13.233+02:00,2025-08-18T18:10:13.463+02:00
+17,10.215.173.1,33852,157.240.251.11,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,gateway.instagram.com,8432,7391,20,27,2025-08-18T18:10:14.089+02:00,2025-08-18T18:10:14.601+02:00
+17,10.215.173.1,24168,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,gateway.instagram.com,67,115,1,1,2025-08-18T18:10:14.092+02:00,2025-08-18T18:10:14.149+02:00

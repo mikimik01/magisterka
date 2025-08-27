@@ -1,0 +1,1 @@
+curl -L -sS "https://reports.exodus-privacy.eu.org/pl/reports/com.voronoi.organization.app/latest/" -o exodus.txt

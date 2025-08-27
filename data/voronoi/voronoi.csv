@@ -1,0 +1,681 @@
+IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen
+17,10.215.173.1,50850,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T14:31:41.552+02:00,2025-08-24T14:31:41.581+02:00
+6,10.215.173.1,35670,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1365,1184,8,8,2025-08-24T14:31:41.591+02:00,2025-08-24T14:32:42.181+02:00
+17,10.215.173.1,10125,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:31:41.627+02:00,2025-08-24T14:31:41.659+02:00
+6,10.215.173.1,51164,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7269,11,11,2025-08-24T14:31:41.676+02:00,2025-08-24T14:31:42.018+02:00
+6,10.215.173.1,57166,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:31:41.960+02:00,2025-08-24T14:32:42.181+02:00
+6,10.215.173.1,50008,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,,2892,779,14,12,2025-08-24T14:31:42.643+02:00,2025-08-24T14:32:52.460+02:00
+17,10.215.173.1,45492,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-24T14:31:42.965+02:00,2025-08-24T14:31:42.991+02:00
+6,10.215.173.1,33398,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2929,4450,19,15,2025-08-24T14:31:42.996+02:00,2025-08-24T14:33:27.288+02:00
+17,10.52.216.201,35531,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T14:31:44.465+02:00,2025-08-24T14:31:44.505+02:00
+17,10.215.173.1,5096,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firebase-settings.crashlytics.com,79,95,1,1,2025-08-24T14:31:51.052+02:00,2025-08-24T14:31:51.082+02:00
+17,10.215.173.1,1927,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firebaseinstallations.googleapis.com,82,242,1,1,2025-08-24T14:31:51.062+02:00,2025-08-24T14:31:51.083+02:00
+6,10.215.173.1,34900,142.250.203.131,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,firebase-settings.crashlytics.com,2443,6455,11,10,2025-08-24T14:31:51.085+02:00,2025-08-24T14:32:06.413+02:00
+6,10.215.173.1,39466,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,firebaseinstallations.googleapis.com,1777,5077,10,9,2025-08-24T14:31:51.087+02:00,2025-08-24T14:32:06.420+02:00
+17,10.215.173.1,27620,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,fonts.gstatic.com,63,79,1,1,2025-08-24T14:31:51.451+02:00,2025-08-24T14:31:51.484+02:00
+17,10.215.173.1,30873,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,fonts.gstatic.com,63,91,1,1,2025-08-24T14:31:51.472+02:00,2025-08-24T14:31:51.490+02:00
+6,10.215.173.1,44036,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1130,27094,15,13,2025-08-24T14:31:51.498+02:00,2025-08-24T14:32:06.411+02:00
+6,10.215.173.1,44046,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1170,26767,16,15,2025-08-24T14:31:51.509+02:00,2025-08-24T14:32:06.411+02:00
+6,10.215.173.1,44058,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1250,27242,18,17,2025-08-24T14:31:51.514+02:00,2025-08-24T14:32:06.412+02:00
+6,10.215.173.1,44062,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,3290,169374,69,68,2025-08-24T14:31:51.528+02:00,2025-08-24T14:32:06.411+02:00
+6,10.215.173.1,44070,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,3090,157713,64,63,2025-08-24T14:31:51.536+02:00,2025-08-24T14:32:06.411+02:00
+6,10.215.173.1,44072,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,3130,168705,65,64,2025-08-24T14:31:51.538+02:00,2025-08-24T14:32:06.410+02:00
+6,10.215.173.1,44078,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1530,58743,25,24,2025-08-24T14:31:51.542+02:00,2025-08-24T14:32:06.410+02:00
+6,10.215.173.1,44086,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,2890,164946,59,58,2025-08-24T14:31:51.548+02:00,2025-08-24T14:32:06.410+02:00
+6,10.215.173.1,44092,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1450,57428,23,22,2025-08-24T14:31:51.550+02:00,2025-08-24T14:32:06.412+02:00
+6,10.215.173.1,44094,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1130,27134,15,14,2025-08-24T14:31:51.552+02:00,2025-08-24T14:32:06.410+02:00
+6,10.215.173.1,44098,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,1090,27079,14,13,2025-08-24T14:31:51.555+02:00,2025-08-24T14:32:06.410+02:00
+6,10.215.173.1,44108,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,2930,167059,60,58,2025-08-24T14:31:51.573+02:00,2025-08-24T14:32:06.409+02:00
+6,10.215.173.1,44112,216.58.209.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,fonts.gstatic.com,2970,168402,61,60,2025-08-24T14:31:51.576+02:00,2025-08-24T14:32:06.412+02:00
+17,10.215.173.1,26342,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,api.voronoiapp.com,64,112,1,1,2025-08-24T14:31:51.580+02:00,2025-08-24T14:31:51.619+02:00
+17,10.215.173.1,18295,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,api.voronoiapp.com,64,141,1,1,2025-08-24T14:31:51.589+02:00,2025-08-24T14:31:51.792+02:00
+6,10.215.173.1,50890,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,896,5758,10,10,2025-08-24T14:31:51.621+02:00,2025-08-24T14:31:55.191+02:00
+17,10.215.173.1,12924,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,android.apis.google.com,69,109,1,1,2025-08-24T14:31:51.633+02:00,2025-08-24T14:31:51.649+02:00
+17,10.215.173.1,43524,216.58.208.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,android.apis.google.com,9989,7864,23,24,2025-08-24T14:31:51.653+02:00,2025-08-24T14:32:25.816+02:00
+6,10.215.173.1,50904,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:31:52.197+02:00,2025-08-24T14:31:52.334+02:00
+6,10.215.173.1,48610,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,1061,24341,14,13,2025-08-24T14:31:52.206+02:00,2025-08-24T14:31:55.896+02:00
+6,10.215.173.1,50906,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,1338,5325,12,11,2025-08-24T14:31:52.807+02:00,2025-08-24T14:31:56.350+02:00
+6,10.215.173.1,48626,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:31:52.826+02:00,2025-08-24T14:31:52.950+02:00
+17,10.215.173.1,44556,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,128,1,1,2025-08-24T14:31:52.844+02:00,2025-08-24T14:31:52.890+02:00
+17,10.215.173.1,21391,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,141,1,1,2025-08-24T14:31:52.855+02:00,2025-08-24T14:31:53.062+02:00
+6,10.215.173.1,45974,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,847,6087,9,9,2025-08-24T14:31:52.898+02:00,2025-08-24T14:31:53.064+02:00
+6,10.215.173.1,45988,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,927,6135,11,11,2025-08-24T14:31:53.049+02:00,2025-08-24T14:31:53.191+02:00
+6,10.215.173.1,55144,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.068+02:00,2025-08-24T14:31:53.095+02:00
+6,10.215.173.1,45990,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,928,6285,11,10,2025-08-24T14:31:53.169+02:00,2025-08-24T14:31:53.305+02:00
+6,10.215.173.1,55148,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.180+02:00,2025-08-24T14:31:53.211+02:00
+6,10.215.173.1,45998,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,849,6211,9,9,2025-08-24T14:31:53.272+02:00,2025-08-24T14:31:53.414+02:00
+6,10.215.173.1,55152,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.286+02:00,2025-08-24T14:31:53.320+02:00
+6,10.215.173.1,46010,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,845,6413,9,9,2025-08-24T14:31:53.392+02:00,2025-08-24T14:31:53.529+02:00
+6,10.215.173.1,55168,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.400+02:00,2025-08-24T14:31:53.429+02:00
+6,10.215.173.1,46022,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,930,7757,11,10,2025-08-24T14:31:53.504+02:00,2025-08-24T14:31:53.645+02:00
+6,10.215.173.1,55172,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.515+02:00,2025-08-24T14:31:53.541+02:00
+6,10.215.173.1,46026,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,846,6635,9,8,2025-08-24T14:31:53.624+02:00,2025-08-24T14:31:53.765+02:00
+6,10.215.173.1,55186,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.637+02:00,2025-08-24T14:31:53.667+02:00
+6,10.215.173.1,46042,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,925,6250,11,11,2025-08-24T14:31:53.741+02:00,2025-08-24T14:31:53.891+02:00
+6,10.215.173.1,55194,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.753+02:00,2025-08-24T14:31:53.780+02:00
+6,10.215.173.1,35368,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,845,6261,9,8,2025-08-24T14:31:53.870+02:00,2025-08-24T14:31:54.023+02:00
+6,10.215.173.1,39856,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:53.879+02:00,2025-08-24T14:31:53.911+02:00
+6,10.215.173.1,35372,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,890,6287,10,10,2025-08-24T14:31:54.001+02:00,2025-08-24T14:31:54.151+02:00
+6,10.215.173.1,39868,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.015+02:00,2025-08-24T14:31:54.045+02:00
+6,10.215.173.1,35384,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,886,7323,10,10,2025-08-24T14:31:54.123+02:00,2025-08-24T14:31:54.257+02:00
+6,10.215.173.1,39870,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.134+02:00,2025-08-24T14:31:54.162+02:00
+6,10.215.173.1,35390,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,971,7144,12,11,2025-08-24T14:31:54.233+02:00,2025-08-24T14:31:54.364+02:00
+6,10.215.173.1,39880,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.245+02:00,2025-08-24T14:31:54.281+02:00
+17,10.215.173.1,43859,185.60.217.3,443,10303,Messenger,com.facebook.orca,UDP,Zamknij,,640,1644,8,9,2025-08-24T14:31:54.327+02:00,2025-08-24T14:32:50.208+02:00
+6,10.215.173.1,35404,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,848,6265,9,9,2025-08-24T14:31:54.342+02:00,2025-08-24T14:31:54.480+02:00
+6,10.215.173.1,39890,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.355+02:00,2025-08-24T14:31:54.382+02:00
+6,10.215.173.1,35412,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,887,6150,10,9,2025-08-24T14:31:54.459+02:00,2025-08-24T14:31:54.610+02:00
+6,10.215.173.1,39900,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.469+02:00,2025-08-24T14:31:54.498+02:00
+6,10.215.173.1,35418,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,930,6418,11,11,2025-08-24T14:31:54.578+02:00,2025-08-24T14:31:54.729+02:00
+6,10.215.173.1,39906,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.589+02:00,2025-08-24T14:31:54.618+02:00
+6,10.215.173.1,35430,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,894,6253,10,10,2025-08-24T14:31:54.698+02:00,2025-08-24T14:31:54.829+02:00
+6,10.215.173.1,39914,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.712+02:00,2025-08-24T14:31:54.739+02:00
+6,10.215.173.1,35446,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,884,6520,10,10,2025-08-24T14:31:54.807+02:00,2025-08-24T14:31:54.934+02:00
+6,10.215.173.1,39930,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.818+02:00,2025-08-24T14:31:54.846+02:00
+6,10.215.173.1,35448,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,891,6162,10,10,2025-08-24T14:31:54.912+02:00,2025-08-24T14:31:55.057+02:00
+6,10.215.173.1,39932,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:54.925+02:00,2025-08-24T14:31:54.954+02:00
+6,10.215.173.1,35458,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,933,6966,11,10,2025-08-24T14:31:55.031+02:00,2025-08-24T14:31:55.163+02:00
+6,10.215.173.1,39940,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.041+02:00,2025-08-24T14:31:55.070+02:00
+6,10.215.173.1,35462,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,937,6522,11,11,2025-08-24T14:31:55.142+02:00,2025-08-24T14:31:55.277+02:00
+6,10.215.173.1,39954,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.155+02:00,2025-08-24T14:31:55.183+02:00
+6,10.215.173.1,35468,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,885,6300,10,10,2025-08-24T14:31:55.256+02:00,2025-08-24T14:31:55.418+02:00
+6,10.215.173.1,39970,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.271+02:00,2025-08-24T14:31:55.310+02:00
+6,10.215.173.1,35472,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,926,6439,11,11,2025-08-24T14:31:55.399+02:00,2025-08-24T14:31:55.551+02:00
+6,10.215.173.1,39978,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.409+02:00,2025-08-24T14:31:55.440+02:00
+6,10.215.173.1,35484,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,924,6386,11,10,2025-08-24T14:31:55.529+02:00,2025-08-24T14:31:55.684+02:00
+6,10.215.173.1,39986,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.542+02:00,2025-08-24T14:31:55.571+02:00
+6,10.215.173.1,35498,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,927,6739,11,10,2025-08-24T14:31:55.665+02:00,2025-08-24T14:31:55.819+02:00
+6,10.215.173.1,40002,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.678+02:00,2025-08-24T14:31:55.710+02:00
+6,10.215.173.1,35504,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,891,6178,10,10,2025-08-24T14:31:55.797+02:00,2025-08-24T14:31:55.945+02:00
+6,10.215.173.1,40004,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.811+02:00,2025-08-24T14:31:55.844+02:00
+6,10.215.173.1,35514,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,844,6020,9,8,2025-08-24T14:31:55.928+02:00,2025-08-24T14:31:56.075+02:00
+6,10.215.173.1,40020,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:55.939+02:00,2025-08-24T14:31:55.968+02:00
+6,10.215.173.1,35528,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,889,6314,10,10,2025-08-24T14:31:56.051+02:00,2025-08-24T14:31:56.198+02:00
+6,10.215.173.1,40036,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.058+02:00,2025-08-24T14:31:56.089+02:00
+6,10.215.173.1,35542,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,888,6428,10,10,2025-08-24T14:31:56.178+02:00,2025-08-24T14:31:56.350+02:00
+6,10.215.173.1,40048,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,140,128,3,3,2025-08-24T14:31:56.189+02:00,2025-08-24T14:31:56.249+02:00
+6,10.215.173.1,35554,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,854,6007,9,8,2025-08-24T14:31:56.327+02:00,2025-08-24T14:31:56.483+02:00
+6,10.215.173.1,40060,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.340+02:00,2025-08-24T14:31:56.369+02:00
+6,10.215.173.1,35562,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,889,6218,10,10,2025-08-24T14:31:56.463+02:00,2025-08-24T14:31:56.600+02:00
+6,10.215.173.1,40076,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.476+02:00,2025-08-24T14:31:56.510+02:00
+6,10.215.173.1,35578,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,931,6043,11,11,2025-08-24T14:31:56.576+02:00,2025-08-24T14:31:56.718+02:00
+6,10.215.173.1,40078,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.589+02:00,2025-08-24T14:31:56.620+02:00
+6,10.215.173.1,35582,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,889,6225,10,9,2025-08-24T14:31:56.702+02:00,2025-08-24T14:31:56.851+02:00
+6,10.215.173.1,40084,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.714+02:00,2025-08-24T14:31:56.747+02:00
+6,10.215.173.1,35590,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,885,5903,10,10,2025-08-24T14:31:56.830+02:00,2025-08-24T14:31:56.969+02:00
+6,10.215.173.1,40096,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.841+02:00,2025-08-24T14:31:56.870+02:00
+6,10.215.173.1,35604,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,893,6543,10,10,2025-08-24T14:31:56.947+02:00,2025-08-24T14:31:57.091+02:00
+6,10.215.173.1,40112,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:56.956+02:00,2025-08-24T14:31:56.993+02:00
+6,10.215.173.1,35612,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,886,6224,10,9,2025-08-24T14:31:57.068+02:00,2025-08-24T14:31:57.221+02:00
+6,10.215.173.1,40114,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.080+02:00,2025-08-24T14:31:57.111+02:00
+6,10.215.173.1,35624,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,884,6194,10,10,2025-08-24T14:31:57.195+02:00,2025-08-24T14:31:57.341+02:00
+6,10.215.173.1,40124,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.206+02:00,2025-08-24T14:31:57.234+02:00
+6,10.215.173.1,35626,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,894,6388,10,10,2025-08-24T14:31:57.315+02:00,2025-08-24T14:31:57.459+02:00
+6,10.215.173.1,40136,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.325+02:00,2025-08-24T14:31:57.354+02:00
+6,10.215.173.1,35638,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,894,6060,10,10,2025-08-24T14:31:57.434+02:00,2025-08-24T14:31:57.566+02:00
+6,10.215.173.1,40152,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.446+02:00,2025-08-24T14:31:57.474+02:00
+6,10.215.173.1,35652,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,928,6333,11,10,2025-08-24T14:31:57.541+02:00,2025-08-24T14:31:57.680+02:00
+6,10.215.173.1,40162,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.552+02:00,2025-08-24T14:31:57.580+02:00
+6,10.215.173.1,35668,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,891,6046,10,10,2025-08-24T14:31:57.655+02:00,2025-08-24T14:31:57.792+02:00
+6,10.215.173.1,40168,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.667+02:00,2025-08-24T14:31:57.696+02:00
+6,10.215.173.1,35676,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,925,6219,11,11,2025-08-24T14:31:57.762+02:00,2025-08-24T14:31:57.900+02:00
+6,10.215.173.1,40172,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.772+02:00,2025-08-24T14:31:57.799+02:00
+6,10.215.173.1,35680,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,926,6744,11,11,2025-08-24T14:31:57.875+02:00,2025-08-24T14:31:58.021+02:00
+6,10.215.173.1,40176,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:57.887+02:00,2025-08-24T14:31:57.915+02:00
+6,10.215.173.1,35694,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,886,6488,10,10,2025-08-24T14:31:57.994+02:00,2025-08-24T14:31:58.139+02:00
+6,10.215.173.1,40184,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:58.006+02:00,2025-08-24T14:31:58.034+02:00
+6,10.215.173.1,35706,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,887,6503,10,10,2025-08-24T14:31:58.114+02:00,2025-08-24T14:31:58.263+02:00
+6,10.215.173.1,40186,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:31:58.130+02:00,2025-08-24T14:31:58.159+02:00
+17,10.215.173.1,3610,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firebaseremoteconfig.googleapis.com,81,177,1,1,2025-08-24T14:31:58.281+02:00,2025-08-24T14:31:58.305+02:00
+17,10.215.173.1,49461,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,www.googleapis.com,64,192,1,1,2025-08-24T14:31:58.307+02:00,2025-08-24T14:31:58.329+02:00
+6,10.215.173.1,37008,142.250.203.202,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,firebaseremoteconfig.googleapis.com,2601,4815,9,8,2025-08-24T14:31:58.315+02:00,2025-08-24T14:32:06.421+02:00
+17,10.215.173.1,42377,216.58.215.106,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,www.googleapis.com,67258,8613,60,40,2025-08-24T14:31:58.338+02:00,2025-08-24T14:32:01.090+02:00
+17,10.215.173.1,48898,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T14:31:59.691+02:00,2025-08-24T14:31:59.712+02:00
+6,10.215.173.1,57636,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3900,2366,10,10,2025-08-24T14:31:59.718+02:00,2025-08-24T14:31:59.869+02:00
+17,10.215.173.1,30657,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,auth.voronoiapp.com,65,129,1,1,2025-08-24T14:32:00.918+02:00,2025-08-24T14:32:00.966+02:00
+17,10.215.173.1,54721,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,auth.voronoiapp.com,65,129,1,1,2025-08-24T14:32:01.055+02:00,2025-08-24T14:32:01.075+02:00
+17,10.215.173.1,23880,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,auth.voronoiapp.com,65,142,1,1,2025-08-24T14:32:01.062+02:00,2025-08-24T14:32:01.098+02:00
+6,10.215.173.1,40290,18.245.60.109,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,auth.voronoiapp.com,3274,7956,14,13,2025-08-24T14:32:01.095+02:00,2025-08-24T14:32:06.529+02:00
+6,10.215.173.1,40292,18.245.60.109,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,auth.voronoiapp.com,2269,5947,9,8,2025-08-24T14:32:01.207+02:00,2025-08-24T14:32:01.357+02:00
+17,10.215.173.1,4742,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,google-ohttp-relay-safebrowsing.fastly-edge.com,93,109,1,1,2025-08-24T14:32:01.353+02:00,2025-08-24T14:32:01.368+02:00
+17,10.215.173.1,36908,146.75.117.91,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,google-ohttp-relay-safebrowsing.fastly-edge.com,4126,4018,11,8,2025-08-24T14:32:01.383+02:00,2025-08-24T14:32:10.102+02:00
+6,10.215.173.1,33448,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,1065,5426,11,11,2025-08-24T14:32:01.418+02:00,2025-08-24T14:32:04.995+02:00
+6,10.215.173.1,36812,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:01.424+02:00,2025-08-24T14:32:01.556+02:00
+17,10.215.173.1,5989,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,region1.app-measurement.com,73,105,1,1,2025-08-24T14:32:01.628+02:00,2025-08-24T14:32:01.651+02:00
+17,10.215.173.1,44672,216.239.34.36,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,region1.app-measurement.com,5211,4954,10,13,2025-08-24T14:32:01.655+02:00,2025-08-24T14:32:01.811+02:00
+17,10.215.173.1,61723,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,accounts.google.com,65,81,1,1,2025-08-24T14:32:01.671+02:00,2025-08-24T14:32:01.688+02:00
+17,10.215.173.1,36487,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,accounts.google.com,65,115,1,1,2025-08-24T14:32:01.676+02:00,2025-08-24T14:32:01.693+02:00
+17,10.215.173.1,52056,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,safebrowsing.googleapis.com,73,89,1,1,2025-08-24T14:32:01.686+02:00,2025-08-24T14:32:01.703+02:00
+17,10.215.173.1,42942,142.251.9.84,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,accounts.google.com,30282,968627,161,818,2025-08-24T14:32:01.697+02:00,2025-08-24T14:32:06.071+02:00
+6,10.215.173.1,52246,142.251.9.84,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,accounts.google.com,2482,6797,11,10,2025-08-24T14:32:01.701+02:00,2025-08-24T14:32:06.547+02:00
+17,10.215.173.1,38661,142.250.203.138,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,safebrowsing.googleapis.com,5649,8773,10,11,2025-08-24T14:32:01.705+02:00,2025-08-24T14:32:01.837+02:00
+17,10.215.173.1,63697,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,app-measurement.com,65,81,1,1,2025-08-24T14:32:01.783+02:00,2025-08-24T14:32:01.796+02:00
+17,10.215.173.1,47888,142.250.203.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,app-measurement.com,3311,6075,9,13,2025-08-24T14:32:01.806+02:00,2025-08-24T14:32:01.893+02:00
+17,10.215.173.1,38547,216.239.34.36,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,region1.app-measurement.com,9134,7205,25,29,2025-08-24T14:32:01.919+02:00,2025-08-24T14:33:12.390+02:00
+17,10.215.173.1,26577,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,history.google.com,64,184,1,1,2025-08-24T14:32:02.094+02:00,2025-08-24T14:32:02.110+02:00
+17,10.215.173.1,27275,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,history.google.com,64,138,1,1,2025-08-24T14:32:02.097+02:00,2025-08-24T14:32:02.112+02:00
+17,10.215.173.1,33733,142.251.9.138,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,history.google.com,5473,10413,14,15,2025-08-24T14:32:02.114+02:00,2025-08-24T14:32:02.330+02:00
+6,10.215.173.1,52902,142.251.9.138,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,history.google.com,2238,9126,8,7,2025-08-24T14:32:02.184+02:00,2025-08-24T14:32:06.529+02:00
+17,10.215.173.1,8267,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,lh3.googleusercontent.com,71,116,1,1,2025-08-24T14:32:02.506+02:00,2025-08-24T14:32:02.542+02:00
+17,10.215.173.1,43445,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,lh3.googleusercontent.com,71,157,1,1,2025-08-24T14:32:02.513+02:00,2025-08-24T14:32:02.542+02:00
+17,10.215.173.1,56748,172.217.16.1,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,lh3.googleusercontent.com,6437,15401,24,27,2025-08-24T14:32:02.547+02:00,2025-08-24T14:32:06.152+02:00
+17,10.215.173.1,50063,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,ssl.gstatic.com,61,77,1,1,2025-08-24T14:32:02.579+02:00,2025-08-24T14:32:02.594+02:00
+17,10.215.173.1,63002,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,ssl.gstatic.com,61,118,1,1,2025-08-24T14:32:02.583+02:00,2025-08-24T14:32:02.599+02:00
+17,10.215.173.1,55531,142.250.186.195,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,ssl.gstatic.com,8047,61549,39,60,2025-08-24T14:32:02.606+02:00,2025-08-24T14:32:03.199+02:00
+6,10.215.173.1,50746,172.217.16.1,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,lh3.googleusercontent.com,2229,10579,10,10,2025-08-24T14:32:02.635+02:00,2025-08-24T14:32:06.514+02:00
+17,10.215.173.1,10420,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,accounts.youtube.com,66,110,1,1,2025-08-24T14:32:02.663+02:00,2025-08-24T14:32:02.694+02:00
+17,10.215.173.1,18390,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,accounts.youtube.com,66,144,1,1,2025-08-24T14:32:02.679+02:00,2025-08-24T14:32:02.695+02:00
+6,10.215.173.1,48558,142.250.186.195,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,ssl.gstatic.com,2251,5451,10,10,2025-08-24T14:32:02.685+02:00,2025-08-24T14:32:06.514+02:00
+6,10.215.173.1,55176,142.250.75.14,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,accounts.youtube.com,4206,21053,15,14,2025-08-24T14:32:02.698+02:00,2025-08-24T14:32:06.518+02:00
+17,10.215.173.1,54691,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,fonts.gstatic.com,63,79,1,1,2025-08-24T14:32:03.208+02:00,2025-08-24T14:32:03.249+02:00
+17,10.215.173.1,54375,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,fonts.gstatic.com,63,88,1,1,2025-08-24T14:32:03.222+02:00,2025-08-24T14:32:03.250+02:00
+17,10.215.173.1,33735,216.58.209.3,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,fonts.gstatic.com,4360,7611,10,10,2025-08-24T14:32:03.263+02:00,2025-08-24T14:32:03.421+02:00
+17,10.215.173.1,63903,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,www.google.com,60,76,1,1,2025-08-24T14:32:03.268+02:00,2025-08-24T14:32:03.295+02:00
+17,10.215.173.1,13746,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,www.google.com,60,85,1,1,2025-08-24T14:32:03.272+02:00,2025-08-24T14:32:03.295+02:00
+17,10.215.173.1,54782,142.250.186.196,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,www.google.com,6991,9786,14,16,2025-08-24T14:32:03.303+02:00,2025-08-24T14:32:03.494+02:00
+6,10.215.173.1,46060,142.250.186.196,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,www.google.com,2274,5422,9,8,2025-08-24T14:32:03.356+02:00,2025-08-24T14:32:06.515+02:00
+17,10.215.173.1,7454,10.215.173.2,53,10210,WhatsApp,com.whatsapp,DNS,Zamknij,g.whatsapp.net,60,99,1,1,2025-08-24T14:32:03.606+02:00,2025-08-24T14:32:03.632+02:00
+6,10.215.173.1,55396,185.60.217.54,443,10210,WhatsApp,com.whatsapp,TCP,Zamknij,g.whatsapp.net,2002,1798,23,22,2025-08-24T14:32:03.642+02:00,2025-08-24T14:32:25.143+02:00
+17,10.215.173.1,1053,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,play.google.com,61,77,1,1,2025-08-24T14:32:05.862+02:00,2025-08-24T14:32:05.922+02:00
+17,10.215.173.1,31981,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,play.google.com,61,111,1,1,2025-08-24T14:32:05.889+02:00,2025-08-24T14:32:05.923+02:00
+17,10.215.173.1,57877,216.58.208.206,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,play.google.com,16029,12689,22,20,2025-08-24T14:32:05.936+02:00,2025-08-24T14:32:06.241+02:00
+6,10.215.173.1,42968,216.58.208.206,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,play.google.com,2193,7309,8,7,2025-08-24T14:32:05.965+02:00,2025-08-24T14:32:06.514+02:00
+17,10.215.173.1,64385,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,www.gstatic.com,61,77,1,1,2025-08-24T14:32:05.985+02:00,2025-08-24T14:32:06.004+02:00
+17,10.215.173.1,59712,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,www.gstatic.com,61,118,1,1,2025-08-24T14:32:05.992+02:00,2025-08-24T14:32:06.017+02:00
+17,10.215.173.1,37612,142.250.203.195,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,www.gstatic.com,12473,391082,85,316,2025-08-24T14:32:06.024+02:00,2025-08-24T14:32:06.468+02:00
+6,10.215.173.1,49686,142.250.203.195,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,www.gstatic.com,2235,5370,8,8,2025-08-24T14:32:06.059+02:00,2025-08-24T14:32:06.518+02:00
+17,10.215.173.1,63774,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,clientservices.googleapis.com,75,91,1,1,2025-08-24T14:32:06.297+02:00,2025-08-24T14:32:06.326+02:00
+17,10.215.173.1,49068,10.215.173.2,53,10252,Chrome,com.android.chrome,DNS,Zamknij,clientservices.googleapis.com,75,132,1,1,2025-08-24T14:32:06.301+02:00,2025-08-24T14:32:06.327+02:00
+17,10.215.173.1,40837,142.250.186.195,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,clientservices.googleapis.com,4953,8311,14,14,2025-08-24T14:32:06.332+02:00,2025-08-24T14:32:06.547+02:00
+6,10.215.173.1,47506,142.250.186.195,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,clientservices.googleapis.com,2185,5732,8,7,2025-08-24T14:32:06.337+02:00,2025-08-24T14:32:06.518+02:00
+17,10.215.173.1,34707,142.250.203.195,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,www.gstatic.com,9713,17409,18,23,2025-08-24T14:32:06.530+02:00,2025-08-24T14:32:06.890+02:00
+17,10.215.173.1,38704,142.251.9.84,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,accounts.google.com,12829,12388,27,33,2025-08-24T14:32:06.789+02:00,2025-08-24T14:32:10.043+02:00
+17,10.215.173.1,35554,216.58.209.3,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,fonts.gstatic.com,4120,4142,7,7,2025-08-24T14:32:06.796+02:00,2025-08-24T14:32:06.906+02:00
+17,10.215.173.1,41552,216.58.208.206,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,play.google.com,3439,4529,8,9,2025-08-24T14:32:07.087+02:00,2025-08-24T14:32:07.235+02:00
+17,10.215.173.1,38370,216.58.208.206,443,10252,Chrome,com.android.chrome,QUIC,Zamknij,play.google.com,11710,8224,19,23,2025-08-24T14:32:07.190+02:00,2025-08-24T14:32:11.730+02:00
+6,10.215.173.1,41512,18.245.60.109,443,10252,Chrome,com.android.chrome,HTTPS,Zamknij,auth.voronoiapp.com,4457,3203,12,12,2025-08-24T14:32:10.012+02:00,2025-08-24T14:32:11.188+02:00
+6,10.215.173.1,56658,18.245.60.104,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,auth.voronoiapp.com,1238,10291,10,9,2025-08-24T14:32:11.230+02:00,2025-08-24T14:32:26.710+02:00
+17,10.215.173.1,38558,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,auth.voronoiapp.com,65,142,1,1,2025-08-24T14:32:11.273+02:00,2025-08-24T14:32:11.318+02:00
+6,10.215.173.1,39666,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,1065,5426,11,11,2025-08-24T14:32:11.281+02:00,2025-08-24T14:32:14.871+02:00
+6,10.215.173.1,39682,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,140,128,3,3,2025-08-24T14:32:11.285+02:00,2025-08-24T14:32:11.562+02:00
+6,10.215.173.1,59820,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,896,5758,10,10,2025-08-24T14:32:11.287+02:00,2025-08-24T14:32:14.861+02:00
+6,10.215.173.1,59828,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:11.289+02:00,2025-08-24T14:32:11.426+02:00
+17,10.215.173.1,60358,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,89,137,1,1,2025-08-24T14:32:11.693+02:00,2025-08-24T14:32:11.744+02:00
+17,10.215.173.1,8122,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,89,173,1,1,2025-08-24T14:32:11.703+02:00,2025-08-24T14:32:11.753+02:00
+6,10.215.173.1,41254,3.98.232.104,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,3178,5322,10,10,2025-08-24T14:32:11.747+02:00,2025-08-24T14:32:12.180+02:00
+6,10.215.173.1,36292,3.97.223.104,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,100,88,2,2,2025-08-24T14:32:11.756+02:00,2025-08-24T14:32:11.885+02:00
+6,10.215.173.1,41270,3.98.232.104,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,3194,6785,10,10,2025-08-24T14:32:12.186+02:00,2025-08-24T14:32:12.679+02:00
+6,10.215.173.1,36306,3.97.223.104,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cognito-identity.ca-central-1.amazonaws.com,100,88,2,2,2025-08-24T14:32:12.198+02:00,2025-08-24T14:32:12.334+02:00
+17,10.215.173.1,42510,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cognito-idp.ca-central-1.amazonaws.com,84,132,1,1,2025-08-24T14:32:12.727+02:00,2025-08-24T14:32:12.800+02:00
+17,10.215.173.1,24354,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cognito-idp.ca-central-1.amazonaws.com,84,168,1,1,2025-08-24T14:32:12.739+02:00,2025-08-24T14:32:12.795+02:00
+6,10.215.173.1,40182,52.60.133.80,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cognito-idp.ca-central-1.amazonaws.com,2524,5735,10,10,2025-08-24T14:32:12.806+02:00,2025-08-24T14:32:13.323+02:00
+6,10.215.173.1,47336,15.222.101.118,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cognito-idp.ca-central-1.amazonaws.com,100,88,2,2,2025-08-24T14:32:12.816+02:00,2025-08-24T14:32:12.956+02:00
+6,10.215.173.1,39686,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2711,5390,10,10,2025-08-24T14:32:13.358+02:00,2025-08-24T14:32:16.974+02:00
+6,10.215.173.1,39690,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2514,6112,10,10,2025-08-24T14:32:13.370+02:00,2025-08-24T14:32:17.043+02:00
+6,10.215.173.1,59840,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:13.378+02:00,2025-08-24T14:32:13.516+02:00
+6,10.215.173.1,59844,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:13.390+02:00,2025-08-24T14:32:13.517+02:00
+17,10.215.173.1,34918,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,crashlyticsreports-pa.googleapis.com,82,98,1,1,2025-08-24T14:32:16.129+02:00,2025-08-24T14:32:16.153+02:00
+6,10.215.173.1,37982,172.217.16.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,crashlyticsreports-pa.googleapis.com,6019,4793,7,7,2025-08-24T14:32:16.158+02:00,2025-08-24T14:33:17.643+02:00
+6,10.215.173.1,38498,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,4350,5953,12,12,2025-08-24T14:32:20.536+02:00,2025-08-24T14:32:27.102+02:00
+6,10.215.173.1,50322,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:20.548+02:00,2025-08-24T14:32:20.686+02:00
+6,10.215.173.1,60462,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2915,5430,11,11,2025-08-24T14:32:23.986+02:00,2025-08-24T14:32:27.614+02:00
+6,10.215.173.1,43102,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:23.998+02:00,2025-08-24T14:32:24.122+02:00
+6,10.215.173.1,60476,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:24.519+02:00,2025-08-24T14:32:24.666+02:00
+6,10.215.173.1,43108,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2497,5388,10,10,2025-08-24T14:32:24.532+02:00,2025-08-24T14:32:28.572+02:00
+17,10.215.173.1,28742,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firestore.googleapis.com,70,86,1,1,2025-08-24T14:32:24.688+02:00,2025-08-24T14:32:24.702+02:00
+6,10.215.173.1,42520,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Błąd,firestore.googleapis.com,5634,7316,42,41,2025-08-24T14:32:24.712+02:00,2025-08-24T14:33:27.283+02:00
+6,10.215.173.1,60490,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2554,6207,11,11,2025-08-24T14:32:25.620+02:00,2025-08-24T14:32:29.186+02:00
+6,10.215.173.1,60494,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3502,149376,34,33,2025-08-24T14:32:25.627+02:00,2025-08-24T14:32:29.983+02:00
+6,10.215.173.1,43112,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:25.656+02:00,2025-08-24T14:32:25.785+02:00
+6,10.215.173.1,43120,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:25.666+02:00,2025-08-24T14:32:25.789+02:00
+6,10.215.173.1,54066,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,9945,851625,187,187,2025-08-24T14:32:26.854+02:00,2025-08-24T14:33:23.214+02:00
+6,10.215.173.1,54070,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2059,64095,29,29,2025-08-24T14:32:26.859+02:00,2025-08-24T14:32:46.877+02:00
+6,10.215.173.1,54080,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2446,88200,38,38,2025-08-24T14:32:26.869+02:00,2025-08-24T14:32:46.496+02:00
+6,10.215.173.1,54090,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2225,97922,38,38,2025-08-24T14:32:26.874+02:00,2025-08-24T14:32:46.536+02:00
+6,10.215.173.1,44024,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:26.878+02:00,2025-08-24T14:32:26.907+02:00
+6,10.215.173.1,44026,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:26.881+02:00,2025-08-24T14:32:26.908+02:00
+6,10.215.173.1,44038,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:26.884+02:00,2025-08-24T14:32:26.910+02:00
+6,10.215.173.1,44054,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:26.886+02:00,2025-08-24T14:32:26.915+02:00
+6,10.215.173.1,60508,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2478,5809,10,10,2025-08-24T14:32:30.531+02:00,2025-08-24T14:32:34.174+02:00
+6,10.215.173.1,60520,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2544,13558,11,11,2025-08-24T14:32:30.538+02:00,2025-08-24T14:32:34.244+02:00
+6,10.215.173.1,60526,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2753,45670,16,16,2025-08-24T14:32:30.550+02:00,2025-08-24T14:32:34.495+02:00
+6,10.215.173.1,43132,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:30.560+02:00,2025-08-24T14:32:30.683+02:00
+6,10.215.173.1,43136,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:30.562+02:00,2025-08-24T14:32:30.685+02:00
+6,10.215.173.1,43146,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:30.564+02:00,2025-08-24T14:32:30.686+02:00
+6,10.215.173.1,54104,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,10722,836481,205,205,2025-08-24T14:32:31.148+02:00,2025-08-24T14:33:26.907+02:00
+6,10.215.173.1,54112,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,10545,737106,208,208,2025-08-24T14:32:31.157+02:00,2025-08-24T14:33:23.437+02:00
+6,10.215.173.1,54118,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1043,24781,13,13,2025-08-24T14:32:31.176+02:00,2025-08-24T14:32:46.688+02:00
+6,10.215.173.1,54128,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1675,56134,24,23,2025-08-24T14:32:31.181+02:00,2025-08-24T14:32:46.488+02:00
+6,10.215.173.1,54136,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,11404,982014,213,214,2025-08-24T14:32:31.188+02:00,2025-08-24T14:33:26.836+02:00
+6,10.215.173.1,44060,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,140,128,3,3,2025-08-24T14:32:31.194+02:00,2025-08-24T14:32:31.262+02:00
+6,10.215.173.1,44074,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:31.199+02:00,2025-08-24T14:32:31.232+02:00
+6,10.215.173.1,44088,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:31.206+02:00,2025-08-24T14:32:31.242+02:00
+6,10.215.173.1,44096,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:31.213+02:00,2025-08-24T14:32:31.243+02:00
+6,10.215.173.1,44112,18.245.46.64,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:31.219+02:00,2025-08-24T14:32:31.252+02:00
+6,10.215.173.1,60528,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:32.589+02:00,2025-08-24T14:32:32.734+02:00
+6,10.215.173.1,43158,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2607,5428,11,11,2025-08-24T14:32:32.600+02:00,2025-08-24T14:32:36.169+02:00
+6,10.215.173.1,34340,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2540,5388,10,10,2025-08-24T14:32:35.461+02:00,2025-08-24T14:32:39.065+02:00
+6,10.215.173.1,45978,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:35.473+02:00,2025-08-24T14:32:35.597+02:00
+6,10.215.173.1,34352,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:39.671+02:00,2025-08-24T14:32:39.814+02:00
+6,10.215.173.1,45982,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3302,149238,29,29,2025-08-24T14:32:39.684+02:00,2025-08-24T14:32:44.008+02:00
+17,10.215.173.1,9035,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:32:43.724+02:00,2025-08-24T14:32:43.751+02:00
+6,10.215.173.1,59208,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1409,7309,12,12,2025-08-24T14:32:43.771+02:00,2025-08-24T14:32:44.086+02:00
+6,10.215.173.1,39076,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,768,4,4,2025-08-24T14:32:44.046+02:00,2025-08-24T14:33:27.289+02:00
+6,10.215.173.1,43644,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3545,144147,35,35,2025-08-24T14:32:44.068+02:00,2025-08-24T14:32:48.354+02:00
+6,10.215.173.1,51028,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:44.080+02:00,2025-08-24T14:32:44.204+02:00
+6,10.215.173.1,43658,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3193,109735,27,27,2025-08-24T14:32:45.256+02:00,2025-08-24T14:32:49.344+02:00
+6,10.215.173.1,51032,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:45.268+02:00,2025-08-24T14:32:45.396+02:00
+17,10.215.173.1,31409,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firebaselogging-pa.googleapis.com,79,223,1,1,2025-08-24T14:32:46.503+02:00,2025-08-24T14:32:46.520+02:00
+6,10.215.173.1,37836,142.250.203.138,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,firebaselogging-pa.googleapis.com,2501,4862,8,8,2025-08-24T14:32:46.532+02:00,2025-08-24T14:33:27.290+02:00
+6,10.215.173.1,43674,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:47.625+02:00,2025-08-24T14:32:47.774+02:00
+6,10.215.173.1,51044,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3375,144544,30,30,2025-08-24T14:32:47.639+02:00,2025-08-24T14:32:51.980+02:00
+6,10.215.173.1,43680,99.79.14.108,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3386,153911,31,31,2025-08-24T14:32:49.760+02:00,2025-08-24T14:32:54.111+02:00
+6,10.215.173.1,51050,3.98.16.223,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:49.774+02:00,2025-08-24T14:32:49.896+02:00
+6,10.215.173.1,40394,172.217.16.3,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,crashlyticsreports-pa.googleapis.com,9841,4687,8,8,2025-08-24T14:32:50.281+02:00,2025-08-24T14:33:27.291+02:00
+6,10.215.173.1,60924,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Błąd,mtalk.google.com,1360,1184,8,8,2025-08-24T14:32:51.247+02:00,2025-08-24T14:33:27.291+02:00
+17,10.215.173.1,50816,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,api.voronoiapp.com,64,112,1,1,2025-08-24T14:32:52.181+02:00,2025-08-24T14:32:52.202+02:00
+6,10.215.173.1,37532,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2713,5386,11,10,2025-08-24T14:32:52.209+02:00,2025-08-24T14:32:55.879+02:00
+6,10.215.173.1,38268,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:52.217+02:00,2025-08-24T14:32:52.343+02:00
+6,10.215.173.1,41784,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2867,739,14,11,2025-08-24T14:32:52.496+02:00,2025-08-24T14:32:53.839+02:00
+17,10.215.173.1,9294,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T14:32:52.501+02:00,2025-08-24T14:32:52.520+02:00
+6,10.215.173.1,46496,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,api.voronoiapp.com,140,128,3,3,2025-08-24T14:32:54.505+02:00,2025-08-24T14:32:54.781+02:00
+6,10.215.173.1,44698,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3382,149318,31,31,2025-08-24T14:32:54.517+02:00,2025-08-24T14:32:58.797+02:00
+6,10.215.173.1,46510,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2478,5843,10,10,2025-08-24T14:32:55.690+02:00,2025-08-24T14:32:59.290+02:00
+6,10.215.173.1,46518,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2873,53323,19,19,2025-08-24T14:32:55.696+02:00,2025-08-24T14:32:59.539+02:00
+6,10.215.173.1,46526,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2544,12891,11,11,2025-08-24T14:32:55.702+02:00,2025-08-24T14:32:59.359+02:00
+6,10.215.173.1,44706,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:55.714+02:00,2025-08-24T14:32:55.839+02:00
+6,10.215.173.1,44712,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:55.719+02:00,2025-08-24T14:32:55.849+02:00
+6,10.215.173.1,44722,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:55.721+02:00,2025-08-24T14:32:55.849+02:00
+17,10.215.173.1,62077,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,128,1,1,2025-08-24T14:32:56.267+02:00,2025-08-24T14:32:56.285+02:00
+17,10.215.173.1,46141,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,128,1,1,2025-08-24T14:32:56.277+02:00,2025-08-24T14:32:56.328+02:00
+6,10.215.173.1,46518,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2395,126416,42,42,2025-08-24T14:32:56.296+02:00,2025-08-24T14:33:15.437+02:00
+6,10.215.173.1,55508,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:56.306+02:00,2025-08-24T14:32:56.353+02:00
+6,10.215.173.1,46524,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,895,19535,10,9,2025-08-24T14:32:56.313+02:00,2025-08-24T14:33:11.491+02:00
+6,10.215.173.1,55524,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:56.321+02:00,2025-08-24T14:32:56.360+02:00
+6,10.215.173.1,46534,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2035,104121,33,33,2025-08-24T14:32:56.335+02:00,2025-08-24T14:33:15.757+02:00
+6,10.215.173.1,55532,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:56.345+02:00,2025-08-24T14:32:56.378+02:00
+6,10.215.173.1,46536,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2261,109155,43,43,2025-08-24T14:32:56.424+02:00,2025-08-24T14:33:11.678+02:00
+6,10.215.173.1,46544,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2039,84178,37,37,2025-08-24T14:32:56.435+02:00,2025-08-24T14:33:11.676+02:00
+6,10.215.173.1,55536,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:56.443+02:00,2025-08-24T14:32:56.477+02:00
+6,10.215.173.1,55542,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:32:56.452+02:00,2025-08-24T14:32:56.492+02:00
+6,10.215.173.1,46540,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2594,6987,12,12,2025-08-24T14:32:59.455+02:00,2025-08-24T14:33:03.049+02:00
+6,10.215.173.1,46556,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3012,77458,22,22,2025-08-24T14:32:59.460+02:00,2025-08-24T14:33:03.369+02:00
+6,10.215.173.1,44726,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:59.470+02:00,2025-08-24T14:32:59.604+02:00
+6,10.215.173.1,44728,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:32:59.473+02:00,2025-08-24T14:32:59.605+02:00
+6,10.215.173.1,46564,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,4627,5928,13,13,2025-08-24T14:33:01.625+02:00,2025-08-24T14:33:07.456+02:00
+6,10.215.173.1,44738,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:01.653+02:00,2025-08-24T14:33:01.787+02:00
+6,10.215.173.1,46556,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,913,6035,10,10,2025-08-24T14:33:01.669+02:00,2025-08-24T14:33:04.826+02:00
+6,10.215.173.1,55548,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:33:01.675+02:00,2025-08-24T14:33:01.704+02:00
+6,10.215.173.1,37560,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,913,5646,10,9,2025-08-24T14:33:04.144+02:00,2025-08-24T14:33:07.596+02:00
+6,10.215.173.1,38920,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:33:04.149+02:00,2025-08-24T14:33:04.176+02:00
+6,10.215.173.1,52280,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2972,77418,21,21,2025-08-24T14:33:05.469+02:00,2025-08-24T14:33:09.459+02:00
+6,10.215.173.1,48520,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,140,128,3,3,2025-08-24T14:33:05.479+02:00,2025-08-24T14:33:05.746+02:00
+6,10.215.173.1,52284,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2567,9841,12,12,2025-08-24T14:33:09.464+02:00,2025-08-24T14:33:13.050+02:00
+6,10.215.173.1,52298,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2652,5426,11,11,2025-08-24T14:33:09.470+02:00,2025-08-24T14:33:13.084+02:00
+6,10.215.173.1,48530,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:09.476+02:00,2025-08-24T14:33:09.599+02:00
+6,10.215.173.1,48544,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:09.482+02:00,2025-08-24T14:33:09.604+02:00
+6,10.215.173.1,37576,18.245.46.92,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,140,128,3,3,2025-08-24T14:33:09.948+02:00,2025-08-24T14:33:10.013+02:00
+6,10.215.173.1,38928,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,913,5633,10,10,2025-08-24T14:33:09.955+02:00,2025-08-24T14:33:13.435+02:00
+6,10.215.173.1,38634,35.182.46.15,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2544,5459,11,11,2025-08-24T14:33:16.519+02:00,2025-08-24T14:33:20.296+02:00
+6,10.215.173.1,43000,3.97.54.246,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:16.535+02:00,2025-08-24T14:33:16.664+02:00
+6,10.215.173.1,53786,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:27.300+02:00,2025-08-24T14:33:27.325+02:00
+6,10.215.173.1,35190,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T14:33:27.601+02:00,2025-08-24T14:33:27.603+02:00
+17,10.215.173.1,61851,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:27.868+02:00,2025-08-24T14:33:27.868+02:00
+17,10.215.173.1,28529,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:27.873+02:00,2025-08-24T14:33:27.873+02:00
+6,10.215.173.1,53786,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:28.303+02:00,2025-08-24T14:33:28.306+02:00
+6,10.215.173.1,35190,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T14:33:28.624+02:00,2025-08-24T14:33:28.628+02:00
+6,10.215.173.1,35190,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T14:33:30.640+02:00,2025-08-24T14:33:30.645+02:00
+17,10.215.173.1,60602,10.215.173.2,53,10138,Ekran startowy One UI,com.sec.android.app.launcher,DNS,Nieosiągalny,www.google.com,0,0,0,0,2025-08-24T14:33:32.577+02:00,2025-08-24T14:33:32.577+02:00
+17,10.215.173.1,36492,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:33.603+02:00,2025-08-24T14:33:33.603+02:00
+6,10.215.173.1,35190,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T14:33:34.676+02:00,2025-08-24T14:33:34.679+02:00
+17,10.215.173.1,60602,10.215.173.2,53,10138,Ekran startowy One UI,com.sec.android.app.launcher,DNS,Nieosiągalny,www.google.com,0,0,0,0,2025-08-24T14:33:35.575+02:00,2025-08-24T14:33:35.575+02:00
+17,10.215.173.1,36492,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:36.609+02:00,2025-08-24T14:33:36.609+02:00
+17,10.215.173.1,2464,10.215.173.2,53,10138,Ekran startowy One UI,com.sec.android.app.launcher,DNS,Nieosiągalny,www.google.com,0,0,0,0,2025-08-24T14:33:38.584+02:00,2025-08-24T14:33:38.584+02:00
+6,10.215.173.1,57344,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:39.200+02:00,2025-08-24T14:33:39.203+02:00
+17,10.215.173.1,45422,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:39.609+02:00,2025-08-24T14:33:39.609+02:00
+17,10.215.173.1,60952,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:39.616+02:00,2025-08-24T14:33:39.616+02:00
+17,10.215.173.1,21499,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:39.621+02:00,2025-08-24T14:33:39.621+02:00
+17,10.215.173.1,17451,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:39.627+02:00,2025-08-24T14:33:39.627+02:00
+6,10.215.173.1,57344,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:40.212+02:00,2025-08-24T14:33:40.219+02:00
+17,10.215.173.1,2464,10.215.173.2,53,10138,Ekran startowy One UI,com.sec.android.app.launcher,DNS,Nieosiągalny,www.google.com,0,0,0,0,2025-08-24T14:33:41.585+02:00,2025-08-24T14:33:41.585+02:00
+6,10.215.173.1,57344,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:42.224+02:00,2025-08-24T14:33:42.234+02:00
+17,10.215.173.1,45422,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:42.614+02:00,2025-08-24T14:33:42.614+02:00
+17,10.215.173.1,60952,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:42.624+02:00,2025-08-24T14:33:42.624+02:00
+17,10.215.173.1,21499,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:42.634+02:00,2025-08-24T14:33:42.634+02:00
+17,10.215.173.1,17451,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:42.641+02:00,2025-08-24T14:33:42.641+02:00
+6,10.215.173.1,35190,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T14:33:42.863+02:00,2025-08-24T14:33:42.870+02:00
+17,10.215.173.1,29581,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,api.voronoiapp.com,0,0,0,0,2025-08-24T14:33:45.626+02:00,2025-08-24T14:33:45.626+02:00
+6,10.215.173.1,57344,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:33:46.448+02:00,2025-08-24T14:33:46.452+02:00
+17,10.215.173.1,59816,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Nieosiągalny,z-m-gateway.facebook.com,0,0,0,0,2025-08-24T14:33:46.778+02:00,2025-08-24T14:33:46.778+02:00
+17,10.215.173.1,60125,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:33:46.825+02:00,2025-08-24T14:33:46.870+02:00
+6,10.215.173.1,43650,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7229,10,10,2025-08-24T14:33:46.896+02:00,2025-08-24T14:33:47.233+02:00
+17,10.215.173.1,49582,216.58.208.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.google.com,11413,7257,23,28,2025-08-24T14:33:47.097+02:00,2025-08-24T14:33:49.848+02:00
+6,10.215.173.1,45460,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,768,4,4,2025-08-24T14:33:47.185+02:00,2025-08-24T14:34:22.099+02:00
+17,10.215.173.1,29581,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,api.voronoiapp.com,64,112,1,1,2025-08-24T14:33:48.631+02:00,2025-08-24T14:33:48.716+02:00
+6,10.215.173.1,41554,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.721+02:00,2025-08-24T14:33:48.859+02:00
+6,10.215.173.1,49358,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2554,6207,11,11,2025-08-24T14:33:48.730+02:00,2025-08-24T14:33:52.317+02:00
+6,10.215.173.1,41566,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2610,5386,10,10,2025-08-24T14:33:48.738+02:00,2025-08-24T14:33:52.326+02:00
+6,10.215.173.1,49364,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.746+02:00,2025-08-24T14:33:48.877+02:00
+6,10.215.173.1,41578,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2562,5838,12,12,2025-08-24T14:33:48.753+02:00,2025-08-24T14:33:52.322+02:00
+6,10.215.173.1,49366,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.758+02:00,2025-08-24T14:33:48.880+02:00
+6,10.215.173.1,41580,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3422,149358,32,32,2025-08-24T14:33:48.762+02:00,2025-08-24T14:33:53.020+02:00
+6,10.215.173.1,49368,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.768+02:00,2025-08-24T14:33:48.892+02:00
+6,10.215.173.1,41584,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2554,6207,11,11,2025-08-24T14:33:48.773+02:00,2025-08-24T14:33:52.323+02:00
+6,10.215.173.1,49370,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.778+02:00,2025-08-24T14:33:48.904+02:00
+6,10.215.173.1,41598,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2518,5527,11,11,2025-08-24T14:33:48.782+02:00,2025-08-24T14:33:52.323+02:00
+6,10.215.173.1,49386,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:48.785+02:00,2025-08-24T14:33:48.906+02:00
+6,10.215.173.1,41602,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2554,6207,11,11,2025-08-24T14:33:48.787+02:00,2025-08-24T14:33:52.325+02:00
+6,10.215.173.1,49396,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,api.voronoiapp.com,140,128,3,3,2025-08-24T14:33:48.788+02:00,2025-08-24T14:33:49.029+02:00
+17,10.215.173.1,59816,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-24T14:33:49.776+02:00,2025-08-24T14:33:49.807+02:00
+6,10.215.173.1,46694,157.240.253.33,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2812,4296,17,11,2025-08-24T14:33:49.820+02:00,2025-08-24T14:34:22.100+02:00
+6,10.215.173.1,41612,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2580,5428,11,11,2025-08-24T14:33:51.998+02:00,2025-08-24T14:33:55.581+02:00
+6,10.215.173.1,49402,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:33:52.015+02:00,2025-08-24T14:33:52.139+02:00
+6,10.215.173.1,53004,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Błąd,firestore.googleapis.com,3094,5061,17,17,2025-08-24T14:33:54.223+02:00,2025-08-24T14:34:22.101+02:00
+6,10.215.173.1,33160,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,api.voronoiapp.com,140,128,3,3,2025-08-24T14:33:54.291+02:00,2025-08-24T14:33:54.558+02:00
+6,10.215.173.1,40968,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2607,5428,11,11,2025-08-24T14:33:54.303+02:00,2025-08-24T14:33:57.916+02:00
+6,10.215.173.1,57344,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,firestore.googleapis.com,1064,593,9,9,2025-08-24T14:33:54.642+02:00,2025-08-24T14:33:54.737+02:00
+6,10.215.173.1,34026,142.251.9.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Błąd,mtalk.google.com,1347,1144,7,7,2025-08-24T14:34:05.742+02:00,2025-08-24T14:34:22.097+02:00
+6,10.215.173.1,55060,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:06.537+02:00,2025-08-24T14:34:06.690+02:00
+6,10.215.173.1,55946,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2607,5428,11,11,2025-08-24T14:34:06.553+02:00,2025-08-24T14:34:10.199+02:00
+6,10.215.173.1,55068,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2873,40937,19,19,2025-08-24T14:34:08.227+02:00,2025-08-24T14:34:12.035+02:00
+6,10.215.173.1,55084,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2504,13656,10,10,2025-08-24T14:34:08.233+02:00,2025-08-24T14:34:11.901+02:00
+6,10.215.173.1,55088,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2518,5867,11,11,2025-08-24T14:34:08.237+02:00,2025-08-24T14:34:11.889+02:00
+6,10.215.173.1,55960,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.249+02:00,2025-08-24T14:34:08.375+02:00
+6,10.215.173.1,55974,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.253+02:00,2025-08-24T14:34:08.377+02:00
+6,10.215.173.1,55984,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.256+02:00,2025-08-24T14:34:08.379+02:00
+17,10.215.173.1,34082,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,128,1,1,2025-08-24T14:34:08.827+02:00,2025-08-24T14:34:09.072+02:00
+17,10.215.173.1,1745,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,cdn.voronoiapp.com,64,128,1,1,2025-08-24T14:34:08.837+02:00,2025-08-24T14:34:08.891+02:00
+6,10.215.173.1,55476,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.903+02:00,2025-08-24T14:34:09.969+02:00
+6,10.215.173.1,34750,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,882,11415,9,8,2025-08-24T14:34:08.915+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,55492,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.926+02:00,2025-08-24T14:34:09.979+02:00
+6,10.215.173.1,34752,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:08.936+02:00,2025-08-24T14:34:10.020+02:00
+6,10.215.173.1,55508,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,963,16822,11,10,2025-08-24T14:34:08.955+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,34758,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,140,128,3,3,2025-08-24T14:34:08.970+02:00,2025-08-24T14:34:09.378+02:00
+6,10.215.173.1,55516,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,971,13576,11,11,2025-08-24T14:34:08.979+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,34770,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,140,128,3,3,2025-08-24T14:34:08.988+02:00,2025-08-24T14:34:09.129+02:00
+6,10.215.173.1,55526,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1322,116489,20,19,2025-08-24T14:34:08.995+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,34782,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.000+02:00,2025-08-24T14:34:10.075+02:00
+6,10.215.173.1,55532,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1210,57477,17,17,2025-08-24T14:34:09.009+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,55548,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1163,53504,16,16,2025-08-24T14:34:09.014+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,55562,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1443,109219,23,23,2025-08-24T14:34:09.018+02:00,2025-08-24T14:34:22.103+02:00
+6,10.215.173.1,55570,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.023+02:00,2025-08-24T14:34:11.080+02:00
+6,10.215.173.1,55586,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.028+02:00,2025-08-24T14:34:11.185+02:00
+6,10.215.173.1,55596,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1723,79341,30,30,2025-08-24T14:34:09.034+02:00,2025-08-24T14:34:22.097+02:00
+6,10.215.173.1,34796,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.039+02:00,2025-08-24T14:34:09.095+02:00
+6,10.215.173.1,34808,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1243,51180,18,18,2025-08-24T14:34:09.045+02:00,2025-08-24T14:34:22.097+02:00
+6,10.215.173.1,34822,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.051+02:00,2025-08-24T14:34:10.115+02:00
+6,10.215.173.1,34832,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.058+02:00,2025-08-24T14:34:09.105+02:00
+6,10.215.173.1,34834,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.064+02:00,2025-08-24T14:34:10.141+02:00
+6,10.215.173.1,34836,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,1323,77352,19,18,2025-08-24T14:34:09.068+02:00,2025-08-24T14:34:22.104+02:00
+6,10.215.173.1,54590,18.245.46.67,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,881,9672,9,9,2025-08-24T14:34:09.080+02:00,2025-08-24T14:34:22.117+02:00
+6,10.215.173.1,47918,18.245.46.109,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:09.085+02:00,2025-08-24T14:34:09.114+02:00
+6,10.215.173.1,49670,3.160.212.6,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Błąd,cdn.voronoiapp.com,923,21123,10,10,2025-08-24T14:34:09.155+02:00,2025-08-24T14:34:22.117+02:00
+6,10.215.173.1,44632,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,3382,149296,31,31,2025-08-24T14:34:13.895+02:00,2025-08-24T14:34:18.150+02:00
+6,10.215.173.1,47780,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:13.904+02:00,2025-08-24T14:34:14.027+02:00
+17,10.215.173.1,13202,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,firestore.googleapis.com,0,0,0,0,2025-08-24T14:34:22.120+02:00,2025-08-24T14:34:22.120+02:00
+6,10.215.173.1,35894,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:34:22.130+02:00,2025-08-24T14:34:22.144+02:00
+17,10.215.173.1,19680,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-24T14:34:22.330+02:00,2025-08-24T14:34:22.330+02:00
+6,10.215.173.1,44638,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.795+02:00,2025-08-24T14:34:22.803+02:00
+6,10.215.173.1,44648,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.807+02:00,2025-08-24T14:34:22.813+02:00
+6,10.215.173.1,44662,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.815+02:00,2025-08-24T14:34:22.816+02:00
+6,10.215.173.1,47786,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.820+02:00,2025-08-24T14:34:22.830+02:00
+6,10.215.173.1,47800,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.830+02:00,2025-08-24T14:34:22.832+02:00
+6,10.215.173.1,47812,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:22.833+02:00,2025-08-24T14:34:22.835+02:00
+6,10.215.173.1,58218,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.061+02:00,2025-08-24T14:34:23.063+02:00
+6,10.215.173.1,58232,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.067+02:00,2025-08-24T14:34:23.069+02:00
+6,10.215.173.1,58242,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.071+02:00,2025-08-24T14:34:23.073+02:00
+6,10.215.173.1,35894,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:34:23.152+02:00,2025-08-24T14:34:23.156+02:00
+6,10.215.173.1,44676,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.283+02:00,2025-08-24T14:34:23.296+02:00
+6,10.215.173.1,44678,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.298+02:00,2025-08-24T14:34:23.304+02:00
+6,10.215.173.1,44684,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.305+02:00,2025-08-24T14:34:23.314+02:00
+6,10.215.173.1,47824,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.319+02:00,2025-08-24T14:34:23.323+02:00
+6,10.215.173.1,47836,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.324+02:00,2025-08-24T14:34:23.328+02:00
+6,10.215.173.1,47846,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.331+02:00,2025-08-24T14:34:23.339+02:00
+6,10.215.173.1,58250,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.553+02:00,2025-08-24T14:34:23.557+02:00
+6,10.215.173.1,58254,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.559+02:00,2025-08-24T14:34:23.565+02:00
+6,10.215.173.1,58258,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.566+02:00,2025-08-24T14:34:23.568+02:00
+6,10.215.173.1,44662,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.823+02:00,2025-08-24T14:34:23.832+02:00
+6,10.215.173.1,47812,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.835+02:00,2025-08-24T14:34:23.841+02:00
+6,10.215.173.1,47786,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.842+02:00,2025-08-24T14:34:23.861+02:00
+6,10.215.173.1,44648,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.873+02:00,2025-08-24T14:34:23.878+02:00
+6,10.215.173.1,44638,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.882+02:00,2025-08-24T14:34:23.887+02:00
+6,10.215.173.1,47800,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:23.890+02:00,2025-08-24T14:34:23.898+02:00
+6,10.215.173.1,58242,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.079+02:00,2025-08-24T14:34:24.080+02:00
+6,10.215.173.1,58232,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.084+02:00,2025-08-24T14:34:24.088+02:00
+6,10.215.173.1,58218,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.093+02:00,2025-08-24T14:34:24.097+02:00
+6,10.215.173.1,47846,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.302+02:00,2025-08-24T14:34:24.305+02:00
+6,10.215.173.1,44678,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.307+02:00,2025-08-24T14:34:24.312+02:00
+6,10.215.173.1,44676,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.313+02:00,2025-08-24T14:34:24.315+02:00
+6,10.215.173.1,47836,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.316+02:00,2025-08-24T14:34:24.318+02:00
+6,10.215.173.1,47824,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.319+02:00,2025-08-24T14:34:24.321+02:00
+6,10.215.173.1,44684,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.322+02:00,2025-08-24T14:34:24.324+02:00
+6,10.215.173.1,58258,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.559+02:00,2025-08-24T14:34:24.562+02:00
+6,10.215.173.1,58254,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.564+02:00,2025-08-24T14:34:24.566+02:00
+6,10.215.173.1,58250,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:24.567+02:00,2025-08-24T14:34:24.574+02:00
+17,10.215.173.1,13202,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,firestore.googleapis.com,0,0,0,0,2025-08-24T14:34:25.112+02:00,2025-08-24T14:34:25.112+02:00
+6,10.215.173.1,35894,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:34:25.166+02:00,2025-08-24T14:34:25.168+02:00
+17,10.215.173.1,19680,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-24T14:34:25.328+02:00,2025-08-24T14:34:25.328+02:00
+6,10.215.173.1,44342,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.632+02:00,2025-08-24T14:34:25.635+02:00
+6,10.215.173.1,44352,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.646+02:00,2025-08-24T14:34:25.668+02:00
+6,10.215.173.1,44368,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.670+02:00,2025-08-24T14:34:25.682+02:00
+6,10.215.173.1,44634,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.684+02:00,2025-08-24T14:34:25.686+02:00
+6,10.215.173.1,44642,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.690+02:00,2025-08-24T14:34:25.691+02:00
+6,10.215.173.1,44644,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.693+02:00,2025-08-24T14:34:25.697+02:00
+6,10.215.173.1,44638,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.841+02:00,2025-08-24T14:34:25.843+02:00
+6,10.215.173.1,47800,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.845+02:00,2025-08-24T14:34:25.848+02:00
+6,10.215.173.1,47786,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.849+02:00,2025-08-24T14:34:25.852+02:00
+6,10.215.173.1,47812,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.852+02:00,2025-08-24T14:34:25.860+02:00
+6,10.215.173.1,44648,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.861+02:00,2025-08-24T14:34:25.867+02:00
+6,10.215.173.1,44662,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.869+02:00,2025-08-24T14:34:25.883+02:00
+6,10.215.173.1,47324,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.905+02:00,2025-08-24T14:34:25.909+02:00
+6,10.215.173.1,47326,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.910+02:00,2025-08-24T14:34:25.915+02:00
+6,10.215.173.1,47342,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:25.917+02:00,2025-08-24T14:34:25.920+02:00
+6,10.215.173.1,58218,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.099+02:00,2025-08-24T14:34:26.101+02:00
+6,10.215.173.1,58232,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.102+02:00,2025-08-24T14:34:26.109+02:00
+6,10.215.173.1,58242,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.110+02:00,2025-08-24T14:34:26.114+02:00
+6,10.215.173.1,44684,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.318+02:00,2025-08-24T14:34:26.324+02:00
+6,10.215.173.1,44676,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.325+02:00,2025-08-24T14:34:26.327+02:00
+6,10.215.173.1,44678,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.328+02:00,2025-08-24T14:34:26.332+02:00
+6,10.215.173.1,47824,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.334+02:00,2025-08-24T14:34:26.336+02:00
+6,10.215.173.1,47836,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.339+02:00,2025-08-24T14:34:26.342+02:00
+6,10.215.173.1,47846,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.343+02:00,2025-08-24T14:34:26.350+02:00
+6,10.215.173.1,58250,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.577+02:00,2025-08-24T14:34:26.582+02:00
+6,10.215.173.1,58254,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.585+02:00,2025-08-24T14:34:26.590+02:00
+6,10.215.173.1,58258,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.594+02:00,2025-08-24T14:34:26.600+02:00
+6,10.215.173.1,44352,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.640+02:00,2025-08-24T14:34:26.647+02:00
+6,10.215.173.1,44342,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.650+02:00,2025-08-24T14:34:26.655+02:00
+6,10.215.173.1,44644,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.676+02:00,2025-08-24T14:34:26.683+02:00
+6,10.215.173.1,44642,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.685+02:00,2025-08-24T14:34:26.691+02:00
+6,10.215.173.1,44634,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.693+02:00,2025-08-24T14:34:26.699+02:00
+6,10.215.173.1,44368,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.702+02:00,2025-08-24T14:34:26.707+02:00
+6,10.215.173.1,47342,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.934+02:00,2025-08-24T14:34:26.953+02:00
+6,10.215.173.1,47326,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.959+02:00,2025-08-24T14:34:26.966+02:00
+6,10.215.173.1,47324,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:26.970+02:00,2025-08-24T14:34:26.979+02:00
+6,10.215.173.1,44342,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.663+02:00,2025-08-24T14:34:28.672+02:00
+6,10.215.173.1,44352,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.682+02:00,2025-08-24T14:34:28.690+02:00
+6,10.215.173.1,44368,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.694+02:00,2025-08-24T14:34:28.701+02:00
+6,10.215.173.1,44634,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.703+02:00,2025-08-24T14:34:28.708+02:00
+6,10.215.173.1,44642,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.711+02:00,2025-08-24T14:34:28.718+02:00
+6,10.215.173.1,44644,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.721+02:00,2025-08-24T14:34:28.729+02:00
+6,10.215.173.1,47324,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.958+02:00,2025-08-24T14:34:28.964+02:00
+6,10.215.173.1,47326,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.966+02:00,2025-08-24T14:34:28.974+02:00
+6,10.215.173.1,47342,16.52.48.234,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,api.voronoiapp.com,60,40,1,1,2025-08-24T14:34:28.980+02:00,2025-08-24T14:34:28.985+02:00
+17,10.215.173.1,54412,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Nieosiągalny,firestore.googleapis.com,0,0,0,0,2025-08-24T14:34:29.174+02:00,2025-08-24T14:34:29.174+02:00
+17,10.215.173.1,49107,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-24T14:34:29.191+02:00,2025-08-24T14:34:29.191+02:00
+6,10.215.173.1,35894,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Nieosiągalny,firebaselogging-pa.googleapis.com,60,40,1,1,2025-08-24T14:34:29.221+02:00,2025-08-24T14:34:29.244+02:00
+6,10.215.173.1,40298,157.240.253.33,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,5648,7244,46,37,2025-08-24T14:34:29.317+02:00,2025-08-24T14:43:52.010+02:00
+6,10.215.173.1,47060,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7268,11,11,2025-08-24T14:34:29.350+02:00,2025-08-24T14:34:29.818+02:00
+6,10.215.173.1,50428,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:34:29.778+02:00,2025-08-24T14:35:29.702+02:00
+6,10.215.173.1,44662,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2650,5426,11,11,2025-08-24T14:34:29.981+02:00,2025-08-24T14:34:33.566+02:00
+6,10.215.173.1,47812,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2522,5798,11,11,2025-08-24T14:34:29.999+02:00,2025-08-24T14:34:33.545+02:00
+6,10.215.173.1,47786,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2518,5487,11,10,2025-08-24T14:34:30.009+02:00,2025-08-24T14:34:33.566+02:00
+6,10.215.173.1,47800,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.016+02:00,2025-08-24T14:34:30.142+02:00
+6,10.215.173.1,44648,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.022+02:00,2025-08-24T14:34:30.151+02:00
+6,10.215.173.1,44638,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.026+02:00,2025-08-24T14:34:30.152+02:00
+6,10.215.173.1,44384,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2518,5487,11,10,2025-08-24T14:34:30.031+02:00,2025-08-24T14:34:33.580+02:00
+6,10.215.173.1,44390,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2522,5798,11,11,2025-08-24T14:34:30.034+02:00,2025-08-24T14:34:33.580+02:00
+6,10.215.173.1,44404,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2610,5386,10,10,2025-08-24T14:34:30.037+02:00,2025-08-24T14:34:33.651+02:00
+17,10.215.173.1,13221,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,region1.app-measurement.com,73,105,1,1,2025-08-24T14:34:30.040+02:00,2025-08-24T14:34:30.071+02:00
+6,10.215.173.1,44648,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.043+02:00,2025-08-24T14:34:30.171+02:00
+6,10.215.173.1,44654,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.048+02:00,2025-08-24T14:34:30.175+02:00
+6,10.215.173.1,44664,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.051+02:00,2025-08-24T14:34:30.192+02:00
+17,10.215.173.1,46511,216.239.32.36,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,region1.app-measurement.com,5290,4913,9,12,2025-08-24T14:34:30.078+02:00,2025-08-24T14:34:30.278+02:00
+6,10.215.173.1,47846,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2584,14925,12,13,2025-08-24T14:34:30.484+02:00,2025-08-24T14:34:34.205+02:00
+6,10.215.173.1,44678,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.490+02:00,2025-08-24T14:34:30.621+02:00
+6,10.215.173.1,44676,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2518,5850,11,11,2025-08-24T14:34:30.493+02:00,2025-08-24T14:34:34.116+02:00
+6,10.215.173.1,47836,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2753,47694,16,19,2025-08-24T14:34:30.496+02:00,2025-08-24T14:34:34.440+02:00
+6,10.215.173.1,47824,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.504+02:00,2025-08-24T14:34:30.635+02:00
+6,10.215.173.1,44684,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:30.511+02:00,2025-08-24T14:34:30.641+02:00
+6,10.215.173.1,51386,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.104+02:00,2025-08-24T14:34:33.194+02:00
+6,10.215.173.1,51396,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.110+02:00,2025-08-24T14:34:32.179+02:00
+6,10.215.173.1,51406,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1803,122960,27,27,2025-08-24T14:34:31.116+02:00,2025-08-24T14:34:38.390+02:00
+6,10.215.173.1,51416,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.124+02:00,2025-08-24T14:34:33.204+02:00
+6,10.215.173.1,51422,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1227,13829,13,12,2025-08-24T14:34:31.136+02:00,2025-08-24T14:34:38.115+02:00
+6,10.215.173.1,51426,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1494,47472,19,19,2025-08-24T14:34:31.140+02:00,2025-08-24T14:34:38.115+02:00
+6,10.215.173.1,51432,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,923,17551,10,9,2025-08-24T14:34:31.144+02:00,2025-08-24T14:34:38.116+02:00
+6,10.215.173.1,51434,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.147+02:00,2025-08-24T14:34:32.234+02:00
+6,10.215.173.1,34980,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.152+02:00,2025-08-24T14:34:31.203+02:00
+6,10.215.173.1,34994,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2067,95133,29,29,2025-08-24T14:34:31.155+02:00,2025-08-24T14:34:38.116+02:00
+6,10.215.173.1,34998,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,891,6035,9,8,2025-08-24T14:34:31.160+02:00,2025-08-24T14:34:38.114+02:00
+6,10.215.173.1,35000,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.163+02:00,2025-08-24T14:34:33.241+02:00
+6,10.215.173.1,35016,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.165+02:00,2025-08-24T14:34:32.234+02:00
+6,10.215.173.1,35024,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.169+02:00,2025-08-24T14:34:31.214+02:00
+6,10.215.173.1,35028,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.171+02:00,2025-08-24T14:34:32.249+02:00
+6,10.215.173.1,35042,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1873,86769,25,25,2025-08-24T14:34:31.175+02:00,2025-08-24T14:34:38.111+02:00
+6,10.215.173.1,51446,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1803,147504,32,31,2025-08-24T14:34:31.339+02:00,2025-08-24T14:34:38.365+02:00
+6,10.215.173.1,51456,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1847,75417,27,27,2025-08-24T14:34:31.344+02:00,2025-08-24T14:34:38.115+02:00
+6,10.215.173.1,51470,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2187,210764,37,37,2025-08-24T14:34:31.352+02:00,2025-08-24T14:35:39.797+02:00
+6,10.215.173.1,51484,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1194,50488,16,15,2025-08-24T14:34:31.356+02:00,2025-08-24T14:34:38.380+02:00
+6,10.215.173.1,51488,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,1790,114026,26,26,2025-08-24T14:34:31.367+02:00,2025-08-24T14:34:38.111+02:00
+6,10.215.173.1,51502,3.160.212.30,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,2738,198061,45,44,2025-08-24T14:34:31.370+02:00,2025-08-24T14:34:38.114+02:00
+6,10.215.173.1,35046,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.376+02:00,2025-08-24T14:34:31.441+02:00
+6,10.215.173.1,35052,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.390+02:00,2025-08-24T14:34:31.441+02:00
+6,10.215.173.1,35068,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.396+02:00,2025-08-24T14:34:32.449+02:00
+6,10.215.173.1,35070,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.401+02:00,2025-08-24T14:34:31.450+02:00
+6,10.215.173.1,35084,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.405+02:00,2025-08-24T14:34:31.472+02:00
+6,10.215.173.1,35096,3.160.212.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.413+02:00,2025-08-24T14:34:31.473+02:00
+6,10.215.173.1,42260,3.160.212.6,443,10040,Voronoi,com.voronoi.organization.app,TCP,Zamknij,cdn.voronoiapp.com,100,88,2,2,2025-08-24T14:34:31.423+02:00,2025-08-24T14:34:33.542+02:00
+6,10.215.173.1,46744,3.160.212.110,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,cdn.voronoiapp.com,874,9124,9,9,2025-08-24T14:34:31.640+02:00,2025-08-24T14:34:38.376+02:00
+17,10.215.173.1,54412,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firestore.googleapis.com,70,86,1,1,2025-08-24T14:34:32.174+02:00,2025-08-24T14:34:32.214+02:00
+17,10.215.173.1,49107,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T14:34:32.187+02:00,2025-08-24T14:34:32.233+02:00
+6,10.215.173.1,35260,142.250.186.106,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,firestore.googleapis.com,3576,5250,20,16,2025-08-24T14:34:32.226+02:00,2025-08-24T14:34:38.105+02:00
+6,10.215.173.1,44918,64.233.166.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1536,9899,11,11,2025-08-24T14:34:32.244+02:00,2025-08-24T14:37:06.155+02:00
+6,10.215.173.1,44644,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2624,14078,13,16,2025-08-24T14:34:32.787+02:00,2025-08-24T14:34:36.530+02:00
+6,10.215.173.1,44642,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2713,47850,15,18,2025-08-24T14:34:32.791+02:00,2025-08-24T14:34:36.687+02:00
+6,10.215.173.1,44634,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,2478,5801,10,10,2025-08-24T14:34:32.806+02:00,2025-08-24T14:34:36.421+02:00
+6,10.215.173.1,44368,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:32.828+02:00,2025-08-24T14:34:32.952+02:00
+6,10.215.173.1,44352,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:32.838+02:00,2025-08-24T14:34:32.981+02:00
+6,10.215.173.1,44342,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:32.856+02:00,2025-08-24T14:34:32.992+02:00
+17,10.215.173.1,42705,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,crashlyticsreports-pa.googleapis.com,82,98,1,1,2025-08-24T14:34:32.870+02:00,2025-08-24T14:34:32.903+02:00
+6,10.215.173.1,36874,142.250.184.195,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,crashlyticsreports-pa.googleapis.com,6189,4810,8,8,2025-08-24T14:34:32.909+02:00,2025-08-24T14:34:38.105+02:00
+6,10.215.173.1,35894,172.217.16.10,443,10040,Voronoi,com.voronoi.organization.app,TLS,Błąd,firestore.googleapis.com,1024,404,8,6,2025-08-24T14:34:37.391+02:00,2025-08-24T14:34:37.487+02:00
+6,10.215.173.1,34472,99.79.109.70,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,api.voronoiapp.com,515,4561,6,5,2025-08-24T14:34:37.539+02:00,2025-08-24T14:34:38.067+02:00
+6,10.215.173.1,56950,99.79.136.123,443,10040,Voronoi,com.voronoi.organization.app,TLS,Zamknij,api.voronoiapp.com,100,88,2,2,2025-08-24T14:34:37.552+02:00,2025-08-24T14:34:37.676+02:00
+17,10.215.173.1,1270,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-24T14:34:44.090+02:00,2025-08-24T14:34:44.140+02:00
+6,10.215.173.1,34986,157.240.0.13,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,graph.facebook.com,2140,4783,9,9,2025-08-24T14:34:44.148+02:00,2025-08-24T14:34:44.475+02:00
+17,10.215.173.1,8506,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,android.clients.google.com,72,352,1,1,2025-08-24T14:34:49.310+02:00,2025-08-24T14:34:49.357+02:00
+17,10.215.173.1,22414,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-fe.googleapis.com,68,84,1,1,2025-08-24T14:34:49.370+02:00,2025-08-24T14:34:49.410+02:00
+17,10.215.173.1,6766,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T14:34:49.422+02:00,2025-08-24T14:34:49.459+02:00
+17,10.215.173.1,39582,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,playstoregatewayadapter-pa.googleapis.com,87,343,1,1,2025-08-24T14:34:49.469+02:00,2025-08-24T14:34:49.510+02:00
+17,10.215.173.1,40457,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,prod-lt-playstoregatewayadapter-pa.googleapis.com,95,351,1,1,2025-08-24T14:34:49.517+02:00,2025-08-24T14:34:49.560+02:00
+17,10.215.173.1,36596,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-lh.googleusercontent.com,75,91,1,1,2025-08-24T14:34:49.580+02:00,2025-08-24T14:34:49.620+02:00
+17,10.215.173.1,52618,142.250.184.206,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play-fe.googleapis.com,7124,8250,14,15,2025-08-24T14:34:49.625+02:00,2025-08-24T14:34:49.908+02:00
+6,10.215.173.1,52350,142.250.184.206,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play-fe.googleapis.com,2146,5712,8,7,2025-08-24T14:34:49.631+02:00,2025-08-24T14:35:49.892+02:00
+17,10.215.173.1,32479,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,i.ytimg.com,57,313,1,1,2025-08-24T14:34:49.634+02:00,2025-08-24T14:34:49.681+02:00
+17,10.215.173.1,33283,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,connectivitycheck.gstatic.com,75,91,1,1,2025-08-24T14:34:50.392+02:00,2025-08-24T14:34:50.446+02:00
+6,10.215.173.1,51396,142.250.185.227,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,connectivitycheck.gstatic.com,1135,3894,7,7,2025-08-24T14:34:50.452+02:00,2025-08-24T14:35:55.063+02:00
+17,10.215.173.1,21783,10.215.173.2,53,10239,Google,com.google.android.googlequicksearchbox,DNS,Zamknij,www.google.com,60,76,1,1,2025-08-24T14:35:17.459+02:00,2025-08-24T14:35:17.505+02:00
+17,10.215.173.1,59149,216.58.212.164,443,10239,Google,com.google.android.googlequicksearchbox,QUIC,Zamknij,www.google.com,9210,8352,15,15,2025-08-24T14:35:17.523+02:00,2025-08-24T14:35:17.808+02:00
+6,10.215.173.1,46066,216.58.212.164,443,10239,Google,com.google.android.googlequicksearchbox,HTTPS,Zamknij,www.google.com,2234,4366,8,7,2025-08-24T14:35:17.532+02:00,2025-08-24T14:35:27.697+02:00
+17,10.215.173.1,4032,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:35:30.050+02:00,2025-08-24T14:35:30.087+02:00
+6,10.215.173.1,37020,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7228,10,10,2025-08-24T14:35:30.102+02:00,2025-08-24T14:35:30.436+02:00
+6,10.215.173.1,38222,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:35:30.396+02:00,2025-08-24T14:36:30.607+02:00
+17,10.215.173.1,15894,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,gateway.facebook.com,66,105,1,1,2025-08-24T14:35:44.749+02:00,2025-08-24T14:35:44.808+02:00
+17,10.215.173.1,60519,185.60.217.3,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,,6513,11540,22,44,2025-08-24T14:35:44.760+02:00,2025-08-24T14:36:40.860+02:00
+17,10.215.173.1,55801,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T14:35:44.814+02:00,2025-08-24T14:35:44.858+02:00
+6,10.215.173.1,49170,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2010,738,9,8,2025-08-24T14:35:44.817+02:00,2025-08-24T14:36:09.272+02:00
+6,10.215.173.1,43694,185.60.217.33,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,,3283,1502,20,17,2025-08-24T14:35:45.080+02:00,2025-08-24T14:35:47.202+02:00
+17,10.215.173.1,11772,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-24T14:35:47.000+02:00,2025-08-24T14:35:47.045+02:00
+17,10.215.173.1,58455,157.240.251.6,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,,2774,3195,6,9,2025-08-24T14:35:47.004+02:00,2025-08-24T14:35:47.245+02:00
+17,10.215.173.1,42026,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T14:35:47.215+02:00,2025-08-24T14:35:47.247+02:00
+6,10.215.173.1,43914,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2867,819,14,13,2025-08-24T14:35:47.217+02:00,2025-08-24T14:36:09.271+02:00
+17,10.215.173.1,50472,185.60.217.28,443,10303,Messenger,com.facebook.orca,QUIC,Zamknij,,2633,11963,7,17,2025-08-24T14:35:47.229+02:00,2025-08-24T14:35:47.312+02:00
+17,10.215.173.1,31669,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,scontent.xx.fbcdn.net,67,83,1,1,2025-08-24T14:35:47.232+02:00,2025-08-24T14:35:47.273+02:00
+6,10.215.173.1,52686,185.60.217.35,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,www.facebook.com,2564,4172,11,10,2025-08-24T14:35:49.890+02:00,2025-08-24T14:36:09.268+02:00
+17,10.215.173.1,59210,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,www.facebook.com,62,107,1,1,2025-08-24T14:35:49.893+02:00,2025-08-24T14:35:49.935+02:00
+6,10.215.173.1,37908,216.239.38.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3085,6429,13,13,2025-08-24T14:35:57.348+02:00,2025-08-24T14:35:57.653+02:00
+17,10.215.173.1,56246,10.215.173.2,53,10389,cda.pl,pl.cda,DNS,Zamknij,icdn.cda.pl,57,89,1,1,2025-08-24T14:36:06.122+02:00,2025-08-24T14:36:06.165+02:00
+17,10.215.173.1,46381,216.58.208.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.google.com,4978,4728,9,13,2025-08-24T14:36:06.150+02:00,2025-08-24T14:36:06.359+02:00
+6,10.215.173.1,55418,104.20.6.187,443,10389,cda.pl,pl.cda,HTTPS,Zamknij,icdn.cda.pl,1301,28980,11,10,2025-08-24T14:36:06.170+02:00,2025-08-24T14:36:26.099+02:00
+17,10.215.173.1,38889,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:36:31.650+02:00,2025-08-24T14:36:31.698+02:00
+6,10.215.173.1,60126,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7229,10,10,2025-08-24T14:36:31.727+02:00,2025-08-24T14:36:32.058+02:00
+6,10.215.173.1,34558,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:36:32.018+02:00,2025-08-24T14:37:36.849+02:00
+6,10.215.173.1,50606,157.240.253.17,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,4354,4324,14,13,2025-08-24T14:36:55.945+02:00,2025-08-24T14:37:01.894+02:00
+17,10.215.173.1,10996,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T14:36:55.952+02:00,2025-08-24T14:36:56.005+02:00
+17,10.215.173.1,35939,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T14:36:55.978+02:00,2025-08-24T14:36:56.012+02:00
+6,10.215.173.1,47018,157.240.251.18,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2907,779,15,12,2025-08-24T14:36:55.983+02:00,2025-08-24T14:37:01.895+02:00
+6,10.215.173.1,60542,157.240.253.35,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,www.facebook.com,2812,6562,12,11,2025-08-24T14:36:55.997+02:00,2025-08-24T14:37:01.895+02:00
+17,10.215.173.1,19139,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,www.facebook.com,62,107,1,1,2025-08-24T14:36:56.000+02:00,2025-08-24T14:36:56.033+02:00
+17,10.215.173.1,28970,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T14:37:18.199+02:00,2025-08-24T14:37:18.343+02:00
+6,10.215.173.1,46056,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1404,7591,8,8,2025-08-24T14:37:18.359+02:00,2025-08-24T14:38:22.338+02:00
+17,10.215.173.1,29574,10.215.173.2,53,10040,Voronoi,com.voronoi.organization.app,DNS,Zamknij,firebaselogging-pa.googleapis.com,79,335,1,1,2025-08-24T14:37:18.530+02:00,2025-08-24T14:37:18.697+02:00
+6,10.215.173.1,50922,142.250.186.170,443,10040,Voronoi,com.voronoi.organization.app,HTTPS,Zamknij,firebaselogging-pa.googleapis.com,2572,4883,9,8,2025-08-24T14:37:18.705+02:00,2025-08-24T14:37:25.752+02:00
+17,10.215.173.1,41886,10.215.173.2,53,10099,OneDrive,com.microsoft.skydrive,DNS,Zamknij,skyapi.live.net,61,235,1,1,2025-08-24T14:37:19.246+02:00,2025-08-24T14:37:19.280+02:00
+17,10.215.173.1,36001,10.215.173.2,53,10099,OneDrive,com.microsoft.skydrive,DNS,Zamknij,my.microsoftpersonalcontent.com,77,515,1,1,2025-08-24T14:37:19.256+02:00,2025-08-24T14:37:19.300+02:00
+17,10.215.173.1,6101,10.215.173.2,53,5009,Samsung Cloud,com.samsung.android.scloud,DNS,Zamknij,api.samsungcloud.com,66,229,1,1,2025-08-24T14:37:19.294+02:00,2025-08-24T14:37:19.325+02:00
+6,10.215.173.1,33330,20.135.17.16,443,10099,OneDrive,com.microsoft.skydrive,HTTPS,Zamknij,skyapi.live.net,2941,12804,13,12,2025-08-24T14:37:19.298+02:00,2025-08-24T14:37:27.430+02:00
+6,10.215.173.1,47714,13.107.139.11,443,10099,OneDrive,com.microsoft.skydrive,HTTPS,Zamknij,my.microsoftpersonalcontent.com,3111,9823,17,16,2025-08-24T14:37:19.305+02:00,2025-08-24T14:37:27.430+02:00
+6,10.215.173.1,46996,54.220.149.85,443,5009,Samsung Cloud,com.samsung.android.scloud,HTTPS,Zamknij,api.samsungcloud.com,3381,6434,15,14,2025-08-24T14:37:19.333+02:00,2025-08-24T14:37:34.092+02:00
+17,10.215.173.1,6891,10.215.173.2,53,10099,OneDrive,com.microsoft.skydrive,DNS,Zamknij,my.microsoftpersonalcontent.com,77,513,1,1,2025-08-24T14:37:19.370+02:00,2025-08-24T14:37:19.417+02:00
+6,10.215.173.1,47718,13.107.139.11,443,10099,OneDrive,com.microsoft.skydrive,HTTPS,Zamknij,my.microsoftpersonalcontent.com,4123,8181,13,12,2025-08-24T14:37:19.421+02:00,2025-08-24T14:37:27.428+02:00
+17,10.215.173.1,12282,10.215.173.2,53,10143,Łącze do Windows,com.microsoft.appmanager,DNS,Zamknij,config.edge.skype.com,67,230,1,1,2025-08-24T14:37:19.788+02:00,2025-08-24T14:37:19.840+02:00
+6,10.215.173.1,49092,150.171.22.17,443,10143,Łącze do Windows,com.microsoft.appmanager,HTTPS,Zamknij,config.edge.skype.com,1550,7535,8,8,2025-08-24T14:37:19.844+02:00,2025-08-24T14:38:22.339+02:00
+17,10.215.173.1,51234,10.215.173.2,53,10099,OneDrive,com.microsoft.skydrive,DNS,Zamknij,api.onedrive.com,62,284,1,1,2025-08-24T14:37:20.905+02:00,2025-08-24T14:37:20.944+02:00
+6,10.215.173.1,35386,13.107.42.12,443,10099,OneDrive,com.microsoft.skydrive,HTTPS,Zamknij,api.onedrive.com,3021,12719,15,14,2025-08-24T14:37:20.950+02:00,2025-08-24T14:37:27.429+02:00
+6,10.215.173.1,49104,150.171.22.17,443,10099,OneDrive,com.microsoft.skydrive,HTTPS,Zamknij,config.edge.skype.com,1430,7580,10,9,2025-08-24T14:37:23.180+02:00,2025-08-24T14:37:27.430+02:00
+17,10.215.173.1,5007,10.215.173.2,53,10099,OneDrive,com.microsoft.skydrive,DNS,Zamknij,self.events.data.microsoft.com,76,194,1,1,2025-08-24T14:37:27.074+02:00,2025-08-24T14:37:27.119+02:00
+6,10.215.173.1,32978,20.189.173.25,443,10099,OneDrive,com.microsoft.skydrive,TLS,Zamknij,self.events.data.microsoft.com,697,128,4,3,2025-08-24T14:37:27.125+02:00,2025-08-24T14:37:27.431+02:00
+17,10.215.173.1,2108,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:37:38.292+02:00,2025-08-24T14:37:38.341+02:00
+6,10.215.173.1,48636,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7229,10,10,2025-08-24T14:37:38.371+02:00,2025-08-24T14:37:38.710+02:00
+6,10.215.173.1,45234,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:37:38.683+02:00,2025-08-24T14:38:42.423+02:00
+6,10.215.173.1,46482,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1365,7590,8,8,2025-08-24T14:38:27.375+02:00,2025-08-24T14:39:27.766+02:00
+17,10.215.173.1,59906,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:38:42.455+02:00,2025-08-24T14:38:42.564+02:00
+6,10.215.173.1,58076,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7228,10,10,2025-08-24T14:38:42.580+02:00,2025-08-24T14:38:43.133+02:00
+6,10.215.173.1,60080,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:38:43.090+02:00,2025-08-24T14:39:43.024+02:00
+6,10.215.173.1,39808,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1524,9233,11,11,2025-08-24T14:39:33.805+02:00,2025-08-24T14:41:19.104+02:00
+17,10.215.173.1,3947,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:39:44.354+02:00,2025-08-24T14:39:44.402+02:00
+6,10.215.173.1,59170,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7269,11,11,2025-08-24T14:39:44.431+02:00,2025-08-24T14:39:44.770+02:00
+6,10.215.173.1,41084,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:39:44.723+02:00,2025-08-24T14:40:49.015+02:00
+17,10.215.173.1,20347,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T14:39:49.454+02:00,2025-08-24T14:39:49.506+02:00
+6,10.215.173.1,42372,216.239.34.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3242,6702,12,12,2025-08-24T14:39:49.520+02:00,2025-08-24T14:39:49.839+02:00
+17,10.215.173.1,6870,10.215.173.2,53,10300,Discord,com.discord,DNS,Zamknij,gateway.discord.gg,64,144,1,1,2025-08-24T14:40:17.590+02:00,2025-08-24T14:40:17.627+02:00
+6,10.215.173.1,53230,162.159.134.234,443,10300,Discord,com.discord,HTTPS,Zamknij,gateway.discord.gg,1296,5024,9,8,2025-08-24T14:40:17.631+02:00,2025-08-24T14:40:43.910+02:00
+17,10.215.173.1,40283,10.215.173.2,53,10300,Discord,com.discord,DNS,Zamknij,discord.com,57,137,1,1,2025-08-24T14:40:18.601+02:00,2025-08-24T14:40:18.633+02:00
+6,10.215.173.1,47710,162.159.135.232,443,10300,Discord,com.discord,HTTPS,Zamknij,discord.com,4040,6490,22,21,2025-08-24T14:40:18.638+02:00,2025-08-24T14:40:43.910+02:00
+6,10.215.173.1,47722,162.159.135.232,443,10300,Discord,com.discord,HTTPS,Błąd,discord.com,1103,3433,9,8,2025-08-24T14:40:18.676+02:00,2025-08-24T14:40:18.782+02:00
+6,10.215.173.1,47730,162.159.135.232,443,10300,Discord,com.discord,HTTPS,Zamknij,discord.com,1223,4121,12,12,2025-08-24T14:40:18.679+02:00,2025-08-24T14:40:18.802+02:00
+17,10.215.173.1,8074,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-24T14:40:43.893+02:00,2025-08-24T14:40:44.059+02:00
+6,10.215.173.1,47050,157.240.0.13,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,graph.facebook.com,2066,1704,9,9,2025-08-24T14:40:44.065+02:00,2025-08-24T14:40:44.504+02:00
+17,10.215.173.1,60220,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:40:50.506+02:00,2025-08-24T14:40:50.553+02:00
+6,10.215.173.1,57424,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7269,11,11,2025-08-24T14:40:50.584+02:00,2025-08-24T14:40:50.921+02:00
+6,10.215.173.1,33662,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:40:50.877+02:00,2025-08-24T14:41:54.452+02:00
+17,10.215.173.1,49332,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T14:41:31.151+02:00,2025-08-24T14:41:31.307+02:00
+6,10.215.173.1,35936,142.251.168.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1360,1144,7,7,2025-08-24T14:41:31.318+02:00,2025-08-24T14:42:34.741+02:00
+17,10.215.173.1,63181,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:41:54.662+02:00,2025-08-24T14:41:54.700+02:00
+6,10.215.173.1,36400,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7227,10,10,2025-08-24T14:41:54.737+02:00,2025-08-24T14:41:55.087+02:00
+6,10.215.173.1,37776,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:41:55.047+02:00,2025-08-24T14:42:59.877+02:00
+6,10.215.173.1,55756,157.240.253.17,443,10303,Messenger,com.facebook.orca,TLS,Zamknij,edge-mqtt.facebook.com,100,88,2,2,2025-08-24T14:41:55.950+02:00,2025-08-24T14:41:55.992+02:00
+17,10.215.173.1,1670,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T14:41:55.964+02:00,2025-08-24T14:41:56.001+02:00
+17,10.215.173.1,46679,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T14:41:55.971+02:00,2025-08-24T14:41:56.007+02:00
+6,10.215.173.1,35380,157.240.253.5,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,3003,1033,16,15,2025-08-24T14:41:56.019+02:00,2025-08-24T14:42:01.908+02:00
+17,10.215.173.1,36481,10.215.173.2,53,10162,Pogoda,com.sec.android.daemonapp,DNS,Zamknij,api.weather.com,61,267,1,1,2025-08-24T14:42:00.449+02:00,2025-08-24T14:42:00.518+02:00
+6,10.215.173.1,43746,2.19.11.7,443,10162,Pogoda,com.sec.android.daemonapp,HTTPS,Zamknij,api.weather.com,2437,11112,13,13,2025-08-24T14:42:00.528+02:00,2025-08-24T14:43:05.073+02:00
+6,10.215.173.1,43762,2.19.11.7,443,10162,Pogoda,com.sec.android.daemonapp,HTTPS,Zamknij,api.weather.com,1362,2157,8,8,2025-08-24T14:42:00.534+02:00,2025-08-24T14:43:05.073+02:00
+6,10.215.173.1,53792,142.251.168.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1361,1184,8,8,2025-08-24T14:42:47.794+02:00,2025-08-24T14:43:50.172+02:00
+17,10.215.173.1,53878,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:43:00.326+02:00,2025-08-24T14:43:00.367+02:00
+6,10.215.173.1,54314,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7227,10,10,2025-08-24T14:43:00.401+02:00,2025-08-24T14:43:00.728+02:00
+6,10.215.173.1,39088,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T14:43:00.688+02:00,2025-08-24T14:44:00.419+02:00
+6,10.215.173.1,42038,142.251.168.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1144,8,7,2025-08-24T14:43:57.213+02:00,2025-08-24T14:43:57.412+02:00
+17,10.215.173.1,64704,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T14:44:01.952+02:00,2025-08-24T14:44:02.004+02:00
+6,10.215.173.1,53412,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1369,7267,11,11,2025-08-24T14:44:02.028+02:00,2025-08-24T14:44:02.375+02:00
+6,10.215.173.1,35738,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,728,4,3,2025-08-24T14:44:02.334+02:00,2025-08-24T14:44:02.469+02:00

@@ -1,0 +1,1 @@
+curl -L -sS "https://reports.exodus-privacy.eu.org/pl/reports/pl.edu.usos.mobilny/latest/" -o exodus.txt

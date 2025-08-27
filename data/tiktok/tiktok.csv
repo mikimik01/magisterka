@@ -1,0 +1,903 @@
+IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen
+17,10.52.216.201,42050,216.239.34.223,443,-1,Nieznany,unknown,UDP,Zamknij,,79,0,1,0,2025-08-24T16:40:34.897+02:00,2025-08-24T16:40:34.897+02:00
+17,10.52.216.201,55961,213.158.221.143,443,-1,Nieznany,unknown,UDP,Zamknij,,80,0,1,0,2025-08-24T16:40:34.904+02:00,2025-08-24T16:40:34.904+02:00
+17,10.52.216.201,49739,213.158.221.140,443,-1,Nieznany,unknown,UDP,Zamknij,,82,0,1,0,2025-08-24T16:40:34.908+02:00,2025-08-24T16:40:34.908+02:00
+17,10.52.216.201,34339,213.158.221.141,443,-1,Nieznany,unknown,UDP,Zamknij,,80,0,1,0,2025-08-24T16:40:34.911+02:00,2025-08-24T16:40:34.911+02:00
+17,10.52.216.201,53821,213.158.221.142,443,-1,Nieznany,unknown,UDP,Zamknij,,78,0,1,0,2025-08-24T16:40:34.931+02:00,2025-08-24T16:40:34.931+02:00
+17,10.52.216.201,39337,213.158.221.144,443,-1,Nieznany,unknown,UDP,Zamknij,,78,0,1,0,2025-08-24T16:40:34.936+02:00,2025-08-24T16:40:34.936+02:00
+17,10.52.216.201,48052,213.158.221.146,443,-1,Nieznany,unknown,UDP,Zamknij,,82,0,1,0,2025-08-24T16:40:34.940+02:00,2025-08-24T16:40:34.940+02:00
+6,10.215.173.1,45160,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2401,926,15,10,2025-08-24T16:40:34.944+02:00,2025-08-24T16:40:48.574+02:00
+17,10.215.173.1,48939,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:40:34.947+02:00,2025-08-24T16:40:35.005+02:00
+17,10.215.173.1,8657,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T16:40:34.987+02:00,2025-08-24T16:40:35.037+02:00
+6,10.215.173.1,52036,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1407,7629,9,9,2025-08-24T16:40:35.009+02:00,2025-08-24T16:41:35.465+02:00
+17,10.215.173.1,5782,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T16:40:35.013+02:00,2025-08-24T16:40:35.038+02:00
+6,10.215.173.1,55436,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,,2867,739,14,11,2025-08-24T16:40:35.036+02:00,2025-08-24T16:40:48.573+02:00
+17,10.215.173.1,56795,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:40:35.938+02:00,2025-08-24T16:40:35.965+02:00
+6,10.215.173.1,46826,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7268,11,11,2025-08-24T16:40:35.979+02:00,2025-08-24T16:40:36.297+02:00
+6,10.215.173.1,45280,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:40:36.247+02:00,2025-08-24T16:41:40.482+02:00
+17,10.215.173.1,22003,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-24T16:40:36.387+02:00,2025-08-24T16:40:36.411+02:00
+6,10.215.173.1,46456,185.60.217.40,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,4685,6442,28,23,2025-08-24T16:40:36.417+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,58401,185.60.217.3,443,-1,Nieznany,unknown,UDP,Zamknij,,65,0,1,0,2025-08-24T16:40:39.176+02:00,2025-08-24T16:40:39.176+02:00
+17,10.52.216.201,53967,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,213765,2817,176,41,2025-08-24T16:40:45.383+02:00,2025-08-24T16:40:45.985+02:00
+17,10.215.173.1,25095,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,connectivitycheck.gstatic.com,75,91,1,1,2025-08-24T16:40:51.910+02:00,2025-08-24T16:40:51.973+02:00
+6,10.215.173.1,46634,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2399,886,15,9,2025-08-24T16:40:51.921+02:00,2025-08-24T16:40:56.556+02:00
+6,10.215.173.1,56688,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,3248,1070,20,15,2025-08-24T16:40:51.962+02:00,2025-08-24T16:40:56.555+02:00
+17,10.215.173.1,17582,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T16:40:51.966+02:00,2025-08-24T16:40:52.068+02:00
+6,10.215.173.1,49314,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,connectivitycheck.gstatic.com,1864,1848,11,11,2025-08-24T16:40:51.993+02:00,2025-08-24T16:42:05.952+02:00
+17,10.215.173.1,47516,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T16:40:52.039+02:00,2025-08-24T16:40:52.084+02:00
+17,10.215.173.1,49053,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,digitalassetlinks.googleapis.com,78,206,1,1,2025-08-24T16:40:52.092+02:00,2025-08-24T16:40:52.116+02:00
+6,10.215.173.1,51420,216.58.215.106,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Zamknij,digitalassetlinks.googleapis.com,7510,7850,32,39,2025-08-24T16:40:52.177+02:00,2025-08-24T16:41:55.592+02:00
+17,10.215.173.1,31566,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,mon-va.tiktokv.com,64,186,1,1,2025-08-24T16:40:55.885+02:00,2025-08-24T16:40:55.946+02:00
+6,10.215.173.1,37916,71.18.240.1,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,mon-va.tiktokv.com,1503,7534,11,10,2025-08-24T16:40:55.952+02:00,2025-08-24T16:40:57.691+02:00
+17,10.215.173.1,29224,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,firebaseinstallations.googleapis.com,82,226,1,1,2025-08-24T16:40:56.313+02:00,2025-08-24T16:40:56.393+02:00
+17,10.215.173.1,7237,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api-boot.tiktokv.com,66,332,1,1,2025-08-24T16:40:56.389+02:00,2025-08-24T16:40:56.451+02:00
+6,10.215.173.1,53792,8.8.4.4,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,dns.google,891,4335,7,7,2025-08-24T16:40:56.398+02:00,2025-08-24T16:41:07.612+02:00
+6,10.215.173.1,56096,142.250.186.202,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,firebaseinstallations.googleapis.com,2066,5205,10,9,2025-08-24T16:40:56.408+02:00,2025-08-24T16:40:57.781+02:00
+17,10.215.173.1,27633,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api-core-boot.tiktokv.com,71,300,1,1,2025-08-24T16:40:56.414+02:00,2025-08-24T16:40:56.511+02:00
+17,10.215.173.1,47210,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,webcast-boot.tiktokv.com,70,298,1,1,2025-08-24T16:40:56.432+02:00,2025-08-24T16:40:56.511+02:00
+17,10.215.173.1,23499,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,log-boot.tiktokv.com,66,290,1,1,2025-08-24T16:40:56.434+02:00,2025-08-24T16:40:56.512+02:00
+17,10.215.173.1,16400,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,search16-normal-c-useast1a.tiktokv.com,84,326,1,1,2025-08-24T16:40:56.437+02:00,2025-08-24T16:40:56.513+02:00
+6,10.215.173.1,44952,95.101.116.17,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api-boot.tiktokv.com,3224,6913,11,11,2025-08-24T16:40:56.502+02:00,2025-08-24T16:42:00.834+02:00
+17,10.215.173.1,47263,185.60.217.20,443,10274,Facebook,com.facebook.katana,QUIC,Zamknij,,7943,5074,20,19,2025-08-24T16:40:56.509+02:00,2025-08-24T16:40:57.694+02:00
+17,10.215.173.1,5925,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-24T16:40:56.517+02:00,2025-08-24T16:40:56.556+02:00
+6,10.215.173.1,58062,95.101.116.25,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api-core-boot.tiktokv.com,19166,261750,67,56,2025-08-24T16:40:56.518+02:00,2025-08-24T16:42:00.834+02:00
+6,10.215.173.1,44966,95.101.116.17,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,log-boot.tiktokv.com,5992,33032,22,21,2025-08-24T16:40:56.533+02:00,2025-08-24T16:42:00.839+02:00
+6,10.215.173.1,51962,95.101.116.27,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,search16-normal-c-useast1a.tiktokv.com,1057,5548,11,10,2025-08-24T16:40:56.536+02:00,2025-08-24T16:41:07.568+02:00
+6,10.215.173.1,51964,95.101.116.27,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,webcast-boot.tiktokv.com,1017,5475,10,9,2025-08-24T16:40:56.542+02:00,2025-08-24T16:41:07.568+02:00
+6,10.215.173.1,37506,185.60.217.3,443,10542,Instagram,com.instagram.android,HTTPS,Zamknij,gateway.instagram.com,3301,1136,16,11,2025-08-24T16:40:56.553+02:00,2025-08-24T16:41:03.760+02:00
+17,10.215.173.1,47724,157.240.210.63,443,10542,Instagram,com.instagram.android,QUIC,Zamknij,,5366,10037,19,23,2025-08-24T16:40:56.790+02:00,2025-08-24T16:40:57.755+02:00
+17,10.215.173.1,47597,10.215.173.2,53,10542,Instagram,com.instagram.android,DNS,Zamknij,i-fallback.instagram.com,70,119,1,1,2025-08-24T16:40:56.819+02:00,2025-08-24T16:40:56.852+02:00
+6,10.215.173.1,43992,185.60.217.20,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,graph.facebook.com,1434,5652,10,9,2025-08-24T16:40:56.960+02:00,2025-08-24T16:41:20.993+02:00
+6,10.215.173.1,43996,185.60.217.20,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,graph.facebook.com,1897,5750,12,12,2025-08-24T16:40:56.989+02:00,2025-08-24T16:40:58.366+02:00
+6,10.215.173.1,44004,185.60.217.20,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,graph.facebook.com,1857,5663,11,11,2025-08-24T16:40:57.015+02:00,2025-08-24T16:41:16.029+02:00
+6,10.215.173.1,44012,185.60.217.20,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,graph.facebook.com,1711,4824,9,9,2025-08-24T16:40:57.026+02:00,2025-08-24T16:42:00.844+02:00
+6,10.215.173.1,46648,185.60.217.13,443,10274,Facebook,com.facebook.katana,HTTPS,Zamknij,edge-mqtt.facebook.com,2580,1045,16,13,2025-08-24T16:40:57.028+02:00,2025-08-24T16:40:57.663+02:00
+17,10.215.173.1,48219,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,cp-rp.tiktokv.com,63,169,1,1,2025-08-24T16:40:57.092+02:00,2025-08-24T16:40:57.129+02:00
+6,10.215.173.1,59584,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,cp-rp.tiktokv.com,2293,4853,11,9,2025-08-24T16:40:57.208+02:00,2025-08-24T16:42:00.844+02:00
+17,10.215.173.1,1495,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-cdn-settings.appsflyersdk.com,82,146,1,1,2025-08-24T16:40:57.283+02:00,2025-08-24T16:40:57.323+02:00
+6,10.215.173.1,43148,18.172.111.36,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,reqhfg-cdn-settings.appsflyersdk.com,1316,5867,9,8,2025-08-24T16:40:57.329+02:00,2025-08-24T16:41:23.804+02:00
+17,10.215.173.1,19584,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,android.apis.google.com,69,109,1,1,2025-08-24T16:40:57.332+02:00,2025-08-24T16:40:57.358+02:00
+17,10.215.173.1,40313,216.58.208.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,android.apis.google.com,5579,4984,12,14,2025-08-24T16:40:57.391+02:00,2025-08-24T16:40:58.995+02:00
+6,10.215.173.1,46664,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2321,926,13,10,2025-08-24T16:40:57.505+02:00,2025-08-24T16:41:03.076+02:00
+6,10.215.173.1,44014,185.60.217.20,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,graph.facebook.com,1330,2530,8,8,2025-08-24T16:40:57.514+02:00,2025-08-24T16:42:00.845+02:00
+6,10.215.173.1,56704,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2827,699,13,10,2025-08-24T16:40:57.553+02:00,2025-08-24T16:41:03.086+02:00
+17,10.215.173.1,33998,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,aggr32-normal.tiktokv.eu,70,125,1,1,2025-08-24T16:40:58.026+02:00,2025-08-24T16:40:58.054+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,570367,2309762,1611,2868,2025-08-24T16:40:58.077+02:00,2025-08-24T16:44:01.447+02:00
+6,10.215.173.1,35800,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,921,4073,8,8,2025-08-24T16:40:58.080+02:00,2025-08-24T16:41:08.468+02:00
+6,10.215.173.1,35816,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,881,4033,7,7,2025-08-24T16:40:58.094+02:00,2025-08-24T16:41:08.467+02:00
+17,10.215.173.1,49650,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,libra16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:40:58.103+02:00,2025-08-24T16:40:58.133+02:00
+6,10.215.173.1,51980,213.158.203.243,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,libra16-normal-no1a.tiktokv.eu,12561,1653369,187,203,2025-08-24T16:40:58.144+02:00,2025-08-24T16:42:20.957+02:00
+17,10.215.173.1,5409,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p77-sign-sg.tiktokcdn.com,71,189,1,1,2025-08-24T16:40:58.920+02:00,2025-08-24T16:40:58.956+02:00
+6,10.215.173.1,40624,138.199.37.3,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p77-sign-sg.tiktokcdn.com,2029,30620,17,16,2025-08-24T16:40:58.967+02:00,2025-08-24T16:42:00.845+02:00
+6,10.215.173.1,40638,138.199.37.3,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p77-sign-sg.tiktokcdn.com,897,3403,7,7,2025-08-24T16:40:58.974+02:00,2025-08-24T16:40:59.157+02:00
+17,10.215.173.1,21801,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,mssdk16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:40:59.149+02:00,2025-08-24T16:40:59.194+02:00
+17,10.215.173.1,5346,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,vcs16-normal-no1a.tiktokv.eu,74,191,1,1,2025-08-24T16:40:59.190+02:00,2025-08-24T16:40:59.230+02:00
+6,10.215.173.1,54750,213.158.199.83,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,mssdk16-normal-no1a.tiktokv.eu,20066,54339,40,38,2025-08-24T16:40:59.203+02:00,2025-08-24T16:42:25.959+02:00
+6,10.215.173.1,54754,213.158.199.83,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,mssdk16-normal-no1a.tiktokv.eu,737,1528,5,5,2025-08-24T16:40:59.206+02:00,2025-08-24T16:40:59.346+02:00
+6,10.215.173.1,60824,213.158.203.216,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,vcs16-normal-no1a.tiktokv.eu,3304,7891,18,17,2025-08-24T16:40:59.251+02:00,2025-08-24T16:42:00.845+02:00
+17,10.215.173.1,52120,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,webcast-ws16-normal-no1a.tiktokv.eu,81,434,1,1,2025-08-24T16:40:59.411+02:00,2025-08-24T16:40:59.444+02:00
+6,10.215.173.1,54632,23.207.210.84,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,webcast-ws16-normal-no1a.tiktokv.eu,1467,5000,8,8,2025-08-24T16:40:59.449+02:00,2025-08-24T16:42:00.845+02:00
+17,10.215.173.1,24560,10.215.173.2,53,10343,App Selector,com.aura.oobe.samsung.gl,DNS,Zamknij,crashlyticsreports-pa.googleapis.com,82,98,1,1,2025-08-24T16:40:59.479+02:00,2025-08-24T16:40:59.526+02:00
+6,10.215.173.1,45044,172.217.16.3,443,10343,App Selector,com.aura.oobe.samsung.gl,HTTPS,Zamknij,crashlyticsreports-pa.googleapis.com,3750,4701,9,8,2025-08-24T16:40:59.535+02:00,2025-08-24T16:41:10.100+02:00
+17,10.215.173.1,63535,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,log16-normal-no1a.tiktokv.eu,74,222,1,1,2025-08-24T16:40:59.729+02:00,2025-08-24T16:40:59.772+02:00
+6,10.215.173.1,33210,213.158.199.72,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,log16-normal-no1a.tiktokv.eu,58650,52154,56,52,2025-08-24T16:40:59.779+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,15392,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,rtlog16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:41:00.086+02:00,2025-08-24T16:41:00.123+02:00
+17,10.215.173.1,57290,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,bsync16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:41:00.324+02:00,2025-08-24T16:41:00.363+02:00
+6,10.215.173.1,42538,213.158.203.241,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,bsync16-normal-no1a.tiktokv.eu,1582,4568,12,10,2025-08-24T16:41:00.385+02:00,2025-08-24T16:42:00.845+02:00
+17,10.215.173.1,3244,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-ies-music.tiktokcdn.com,74,193,1,1,2025-08-24T16:41:00.487+02:00,2025-08-24T16:41:00.533+02:00
+6,10.215.173.1,57412,23.64.12.178,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-ies-music.tiktokcdn.com,13099,4042929,301,481,2025-08-24T16:41:00.556+02:00,2025-08-24T16:42:00.845+02:00
+6,10.215.173.1,57424,23.64.12.178,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-ies-music.tiktokcdn.com,1017,3973,10,8,2025-08-24T16:41:00.573+02:00,2025-08-24T16:41:20.797+02:00
+6,10.215.173.1,57440,23.64.12.178,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-ies-music.tiktokcdn.com,1070,870,9,7,2025-08-24T16:41:00.650+02:00,2025-08-24T16:41:35.435+02:00
+17,10.215.173.1,26516,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-no1a.tiktokv.eu,74,191,1,1,2025-08-24T16:41:00.693+02:00,2025-08-24T16:41:00.732+02:00
+6,10.215.173.1,47088,213.158.199.74,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-no1a.tiktokv.eu,5711,34080,21,18,2025-08-24T16:41:00.736+02:00,2025-08-24T16:42:15.955+02:00
+17,10.215.173.1,47128,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-core-no1a.tiktokv.eu,72,187,1,1,2025-08-24T16:41:00.929+02:00,2025-08-24T16:41:00.990+02:00
+17,10.215.173.1,32510,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,webcast16-normal-no1a.tiktokv.eu,78,198,1,1,2025-08-24T16:41:01.057+02:00,2025-08-24T16:41:01.159+02:00
+6,10.215.173.1,45632,213.158.203.234,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,webcast16-normal-no1a.tiktokv.eu,1621,4898,13,13,2025-08-24T16:41:01.179+02:00,2025-08-24T16:42:00.846+02:00
+17,10.215.173.1,63083,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,mon16-normal-no1a.tiktokv.eu,74,191,1,1,2025-08-24T16:41:01.188+02:00,2025-08-24T16:41:01.252+02:00
+17,10.215.173.1,39683,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,search16-normal-no1a.tiktokv.eu,77,197,1,1,2025-08-24T16:41:01.219+02:00,2025-08-24T16:41:01.273+02:00
+6,10.215.173.1,55514,213.158.203.249,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,mon16-normal-no1a.tiktokv.eu,29666,144791,115,109,2025-08-24T16:41:01.260+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,30852,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,tnc16-normal-no1a.tiktokv.eu,74,190,1,1,2025-08-24T16:41:01.413+02:00,2025-08-24T16:41:01.441+02:00
+6,10.215.173.1,35096,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,tnc16-normal-no1a.tiktokv.eu,5194,32864,24,23,2025-08-24T16:41:01.447+02:00,2025-08-24T16:42:20.958+02:00
+17,10.215.173.1,25316,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-24T16:41:03.180+02:00,2025-08-24T16:41:03.226+02:00
+6,10.215.173.1,53972,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,,2969,2198,16,14,2025-08-24T16:41:03.199+02:00,2025-08-24T16:41:03.766+02:00
+17,10.215.173.1,26011,10.215.173.2,53,10028,PCAPdroid,com.emanuelef.remote_capture,DNS,Zamknij,firebaselogging.googleapis.com,76,188,1,1,2025-08-24T16:41:03.217+02:00,2025-08-24T16:41:03.244+02:00
+6,10.215.173.1,55428,216.58.208.202,443,10028,PCAPdroid,com.emanuelef.remote_capture,HTTPS,Zamknij,firebaselogging.googleapis.com,1889,5310,8,8,2025-08-24T16:41:03.262+02:00,2025-08-24T16:42:05.953+02:00
+17,10.215.173.1,4677,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,clientauthconfig.googleapis.com,77,221,1,1,2025-08-24T16:41:03.286+02:00,2025-08-24T16:41:03.322+02:00
+6,10.215.173.1,52554,216.58.215.74,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Zamknij,clientauthconfig.googleapis.com,1764,5010,14,14,2025-08-24T16:41:03.354+02:00,2025-08-24T16:41:39.059+02:00
+17,10.215.173.1,38716,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,beacons.gcp.gvt2.com,66,112,1,1,2025-08-24T16:41:04.611+02:00,2025-08-24T16:41:04.641+02:00
+6,10.215.173.1,38116,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,beacons.gcp.gvt2.com,5033,6609,20,16,2025-08-24T16:41:04.649+02:00,2025-08-24T16:42:05.954+02:00
+17,10.215.173.1,54400,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,beacons.gcp.gvt2.com,5425,7539,7,9,2025-08-24T16:41:04.860+02:00,2025-08-24T16:41:04.968+02:00
+17,10.215.173.1,56626,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,www.googleapis.com,64,192,1,1,2025-08-24T16:41:06.410+02:00,2025-08-24T16:41:06.436+02:00
+17,10.215.173.1,58223,216.58.215.74,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,www.googleapis.com,66095,9800,61,41,2025-08-24T16:41:06.443+02:00,2025-08-24T16:41:09.065+02:00
+6,10.215.173.1,53978,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,3402,2205,21,16,2025-08-24T16:41:07.165+02:00,2025-08-24T16:41:12.028+02:00
+17,10.215.173.1,42442,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,gecko16-normal-no1a.tiktokv.eu,76,195,1,1,2025-08-24T16:41:07.581+02:00,2025-08-24T16:41:07.612+02:00
+6,10.215.173.1,35542,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,gecko16-normal-no1a.tiktokv.eu,25351,959457,214,208,2025-08-24T16:41:07.657+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,16044,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,android.googleapis.com,68,180,1,1,2025-08-24T16:41:07.676+02:00,2025-08-24T16:41:07.708+02:00
+17,10.215.173.1,44845,142.250.203.138,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,android.googleapis.com,8188,7813,21,26,2025-08-24T16:41:07.731+02:00,2025-08-24T16:41:08.847+02:00
+17,10.215.173.1,54924,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-teko.tiktokcdn-eu.com,72,299,1,1,2025-08-24T16:41:08.422+02:00,2025-08-24T16:41:08.468+02:00
+6,10.215.173.1,47864,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,sf16-teko.tiktokcdn-eu.com,113040,22559247,1455,2736,2025-08-24T16:41:08.479+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,48924,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T16:41:09.050+02:00,2025-08-24T16:41:09.075+02:00
+17,10.215.173.1,60017,216.239.36.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,25856,8251,47,46,2025-08-24T16:41:09.095+02:00,2025-08-24T16:41:13.962+02:00
+17,10.215.173.1,41529,10.215.173.2,53,10210,WhatsApp,com.whatsapp,DNS,Zamknij,g.whatsapp.net,60,99,1,1,2025-08-24T16:41:09.224+02:00,2025-08-24T16:41:09.241+02:00
+6,10.215.173.1,44800,185.60.217.54,443,10210,WhatsApp,com.whatsapp,TCP,Zamknij,g.whatsapp.net,2542,1830,24,23,2025-08-24T16:41:09.285+02:00,2025-08-24T16:41:35.532+02:00
+17,10.215.173.1,40554,216.239.38.135,443,10255,Mapy,com.google.android.apps.maps,QUIC,Zamknij,,15170,24084,31,33,2025-08-24T16:41:11.136+02:00,2025-08-24T16:41:11.872+02:00
+17,10.215.173.1,56970,10.215.173.2,53,10255,Mapy,com.google.android.apps.maps,DNS,Zamknij,mobilemaps-pa-gz.googleapis.com,77,93,1,1,2025-08-24T16:41:11.149+02:00,2025-08-24T16:41:11.187+02:00
+6,10.215.173.1,56410,216.239.38.135,443,10255,Mapy,com.google.android.apps.maps,HTTPS,Zamknij,mobilemaps-pa-gz.googleapis.com,2251,5698,8,6,2025-08-24T16:41:11.152+02:00,2025-08-24T16:41:14.441+02:00
+17,10.215.173.1,35683,10.215.173.2,53,10104,Konto Samsung,com.osp.app.signin,DNS,Zamknij,api.account.samsung.com,69,176,1,1,2025-08-24T16:41:11.363+02:00,2025-08-24T16:41:11.404+02:00
+6,10.215.173.1,49266,143.204.215.49,443,10104,Konto Samsung,com.osp.app.signin,HTTPS,Zamknij,api.account.samsung.com,1251,5742,9,10,2025-08-24T16:41:11.421+02:00,2025-08-24T16:41:39.947+02:00
+6,10.215.173.1,56418,216.239.38.135,443,10255,Mapy,com.google.android.apps.maps,HTTPS,Zamknij,mobilemaps-pa-gz.googleapis.com,2219,5698,8,6,2025-08-24T16:41:11.457+02:00,2025-08-24T16:41:14.440+02:00
+6,10.215.173.1,56422,216.239.38.135,443,10255,Mapy,com.google.android.apps.maps,HTTPS,Zamknij,mobilemaps-pa-gz.googleapis.com,2155,5700,8,6,2025-08-24T16:41:11.499+02:00,2025-08-24T16:41:14.440+02:00
+17,10.215.173.1,42046,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-useast5.tiktokv.us,77,367,1,1,2025-08-24T16:41:11.903+02:00,2025-08-24T16:41:11.936+02:00
+17,10.215.173.1,24177,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-c-alisg.tiktokv.com,78,380,1,1,2025-08-24T16:41:11.911+02:00,2025-08-24T16:41:11.950+02:00
+6,10.215.173.1,52732,95.101.61.204,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-c-alisg.tiktokv.com,6334,10385,32,31,2025-08-24T16:41:11.965+02:00,2025-08-24T16:43:15.909+02:00
+6,10.215.173.1,37652,23.219.36.231,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-useast5.tiktokv.us,6285,7911,32,28,2025-08-24T16:41:11.984+02:00,2025-08-24T16:43:15.828+02:00
+6,10.215.173.1,37662,23.219.36.231,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-useast5.tiktokv.us,977,3754,9,8,2025-08-24T16:41:12.138+02:00,2025-08-24T16:41:34.974+02:00
+17,10.215.173.1,37746,216.239.36.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,14581,6137,21,24,2025-08-24T16:41:12.200+02:00,2025-08-24T16:41:14.202+02:00
+17,10.215.173.1,18779,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,youtubei.googleapis.com,69,149,1,1,2025-08-24T16:41:12.260+02:00,2025-08-24T16:41:12.295+02:00
+17,10.215.173.1,57636,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,i.ytimg.com,57,169,1,1,2025-08-24T16:41:12.278+02:00,2025-08-24T16:41:12.331+02:00
+17,10.215.173.1,33454,142.250.186.202,443,10253,YouTube,com.google.android.youtube,QUIC,Zamknij,youtubei.googleapis.com,9677,9483,19,18,2025-08-24T16:41:12.516+02:00,2025-08-24T16:41:13.212+02:00
+17,10.215.173.1,50294,142.250.203.214,443,10253,YouTube,com.google.android.youtube,QUIC,Zamknij,i.ytimg.com,5976,9676,14,13,2025-08-24T16:41:12.526+02:00,2025-08-24T16:41:13.044+02:00
+17,10.215.173.1,38575,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,youtubei.googleapis.com,69,149,1,1,2025-08-24T16:41:12.538+02:00,2025-08-24T16:41:12.581+02:00
+17,10.215.173.1,7542,10.215.173.2,53,10253,YouTube,com.google.android.youtube,DNS,Zamknij,i.ytimg.com,57,169,1,1,2025-08-24T16:41:12.549+02:00,2025-08-24T16:41:12.635+02:00
+6,10.215.173.1,46432,142.250.203.138,443,10253,YouTube,com.google.android.youtube,HTTPS,Zamknij,youtubei.googleapis.com,2179,5715,8,7,2025-08-24T16:41:12.590+02:00,2025-08-24T16:41:16.758+02:00
+6,10.215.173.1,44394,216.58.215.118,443,10253,YouTube,com.google.android.youtube,HTTPS,Zamknij,i.ytimg.com,2175,7050,9,7,2025-08-24T16:41:12.706+02:00,2025-08-24T16:41:16.758+02:00
+17,10.215.173.1,52140,216.239.36.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,8088,5189,13,15,2025-08-24T16:41:13.315+02:00,2025-08-24T16:41:13.524+02:00
+17,10.215.173.1,40619,216.239.36.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,8186,5262,13,14,2025-08-24T16:41:14.243+02:00,2025-08-24T16:41:14.467+02:00
+17,10.215.173.1,52134,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-dlsdk.appsflyersdk.com,75,139,1,1,2025-08-24T16:41:15.664+02:00,2025-08-24T16:41:15.696+02:00
+6,10.215.173.1,47476,143.204.214.100,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,reqhfg-dlsdk.appsflyersdk.com,1628,5873,10,10,2025-08-24T16:41:15.711+02:00,2025-08-24T16:42:15.955+02:00
+6,10.215.173.1,37610,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2321,886,13,9,2025-08-24T16:41:19.487+02:00,2025-08-24T16:41:35.371+02:00
+6,10.215.173.1,55230,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,3244,986,19,12,2025-08-24T16:41:19.554+02:00,2025-08-24T16:41:35.371+02:00
+17,10.215.173.1,28008,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,frontier16-normal-no1a.tiktokv.eu,79,370,1,1,2025-08-24T16:41:19.642+02:00,2025-08-24T16:41:19.747+02:00
+6,10.215.173.1,45128,23.207.210.95,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,frontier16-normal-no1a.tiktokv.eu,7649,8354,23,23,2025-08-24T16:41:19.831+02:00,2025-08-24T16:43:23.146+02:00
+6,10.215.173.1,42334,185.60.217.35,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,www.facebook.com,2636,4172,12,10,2025-08-24T16:41:20.254+02:00,2025-08-24T16:41:35.371+02:00
+17,10.215.173.1,14467,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,www.facebook.com,62,107,1,1,2025-08-24T16:41:20.419+02:00,2025-08-24T16:41:20.444+02:00
+17,10.215.173.1,42876,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,86,215,1,1,2025-08-24T16:41:20.422+02:00,2025-08-24T16:41:20.444+02:00
+6,10.215.173.1,47428,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,817,3037,7,7,2025-08-24T16:41:20.450+02:00,2025-08-24T16:41:20.562+02:00
+6,10.215.173.1,47434,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,3782,60728,30,26,2025-08-24T16:41:20.458+02:00,2025-08-24T16:42:20.958+02:00
+6,10.215.173.1,47444,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,100,88,2,2,2025-08-24T16:41:20.500+02:00,2025-08-24T16:41:20.562+02:00
+6,10.215.173.1,47450,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,100,88,2,2,2025-08-24T16:41:20.510+02:00,2025-08-24T16:41:20.562+02:00
+17,10.215.173.1,58224,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-conversions.appsflyersdk.com,81,145,1,1,2025-08-24T16:41:20.768+02:00,2025-08-24T16:41:20.787+02:00
+6,10.215.173.1,38154,108.138.24.124,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,reqhfg-conversions.appsflyersdk.com,5239,5781,9,9,2025-08-24T16:41:20.792+02:00,2025-08-24T16:42:20.958+02:00
+17,10.215.173.1,56467,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-gcdsdk.appsflyersdk.com,76,140,1,1,2025-08-24T16:41:21.026+02:00,2025-08-24T16:41:21.051+02:00
+6,10.215.173.1,40500,13.32.23.202,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,reqhfg-gcdsdk.appsflyersdk.com,1497,6059,11,11,2025-08-24T16:41:21.056+02:00,2025-08-24T16:41:23.767+02:00
+17,10.215.173.1,33737,10.215.173.2,53,10390,Prywatność w reklamach,com.google.android.adservices.api,DNS,Zamknij,aps-webhandler.appsflyer.com,74,138,1,1,2025-08-24T16:41:22.198+02:00,2025-08-24T16:41:22.250+02:00
+6,10.215.173.1,55140,52.222.136.4,443,10390,Prywatność w reklamach,com.google.android.adservices.api,HTTPS,Zamknij,aps-webhandler.appsflyer.com,1445,6268,9,9,2025-08-24T16:41:22.270+02:00,2025-08-24T16:41:22.788+02:00
+17,10.215.173.1,47245,10.215.173.2,53,10390,Prywatność w reklamach,com.google.android.adservices.api,DNS,Zamknij,privacy-sandbox.appsflyersdk.com,78,142,1,1,2025-08-24T16:41:22.848+02:00,2025-08-24T16:41:22.867+02:00
+6,10.215.173.1,41980,108.138.26.9,443,10390,Prywatność w reklamach,com.google.android.adservices.api,HTTPS,Zamknij,privacy-sandbox.appsflyersdk.com,1508,6663,10,10,2025-08-24T16:41:22.873+02:00,2025-08-24T16:42:25.959+02:00
+6,10.215.173.1,56368,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2790,819,14,13,2025-08-24T16:41:23.040+02:00,2025-08-24T16:41:29.242+02:00
+6,10.215.173.1,53070,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,2691,2235,9,9,2025-08-24T16:41:23.371+02:00,2025-08-24T16:41:23.563+02:00
+17,10.215.173.1,5187,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-launches.appsflyersdk.com,78,142,1,1,2025-08-24T16:41:23.575+02:00,2025-08-24T16:41:23.606+02:00
+6,10.215.173.1,57520,54.192.87.209,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,reqhfg-launches.appsflyersdk.com,4980,5781,9,9,2025-08-24T16:41:23.614+02:00,2025-08-24T16:42:25.959+02:00
+17,10.215.173.1,38530,216.58.215.74,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,www.googleapis.com,8155,110337,54,94,2025-08-24T16:41:23.965+02:00,2025-08-24T16:41:24.387+02:00
+6,10.215.173.1,38200,216.58.215.74,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Zamknij,www.googleapis.com,2102,5661,7,6,2025-08-24T16:41:24.028+02:00,2025-08-24T16:42:25.959+02:00
+17,10.52.216.201,53967,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,46395,2456,41,13,2025-08-24T16:41:26.283+02:00,2025-08-24T16:41:26.705+02:00
+17,10.215.173.1,57472,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-useast2a.tiktokcdn.com,72,187,1,1,2025-08-24T16:41:34.982+02:00,2025-08-24T16:41:35.013+02:00
+17,10.215.173.1,29082,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-pu-sign-no.tiktokcdn-eu.com,77,262,1,1,2025-08-24T16:41:35.027+02:00,2025-08-24T16:41:35.047+02:00
+6,10.215.173.1,55664,23.64.12.171,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-useast2a.tiktokcdn.com,1585,8816,13,13,2025-08-24T16:41:35.039+02:00,2025-08-24T16:42:36.031+02:00
+6,10.215.173.1,55672,23.64.12.171,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-pu-sign-no.tiktokcdn-eu.com,18100,556925,164,165,2025-08-24T16:41:35.064+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,5215,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,v15m.tiktokcdn-eu.com,67,174,1,1,2025-08-24T16:41:35.458+02:00,2025-08-24T16:41:35.484+02:00
+6,10.215.173.1,48004,18.66.112.33,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v15m.tiktokcdn-eu.com,6933,934765,123,123,2025-08-24T16:41:35.499+02:00,2025-08-24T16:42:36.036+02:00
+6,10.215.173.1,48012,18.66.112.33,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v15m.tiktokcdn-eu.com,1001,4790,10,8,2025-08-24T16:41:35.512+02:00,2025-08-24T16:42:17.679+02:00
+6,10.215.173.1,48018,18.66.112.33,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v15m.tiktokcdn-eu.com,7252,831727,110,110,2025-08-24T16:41:35.534+02:00,2025-08-24T16:41:36.469+02:00
+6,10.215.173.1,48030,18.66.112.33,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v15m.tiktokcdn-eu.com,961,716,9,7,2025-08-24T16:41:35.651+02:00,2025-08-24T16:42:17.679+02:00
+17,10.215.173.1,62220,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,v19.tiktokcdn-eu.com,66,126,1,1,2025-08-24T16:41:35.751+02:00,2025-08-24T16:41:35.799+02:00
+6,10.215.173.1,52430,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v19.tiktokcdn-eu.com,801,3756,5,5,2025-08-24T16:41:35.812+02:00,2025-08-24T16:42:36.040+02:00
+6,10.215.173.1,52444,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v19.tiktokcdn-eu.com,801,3756,5,5,2025-08-24T16:41:35.969+02:00,2025-08-24T16:42:36.041+02:00
+6,10.215.173.1,56500,95.101.61.17,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,977,3365,9,7,2025-08-24T16:41:36.282+02:00,2025-08-24T16:41:57.579+02:00
+17,10.215.173.1,21205,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,whoami.akamai.net,63,79,1,1,2025-08-24T16:41:36.313+02:00,2025-08-24T16:41:36.468+02:00
+6,10.215.173.1,56512,95.101.61.17,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,120960,40322853,2261,4357,2025-08-24T16:41:36.387+02:00,2025-08-24T16:44:01.302+02:00
+17,10.215.173.1,9458,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,v16m.tiktokcdn-eu.com,67,291,1,1,2025-08-24T16:41:36.430+02:00,2025-08-24T16:41:36.494+02:00
+6,10.215.173.1,39320,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Błąd,connectivitycheck.gstatic.com,2532,2420,15,15,2025-08-24T16:41:36.511+02:00,2025-08-24T16:44:01.302+02:00
+6,10.215.173.1,56528,95.101.61.17,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,977,3365,9,7,2025-08-24T16:41:36.565+02:00,2025-08-24T16:41:57.580+02:00
+6,10.215.173.1,43478,156.146.33.173,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v77.tiktokcdn-eu.com,977,3421,9,7,2025-08-24T16:41:36.721+02:00,2025-08-24T16:41:57.580+02:00
+6,10.215.173.1,43494,156.146.33.173,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v77.tiktokcdn-eu.com,977,3420,9,7,2025-08-24T16:41:36.950+02:00,2025-08-24T16:42:17.679+02:00
+6,10.215.173.1,39406,185.60.217.54,5222,10210,WhatsApp,com.whatsapp,TCP,Zamknij,g.whatsapp.net,1104,1204,10,9,2025-08-24T16:41:37.048+02:00,2025-08-24T16:41:42.944+02:00
+17,10.215.173.1,26851,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-music.tiktokcdn-eu.com,73,189,1,1,2025-08-24T16:41:37.256+02:00,2025-08-24T16:41:37.291+02:00
+6,10.215.173.1,47294,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-music.tiktokcdn-eu.com,977,3348,9,7,2025-08-24T16:41:37.307+02:00,2025-08-24T16:41:57.582+02:00
+6,10.215.173.1,47306,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-music.tiktokcdn-eu.com,2874,328828,49,49,2025-08-24T16:41:37.319+02:00,2025-08-24T16:41:37.673+02:00
+6,10.215.173.1,47314,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-music.tiktokcdn-eu.com,977,3348,9,7,2025-08-24T16:41:37.429+02:00,2025-08-24T16:42:17.680+02:00
+17,10.215.173.1,14842,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p77-sg.tiktokcdn.com,66,184,1,1,2025-08-24T16:41:37.920+02:00,2025-08-24T16:41:37.947+02:00
+17,10.52.216.201,48397,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,1826,29750,15,27,2025-08-24T16:41:37.963+02:00,2025-08-24T16:41:38.187+02:00
+6,10.215.173.1,42468,138.199.37.53,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p77-sg.tiktokcdn.com,2214,32900,20,19,2025-08-24T16:41:37.990+02:00,2025-08-24T16:42:56.163+02:00
+17,10.215.173.1,57122,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play.googleapis.com,7022,8007,15,19,2025-08-24T16:41:38.752+02:00,2025-08-24T16:41:39.312+02:00
+6,10.215.173.1,49188,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,2698,2724,8,7,2025-08-24T16:41:38.774+02:00,2025-08-24T16:42:41.044+02:00
+17,10.215.173.1,21178,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,rr2---sn-2auhvcpax-2v1e.gvt1.com,78,130,1,1,2025-08-24T16:41:38.968+02:00,2025-08-24T16:41:39.019+02:00
+17,10.215.173.1,57559,213.158.221.141,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr2---sn-2auhvcpax-2v1e.gvt1.com,43193,6528177,619,5114,2025-08-24T16:41:39.050+02:00,2025-08-24T16:41:41.746+02:00
+17,10.215.173.1,1121,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,rr6---sn-2auhvcpax-2v1e.gvt1.com,78,130,1,1,2025-08-24T16:41:39.340+02:00,2025-08-24T16:41:39.372+02:00
+17,10.215.173.1,41324,213.158.221.145,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr6---sn-2auhvcpax-2v1e.gvt1.com,7455,98405,50,85,2025-08-24T16:41:39.410+02:00,2025-08-24T16:41:39.911+02:00
+6,10.215.173.1,53992,213.158.221.145,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,rr6---sn-2auhvcpax-2v1e.gvt1.com,2178,4765,8,6,2025-08-24T16:41:39.440+02:00,2025-08-24T16:42:39.535+02:00
+6,10.215.173.1,49202,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,5707,2196,10,10,2025-08-24T16:41:40.048+02:00,2025-08-24T16:41:40.323+02:00
+17,10.215.173.1,5601,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:41:41.084+02:00,2025-08-24T16:41:41.119+02:00
+6,10.215.173.1,54590,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1327,7228,10,10,2025-08-24T16:41:41.134+02:00,2025-08-24T16:41:41.565+02:00
+6,10.215.173.1,35076,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:41:41.514+02:00,2025-08-24T16:42:41.044+02:00
+6,10.215.173.1,44924,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1406,7631,9,9,2025-08-24T16:41:41.547+02:00,2025-08-24T16:42:46.066+02:00
+17,10.215.173.1,8281,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-va.tiktokcdn.com,67,179,1,1,2025-08-24T16:41:48.555+02:00,2025-08-24T16:41:48.640+02:00
+6,10.215.173.1,35438,23.64.12.160,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,sf16-va.tiktokcdn.com,12189,1197356,174,196,2025-08-24T16:41:48.650+02:00,2025-08-24T16:44:01.302+02:00
+6,10.215.173.1,46336,185.60.217.13,443,10303,Messenger,com.facebook.orca,TLS,Zamknij,edge-mqtt.facebook.com,100,88,2,2,2025-08-24T16:41:51.183+02:00,2025-08-24T16:41:51.232+02:00
+17,10.215.173.1,43830,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T16:41:51.198+02:00,2025-08-24T16:41:51.246+02:00
+17,10.215.173.1,32152,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T16:41:51.207+02:00,2025-08-24T16:41:51.248+02:00
+6,10.215.173.1,53522,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2907,739,15,11,2025-08-24T16:41:51.270+02:00,2025-08-24T16:42:56.163+02:00
+6,10.215.173.1,46342,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2094,804,9,9,2025-08-24T16:41:51.286+02:00,2025-08-24T16:42:51.134+02:00
+17,10.215.173.1,38934,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p77-sign-va.tiktokcdn.com,71,189,1,1,2025-08-24T16:42:11.731+02:00,2025-08-24T16:42:11.776+02:00
+17,10.215.173.1,52774,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-common-sign-useastred.tiktokcdn-eu.com,88,331,1,1,2025-08-24T16:42:11.749+02:00,2025-08-24T16:42:11.805+02:00
+6,10.215.173.1,51920,138.199.37.40,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p77-sign-va.tiktokcdn.com,1554,5819,9,7,2025-08-24T16:42:11.794+02:00,2025-08-24T16:43:16.323+02:00
+6,10.215.173.1,41594,213.158.203.235,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-common-sign-useastred.tiktokcdn-eu.com,857,2934,6,5,2025-08-24T16:42:11.819+02:00,2025-08-24T16:42:11.944+02:00
+6,10.215.173.1,41604,213.158.203.235,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-common-sign-useastred.tiktokcdn-eu.com,2312,13288,15,11,2025-08-24T16:42:11.830+02:00,2025-08-24T16:43:16.324+02:00
+6,10.215.173.1,41614,213.158.203.235,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-common-sign-useastred.tiktokcdn-eu.com,777,2998,6,6,2025-08-24T16:42:11.845+02:00,2025-08-24T16:42:11.960+02:00
+6,10.215.173.1,51118,185.60.217.54,5222,10210,WhatsApp,com.whatsapp,TCP,Zamknij,g.whatsapp.net,1617,1725,22,21,2025-08-24T16:42:16.551+02:00,2025-08-24T16:42:57.878+02:00
+17,10.215.173.1,39657,142.250.203.138,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,youtubei.googleapis.com,6492,5828,13,16,2025-08-24T16:42:19.078+02:00,2025-08-24T16:42:19.372+02:00
+17,10.52.216.201,48397,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,1472,33913,16,30,2025-08-24T16:42:23.733+02:00,2025-08-24T16:42:24.012+02:00
+17,10.215.173.1,51854,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play.googleapis.com,5917,7029,15,19,2025-08-24T16:42:25.045+02:00,2025-08-24T16:42:25.575+02:00
+17,10.215.173.1,51159,213.158.221.141,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr2---sn-2auhvcpax-2v1e.gvt1.com,8794,402735,79,319,2025-08-24T16:42:25.221+02:00,2025-08-24T16:42:25.466+02:00
+17,10.215.173.1,22939,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,rr1---sn-2auhvcpax-2v1e.gvt1.com,78,130,1,1,2025-08-24T16:42:25.598+02:00,2025-08-24T16:42:25.634+02:00
+17,10.215.173.1,39827,213.158.221.140,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr1---sn-2auhvcpax-2v1e.gvt1.com,39014,5855321,551,4586,2025-08-24T16:42:25.650+02:00,2025-08-24T16:42:27.489+02:00
+17,10.215.173.1,22953,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,libra16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:42:26.280+02:00,2025-08-24T16:42:26.308+02:00
+6,10.215.173.1,39300,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,libra16-normal-no1a.tiktokv.eu,3779,2924,10,10,2025-08-24T16:42:26.314+02:00,2025-08-24T16:43:26.524+02:00
+6,10.215.173.1,45898,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,10246,2110,11,11,2025-08-24T16:42:29.710+02:00,2025-08-24T16:42:29.963+02:00
+6,10.215.173.1,33612,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:42:33.491+02:00,2025-08-24T16:42:54.150+02:00
+6,10.215.173.1,33616,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:42:33.712+02:00,2025-08-24T16:42:54.150+02:00
+6,10.215.173.1,60518,156.146.33.173,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v77.tiktokcdn-eu.com,977,3420,9,7,2025-08-24T16:42:33.884+02:00,2025-08-24T16:43:23.254+02:00
+6,10.215.173.1,60526,156.146.33.173,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v77.tiktokcdn-eu.com,977,3405,9,7,2025-08-24T16:42:34.001+02:00,2025-08-24T16:43:24.017+02:00
+17,10.215.173.1,11306,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,83,208,1,1,2025-08-24T16:42:34.495+02:00,2025-08-24T16:42:34.524+02:00
+17,10.215.173.1,56804,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,83,137,1,1,2025-08-24T16:42:34.507+02:00,2025-08-24T16:42:34.546+02:00
+6,10.215.173.1,52034,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,29186,6197448,390,747,2025-08-24T16:42:34.531+02:00,2025-08-24T16:44:01.302+02:00
+6,10.215.173.1,52042,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,777,2997,6,6,2025-08-24T16:42:34.540+02:00,2025-08-24T16:42:34.697+02:00
+6,10.215.173.1,41880,146.75.118.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,18082,2769775,264,383,2025-08-24T16:42:34.561+02:00,2025-08-24T16:44:01.302+02:00
+6,10.215.173.1,41896,146.75.118.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,881,4364,7,7,2025-08-24T16:42:34.568+02:00,2025-08-24T16:42:34.757+02:00
+6,10.215.173.1,41904,146.75.118.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,881,4364,7,7,2025-08-24T16:42:34.579+02:00,2025-08-24T16:42:34.756+02:00
+6,10.215.173.1,52058,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,777,2934,6,5,2025-08-24T16:42:34.589+02:00,2025-08-24T16:42:34.683+02:00
+6,10.215.173.1,52074,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,737,2934,5,5,2025-08-24T16:42:34.598+02:00,2025-08-24T16:42:34.686+02:00
+6,10.215.173.1,52076,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,817,2974,7,6,2025-08-24T16:42:34.604+02:00,2025-08-24T16:42:34.683+02:00
+6,10.215.173.1,52090,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,737,2933,5,5,2025-08-24T16:42:34.611+02:00,2025-08-24T16:42:34.686+02:00
+17,10.215.173.1,59323,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,reqhfg-launches.appsflyersdk.com,78,142,1,1,2025-08-24T16:42:41.017+02:00,2025-08-24T16:42:41.043+02:00
+6,10.215.173.1,44306,99.84.149.42,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,reqhfg-launches.appsflyersdk.com,8322,2002,12,12,2025-08-24T16:42:41.050+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,49194,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:42:42.315+02:00,2025-08-24T16:42:42.369+02:00
+6,10.215.173.1,60792,52.214.10.134,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1409,7309,12,12,2025-08-24T16:42:42.390+02:00,2025-08-24T16:42:42.794+02:00
+6,10.215.173.1,45176,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:42:42.733+02:00,2025-08-24T16:43:46.833+02:00
+17,10.215.173.1,65360,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,jsb16-normal-no1a.tiktokv.eu,74,190,1,1,2025-08-24T16:42:49.336+02:00,2025-08-24T16:42:49.375+02:00
+6,10.215.173.1,60344,213.158.199.81,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,jsb16-normal-no1a.tiktokv.eu,3275,14760,14,14,2025-08-24T16:42:49.384+02:00,2025-08-24T16:43:52.045+02:00
+17,10.215.173.1,51705,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-24T16:42:50.589+02:00,2025-08-24T16:42:50.614+02:00
+6,10.215.173.1,44676,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2790,819,14,13,2025-08-24T16:42:50.594+02:00,2025-08-24T16:42:51.937+02:00
+6,10.215.173.1,49468,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2051,698,10,7,2025-08-24T16:42:51.203+02:00,2025-08-24T16:42:57.253+02:00
+17,10.215.173.1,64418,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,edge-mqtt.facebook.com,68,108,1,1,2025-08-24T16:42:51.211+02:00,2025-08-24T16:42:51.236+02:00
+6,10.215.173.1,38220,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1401,7631,9,9,2025-08-24T16:42:52.130+02:00,2025-08-24T16:43:52.060+02:00
+17,10.52.216.201,53967,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,405,557,4,5,2025-08-24T16:42:53.043+02:00,2025-08-24T16:42:53.311+02:00
+17,10.215.173.1,17422,10.215.173.2,53,10303,Messenger,com.facebook.orca,DNS,Zamknij,chat-e2ee.facebook.com,68,113,1,1,2025-08-24T16:42:56.196+02:00,2025-08-24T16:42:56.229+02:00
+6,10.215.173.1,37444,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,3003,953,16,13,2025-08-24T16:42:56.202+02:00,2025-08-24T16:42:57.251+02:00
+17,10.215.173.1,6927,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-sg.tiktokcdn.com,67,179,1,1,2025-08-24T16:42:57.662+02:00,2025-08-24T16:42:57.687+02:00
+17,10.215.173.1,56911,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,oec16-normal-no1a.tiktokv.eu,74,191,1,1,2025-08-24T16:42:57.739+02:00,2025-08-24T16:42:57.775+02:00
+6,10.215.173.1,52546,213.158.203.217,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,oec16-normal-no1a.tiktokv.eu,7571,7187,19,18,2025-08-24T16:42:57.786+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,31323,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,86,215,1,1,2025-08-24T16:42:58.303+02:00,2025-08-24T16:42:58.341+02:00
+17,10.215.173.1,22824,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-sg.tiktokcdn.com,66,289,1,1,2025-08-24T16:42:58.785+02:00,2025-08-24T16:42:58.821+02:00
+17,10.215.173.1,20876,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,lf16-effectcdn-sg.tiktokcdn.com,77,199,1,1,2025-08-24T16:43:00.959+02:00,2025-08-24T16:43:00.986+02:00
+6,10.215.173.1,39146,23.64.12.176,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf16-effectcdn-sg.tiktokcdn.com,6037,704392,119,119,2025-08-24T16:43:00.992+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,43837,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,mssdk16-normal-no1a.tiktokv.eu,76,194,1,1,2025-08-24T16:43:01.364+02:00,2025-08-24T16:43:01.406+02:00
+6,10.215.173.1,36360,213.158.199.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,mssdk16-normal-no1a.tiktokv.eu,38370,6361,25,22,2025-08-24T16:43:01.414+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,61284,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,v45.tiktokcdn-eu.com,66,119,1,1,2025-08-24T16:43:01.922+02:00,2025-08-24T16:43:01.965+02:00
+6,10.215.173.1,37016,139.177.245.199,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v45.tiktokcdn-eu.com,857,5125,6,6,2025-08-24T16:43:01.979+02:00,2025-08-24T16:44:01.303+02:00
+6,10.215.173.1,37032,139.177.245.199,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v45.tiktokcdn-eu.com,897,5165,7,7,2025-08-24T16:43:02.108+02:00,2025-08-24T16:44:01.303+02:00
+6,10.215.173.1,40360,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:43:02.242+02:00,2025-08-24T16:43:23.254+02:00
+6,10.215.173.1,40374,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:43:03.074+02:00,2025-08-24T16:43:23.254+02:00
+6,10.215.173.1,37206,185.60.217.13,443,10303,Messenger,com.facebook.orca,HTTPS,Zamknij,edge-mqtt.facebook.com,2010,658,9,6,2025-08-24T16:43:03.176+02:00,2025-08-24T16:43:51.491+02:00
+6,10.215.173.1,44960,185.60.217.29,5222,10303,Messenger,com.facebook.orca,TCP,Zamknij,chat-e2ee.facebook.com,2907,699,15,10,2025-08-24T16:43:03.196+02:00,2025-08-24T16:43:51.489+02:00
+6,10.215.173.1,35654,185.60.217.54,443,10210,WhatsApp,com.whatsapp,TCP,Błąd,g.whatsapp.net,1537,1685,20,20,2025-08-24T16:43:03.305+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,2886,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p77-sg.tiktokcdn.com,66,184,1,1,2025-08-24T16:43:04.273+02:00,2025-08-24T16:43:04.326+02:00
+6,10.215.173.1,52242,138.199.37.3,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p77-sg.tiktokcdn.com,2945,74089,34,31,2025-08-24T16:43:04.356+02:00,2025-08-24T16:44:01.303+02:00
+17,10.52.216.201,48397,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,1752,37327,11,33,2025-08-24T16:43:09.224+02:00,2025-08-24T16:43:09.481+02:00
+6,10.215.173.1,55738,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Błąd,beacons.gcp.gvt2.com,4451,6489,18,13,2025-08-24T16:43:09.525+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,53952,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,beacons.gcp.gvt2.com,4148,7546,6,9,2025-08-24T16:43:09.904+02:00,2025-08-24T16:43:10.055+02:00
+17,10.215.173.1,60329,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play.googleapis.com,5685,6646,13,17,2025-08-24T16:43:10.340+02:00,2025-08-24T16:43:10.523+02:00
+17,10.215.173.1,40831,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,rr7---sn-2auhvcpax-2v1e.gvt1.com,78,130,1,1,2025-08-24T16:43:10.464+02:00,2025-08-24T16:43:10.498+02:00
+17,10.215.173.1,58307,213.158.221.141,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr2---sn-2auhvcpax-2v1e.gvt1.com,5994,14715,12,16,2025-08-24T16:43:10.478+02:00,2025-08-24T16:43:10.632+02:00
+17,10.215.173.1,33925,213.158.221.146,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr7---sn-2auhvcpax-2v1e.gvt1.com,39861,6427927,583,5036,2025-08-24T16:43:10.512+02:00,2025-08-24T16:43:12.250+02:00
+6,10.215.173.1,38252,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2790,819,14,13,2025-08-24T16:43:12.970+02:00,2025-08-24T16:43:19.525+02:00
+17,10.215.173.1,57434,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,frontier16-normal-no1a.tiktokv.eu,79,370,1,1,2025-08-24T16:43:23.108+02:00,2025-08-24T16:43:23.131+02:00
+6,10.215.173.1,55016,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,frontier16-normal-no1a.tiktokv.eu,6828,4527,16,15,2025-08-24T16:43:23.138+02:00,2025-08-24T16:43:59.086+02:00
+6,10.215.173.1,58656,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,2610,151125,31,31,2025-08-24T16:43:24.041+02:00,2025-08-24T16:44:01.303+02:00
+6,10.215.173.1,58660,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:43:24.426+02:00,2025-08-24T16:43:52.744+02:00
+17,10.215.173.1,36872,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-common-sign-useastred.tiktokcdn-eu.com,88,331,1,1,2025-08-24T16:43:24.624+02:00,2025-08-24T16:43:24.697+02:00
+6,10.215.173.1,33322,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-common-sign-useastred.tiktokcdn-eu.com,2613,10493,17,14,2025-08-24T16:43:24.718+02:00,2025-08-24T16:44:01.303+02:00
+17,10.52.216.201,53967,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,20235,492,20,6,2025-08-24T16:43:28.134+02:00,2025-08-24T16:43:28.531+02:00
+6,10.215.173.1,44132,138.199.37.40,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p77-sign-va.tiktokcdn.com,1754,3477,11,11,2025-08-24T16:43:28.209+02:00,2025-08-24T16:44:01.303+02:00
+6,10.215.173.1,47812,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,3619,2035,9,9,2025-08-24T16:43:28.623+02:00,2025-08-24T16:43:28.838+02:00
+6,10.215.173.1,47824,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play.googleapis.com,4810,2045,9,9,2025-08-24T16:43:28.869+02:00,2025-08-24T16:43:29.128+02:00
+6,10.215.173.1,34096,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:43:32.639+02:00,2025-08-24T16:43:52.745+02:00
+17,10.215.173.1,39541,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p77-sign-sg.tiktokcdn.com,71,189,1,1,2025-08-24T16:43:35.143+02:00,2025-08-24T16:43:35.170+02:00
+6,10.215.173.1,44622,138.199.37.37,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p77-sign-sg.tiktokcdn.com,2156,6922,14,13,2025-08-24T16:43:35.184+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,31475,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,libra16-normal-no1a.tiktokv.eu,76,306,1,1,2025-08-24T16:43:44.721+02:00,2025-08-24T16:43:44.771+02:00
+17,10.215.173.1,63869,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-useast5.tiktokv.us,77,367,1,1,2025-08-24T16:43:46.475+02:00,2025-08-24T16:43:46.506+02:00
+6,10.215.173.1,57264,95.101.61.204,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,api16-normal-c-alisg.tiktokv.com,6254,4975,19,19,2025-08-24T16:43:46.480+02:00,2025-08-24T16:44:01.303+02:00
+6,10.215.173.1,34424,23.43.85.208,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,api16-normal-useast5.tiktokv.us,6199,4285,19,19,2025-08-24T16:43:46.533+02:00,2025-08-24T16:44:01.295+02:00
+17,10.215.173.1,34455,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-no1a.tiktokv.eu,74,239,1,1,2025-08-24T16:43:47.108+02:00,2025-08-24T16:43:47.138+02:00
+17,10.215.173.1,1146,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:43:48.035+02:00,2025-08-24T16:43:48.066+02:00
+6,10.215.173.1,46124,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7268,11,11,2025-08-24T16:43:48.088+02:00,2025-08-24T16:43:48.465+02:00
+6,10.215.173.1,59470,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,768,4,4,2025-08-24T16:43:48.411+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,33323,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,connectivitycheck.gstatic.com,75,91,1,1,2025-08-24T16:43:49.331+02:00,2025-08-24T16:43:49.355+02:00
+6,10.215.173.1,41892,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Błąd,connectivitycheck.gstatic.com,1196,1276,7,7,2025-08-24T16:43:49.363+02:00,2025-08-24T16:44:01.303+02:00
+17,10.215.173.1,49912,142.250.203.138,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,youtubei.googleapis.com,7707,7164,13,18,2025-08-24T16:43:51.469+02:00,2025-08-24T16:43:51.794+02:00
+6,10.215.173.1,47712,216.58.215.74,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Błąd,clientauthconfig.googleapis.com,1746,4968,13,13,2025-08-24T16:43:53.852+02:00,2025-08-24T16:44:01.304+02:00
+17,10.215.173.1,11631,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,region1.app-measurement.com,73,105,1,1,2025-08-24T16:43:54.926+02:00,2025-08-24T16:43:54.963+02:00
+17,10.215.173.1,42865,216.239.32.36,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,region1.app-measurement.com,5082,4963,9,13,2025-08-24T16:43:54.995+02:00,2025-08-24T16:43:55.173+02:00
+17,10.52.216.201,48397,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,1006,44907,7,38,2025-08-24T16:43:55.057+02:00,2025-08-24T16:43:55.297+02:00
+17,10.215.173.1,44771,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,app-measurement.com,65,81,1,1,2025-08-24T16:43:55.144+02:00,2025-08-24T16:43:55.160+02:00
+17,10.215.173.1,39859,142.250.203.206,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,app-measurement.com,3902,32116,19,32,2025-08-24T16:43:55.170+02:00,2025-08-24T16:43:55.345+02:00
+17,10.215.173.1,43407,216.239.32.36,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,region1.app-measurement.com,6317,6309,10,15,2025-08-24T16:43:55.381+02:00,2025-08-24T16:43:55.572+02:00
+17,10.215.173.1,47585,216.239.36.223,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play.googleapis.com,7688,8466,21,25,2025-08-24T16:43:55.789+02:00,2025-08-24T16:43:56.727+02:00
+17,10.215.173.1,50924,213.158.221.145,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr6---sn-2auhvcpax-2v1e.gvt1.com,40819,6058022,588,4747,2025-08-24T16:43:55.903+02:00,2025-08-24T16:43:58.060+02:00
+17,10.215.173.1,3744,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,rr5---sn-2auhvcpax-2v1e.gvt1.com,78,130,1,1,2025-08-24T16:43:56.462+02:00,2025-08-24T16:43:56.494+02:00
+17,10.215.173.1,33213,213.158.221.144,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr5---sn-2auhvcpax-2v1e.gvt1.com,7044,18344,16,22,2025-08-24T16:43:56.509+02:00,2025-08-24T16:43:56.895+02:00
+17,10.215.173.1,58628,213.158.221.141,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,rr2---sn-2auhvcpax-2v1e.gvt1.com,12842,1085962,144,854,2025-08-24T16:43:56.670+02:00,2025-08-24T16:43:57.833+02:00
+6,10.215.173.1,52752,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,frontier16-normal-no1a.tiktokv.eu,4214,2303,8,8,2025-08-24T16:43:59.180+02:00,2025-08-24T16:44:01.304+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.458+02:00,2025-08-24T16:44:01.458+02:00
+6,10.215.173.1,35156,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:01.577+02:00,2025-08-24T16:44:01.592+02:00
+17,10.215.173.1,54157,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,v19.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:01.595+02:00,2025-08-24T16:44:01.595+02:00
+6,10.215.173.1,35160,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:01.644+02:00,2025-08-24T16:44:01.801+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.809+02:00,2025-08-24T16:44:01.809+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.855+02:00,2025-08-24T16:44:01.855+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.879+02:00,2025-08-24T16:44:01.879+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.886+02:00,2025-08-24T16:44:01.886+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.895+02:00,2025-08-24T16:44:01.895+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.908+02:00,2025-08-24T16:44:01.908+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.928+02:00,2025-08-24T16:44:01.928+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.936+02:00,2025-08-24T16:44:01.936+02:00
+6,10.215.173.1,57246,185.60.217.54,5222,10210,WhatsApp,com.whatsapp,TCP,Nieosiągalny,g.whatsapp.net,60,40,1,1,2025-08-24T16:44:01.947+02:00,2025-08-24T16:44:01.963+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.965+02:00,2025-08-24T16:44:01.965+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.971+02:00,2025-08-24T16:44:01.971+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.976+02:00,2025-08-24T16:44:01.976+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.982+02:00,2025-08-24T16:44:01.982+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.987+02:00,2025-08-24T16:44:01.987+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:01.993+02:00,2025-08-24T16:44:01.993+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.001+02:00,2025-08-24T16:44:02.001+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.007+02:00,2025-08-24T16:44:02.007+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.013+02:00,2025-08-24T16:44:02.013+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.017+02:00,2025-08-24T16:44:02.017+02:00
+17,10.215.173.1,37090,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.028+02:00,2025-08-24T16:44:02.028+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.040+02:00,2025-08-24T16:44:02.040+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.054+02:00,2025-08-24T16:44:02.054+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.079+02:00,2025-08-24T16:44:02.079+02:00
+17,10.215.173.1,44811,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,p16-pu-sign-no.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:02.111+02:00,2025-08-24T16:44:02.111+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.144+02:00,2025-08-24T16:44:02.144+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.167+02:00,2025-08-24T16:44:02.167+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.210+02:00,2025-08-24T16:44:02.210+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.216+02:00,2025-08-24T16:44:02.216+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.229+02:00,2025-08-24T16:44:02.229+02:00
+6,10.215.173.1,55682,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T16:44:02.250+02:00,2025-08-24T16:44:02.259+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.264+02:00,2025-08-24T16:44:02.264+02:00
+17,10.215.173.1,37090,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.303+02:00,2025-08-24T16:44:02.303+02:00
+6,10.215.173.1,52768,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:02.376+02:00,2025-08-24T16:44:02.387+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.393+02:00,2025-08-24T16:44:02.393+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.399+02:00,2025-08-24T16:44:02.399+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.548+02:00,2025-08-24T16:44:02.548+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.555+02:00,2025-08-24T16:44:02.555+02:00
+17,10.215.173.1,37090,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.563+02:00,2025-08-24T16:44:02.563+02:00
+6,10.215.173.1,35156,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:02.656+02:00,2025-08-24T16:44:02.663+02:00
+6,10.215.173.1,35160,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:02.665+02:00,2025-08-24T16:44:02.678+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.681+02:00,2025-08-24T16:44:02.681+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.694+02:00,2025-08-24T16:44:02.694+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:02.862+02:00,2025-08-24T16:44:02.862+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:03.182+02:00,2025-08-24T16:44:03.182+02:00
+6,10.215.173.1,55682,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T16:44:03.216+02:00,2025-08-24T16:44:03.219+02:00
+6,10.215.173.1,57756,2.16.10.155,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:03.275+02:00,2025-08-24T16:44:03.279+02:00
+6,10.215.173.1,35176,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:03.595+02:00,2025-08-24T16:44:03.598+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:03.817+02:00,2025-08-24T16:44:03.817+02:00
+6,10.215.173.1,50810,2.16.10.148,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:04.178+02:00,2025-08-24T16:44:04.185+02:00
+17,10.215.173.1,48119,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,reqhfg-launches.appsflyersdk.com,0,0,0,0,2025-08-24T16:44:04.237+02:00,2025-08-24T16:44:04.237+02:00
+17,10.215.173.1,54157,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,v19.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:04.580+02:00,2025-08-24T16:44:04.580+02:00
+6,10.215.173.1,35176,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:04.624+02:00,2025-08-24T16:44:04.644+02:00
+6,10.215.173.1,35160,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:04.655+02:00,2025-08-24T16:44:04.659+02:00
+17,10.215.173.1,44811,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,p16-pu-sign-no.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:04.977+02:00,2025-08-24T16:44:04.977+02:00
+6,10.215.173.1,53640,2.16.10.151,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:05.084+02:00,2025-08-24T16:44:05.101+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:05.113+02:00,2025-08-24T16:44:05.113+02:00
+6,10.215.173.1,55682,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T16:44:05.232+02:00,2025-08-24T16:44:05.241+02:00
+6,10.215.173.1,35188,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:05.627+02:00,2025-08-24T16:44:05.643+02:00
+6,10.215.173.1,35190,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:05.823+02:00,2025-08-24T16:44:05.874+02:00
+6,10.215.173.1,42410,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:05.876+02:00,2025-08-24T16:44:05.880+02:00
+17,10.215.173.1,34168,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,v16m.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:05.881+02:00,2025-08-24T16:44:05.881+02:00
+6,10.215.173.1,40582,2.16.10.157,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.005+02:00,2025-08-24T16:44:06.010+02:00
+17,10.215.173.1,54956,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:06.117+02:00,2025-08-24T16:44:06.117+02:00
+17,10.215.173.1,11753,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:06.128+02:00,2025-08-24T16:44:06.128+02:00
+6,10.215.173.1,54690,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.138+02:00,2025-08-24T16:44:06.154+02:00
+6,10.215.173.1,54916,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.167+02:00,2025-08-24T16:44:06.171+02:00
+17,10.215.173.1,47618,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,sf16-music.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:06.180+02:00,2025-08-24T16:44:06.180+02:00
+6,10.215.173.1,55474,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.316+02:00,2025-08-24T16:44:06.334+02:00
+6,10.215.173.1,39888,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.439+02:00,2025-08-24T16:44:06.452+02:00
+6,10.215.173.1,48772,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.469+02:00,2025-08-24T16:44:06.478+02:00
+6,10.215.173.1,55482,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.572+02:00,2025-08-24T16:44:06.587+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:06.590+02:00,2025-08-24T16:44:06.590+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:06.597+02:00,2025-08-24T16:44:06.597+02:00
+6,10.215.173.1,49188,213.158.199.82,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.634+02:00,2025-08-24T16:44:06.639+02:00
+6,10.215.173.1,35188,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.642+02:00,2025-08-24T16:44:06.651+02:00
+6,10.215.173.1,55486,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.827+02:00,2025-08-24T16:44:06.831+02:00
+6,10.215.173.1,42410,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.832+02:00,2025-08-24T16:44:06.836+02:00
+6,10.215.173.1,35190,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.837+02:00,2025-08-24T16:44:06.840+02:00
+6,10.215.173.1,55496,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.846+02:00,2025-08-24T16:44:06.850+02:00
+6,10.215.173.1,51926,2.16.10.152,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.887+02:00,2025-08-24T16:44:06.896+02:00
+6,10.215.173.1,49202,213.158.199.82,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:06.899+02:00,2025-08-24T16:44:06.906+02:00
+6,10.215.173.1,52740,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:06.956+02:00,2025-08-24T16:44:06.960+02:00
+6,10.215.173.1,32980,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:06.965+02:00,2025-08-24T16:44:06.968+02:00
+6,10.215.173.1,49214,213.158.199.82,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.150+02:00,2025-08-24T16:44:07.155+02:00
+6,10.215.173.1,54690,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.157+02:00,2025-08-24T16:44:07.161+02:00
+6,10.215.173.1,49216,213.158.199.82,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.173+02:00,2025-08-24T16:44:07.192+02:00
+6,10.215.173.1,54916,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.194+02:00,2025-08-24T16:44:07.202+02:00
+6,10.215.173.1,52752,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.243+02:00,2025-08-24T16:44:07.264+02:00
+6,10.215.173.1,32994,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:07.266+02:00,2025-08-24T16:44:07.277+02:00
+17,10.215.173.1,48119,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,reqhfg-launches.appsflyersdk.com,0,0,0,0,2025-08-24T16:44:07.280+02:00,2025-08-24T16:44:07.280+02:00
+6,10.215.173.1,60782,213.158.203.218,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.299+02:00,2025-08-24T16:44:07.312+02:00
+6,10.215.173.1,52760,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.470+02:00,2025-08-24T16:44:07.473+02:00
+6,10.215.173.1,48772,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.477+02:00,2025-08-24T16:44:07.481+02:00
+6,10.215.173.1,52774,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.490+02:00,2025-08-24T16:44:07.499+02:00
+6,10.215.173.1,60794,213.158.203.218,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.541+02:00,2025-08-24T16:44:07.547+02:00
+6,10.215.173.1,47000,213.158.203.216,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.604+02:00,2025-08-24T16:44:07.611+02:00
+6,10.215.173.1,33010,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:07.638+02:00,2025-08-24T16:44:07.642+02:00
+6,10.215.173.1,35202,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.646+02:00,2025-08-24T16:44:07.649+02:00
+6,10.215.173.1,42424,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.667+02:00,2025-08-24T16:44:07.675+02:00
+6,10.215.173.1,34250,2.16.10.156,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.795+02:00,2025-08-24T16:44:07.804+02:00
+6,10.215.173.1,60810,213.158.203.218,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.808+02:00,2025-08-24T16:44:07.812+02:00
+6,10.215.173.1,60826,213.158.203.218,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.814+02:00,2025-08-24T16:44:07.817+02:00
+6,10.215.173.1,47002,213.158.203.216,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.861+02:00,2025-08-24T16:44:07.868+02:00
+6,10.215.173.1,42430,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.924+02:00,2025-08-24T16:44:07.927+02:00
+17,10.215.173.1,57779,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:07.961+02:00,2025-08-24T16:44:07.961+02:00
+6,10.215.173.1,44900,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.966+02:00,2025-08-24T16:44:07.972+02:00
+6,10.215.173.1,54692,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:07.973+02:00,2025-08-24T16:44:07.976+02:00
+6,10.215.173.1,44912,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.977+02:00,2025-08-24T16:44:07.980+02:00
+6,10.215.173.1,44922,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.981+02:00,2025-08-24T16:44:07.984+02:00
+6,10.215.173.1,44932,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.986+02:00,2025-08-24T16:44:07.989+02:00
+6,10.215.173.1,32980,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:07.990+02:00,2025-08-24T16:44:07.994+02:00
+6,10.215.173.1,44934,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.995+02:00,2025-08-24T16:44:07.998+02:00
+6,10.215.173.1,44940,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:07.999+02:00,2025-08-24T16:44:08.002+02:00
+6,10.215.173.1,44952,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.003+02:00,2025-08-24T16:44:08.006+02:00
+6,10.215.173.1,44962,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.007+02:00,2025-08-24T16:44:08.010+02:00
+6,10.215.173.1,44968,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.011+02:00,2025-08-24T16:44:08.014+02:00
+6,10.215.173.1,44974,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.016+02:00,2025-08-24T16:44:08.019+02:00
+6,10.215.173.1,44976,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.021+02:00,2025-08-24T16:44:08.025+02:00
+6,10.215.173.1,44990,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.027+02:00,2025-08-24T16:44:08.030+02:00
+6,10.215.173.1,44996,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.031+02:00,2025-08-24T16:44:08.035+02:00
+6,10.215.173.1,45002,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.037+02:00,2025-08-24T16:44:08.040+02:00
+6,10.215.173.1,45014,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.042+02:00,2025-08-24T16:44:08.045+02:00
+6,10.215.173.1,45022,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.046+02:00,2025-08-24T16:44:08.049+02:00
+6,10.215.173.1,45030,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.050+02:00,2025-08-24T16:44:08.052+02:00
+6,10.215.173.1,47016,213.158.203.216,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.127+02:00,2025-08-24T16:44:08.129+02:00
+6,10.215.173.1,47028,213.158.203.216,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.133+02:00,2025-08-24T16:44:08.136+02:00
+6,10.215.173.1,42442,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.182+02:00,2025-08-24T16:44:08.185+02:00
+6,10.215.173.1,45042,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.220+02:00,2025-08-24T16:44:08.223+02:00
+6,10.215.173.1,32994,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:08.239+02:00,2025-08-24T16:44:08.242+02:00
+6,10.215.173.1,54926,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.247+02:00,2025-08-24T16:44:08.250+02:00
+6,10.215.173.1,39898,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.273+02:00,2025-08-24T16:44:08.276+02:00
+6,10.215.173.1,42456,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.449+02:00,2025-08-24T16:44:08.452+02:00
+6,10.215.173.1,42458,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.458+02:00,2025-08-24T16:44:08.462+02:00
+6,10.215.173.1,52910,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.503+02:00,2025-08-24T16:44:08.506+02:00
+6,10.215.173.1,32962,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.566+02:00,2025-08-24T16:44:08.569+02:00
+6,10.215.173.1,35202,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v19.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.659+02:00,2025-08-24T16:44:08.664+02:00
+6,10.215.173.1,33010,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:08.667+02:00,2025-08-24T16:44:08.672+02:00
+6,10.215.173.1,42424,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.689+02:00,2025-08-24T16:44:08.698+02:00
+6,10.215.173.1,55590,2.16.10.153,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.699+02:00,2025-08-24T16:44:08.704+02:00
+6,10.215.173.1,52926,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.771+02:00,2025-08-24T16:44:08.785+02:00
+6,10.215.173.1,52934,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.787+02:00,2025-08-24T16:44:08.807+02:00
+6,10.215.173.1,32978,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.835+02:00,2025-08-24T16:44:08.844+02:00
+17,10.215.173.1,34168,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,v16m.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:08.876+02:00,2025-08-24T16:44:08.876+02:00
+6,10.215.173.1,40660,213.158.203.217,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.904+02:00,2025-08-24T16:44:08.914+02:00
+6,10.215.173.1,44912,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.976+02:00,2025-08-24T16:44:08.985+02:00
+6,10.215.173.1,54692,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:08.987+02:00,2025-08-24T16:44:08.990+02:00
+6,10.215.173.1,44900,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:08.991+02:00,2025-08-24T16:44:08.994+02:00
+6,10.215.173.1,44952,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.008+02:00,2025-08-24T16:44:09.020+02:00
+6,10.215.173.1,44940,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.022+02:00,2025-08-24T16:44:09.034+02:00
+6,10.215.173.1,44968,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.046+02:00,2025-08-24T16:44:09.057+02:00
+6,10.215.173.1,44962,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.059+02:00,2025-08-24T16:44:09.063+02:00
+6,10.215.173.1,44934,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.068+02:00,2025-08-24T16:44:09.074+02:00
+6,10.215.173.1,44932,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.078+02:00,2025-08-24T16:44:09.101+02:00
+6,10.215.173.1,44922,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.102+02:00,2025-08-24T16:44:09.112+02:00
+6,10.215.173.1,45014,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.114+02:00,2025-08-24T16:44:09.124+02:00
+6,10.215.173.1,44976,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.127+02:00,2025-08-24T16:44:09.138+02:00
+6,10.215.173.1,45030,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.139+02:00,2025-08-24T16:44:09.146+02:00
+6,10.215.173.1,45022,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.151+02:00,2025-08-24T16:44:09.158+02:00
+6,10.215.173.1,44990,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.160+02:00,2025-08-24T16:44:09.169+02:00
+6,10.215.173.1,45002,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.170+02:00,2025-08-24T16:44:09.174+02:00
+6,10.215.173.1,44974,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.175+02:00,2025-08-24T16:44:09.177+02:00
+6,10.215.173.1,44996,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.179+02:00,2025-08-24T16:44:09.187+02:00
+6,10.215.173.1,34840,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.188+02:00,2025-08-24T16:44:09.191+02:00
+6,10.215.173.1,32994,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.192+02:00,2025-08-24T16:44:09.195+02:00
+6,10.215.173.1,33010,213.158.203.226,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.196+02:00,2025-08-24T16:44:09.199+02:00
+17,10.215.173.1,54956,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:09.201+02:00,2025-08-24T16:44:09.201+02:00
+17,10.215.173.1,11753,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:09.204+02:00,2025-08-24T16:44:09.204+02:00
+6,10.215.173.1,40672,213.158.203.217,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.209+02:00,2025-08-24T16:44:09.214+02:00
+17,10.215.173.1,47618,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,sf16-music.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:09.215+02:00,2025-08-24T16:44:09.215+02:00
+6,10.215.173.1,58606,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.219+02:00,2025-08-24T16:44:09.221+02:00
+6,10.215.173.1,45042,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.231+02:00,2025-08-24T16:44:09.234+02:00
+6,10.215.173.1,39898,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.295+02:00,2025-08-24T16:44:09.298+02:00
+6,10.215.173.1,59082,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.353+02:00,2025-08-24T16:44:09.355+02:00
+6,10.215.173.1,40676,213.158.203.217,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.415+02:00,2025-08-24T16:44:09.417+02:00
+6,10.215.173.1,55682,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TCP,Nieosiągalny,mtalk.google.com,60,40,1,1,2025-08-24T16:44:09.423+02:00,2025-08-24T16:44:09.426+02:00
+6,10.215.173.1,40692,213.158.203.217,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.427+02:00,2025-08-24T16:44:09.431+02:00
+6,10.215.173.1,58612,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.470+02:00,2025-08-24T16:44:09.473+02:00
+6,10.215.173.1,49180,2.16.10.149,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.592+02:00,2025-08-24T16:44:09.594+02:00
+6,10.215.173.1,52948,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.653+02:00,2025-08-24T16:44:09.661+02:00
+6,10.215.173.1,45800,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.664+02:00,2025-08-24T16:44:09.667+02:00
+6,10.215.173.1,58614,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.736+02:00,2025-08-24T16:44:09.740+02:00
+6,10.215.173.1,58620,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:09.746+02:00,2025-08-24T16:44:09.749+02:00
+6,10.215.173.1,38602,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:09.856+02:00,2025-08-24T16:44:09.860+02:00
+6,10.215.173.1,32980,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:09.999+02:00,2025-08-24T16:44:10.003+02:00
+6,10.215.173.1,34840,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.063+02:00,2025-08-24T16:44:10.066+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.206+02:00,2025-08-24T16:44:10.206+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.210+02:00,2025-08-24T16:44:10.210+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.214+02:00,2025-08-24T16:44:10.214+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.225+02:00,2025-08-24T16:44:10.225+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.235+02:00,2025-08-24T16:44:10.235+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.244+02:00,2025-08-24T16:44:10.244+02:00
+6,10.215.173.1,58606,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.254+02:00,2025-08-24T16:44:10.260+02:00
+6,10.215.173.1,32994,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:10.265+02:00,2025-08-24T16:44:10.270+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.321+02:00,2025-08-24T16:44:10.321+02:00
+6,10.215.173.1,59082,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:10.383+02:00,2025-08-24T16:44:10.386+02:00
+6,10.215.173.1,58612,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.480+02:00,2025-08-24T16:44:10.493+02:00
+6,10.215.173.1,55756,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.494+02:00,2025-08-24T16:44:10.497+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:10.547+02:00,2025-08-24T16:44:10.547+02:00
+6,10.215.173.1,45800,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.673+02:00,2025-08-24T16:44:10.679+02:00
+6,10.215.173.1,52948,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:10.687+02:00,2025-08-24T16:44:10.693+02:00
+6,10.215.173.1,33010,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:10.694+02:00,2025-08-24T16:44:10.698+02:00
+6,10.215.173.1,42424,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.705+02:00,2025-08-24T16:44:10.711+02:00
+6,10.215.173.1,58620,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.767+02:00,2025-08-24T16:44:10.770+02:00
+6,10.215.173.1,58614,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.774+02:00,2025-08-24T16:44:10.778+02:00
+6,10.215.173.1,38602,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:10.865+02:00,2025-08-24T16:44:10.880+02:00
+6,10.215.173.1,44900,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:10.996+02:00,2025-08-24T16:44:11.003+02:00
+6,10.215.173.1,54692,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:11.006+02:00,2025-08-24T16:44:11.017+02:00
+6,10.215.173.1,44912,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.021+02:00,2025-08-24T16:44:11.024+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:11.025+02:00,2025-08-24T16:44:11.025+02:00
+6,10.215.173.1,44952,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.029+02:00,2025-08-24T16:44:11.032+02:00
+6,10.215.173.1,44922,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.033+02:00,2025-08-24T16:44:11.035+02:00
+6,10.215.173.1,44962,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.036+02:00,2025-08-24T16:44:11.039+02:00
+6,10.215.173.1,44932,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.039+02:00,2025-08-24T16:44:11.042+02:00
+6,10.215.173.1,44934,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.043+02:00,2025-08-24T16:44:11.045+02:00
+6,10.215.173.1,44968,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.046+02:00,2025-08-24T16:44:11.049+02:00
+6,10.215.173.1,44940,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.050+02:00,2025-08-24T16:44:11.053+02:00
+6,10.215.173.1,44996,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.059+02:00,2025-08-24T16:44:11.062+02:00
+6,10.215.173.1,44974,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.063+02:00,2025-08-24T16:44:11.065+02:00
+6,10.215.173.1,44976,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.072+02:00,2025-08-24T16:44:11.078+02:00
+6,10.215.173.1,44990,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.079+02:00,2025-08-24T16:44:11.082+02:00
+6,10.215.173.1,45002,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.084+02:00,2025-08-24T16:44:11.094+02:00
+6,10.215.173.1,45014,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.097+02:00,2025-08-24T16:44:11.104+02:00
+6,10.215.173.1,45022,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.106+02:00,2025-08-24T16:44:11.111+02:00
+6,10.215.173.1,45030,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.112+02:00,2025-08-24T16:44:11.115+02:00
+6,10.215.173.1,47530,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:11.117+02:00,2025-08-24T16:44:11.120+02:00
+6,10.215.173.1,47542,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:11.121+02:00,2025-08-24T16:44:11.124+02:00
+6,10.215.173.1,45042,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,aggr32-normal.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.248+02:00,2025-08-24T16:44:11.252+02:00
+6,10.215.173.1,39898,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.315+02:00,2025-08-24T16:44:11.318+02:00
+6,10.215.173.1,55756,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:11.503+02:00,2025-08-24T16:44:11.519+02:00
+6,10.215.173.1,52960,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:11.866+02:00,2025-08-24T16:44:11.881+02:00
+6,10.215.173.1,47548,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:11.904+02:00,2025-08-24T16:44:11.908+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:11.916+02:00,2025-08-24T16:44:11.916+02:00
+6,10.215.173.1,37270,138.199.37.40,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.034+02:00,2025-08-24T16:44:12.037+02:00
+17,10.215.173.1,51262,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,p16-pu-sign-no.tiktokcdn-eu.com,0,0,0,0,2025-08-24T16:44:12.084+02:00,2025-08-24T16:44:12.084+02:00
+6,10.215.173.1,47530,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:12.092+02:00,2025-08-24T16:44:12.111+02:00
+6,10.215.173.1,34840,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.115+02:00,2025-08-24T16:44:12.131+02:00
+6,10.215.173.1,47542,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:12.145+02:00,2025-08-24T16:44:12.152+02:00
+6,10.215.173.1,38606,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:12.173+02:00,2025-08-24T16:44:12.184+02:00
+6,10.215.173.1,47550,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:12.235+02:00,2025-08-24T16:44:12.254+02:00
+6,10.215.173.1,58606,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.257+02:00,2025-08-24T16:44:12.262+02:00
+6,10.215.173.1,37276,138.199.37.40,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.296+02:00,2025-08-24T16:44:12.300+02:00
+6,10.215.173.1,58624,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.351+02:00,2025-08-24T16:44:12.371+02:00
+6,10.215.173.1,36666,138.199.37.53,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.373+02:00,2025-08-24T16:44:12.382+02:00
+6,10.215.173.1,59082,213.158.203.219,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,v16m.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:12.400+02:00,2025-08-24T16:44:12.419+02:00
+6,10.215.173.1,58612,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.496+02:00,2025-08-24T16:44:12.500+02:00
+6,10.215.173.1,36682,138.199.37.53,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.615+02:00,2025-08-24T16:44:12.622+02:00
+6,10.215.173.1,38082,213.158.199.82,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,api16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.670+02:00,2025-08-24T16:44:12.696+02:00
+6,10.215.173.1,45800,213.158.199.80,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.702+02:00,2025-08-24T16:44:12.724+02:00
+6,10.215.173.1,56490,138.199.37.38,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.725+02:00,2025-08-24T16:44:12.737+02:00
+6,10.215.173.1,58614,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.788+02:00,2025-08-24T16:44:12.799+02:00
+6,10.215.173.1,58620,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,libra16-normal-no1a.tiktokv.eu,60,40,1,1,2025-08-24T16:44:12.815+02:00,2025-08-24T16:44:12.822+02:00
+6,10.215.173.1,52960,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:12.881+02:00,2025-08-24T16:44:12.889+02:00
+6,10.215.173.1,47548,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,,60,40,1,1,2025-08-24T16:44:12.922+02:00,2025-08-24T16:44:12.951+02:00
+6,10.215.173.1,56496,138.199.37.38,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:12.969+02:00,2025-08-24T16:44:13.014+02:00
+6,10.215.173.1,49426,213.158.203.227,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p16-common-sign-useastred.tiktokcdn-eu.com,60,40,1,1,2025-08-24T16:44:13.018+02:00,2025-08-24T16:44:13.048+02:00
+6,10.215.173.1,33468,138.199.37.24,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Nieosiągalny,p77-sign-sg.tiktokcdn.com,60,40,1,1,2025-08-24T16:44:13.050+02:00,2025-08-24T16:44:13.061+02:00
+17,10.215.173.1,25508,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:44:13.201+02:00,2025-08-24T16:44:13.337+02:00
+6,10.215.173.1,38606,213.158.203.233,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,sf16-music.tiktokcdn-eu.com,4064,517969,73,75,2025-08-24T16:44:13.291+02:00,2025-08-24T16:44:47.201+02:00
+6,10.215.173.1,33480,138.199.37.24,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p77-sign-va.tiktokcdn.com,1731,3866,10,8,2025-08-24T16:44:13.299+02:00,2025-08-24T16:44:47.217+02:00
+6,10.215.173.1,47550,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,,4073,7162,15,10,2025-08-24T16:44:13.307+02:00,2025-08-24T16:44:47.202+02:00
+6,10.215.173.1,40468,213.158.203.218,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-common-sign-useastred.tiktokcdn-eu.com,4707,26929,27,21,2025-08-24T16:44:13.317+02:00,2025-08-24T16:44:47.203+02:00
+6,10.215.173.1,53132,138.199.37.3,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p77-sign-va.tiktokcdn.com,1102,978,9,7,2025-08-24T16:44:13.330+02:00,2025-08-24T16:44:31.113+02:00
+6,10.215.173.1,52964,213.158.203.224,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-music.tiktokcdn-eu.com,1069,870,9,7,2025-08-24T16:44:13.372+02:00,2025-08-24T16:44:54.329+02:00
+6,10.215.173.1,55452,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7229,10,10,2025-08-24T16:44:13.381+02:00,2025-08-24T16:44:13.935+02:00
+17,10.215.173.1,4353,10.215.173.2,53,10274,Facebook,com.facebook.katana,DNS,Zamknij,chat-e2ee-mini.facebook.com,73,123,1,1,2025-08-24T16:44:13.417+02:00,2025-08-24T16:44:13.558+02:00
+6,10.215.173.1,48808,185.60.217.33,5222,10274,Facebook,com.facebook.katana,TCP,Zamknij,chat-e2ee-mini.facebook.com,2830,699,15,10,2025-08-24T16:44:13.434+02:00,2025-08-24T16:44:14.813+02:00
+6,10.215.173.1,37614,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v19.tiktokcdn-eu.com,801,3756,5,5,2025-08-24T16:44:13.457+02:00,2025-08-24T16:44:47.202+02:00
+6,10.215.173.1,55756,2.16.10.150,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,frontier16-normal-no1a.tiktokv.eu,4430,2514,12,12,2025-08-24T16:44:13.523+02:00,2025-08-24T16:44:47.202+02:00
+6,10.215.173.1,59824,167.82.86.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,3363,220768,43,41,2025-08-24T16:44:13.607+02:00,2025-08-24T16:44:47.203+02:00
+6,10.215.173.1,59828,167.82.86.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,778,661,5,5,2025-08-24T16:44:13.617+02:00,2025-08-24T16:44:13.867+02:00
+6,10.215.173.1,32884,23.47.124.74,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,3105,141259,26,25,2025-08-24T16:44:13.641+02:00,2025-08-24T16:44:47.202+02:00
+6,10.215.173.1,32896,23.47.124.74,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,1050,895,7,7,2025-08-24T16:44:13.693+02:00,2025-08-24T16:44:13.926+02:00
+6,10.215.173.1,32906,23.47.124.74,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,777,2997,6,6,2025-08-24T16:44:13.717+02:00,2025-08-24T16:44:13.927+02:00
+6,10.215.173.1,32914,23.47.124.74,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf16-pitaya-pkg-sign.tiktokcdn-eu.com,977,3755,9,8,2025-08-24T16:44:13.726+02:00,2025-08-24T16:44:31.112+02:00
+6,10.215.173.1,59838,167.82.86.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,lf19-pitaya-pkg-sign.tiktokcdn-eu.com,881,4364,7,7,2025-08-24T16:44:13.732+02:00,2025-08-24T16:44:31.151+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,87617,108313,227,211,2025-08-24T16:44:13.752+02:00,2025-08-24T16:44:47.774+02:00
+17,10.215.173.1,62809,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p19-pu-sign-no.tiktokcdn-eu.com,77,131,1,1,2025-08-24T16:44:13.767+02:00,2025-08-24T16:44:13.819+02:00
+6,10.215.173.1,37628,199.232.190.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v19.tiktokcdn-eu.com,801,3756,5,5,2025-08-24T16:44:13.803+02:00,2025-08-24T16:44:47.202+02:00
+6,10.215.173.1,40578,146.75.118.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p19-pu-sign-no.tiktokcdn-eu.com,1963,25759,13,10,2025-08-24T16:44:13.825+02:00,2025-08-24T16:44:47.203+02:00
+6,10.215.173.1,40586,146.75.118.73,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p19-pu-sign-no.tiktokcdn-eu.com,737,2872,5,5,2025-08-24T16:44:13.851+02:00,2025-08-24T16:44:13.994+02:00
+6,10.215.173.1,42368,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Błąd,,780,768,4,4,2025-08-24T16:44:13.900+02:00,2025-08-24T16:44:47.203+02:00
+17,10.215.173.1,44548,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,api16-normal-no1a.tiktokv.eu,74,191,1,1,2025-08-24T16:44:13.944+02:00,2025-08-24T16:44:14.000+02:00
+6,10.215.173.1,39010,23.72.249.12,443,10145,TikTok,com.zhiliaoapp.musically,TCP,Zamknij,api16-normal-no1a.tiktokv.eu,100,88,2,2,2025-08-24T16:44:14.013+02:00,2025-08-24T16:44:15.189+02:00
+6,10.215.173.1,47542,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,,945,1118,7,7,2025-08-24T16:44:14.165+02:00,2025-08-24T16:44:31.146+02:00
+6,10.215.173.1,59246,23.72.249.42,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-no1a.tiktokv.eu,1017,3371,10,8,2025-08-24T16:44:14.216+02:00,2025-08-24T16:44:36.882+02:00
+6,10.215.173.1,39014,23.72.249.12,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,api16-normal-no1a.tiktokv.eu,977,3330,9,7,2025-08-24T16:44:14.496+02:00,2025-08-24T16:44:42.052+02:00
+17,10.215.173.1,5106,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-24T16:44:14.673+02:00,2025-08-24T16:44:14.719+02:00
+6,10.215.173.1,57894,157.240.251.33,443,10062,Meta Services,com.facebook.services,HTTPS,Błąd,z-m-gateway.facebook.com,2852,4455,18,15,2025-08-24T16:44:14.726+02:00,2025-08-24T16:44:47.214+02:00
+17,10.215.173.1,57693,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,v16m.tiktokcdn-eu.com,67,291,1,1,2025-08-24T16:44:14.736+02:00,2025-08-24T16:44:14.771+02:00
+6,10.215.173.1,58574,95.101.61.29,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,38355,9493063,687,1036,2025-08-24T16:44:14.745+02:00,2025-08-24T16:44:47.200+02:00
+6,10.215.173.1,42424,213.158.203.201,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,10110,1717605,193,220,2025-08-24T16:44:14.804+02:00,2025-08-24T16:44:15.494+02:00
+6,10.215.173.1,58576,95.101.61.29,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,4477,408688,54,54,2025-08-24T16:44:14.827+02:00,2025-08-24T16:44:42.307+02:00
+6,10.215.173.1,47548,34.102.215.99,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,,945,1118,7,7,2025-08-24T16:44:14.928+02:00,2025-08-24T16:44:31.148+02:00
+6,10.215.173.1,44952,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,737,3479,5,5,2025-08-24T16:44:15.057+02:00,2025-08-24T16:44:15.267+02:00
+6,10.215.173.1,44962,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,777,3519,6,6,2025-08-24T16:44:15.067+02:00,2025-08-24T16:44:15.268+02:00
+6,10.215.173.1,44968,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,28600,192134,47,50,2025-08-24T16:44:15.071+02:00,2025-08-24T16:44:45.916+02:00
+6,10.215.173.1,44900,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,aggr32-normal.tiktokv.eu,841,3479,6,5,2025-08-24T16:44:15.075+02:00,2025-08-24T16:44:15.266+02:00
+6,10.215.173.1,44934,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,737,3479,5,5,2025-08-24T16:44:15.082+02:00,2025-08-24T16:44:15.268+02:00
+6,10.215.173.1,44932,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,737,3479,5,5,2025-08-24T16:44:15.087+02:00,2025-08-24T16:44:15.268+02:00
+6,10.215.173.1,44922,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,737,3479,5,5,2025-08-24T16:44:15.106+02:00,2025-08-24T16:44:15.268+02:00
+6,10.215.173.1,44912,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,737,3479,5,5,2025-08-24T16:44:15.117+02:00,2025-08-24T16:44:15.268+02:00
+6,10.215.173.1,44940,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Błąd,aggr32-normal.tiktokv.eu,697,128,4,3,2025-08-24T16:44:15.122+02:00,2025-08-24T16:44:15.267+02:00
+17,10.215.173.1,51262,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,p16-pu-sign-no.tiktokcdn-eu.com,77,278,1,1,2025-08-24T16:44:15.128+02:00,2025-08-24T16:44:15.190+02:00
+6,10.215.173.1,43194,2.18.64.205,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-pu-sign-no.tiktokcdn-eu.com,5772,96141,37,41,2025-08-24T16:44:15.196+02:00,2025-08-24T16:44:47.216+02:00
+6,10.215.173.1,43198,2.18.64.205,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,p16-pu-sign-no.tiktokcdn-eu.com,1004,472,6,5,2025-08-24T16:44:15.232+02:00,2025-08-24T16:44:15.337+02:00
+6,10.215.173.1,43208,2.18.64.205,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-pu-sign-no.tiktokcdn-eu.com,737,2935,5,5,2025-08-24T16:44:15.251+02:00,2025-08-24T16:44:15.360+02:00
+6,10.215.173.1,43218,2.18.64.205,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-pu-sign-no.tiktokcdn-eu.com,737,2935,5,5,2025-08-24T16:44:15.259+02:00,2025-08-24T16:44:15.360+02:00
+6,10.215.173.1,45042,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,925,4033,7,7,2025-08-24T16:44:15.315+02:00,2025-08-24T16:44:31.153+02:00
+17,10.215.173.1,37315,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,86,215,1,1,2025-08-24T16:44:15.768+02:00,2025-08-24T16:44:15.822+02:00
+6,10.215.173.1,41090,23.55.163.58,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,sf16-tiktok-im-scp-sign.tiktokcdn-eu.com,3942,57711,30,22,2025-08-24T16:44:15.854+02:00,2025-08-24T16:44:47.217+02:00
+6,10.215.173.1,56336,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:44:15.937+02:00,2025-08-24T16:44:36.891+02:00
+6,10.215.173.1,56344,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,36271,27791647,868,2908,2025-08-24T16:44:16.033+02:00,2025-08-24T16:44:41.997+02:00
+6,10.215.173.1,56346,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,1063,878,9,7,2025-08-24T16:44:16.124+02:00,2025-08-24T16:44:36.891+02:00
+6,10.215.173.1,48982,23.47.124.78,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,sf16-music.tiktokcdn-eu.com,1069,870,9,7,2025-08-24T16:44:16.674+02:00,2025-08-24T16:44:54.324+02:00
+6,10.215.173.1,58620,213.158.203.202,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,p16-common-sign-useastred.tiktokcdn-eu.com,1135,974,9,8,2025-08-24T16:44:16.855+02:00,2025-08-24T16:44:31.113+02:00
+6,10.215.173.1,55682,142.250.147.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Błąd,mtalk.google.com,1352,1184,8,8,2025-08-24T16:44:17.622+02:00,2025-08-24T16:44:47.216+02:00
+17,10.215.173.1,43126,10.215.173.2,53,10104,Konto Samsung,com.osp.app.signin,DNS,Zamknij,api.account.samsung.com,69,176,1,1,2025-08-24T16:44:25.508+02:00,2025-08-24T16:44:25.554+02:00
+6,10.215.173.1,60494,143.204.215.49,443,10104,Konto Samsung,com.osp.app.signin,HTTPS,Błąd,api.account.samsung.com,1291,5742,10,10,2025-08-24T16:44:25.572+02:00,2025-08-24T16:44:47.217+02:00
+17,10.52.216.201,53967,172.217.16.46,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,,20201,608,19,6,2025-08-24T16:44:26.038+02:00,2025-08-24T16:44:26.466+02:00
+17,10.215.173.1,44075,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Zamknij,aggr32-normal.tiktokv.eu,4044,140,3,2,2025-08-24T16:44:30.020+02:00,2025-08-24T16:44:30.665+02:00
+17,10.215.173.1,22985,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,hotapi16-normal-no1a.tiktokv.eu,77,261,1,1,2025-08-24T16:44:31.121+02:00,2025-08-24T16:44:31.157+02:00
+6,10.215.173.1,33714,23.72.249.36,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,hotapi16-normal-no1a.tiktokv.eu,4162,8372,14,14,2025-08-24T16:44:31.171+02:00,2025-08-24T16:44:47.217+02:00
+17,10.215.173.1,32853,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-sg01.tiktokcdn-eu.com,81,205,1,1,2025-08-24T16:44:32.001+02:00,2025-08-24T16:44:32.068+02:00
+17,10.215.173.1,25418,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l60-tt04.tiktokcdn-eu.com,81,200,1,1,2025-08-24T16:44:32.083+02:00,2025-08-24T16:44:32.166+02:00
+17,10.215.173.1,45085,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-sg01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:32.191+02:00,2025-08-24T16:44:32.238+02:00
+17,10.215.173.1,29871,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-q77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:32.250+02:00,2025-08-24T16:44:32.307+02:00
+17,10.215.173.1,20052,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-gcp01.tiktokcdn-eu.com,76,277,1,1,2025-08-24T16:44:32.319+02:00,2025-08-24T16:44:32.358+02:00
+17,10.215.173.1,8748,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-va01.fcdn.eu.tiktokcdn.com,85,283,1,1,2025-08-24T16:44:32.373+02:00,2025-08-24T16:44:32.433+02:00
+17,10.215.173.1,24302,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-gcp01.tiktokcdn.com,73,202,1,1,2025-08-24T16:44:32.459+02:00,2025-08-24T16:44:32.510+02:00
+17,10.215.173.1,7471,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:32.523+02:00,2025-08-24T16:44:32.597+02:00
+17,10.215.173.1,19289,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt04.tiktokcdn.com,77,275,1,1,2025-08-24T16:44:32.614+02:00,2025-08-24T16:44:32.652+02:00
+17,10.215.173.1,2136,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-tt01.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:32.676+02:00,2025-08-24T16:44:32.713+02:00
+17,10.215.173.1,12141,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-sg01.fcdn.eu.tiktokcdn.com,85,283,1,1,2025-08-24T16:44:32.744+02:00,2025-08-24T16:44:32.799+02:00
+17,10.215.173.1,20042,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-tt04.tiktokcdn-eu.com,80,253,1,1,2025-08-24T16:44:32.823+02:00,2025-08-24T16:44:32.873+02:00
+17,10.215.173.1,54927,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:32.884+02:00,2025-08-24T16:44:32.934+02:00
+17,10.215.173.1,43470,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-w77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:32.953+02:00,2025-08-24T16:44:33.022+02:00
+17,10.215.173.1,5121,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt03.fcdn.eu.tiktokcdn.com,86,215,1,1,2025-08-24T16:44:33.044+02:00,2025-08-24T16:44:33.106+02:00
+17,10.215.173.1,29213,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt01.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:33.120+02:00,2025-08-24T16:44:33.158+02:00
+17,10.215.173.1,42524,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f58-tt04.tiktokcdn-eu.com,80,131,1,1,2025-08-24T16:44:33.183+02:00,2025-08-24T16:44:33.227+02:00
+17,10.215.173.1,19004,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-g5-tt04.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:33.250+02:00,2025-08-24T16:44:33.309+02:00
+17,10.215.173.1,47937,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l60-tt04.tiktokcdn-eu.com,80,199,1,1,2025-08-24T16:44:33.327+02:00,2025-08-24T16:44:33.435+02:00
+17,10.215.173.1,62051,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-vr-sg01.tiktokcdn.com,75,202,1,1,2025-08-24T16:44:33.459+02:00,2025-08-24T16:44:33.508+02:00
+17,10.215.173.1,16012,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-vr-gcp01.tiktokcdn.com,81,214,1,1,2025-08-24T16:44:33.518+02:00,2025-08-24T16:44:33.558+02:00
+17,10.215.173.1,16570,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-sg01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:33.566+02:00,2025-08-24T16:44:33.626+02:00
+17,10.215.173.1,53536,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-q5-va01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:33.646+02:00,2025-08-24T16:44:33.695+02:00
+17,10.215.173.1,22054,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-va01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:33.708+02:00,2025-08-24T16:44:33.758+02:00
+17,10.215.173.1,7400,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f58-tt03.fcdn.eu.tiktokcdn.com,85,136,1,1,2025-08-24T16:44:33.790+02:00,2025-08-24T16:44:33.846+02:00
+17,10.215.173.1,48640,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-tt04.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:33.859+02:00,2025-08-24T16:44:33.921+02:00
+17,10.215.173.1,56154,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l77-gcp01.tiktokcdn.com,79,197,1,1,2025-08-24T16:44:33.943+02:00,2025-08-24T16:44:33.994+02:00
+17,10.215.173.1,2630,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f58-tt04.tiktokcdn.com,77,128,1,1,2025-08-24T16:44:34.024+02:00,2025-08-24T16:44:34.071+02:00
+17,10.215.173.1,41951,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt01-tt03.fcdn.eu.tiktokcdn.com,90,288,1,1,2025-08-24T16:44:34.089+02:00,2025-08-24T16:44:34.146+02:00
+17,10.215.173.1,42788,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-l77-gcp01.tiktokcdn.com,79,133,1,1,2025-08-24T16:44:34.162+02:00,2025-08-24T16:44:34.211+02:00
+17,10.215.173.1,10425,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt04.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:34.220+02:00,2025-08-24T16:44:34.267+02:00
+17,10.215.173.1,47252,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-sg01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:34.281+02:00,2025-08-24T16:44:34.346+02:00
+17,10.215.173.1,19500,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-o77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:34.358+02:00,2025-08-24T16:44:34.405+02:00
+17,10.215.173.1,26024,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-l16-gcp01.tiktokcdn.com,79,201,1,1,2025-08-24T16:44:34.433+02:00,2025-08-24T16:44:34.479+02:00
+17,10.215.173.1,53545,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l77-tt04.tiktokcdn-eu.com,81,199,1,1,2025-08-24T16:44:34.497+02:00,2025-08-24T16:44:34.550+02:00
+17,10.215.173.1,6822,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-hls-f77-gcp01.tiktokcdn.com,78,132,1,1,2025-08-24T16:44:34.560+02:00,2025-08-24T16:44:34.614+02:00
+17,10.215.173.1,13958,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-g5-tt03.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:34.625+02:00,2025-08-24T16:44:34.678+02:00
+17,10.215.173.1,11604,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:34.694+02:00,2025-08-24T16:44:34.757+02:00
+17,10.215.173.1,18002,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-tt04.tiktokcdn.com,72,196,1,1,2025-08-24T16:44:34.780+02:00,2025-08-24T16:44:34.826+02:00
+17,10.215.173.1,16037,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-tt03.fcdn.eu.tiktokcdn.com,86,140,1,1,2025-08-24T16:44:34.838+02:00,2025-08-24T16:44:34.876+02:00
+17,10.215.173.1,48403,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt03.tiktokeu-cdn.com,80,278,1,1,2025-08-24T16:44:34.888+02:00,2025-08-24T16:44:34.931+02:00
+17,10.215.173.1,22123,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l16-gcp01.tiktokcdn.com,78,165,1,1,2025-08-24T16:44:34.953+02:00,2025-08-24T16:44:35.011+02:00
+17,10.215.173.1,10103,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l16-gcp01.tiktokcdn.com,79,167,1,1,2025-08-24T16:44:35.039+02:00,2025-08-24T16:44:35.115+02:00
+17,10.215.173.1,5778,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l60-tt04.tiktokcdn.com,77,193,1,1,2025-08-24T16:44:35.131+02:00,2025-08-24T16:44:35.190+02:00
+17,10.215.173.1,45203,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt02-tt03.fcdn.eu.tiktokcdn.com,90,288,1,1,2025-08-24T16:44:35.200+02:00,2025-08-24T16:44:35.320+02:00
+17,10.215.173.1,35133,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-gcp01.tiktokcdn.com,78,276,1,1,2025-08-24T16:44:35.346+02:00,2025-08-24T16:44:35.394+02:00
+17,10.215.173.1,55743,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-gcp01.tiktokcdn.com,78,212,1,1,2025-08-24T16:44:35.415+02:00,2025-08-24T16:44:35.451+02:00
+17,10.215.173.1,48867,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-vr-gcp01.tiktokcdn.com,76,204,1,1,2025-08-24T16:44:35.458+02:00,2025-08-24T16:44:35.513+02:00
+17,10.215.173.1,36362,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt02.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:35.534+02:00,2025-08-24T16:44:35.631+02:00
+17,10.215.173.1,19979,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf-ssp.tiktokcdn-eu.com,69,225,1,1,2025-08-24T16:44:35.616+02:00,2025-08-24T16:44:35.690+02:00
+17,10.215.173.1,52988,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-q5-sg01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:35.660+02:00,2025-08-24T16:44:35.734+02:00
+6,10.215.173.1,51250,184.25.51.115,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,sf-ssp.tiktokcdn-eu.com,1613,8283,11,11,2025-08-24T16:44:35.697+02:00,2025-08-24T16:44:47.218+02:00
+17,10.215.173.1,10160,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-gcp01.tiktokcdn.com,79,133,1,1,2025-08-24T16:44:35.743+02:00,2025-08-24T16:44:35.789+02:00
+17,10.215.173.1,59170,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt04.tiktokcdn.com,78,199,1,1,2025-08-24T16:44:35.800+02:00,2025-08-24T16:44:35.838+02:00
+17,10.215.173.1,5490,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l60-tt03.tiktokcdn-eu.com,81,200,1,1,2025-08-24T16:44:35.851+02:00,2025-08-24T16:44:35.896+02:00
+17,10.215.173.1,16143,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-va01.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:35.919+02:00,2025-08-24T16:44:35.955+02:00
+17,10.215.173.1,45071,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt02.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:35.973+02:00,2025-08-24T16:44:36.026+02:00
+17,10.215.173.1,40072,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,mon16-normal-no1a.tiktokv.eu,74,303,1,1,2025-08-24T16:44:36.051+02:00,2025-08-24T16:44:36.106+02:00
+17,10.215.173.1,32602,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt03.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:36.071+02:00,2025-08-24T16:44:36.114+02:00
+6,10.215.173.1,37730,23.72.249.28,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,mon16-normal-no1a.tiktokv.eu,2979,3811,11,8,2025-08-24T16:44:36.118+02:00,2025-08-24T16:44:47.218+02:00
+17,10.215.173.1,36479,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-a5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:36.129+02:00,2025-08-24T16:44:36.186+02:00
+17,10.215.173.1,42851,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt04.tiktokcdn.com,72,196,1,1,2025-08-24T16:44:36.200+02:00,2025-08-24T16:44:36.270+02:00
+17,10.215.173.1,60556,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-tt03.tiktokeu-cdn.com,80,253,1,1,2025-08-24T16:44:36.291+02:00,2025-08-24T16:44:36.348+02:00
+17,10.215.173.1,40820,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-tt02.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:36.368+02:00,2025-08-24T16:44:36.426+02:00
+17,10.215.173.1,42985,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-sg01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:36.451+02:00,2025-08-24T16:44:36.546+02:00
+17,10.215.173.1,3878,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-o77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:36.565+02:00,2025-08-24T16:44:36.666+02:00
+17,10.215.173.1,30995,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt03.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:36.685+02:00,2025-08-24T16:44:36.750+02:00
+17,10.215.173.1,18164,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokcdn.com,77,275,1,1,2025-08-24T16:44:36.762+02:00,2025-08-24T16:44:36.836+02:00
+17,10.215.173.1,5821,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokeu-cdn.com,80,278,1,1,2025-08-24T16:44:36.857+02:00,2025-08-24T16:44:36.919+02:00
+17,10.215.173.1,5290,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-vr-va01.tiktokcdn.com,75,202,1,1,2025-08-24T16:44:36.938+02:00,2025-08-24T16:44:36.994+02:00
+17,10.215.173.1,39015,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-q5-sg01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:37.003+02:00,2025-08-24T16:44:37.071+02:00
+17,10.215.173.1,32613,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:37.083+02:00,2025-08-24T16:44:37.132+02:00
+17,10.215.173.1,47736,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt01.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:37.146+02:00,2025-08-24T16:44:37.187+02:00
+17,10.215.173.1,8918,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-sg01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:37.197+02:00,2025-08-24T16:44:37.266+02:00
+17,10.215.173.1,58732,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt04.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:37.415+02:00,2025-08-24T16:44:37.472+02:00
+17,10.215.173.1,51263,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-q77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:37.488+02:00,2025-08-24T16:44:37.546+02:00
+17,10.215.173.1,26193,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-tt04.tiktokcdn.com,78,132,1,1,2025-08-24T16:44:37.575+02:00,2025-08-24T16:44:37.612+02:00
+17,10.215.173.1,50620,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:37.620+02:00,2025-08-24T16:44:37.677+02:00
+17,10.215.173.1,58561,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-gcp01.eu.tiktokcdn.com,81,279,1,1,2025-08-24T16:44:37.690+02:00,2025-08-24T16:44:37.747+02:00
+17,10.215.173.1,21278,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:37.760+02:00,2025-08-24T16:44:37.818+02:00
+17,10.215.173.1,13400,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt02.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:37.879+02:00,2025-08-24T16:44:38.098+02:00
+17,10.215.173.1,39023,10.215.173.2,53,10210,WhatsApp,com.whatsapp,DNS,Zamknij,g.whatsapp.net,60,99,1,1,2025-08-24T16:44:38.293+02:00,2025-08-24T16:44:38.346+02:00
+6,10.215.173.1,39148,157.240.0.61,80,10210,WhatsApp,com.whatsapp,HTTP,Błąd,c.whatsapp.net,1446,1570,14,14,2025-08-24T16:44:38.353+02:00,2025-08-24T16:44:47.203+02:00
+17,10.215.173.1,46855,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-va01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:38.361+02:00,2025-08-24T16:44:38.426+02:00
+6,10.215.173.1,57966,142.250.203.131,443,10233,Sklep Google Play,com.android.vending,HTTPS,Błąd,connectivitycheck.gstatic.com,1530,1562,9,9,2025-08-24T16:44:38.490+02:00,2025-08-24T16:44:47.218+02:00
+17,10.215.173.1,54653,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-gcp01.tiktokcdn.com,78,276,1,1,2025-08-24T16:44:38.533+02:00,2025-08-24T16:44:38.574+02:00
+17,10.215.173.1,53744,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-tt03.fcdn.eu.tiktokcdn.com,85,263,1,1,2025-08-24T16:44:38.712+02:00,2025-08-24T16:44:38.746+02:00
+17,10.215.173.1,29735,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt03-expt.fcdn.eu.tiktokcdn.com,90,288,1,1,2025-08-24T16:44:38.807+02:00,2025-08-24T16:44:38.892+02:00
+17,10.215.173.1,52180,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt02-tt03.fcdn.eu.tiktokcdn.com,91,225,1,1,2025-08-24T16:44:38.961+02:00,2025-08-24T16:44:38.994+02:00
+17,10.215.173.1,19587,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-g5-tt04.tiktokcdn.com,72,196,1,1,2025-08-24T16:44:39.036+02:00,2025-08-24T16:44:39.078+02:00
+17,10.215.173.1,26931,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-sg01.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:39.117+02:00,2025-08-24T16:44:39.157+02:00
+17,10.215.173.1,14690,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f10-tt04.tiktokcdn.com,77,241,1,1,2025-08-24T16:44:39.394+02:00,2025-08-24T16:44:39.452+02:00
+17,10.215.173.1,12301,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-sg01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:39.809+02:00,2025-08-24T16:44:39.866+02:00
+17,10.215.173.1,59785,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:39.974+02:00,2025-08-24T16:44:40.026+02:00
+17,10.215.173.1,55867,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-va01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:40.099+02:00,2025-08-24T16:44:40.148+02:00
+17,10.215.173.1,1950,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l10-gcp01.tiktokcdn.com,78,240,1,1,2025-08-24T16:44:40.264+02:00,2025-08-24T16:44:40.308+02:00
+17,10.215.173.1,49131,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt03.fcdn.eu.tiktokcdn.com,85,283,1,1,2025-08-24T16:44:40.345+02:00,2025-08-24T16:44:40.392+02:00
+17,10.215.173.1,10892,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-l10-gcp01.tiktokcdn.com,79,306,1,1,2025-08-24T16:44:40.436+02:00,2025-08-24T16:44:40.506+02:00
+17,10.215.173.1,32018,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-q5-va01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:40.522+02:00,2025-08-24T16:44:40.565+02:00
+17,10.215.173.1,24887,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt04.tiktokcdn-eu.com,81,208,1,1,2025-08-24T16:44:40.590+02:00,2025-08-24T16:44:40.628+02:00
+17,10.215.173.1,11933,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-w77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:40.669+02:00,2025-08-24T16:44:40.707+02:00
+17,10.215.173.1,22218,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l60-tt03.tiktokcdn-eu.com,80,199,1,1,2025-08-24T16:44:40.747+02:00,2025-08-24T16:44:40.786+02:00
+17,10.215.173.1,13492,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-q5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:40.799+02:00,2025-08-24T16:44:40.836+02:00
+17,10.215.173.1,12694,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-tt04.tiktokeu-cdn.com,80,253,1,1,2025-08-24T16:44:40.876+02:00,2025-08-24T16:44:40.918+02:00
+17,10.215.173.1,49952,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-va01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:40.931+02:00,2025-08-24T16:44:40.986+02:00
+17,10.215.173.1,16821,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-gcp01.tiktokcdn.com,79,201,1,1,2025-08-24T16:44:40.996+02:00,2025-08-24T16:44:41.038+02:00
+17,10.215.173.1,65524,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-va01.tiktokcdn-eu.com,81,204,1,1,2025-08-24T16:44:41.110+02:00,2025-08-24T16:44:41.148+02:00
+17,10.215.173.1,28778,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-va01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:41.174+02:00,2025-08-24T16:44:41.226+02:00
+17,10.215.173.1,24051,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt04.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:41.234+02:00,2025-08-24T16:44:41.291+02:00
+17,10.215.173.1,55631,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-va01.fcdn.eu.tiktokcdn.com,80,285,1,1,2025-08-24T16:44:41.310+02:00,2025-08-24T16:44:41.359+02:00
+6,10.215.173.1,56956,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,3332,274962,49,49,2025-08-24T16:44:42.072+02:00,2025-08-24T16:44:47.216+02:00
+6,10.215.173.1,56960,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,v16m.tiktokcdn-eu.com,11074,1758385,219,219,2025-08-24T16:44:42.139+02:00,2025-08-24T16:44:42.997+02:00
+6,10.215.173.1,56976,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,943,814,6,6,2025-08-24T16:44:42.255+02:00,2025-08-24T16:44:47.202+02:00
+17,10.215.173.1,64362,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,lf16-effectcdn-sg.tiktokcdn.com,77,199,1,1,2025-08-24T16:44:42.736+02:00,2025-08-24T16:44:42.797+02:00
+6,10.215.173.1,60514,2.18.64.219,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,lf16-effectcdn-sg.tiktokcdn.com,1744,3634,8,7,2025-08-24T16:44:42.804+02:00,2025-08-24T16:44:47.203+02:00
+6,10.215.173.1,56990,2.16.168.49,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Błąd,v16m.tiktokcdn-eu.com,943,814,6,6,2025-08-24T16:44:43.433+02:00,2025-08-24T16:44:47.216+02:00
+6,10.215.173.1,55688,157.240.0.61,443,10210,WhatsApp,com.whatsapp,TLS,Nieosiągalny,g.whatsapp.net,60,40,1,1,2025-08-24T16:44:47.259+02:00,2025-08-24T16:44:47.263+02:00
+17,10.215.173.1,5876,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Nieosiągalny,mtalk.google.com,0,0,0,0,2025-08-24T16:44:47.460+02:00,2025-08-24T16:44:47.460+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:47.788+02:00,2025-08-24T16:44:47.788+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:47.911+02:00,2025-08-24T16:44:47.911+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:48.158+02:00,2025-08-24T16:44:48.158+02:00
+6,10.215.173.1,55688,157.240.0.61,443,10210,WhatsApp,com.whatsapp,TLS,Nieosiągalny,g.whatsapp.net,60,40,1,1,2025-08-24T16:44:48.274+02:00,2025-08-24T16:44:48.287+02:00
+17,10.215.173.1,47209,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Nieosiągalny,aggr32-normal.tiktokv.eu,0,0,0,0,2025-08-24T16:44:48.328+02:00,2025-08-24T16:44:48.328+02:00
+17,10.215.173.1,43607,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Nieosiągalny,frontier16-normal-no1a.tiktokv.eu,0,0,0,0,2025-08-24T16:44:48.354+02:00,2025-08-24T16:44:48.354+02:00
+17,10.215.173.1,47209,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,UDP,Zamknij,aggr32-normal.tiktokv.eu,1348,70,1,1,2025-08-24T16:44:48.629+02:00,2025-08-24T16:44:48.734+02:00
+17,10.215.173.1,49283,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,UDP,Zamknij,aggr32-normal.tiktokv.eu,1348,70,1,1,2025-08-24T16:44:48.655+02:00,2025-08-24T16:44:48.735+02:00
+6,10.215.173.1,42314,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7269,11,11,2025-08-24T16:44:48.704+02:00,2025-08-24T16:44:49.122+02:00
+6,10.215.173.1,39204,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,aggr32-normal.tiktokv.eu,4293,5700,14,13,2025-08-24T16:44:48.818+02:00,2025-08-24T16:44:54.370+02:00
+6,10.215.173.1,45142,157.240.251.33,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,3280,4734,25,19,2025-08-24T16:44:48.894+02:00,2025-08-24T16:49:49.729+02:00
+6,10.215.173.1,47034,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:44:49.047+02:00,2025-08-24T16:45:53.159+02:00
+17,10.215.173.1,16139,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-q77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:49.076+02:00,2025-08-24T16:44:49.137+02:00
+17,10.215.173.1,58373,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-c5-gcp01.tiktokcdn-eu.com,76,277,1,1,2025-08-24T16:44:49.177+02:00,2025-08-24T16:44:49.215+02:00
+17,10.215.173.1,35895,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-va01.fcdn.eu.tiktokcdn.com,85,283,1,1,2025-08-24T16:44:49.280+02:00,2025-08-24T16:44:49.333+02:00
+17,10.215.173.1,29728,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-gcp01.tiktokcdn.com,73,202,1,1,2025-08-24T16:44:49.363+02:00,2025-08-24T16:44:49.403+02:00
+17,10.215.173.1,21516,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-o5-gcp01.tiktokcdn.com,73,198,1,1,2025-08-24T16:44:49.449+02:00,2025-08-24T16:44:49.506+02:00
+17,10.215.173.1,19749,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt04.tiktokcdn.com,77,275,1,1,2025-08-24T16:44:49.576+02:00,2025-08-24T16:44:49.627+02:00
+17,10.215.173.1,45757,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-sg01.fcdn.eu.tiktokcdn.com,85,283,1,1,2025-08-24T16:44:49.643+02:00,2025-08-24T16:44:49.678+02:00
+17,10.215.173.1,24109,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:49.704+02:00,2025-08-24T16:44:49.752+02:00
+17,10.215.173.1,14795,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-w77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:49.775+02:00,2025-08-24T16:44:49.812+02:00
+17,10.215.173.1,52683,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt03.fcdn.eu.tiktokcdn.com,86,215,1,1,2025-08-24T16:44:49.822+02:00,2025-08-24T16:44:49.866+02:00
+17,10.215.173.1,62428,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt01.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:49.874+02:00,2025-08-24T16:44:49.915+02:00
+17,10.215.173.1,28529,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f58-tt04.tiktokcdn-eu.com,80,131,1,1,2025-08-24T16:44:49.925+02:00,2025-08-24T16:44:49.986+02:00
+17,10.215.173.1,42272,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-vr-gcp01.tiktokcdn.com,81,214,1,1,2025-08-24T16:44:50.027+02:00,2025-08-24T16:44:50.066+02:00
+17,10.215.173.1,40203,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l77-gcp01.tiktokcdn.com,79,197,1,1,2025-08-24T16:44:50.117+02:00,2025-08-24T16:44:50.186+02:00
+17,10.215.173.1,17244,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt01-tt03.fcdn.eu.tiktokcdn.com,90,288,1,1,2025-08-24T16:44:50.230+02:00,2025-08-24T16:44:50.317+02:00
+6,10.215.173.1,55688,157.240.0.61,443,10210,WhatsApp,com.whatsapp,TCP,Zamknij,g.whatsapp.net,1344,1444,16,15,2025-08-24T16:44:50.291+02:00,2025-08-24T16:44:58.877+02:00
+17,10.215.173.1,39866,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-l77-gcp01.tiktokcdn.com,79,133,1,1,2025-08-24T16:44:50.350+02:00,2025-08-24T16:44:50.388+02:00
+17,10.215.173.1,30986,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt04.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:50.411+02:00,2025-08-24T16:44:50.473+02:00
+17,10.215.173.1,5876,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:44:50.463+02:00,2025-08-24T16:44:50.517+02:00
+6,10.215.173.1,60518,173.194.76.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1510,8356,11,11,2025-08-24T16:44:50.548+02:00,2025-08-24T16:46:03.226+02:00
+17,10.215.173.1,63139,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-o77-sg01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:50.651+02:00,2025-08-24T16:44:50.709+02:00
+17,10.215.173.1,27436,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-l16-gcp01.tiktokcdn.com,79,201,1,1,2025-08-24T16:44:50.821+02:00,2025-08-24T16:44:50.870+02:00
+17,10.215.173.1,48357,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-l77-tt04.tiktokcdn-eu.com,81,199,1,1,2025-08-24T16:44:50.881+02:00,2025-08-24T16:44:50.917+02:00
+17,10.215.173.1,1795,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-hls-f77-gcp01.tiktokcdn.com,78,132,1,1,2025-08-24T16:44:50.979+02:00,2025-08-24T16:44:51.040+02:00
+17,10.215.173.1,16440,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:51.056+02:00,2025-08-24T16:44:51.106+02:00
+17,10.215.173.1,19991,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-tt03.fcdn.eu.tiktokcdn.com,86,140,1,1,2025-08-24T16:44:51.215+02:00,2025-08-24T16:44:51.253+02:00
+17,10.215.173.1,14057,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt03.tiktokeu-cdn.com,80,278,1,1,2025-08-24T16:44:51.326+02:00,2025-08-24T16:44:51.386+02:00
+17,10.215.173.1,43607,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,frontier16-normal-no1a.tiktokv.eu,79,370,1,1,2025-08-24T16:44:51.382+02:00,2025-08-24T16:44:51.426+02:00
+6,10.215.173.1,51700,2.21.22.162,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,frontier16-normal-no1a.tiktokv.eu,4435,2404,11,10,2025-08-24T16:44:51.476+02:00,2025-08-24T16:44:54.385+02:00
+17,10.215.173.1,35101,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt02-tt03.fcdn.eu.tiktokcdn.com,90,288,1,1,2025-08-24T16:44:51.540+02:00,2025-08-24T16:44:51.586+02:00
+17,10.215.173.1,57314,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-gcp01.tiktokcdn.com,78,276,1,1,2025-08-24T16:44:51.638+02:00,2025-08-24T16:44:51.680+02:00
+17,10.215.173.1,43731,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-vr-gcp01.tiktokcdn.com,76,204,1,1,2025-08-24T16:44:51.753+02:00,2025-08-24T16:44:51.826+02:00
+17,10.215.173.1,9383,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-gcp01.tiktokcdn.com,79,133,1,1,2025-08-24T16:44:51.865+02:00,2025-08-24T16:44:51.947+02:00
+17,10.215.173.1,13010,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f16-tt04.tiktokcdn.com,78,199,1,1,2025-08-24T16:44:51.958+02:00,2025-08-24T16:44:52.012+02:00
+17,10.215.173.1,58748,139.177.245.196,443,10145,TikTok,com.zhiliaoapp.musically,QUIC,Zamknij,aggr32-normal.tiktokv.eu,12004,23938,24,31,2025-08-24T16:44:51.990+02:00,2025-08-24T16:45:00.432+02:00
+17,10.215.173.1,20665,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,gecko16-normal-no1a.tiktokv.eu,76,307,1,1,2025-08-24T16:44:52.002+02:00,2025-08-24T16:44:52.039+02:00
+17,10.215.173.1,32352,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt02.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:52.036+02:00,2025-08-24T16:44:52.074+02:00
+6,10.215.173.1,50258,23.72.249.18,443,10145,TikTok,com.zhiliaoapp.musically,HTTPS,Zamknij,gecko16-normal-no1a.tiktokv.eu,6041,5441,14,14,2025-08-24T16:44:52.049+02:00,2025-08-24T16:44:54.470+02:00
+17,10.215.173.1,25283,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,push-rtmp-f5-tt03.tiktokeu-cdn.com,80,253,1,1,2025-08-24T16:44:52.117+02:00,2025-08-24T16:44:52.150+02:00
+17,10.215.173.1,24719,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-w5-sg01.tiktokeu-cdn.com,75,275,1,1,2025-08-24T16:44:52.201+02:00,2025-08-24T16:44:52.239+02:00
+17,10.215.173.1,33307,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-o77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:52.252+02:00,2025-08-24T16:44:52.295+02:00
+17,10.215.173.1,47633,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokcdn.com,77,275,1,1,2025-08-24T16:44:52.313+02:00,2025-08-24T16:44:52.350+02:00
+17,10.215.173.1,45842,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-tt04.tiktokeu-cdn.com,80,278,1,1,2025-08-24T16:44:52.361+02:00,2025-08-24T16:44:52.412+02:00
+17,10.215.173.1,1310,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-vr-va01.tiktokcdn.com,75,202,1,1,2025-08-24T16:44:52.422+02:00,2025-08-24T16:44:52.454+02:00
+17,10.215.173.1,20216,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-tt04.tiktokcdn-eu.com,80,278,1,1,2025-08-24T16:44:52.492+02:00,2025-08-24T16:44:52.532+02:00
+17,10.215.173.1,11236,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-q77-va01.eu.tiktokcdn.com,80,278,1,1,2025-08-24T16:44:52.572+02:00,2025-08-24T16:44:52.628+02:00
+17,10.215.173.1,38983,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-cmaf-f77-tt04.tiktokcdn.com,78,132,1,1,2025-08-24T16:44:52.676+02:00,2025-08-24T16:44:52.718+02:00
+17,10.215.173.1,5577,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-l77-gcp01.eu.tiktokcdn.com,81,279,1,1,2025-08-24T16:44:52.775+02:00,2025-08-24T16:44:52.842+02:00
+17,10.215.173.1,22189,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,sf16-teko.tiktokcdn-eu.com,72,203,1,1,2025-08-24T16:44:52.858+02:00,2025-08-24T16:44:52.907+02:00
+17,10.215.173.1,13219,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-f5-tt02.tiktokcdn-eu.com,75,275,1,1,2025-08-24T16:44:52.871+02:00,2025-08-24T16:44:52.908+02:00
+6,10.215.173.1,40584,184.25.50.9,443,10145,TikTok,com.zhiliaoapp.musically,TLS,Zamknij,sf16-teko.tiktokcdn-eu.com,180,175,4,4,2025-08-24T16:44:52.985+02:00,2025-08-24T16:44:54.371+02:00
+17,10.215.173.1,56403,10.215.173.2,53,10145,TikTok,com.zhiliaoapp.musically,DNS,Zamknij,pull-flv-f77-gcp01.tiktokcdn.com,78,276,1,1,2025-08-24T16:44:53.075+02:00,2025-08-24T16:44:53.109+02:00
+17,10.215.173.1,61151,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,myphonenumbers-pa.googleapis.com,78,334,1,1,2025-08-24T16:45:02.454+02:00,2025-08-24T16:45:02.510+02:00
+6,10.215.173.1,43552,142.250.186.170,443,10238,Usługi Google Play,com.google.android.gms,HTTPS,Zamknij,myphonenumbers-pa.googleapis.com,5440,5175,18,19,2025-08-24T16:45:02.523+02:00,2025-08-24T16:46:08.238+02:00
+17,10.215.173.1,10332,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,people-pa.googleapis.com,70,326,1,1,2025-08-24T16:45:04.144+02:00,2025-08-24T16:45:04.203+02:00
+17,10.215.173.1,57494,142.250.186.170,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,people-pa.googleapis.com,8274,10707,21,22,2025-08-24T16:45:04.226+02:00,2025-08-24T16:45:05.430+02:00
+17,10.215.173.1,50194,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T16:45:05.837+02:00,2025-08-24T16:45:05.906+02:00
+17,10.215.173.1,47914,216.239.38.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,13545,6303,21,22,2025-08-24T16:45:05.916+02:00,2025-08-24T16:45:07.625+02:00
+17,10.215.173.1,57454,216.239.38.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,15186,7810,28,29,2025-08-24T16:45:06.156+02:00,2025-08-24T16:45:07.281+02:00
+17,10.215.173.1,51503,216.239.38.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,13177,6111,21,24,2025-08-24T16:45:06.404+02:00,2025-08-24T16:45:07.371+02:00
+17,10.215.173.1,53908,216.239.38.223,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,play.googleapis.com,7653,5077,11,14,2025-08-24T16:45:06.941+02:00,2025-08-24T16:45:07.145+02:00
+17,10.215.173.1,23018,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:45:53.364+02:00,2025-08-24T16:45:53.418+02:00
+6,10.215.173.1,55226,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7269,11,11,2025-08-24T16:45:53.437+02:00,2025-08-24T16:45:53.812+02:00
+6,10.215.173.1,43234,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:45:53.764+02:00,2025-08-24T16:46:58.604+02:00
+17,10.215.173.1,16687,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,graph.facebook.com,64,104,1,1,2025-08-24T16:46:10.372+02:00,2025-08-24T16:46:10.418+02:00
+6,10.215.173.1,51554,157.240.0.13,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,graph.facebook.com,2166,4825,10,10,2025-08-24T16:46:10.427+02:00,2025-08-24T16:46:10.821+02:00
+6,10.215.173.1,42750,173.194.76.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1515,7669,10,10,2025-08-24T16:46:12.279+02:00,2025-08-24T16:47:13.671+02:00
+17,10.215.173.1,23614,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,spot-pa.googleapis.com,68,324,1,1,2025-08-24T16:46:32.177+02:00,2025-08-24T16:46:32.230+02:00
+17,10.215.173.1,34842,142.250.74.202,443,10238,Usługi Google Play,com.google.android.gms,QUIC,Zamknij,spot-pa.googleapis.com,5736,7122,11,11,2025-08-24T16:46:32.258+02:00,2025-08-24T16:46:32.882+02:00
+17,10.215.173.1,2235,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:47:00.033+02:00,2025-08-24T16:47:00.110+02:00
+6,10.215.173.1,58268,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1328,7227,10,10,2025-08-24T16:47:00.133+02:00,2025-08-24T16:47:00.550+02:00
+6,10.215.173.1,40922,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:47:00.499+02:00,2025-08-24T16:48:03.909+02:00
+6,10.215.173.1,46998,173.194.76.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1401,7630,9,9,2025-08-24T16:47:26.707+02:00,2025-08-24T16:48:29.177+02:00
+17,10.215.173.1,50783,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:48:04.278+02:00,2025-08-24T16:48:04.320+02:00
+6,10.215.173.1,49818,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7268,11,11,2025-08-24T16:48:04.353+02:00,2025-08-24T16:48:04.786+02:00
+6,10.215.173.1,60838,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:48:04.739+02:00,2025-08-24T16:49:09.417+02:00
+17,10.215.173.1,45485,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:48:39.209+02:00,2025-08-24T16:48:39.266+02:00
+6,10.215.173.1,43522,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1481,7710,11,11,2025-08-24T16:48:39.279+02:00,2025-08-24T16:49:39.707+02:00
+17,10.215.173.1,7126,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:49:10.508+02:00,2025-08-24T16:49:10.567+02:00
+6,10.215.173.1,37680,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7267,11,11,2025-08-24T16:49:10.589+02:00,2025-08-24T16:49:11.033+02:00
+6,10.215.173.1,50978,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:49:10.982+02:00,2025-08-24T16:50:14.822+02:00
+6,10.215.173.1,34776,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1184,8,8,2025-08-24T16:49:50.736+02:00,2025-08-24T16:50:55.041+02:00
+17,10.215.173.1,18877,10.215.173.2,53,10062,Meta Services,com.facebook.services,DNS,Zamknij,z-m-gateway.facebook.com,70,114,1,1,2025-08-24T16:49:51.250+02:00,2025-08-24T16:49:51.298+02:00
+6,10.215.173.1,57320,157.240.251.33,443,10062,Meta Services,com.facebook.services,HTTPS,Zamknij,z-m-gateway.facebook.com,3179,4550,23,16,2025-08-24T16:49:51.310+02:00,2025-08-24T16:52:52.456+02:00
+17,10.215.173.1,36258,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:50:16.244+02:00,2025-08-24T16:50:16.308+02:00
+6,10.215.173.1,48132,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7269,11,11,2025-08-24T16:50:16.320+02:00,2025-08-24T16:50:16.732+02:00
+6,10.215.173.1,36462,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:50:16.688+02:00,2025-08-24T16:51:20.090+02:00
+17,10.215.173.1,62944,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:51:03.066+02:00,2025-08-24T16:51:03.101+02:00
+6,10.215.173.1,56472,74.125.206.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1184,8,8,2025-08-24T16:51:03.108+02:00,2025-08-24T16:52:05.326+02:00
+17,10.215.173.1,57058,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:51:21.459+02:00,2025-08-24T16:51:21.499+02:00
+6,10.215.173.1,38178,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7269,11,11,2025-08-24T16:51:21.511+02:00,2025-08-24T16:51:21.858+02:00
+6,10.215.173.1,47906,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:51:21.807+02:00,2025-08-24T16:52:25.378+02:00
+17,10.215.173.1,14148,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:52:14.360+02:00,2025-08-24T16:52:14.408+02:00
+6,10.215.173.1,49096,74.125.133.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1366,1184,8,8,2025-08-24T16:52:14.415+02:00,2025-08-24T16:53:15.753+02:00
+17,10.215.173.1,48398,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:52:26.559+02:00,2025-08-24T16:52:26.598+02:00
+6,10.215.173.1,39896,54.76.143.8,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1367,7269,11,11,2025-08-24T16:52:26.609+02:00,2025-08-24T16:52:26.924+02:00
+6,10.215.173.1,33750,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,768,4,4,2025-08-24T16:52:26.887+02:00,2025-08-24T16:53:30.776+02:00
+17,10.215.173.1,5094,10.215.173.2,53,10238,Usługi Google Play,com.google.android.gms,DNS,Zamknij,mtalk.google.com,62,107,1,1,2025-08-24T16:53:28.792+02:00,2025-08-24T16:53:28.938+02:00
+6,10.215.173.1,33496,142.251.173.188,5228,10238,Usługi Google Play,com.google.android.gms,TLS,Zamknij,mtalk.google.com,1360,1144,8,7,2025-08-24T16:53:28.944+02:00,2025-08-24T16:53:29.272+02:00
+17,10.215.173.1,25876,10.215.173.2,53,10248,Samsung Accessory Service,com.samsung.accessory,DNS,Zamknij,gear.sca.samsung.com,66,132,1,1,2025-08-24T16:53:32.145+02:00,2025-08-24T16:53:32.183+02:00
+6,10.215.173.1,46820,34.253.26.62,443,10248,Samsung Accessory Service,com.samsung.accessory,HTTPS,Zamknij,gear.sca.samsung.com,1368,7267,11,11,2025-08-24T16:53:32.197+02:00,2025-08-24T16:53:32.531+02:00
+6,10.215.173.1,41624,18.203.124.33,9090,10248,Samsung Accessory Service,com.samsung.accessory,TCP,Zamknij,,780,728,4,3,2025-08-24T16:53:32.488+02:00,2025-08-24T16:53:32.620+02:00
+17,10.215.173.1,28244,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,android.clients.google.com,72,352,1,1,2025-08-24T16:53:42.514+02:00,2025-08-24T16:53:42.555+02:00
+17,10.215.173.1,16337,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-fe.googleapis.com,68,84,1,1,2025-08-24T16:53:42.561+02:00,2025-08-24T16:53:42.604+02:00
+17,10.215.173.1,52200,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play.googleapis.com,65,129,1,1,2025-08-24T16:53:42.611+02:00,2025-08-24T16:53:42.654+02:00
+17,10.215.173.1,33488,142.250.186.174,443,10233,Sklep Google Play,com.android.vending,QUIC,Zamknij,play-fe.googleapis.com,7072,8196,13,14,2025-08-24T16:53:42.615+02:00,2025-08-24T16:53:42.839+02:00
+6,10.215.173.1,43944,142.250.186.174,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,play-fe.googleapis.com,2170,5633,7,5,2025-08-24T16:53:42.619+02:00,2025-08-24T16:53:42.792+02:00
+17,10.215.173.1,34703,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,playstoregatewayadapter-pa.googleapis.com,87,343,1,1,2025-08-24T16:53:42.674+02:00,2025-08-24T16:53:42.716+02:00
+17,10.215.173.1,17102,10.215.173.2,53,10390,Prywatność w reklamach,com.google.android.adservices.api,DNS,Zamknij,publickeyservice.msmt.aws.privacysandboxservices.com,98,158,1,1,2025-08-24T16:53:42.695+02:00,2025-08-24T16:53:42.729+02:00
+17,10.215.173.1,46802,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,prod-lt-playstoregatewayadapter-pa.googleapis.com,95,351,1,1,2025-08-24T16:53:42.720+02:00,2025-08-24T16:53:42.763+02:00
+6,10.215.173.1,50280,34.98.114.124,443,10390,Prywatność w reklamach,com.google.android.adservices.api,HTTPS,Zamknij,publickeyservice.msmt.aws.privacysandboxservices.com,1225,6430,10,9,2025-08-24T16:53:42.732+02:00,2025-08-24T16:53:42.844+02:00
+17,10.215.173.1,33686,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,play-lh.googleusercontent.com,75,91,1,1,2025-08-24T16:53:42.773+02:00,2025-08-24T16:53:42.808+02:00
+17,10.215.173.1,17754,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,i.ytimg.com,57,313,1,1,2025-08-24T16:53:42.813+02:00,2025-08-24T16:53:42.846+02:00
+17,10.215.173.1,4874,10.215.173.2,53,10390,Prywatność w reklamach,com.google.android.adservices.api,DNS,Zamknij,privacy-sandbox.appsflyersdk.com,78,142,1,1,2025-08-24T16:53:42.896+02:00,2025-08-24T16:53:42.936+02:00
+6,10.215.173.1,36914,108.138.26.9,443,10390,Prywatność w reklamach,com.google.android.adservices.api,HTTPS,Zamknij,privacy-sandbox.appsflyersdk.com,4600,1043,8,7,2025-08-24T16:53:42.940+02:00,2025-08-24T16:53:43.082+02:00
+17,10.215.173.1,33862,10.215.173.2,53,10233,Sklep Google Play,com.android.vending,DNS,Zamknij,connectivitycheck.gstatic.com,75,91,1,1,2025-08-24T16:53:42.957+02:00,2025-08-24T16:53:42.996+02:00
+6,10.215.173.1,40292,216.58.206.67,443,10233,Sklep Google Play,com.android.vending,HTTPS,Zamknij,connectivitycheck.gstatic.com,1175,3894,8,7,2025-08-24T16:53:42.999+02:00,2025-08-24T16:53:43.166+02:00
