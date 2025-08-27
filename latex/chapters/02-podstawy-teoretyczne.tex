@@ -1,79 +1,79 @@
 \chapter{Podstawy teoretyczne}
 
 \section{Architektura systemu Android}
-Android jest otwartą, wielowarstwową platformą opartą na jądrze Linuksa. Stos oprogramowania obejmuje m.in.\ jądro (kernel) z mechanizmami bezpieczeństwa (np.\ SELinux), warstwę HAL (Hardware Abstraction Layer), biblioteki natywne, środowisko uruchomieniowe ART oraz framework Java/Kotlin z zestawem API, na którym budowane są aplikacje i usługi systemowe \cite{AOSPArchitecture,AndroidPlatformArchitecture}. W nowszych wersjach platformy pojawiły się dodatkowe izolatory, takie jak \emph{SDK sandbox} (separowany proces dla wybranych SDK), co jeszcze bardziej ogranicza wpływ komponentów zewnętrznych na proces aplikacji \cite{SdkSandbox}.
+Android jest otwartą, wielowarstwową platformą opartą na jądrze Linuksa. Stos oprogramowania obejmuje m.in.\ jądro (\emph{kernel}) z mechanizmami bezpieczeństwa (np.\ \emph{SELinux}), warstwę \emph{HAL} (\emph{Hardware Abstraction Layer}), biblioteki natywne, środowisko uruchomieniowe \emph{ART} oraz framework Java/Kotlin z zestawem \emph{API}, na którym budowane są aplikacje i usługi systemowe \cite{AOSPArchitecture,AndroidPlatformArchitecture}. W nowszych wersjach platformy pojawiły się dodatkowe izolatory, takie jak \emph{SDK sandbox} (separowany proces dla wybranych \emph{SDK}), co jeszcze bardziej ogranicza wpływ komponentów zewnętrznych na proces aplikacji \cite{SdkSandbox}.
 
 \section{Model bezpieczeństwa}
-Fundamentem bezpieczeństwa Androida jest \emph{piaskownica} (application sandbox): każda aplikacja otrzymuje unikalny UID i działa w odseparowanym procesie z izolowanym przestrzennie systemem plików. Dodatkową ochronę zapewnia polityka MAC (SELinux), a także model uprawnień ograniczający dostęp do wrażliwych zasobów (lokalizacja, kamera, mikrofon) – w tym uprawnienia żądane w czasie działania (\emph{runtime permissions}) \cite{AndroidSandbox,AndroidPermissionsOverview,AndroidPermissionRequest}. Łańcuch zaufania domykają mechanizmy podpisywania aplikacji, Verified Boot/AVB oraz proces weryfikacji w ekosystemie sklepu (Play Protect, audyty polityk), co Google cyklicznie raportuje \cite{GooglePlaySafety2024}. 
-W kontekście komunikacji sieciowej część aplikacji implementuje \emph{certificate pinning}, które utrudnia badaczowi pasywne przechwycenie treści HTTPS przez klasyczne proxy – poprawnie wdrożony pinning ma powodować odrzucenie połączenia z certyfikatem wystawionym przez zaufane, lecz nieprawidłowe (dla danej domeny) CA \cite{OWASPMASTGPinning}.
+Fundamentem bezpieczeństwa Androida jest \emph{piaskownica} (\emph{application sandbox}): każda aplikacja otrzymuje unikalny \emph{UID} i działa w odseparowanym procesie z izolowanym przestrzennie systemem plików. Dodatkową ochronę zapewnia polityka \emph{MAC} (\emph{SELinux}), a także model uprawnień ograniczający dostęp do wrażliwych zasobów (lokalizacja, kamera, mikrofon) – w tym uprawnienia żądane w czasie działania (\emph{runtime permissions}) \cite{AndroidSandbox,AndroidPermissionsOverview,AndroidPermissionRequest}. Łańcuch zaufania domykają mechanizmy podpisywania aplikacji, \emph{Verified Boot/AVB} oraz proces weryfikacji w ekosystemie sklepu (\emph{Play Protect}, audyty polityk), co Google cyklicznie raportuje \cite{GooglePlaySafety2024}. 
+W kontekście komunikacji sieciowej część aplikacji implementuje \emph{certificate pinning}, które utrudnia badaczowi pasywne przechwycenie treści \emph{HTTPS} przez klasyczne proxy – poprawnie wdrożony pinning ma powodować odrzucenie połączenia z certyfikatem wystawionym przez zaufane, lecz nieprawidłowe (dla danej domeny) \emph{CA} \cite{OWASPMASTGPinning}.
 
 \section{Protokoły}
-Przeglądane aplikacje korzystają z rodziny protokołów HTTP w różnych wersjach oraz z TLS do uwierzytelnienia i poufności. 
+Przeglądane aplikacje korzystają z rodziny protokołów \emph{HTTP} w różnych wersjach oraz z \emph{TLS} do uwierzytelnienia i poufności:
 \begin{itemize}
-  \item \textbf{HTTP/1.1} – klasyczny, tekstowy protokół nad TCP (przykładowe różnice semantyczne i transportowe względem nowszych wersji omawiają poniższe punkty HTTP/2/HTTP/3). 
-  \item \textbf{HTTP/2} – binarne ramkowanie, kompresja nagłówków i \emph{multiplexing} wielu strumieni na jednym połączeniu TCP w celu redukcji opóźnień \cite{RFC9113}.
-  \item \textbf{HTTP/3} – mapowanie semantyki HTTP na QUIC (UDP), eliminujące wpływ HoL na poziomie transportu i skracające zestawienie połączenia \cite{RFC9114,RFC9000}. 
-  \item \textbf{TLS 1.3} – domyślny protokół kryptograficzny dla HTTPS, skracający \emph{handshake}, upraszczający zestaw szyfrów i wspierający 0-RTT (z zastrzeżeniami bezpieczeństwa) \cite{RFC8446}.
+  \item \textbf{HTTP/1.1} – klasyczny, tekstowy protokół nad TCP (przykładowe różnice semantyczne i transportowe względem nowszych wersji omawiają poniższe punkty \emph{HTTP/2/HTTP/3}). 
+  \item \textbf{HTTP/2} – binarne ramkowanie, kompresja nagłówków i \emph{multiplexing} wielu strumieni na jednym połączeniu \emph{TCP} w celu redukcji opóźnień \cite{RFC9113}.
+  \item \textbf{HTTP/3} – mapowanie semantyki \emph{HTTP} na QUIC (UDP), eliminujące wpływ HoL na poziomie transportu i skracające zestawienie połączenia \cite{RFC9114,RFC9000}. 
+  \item \textbf{TLS 1.3} – domyślny protokół kryptograficzny dla \emph{HTTPS}, skracający \emph{handshake}, upraszczający zestaw szyfrów i wspierający \emph{0-RTT} (z zastrzeżeniami bezpieczeństwa) \cite{RFC8446}.
 \end{itemize}
 
 \section{Techniki analizy ruchu}
 W analizach bezpieczeństwa mobilnego wykorzystuje się zwykle dwa komplementarne podejścia: 
 \emph{(1) przechwytywanie i inspekcję ruchu} oraz \emph{(2) instrumentację/dynamiczną obserwację aplikacji}. 
-Do przechwytywania pakietów i strumieni wykorzystywane są m.in.\ \textit{tcpdump} i \textit{Wireshark}, a do pośredniczenia w ruchu HTTP(S) – \textit{mitmproxy} (instalacja zaufanego CA na urządzeniu w celu deszyfracji ruchu) \cite{tcpdump,WiresharkDocs,MitmproxyDocs,OWASPMASTGIntercept}. 
-W przypadku aplikacji z poprawnym \emph{certificate pinning} wymagane bywa podejście z instrumentacją (np.\ \textit{Frida}) lub środowisko z większą kontrolą (urządzenie z dostępem \textit{root}/emulator, własny trust store), przy czym nowoczesne techniki (np.\ niestandardowi \emph{trust managerzy}, natywne weryfikacje, integracja z \emph{Play Integrity}) istotnie podnoszą poprzeczkę dla badań dynamicznych \cite{Frida,OWASPMASTGPinning}. 
+Do przechwytywania pakietów i strumieni wykorzystywane są m.in.\ \textit{tcpdump} i \textit{Wireshark}, a do pośredniczenia w ruchu \emph{HTTP(S)} – \textit{mitmproxy} (instalacja zaufanego \emph{CA} na urządzeniu w celu deszyfracji ruchu) \cite{tcpdump,WiresharkDocs,MitmproxyDocs,OWASPMASTGIntercept}. 
+W przypadku aplikacji z poprawnym \emph{certificate pinning} wymagane bywa podejście z instrumentacją (np.\ \textit{Frida}) lub środowisko z większą kontrolą (urządzenie z dostępem \textit{root}/emulator, własny \emph{trust store}), przy czym nowoczesne techniki (np.\ niestandardowi \emph{trust managerzy}, natywne weryfikacje, integracja z \emph{Play Integrity}) istotnie podnoszą poprzeczkę dla badań dynamicznych \cite{Frida,OWASPMASTGPinning}. 
 Wybór między emulatorem a urządzeniem fizycznym wpływa na wierność zachowania (emulator ułatwia kontrolę i automatyzację; urządzenie fizyczne lepiej oddaje ograniczenia sprzętowe i integracje OEM) \cite{OWASPMASTGIntercept}.
 
 \section{Prywatność i tracking}
-Problem prywatności w aplikacjach mobilnych obejmuje zarówno zakres i uzasadnienie uprawnień, jak i obecność komponentów stron trzecich (SDK analityczne/reklamowe). Do statycznego wykrywania trackerów i przeglądu uprawnień w APK wykorzystywane są m.in.\ \textit{Exodus Privacy} oraz narzędzia deweloperskie Androida \cite{ExodusPrivacy,AndroidPermissionsOverview}. Równolegle platforma rozwija rozwiązania mające ograniczyć śledzenie międzyaplikacyjne (np.\ \emph{Privacy Sandbox on Android}) \cite{PrivacySandboxAndroid}. W praktyce ocena prywatności powinna łączyć analizę statyczną i dynamiczną (ruch sieciowy, zachowanie w tle), a także kontrolować zużycie zasobów (bateria/CPU) – symptomy nadmiernej telemetrii mogą ujawniać się jako wzrost aktywności sieciowej w tle czy anomalia energetyczne.
+Problem prywatności w aplikacjach mobilnych obejmuje zarówno zakres i uzasadnienie uprawnień, jak i obecność komponentów stron trzecich (\emph{SDK} analityczne/reklamowe). Do statycznego wykrywania trackerów i przeglądu uprawnień w \emph{APK} wykorzystywane są m.in.\ \textit{Exodus Privacy} oraz narzędzia deweloperskie Androida \cite{ExodusPrivacy,AndroidPermissionsOverview}. Równolegle platforma rozwija rozwiązania mające ograniczyć śledzenie międzyaplikacyjne (np.\ \emph{Privacy Sandbox on Android}) \cite{PrivacySandboxAndroid}. W praktyce ocena prywatności powinna łączyć analizę statyczną i dynamiczną (ruch sieciowy, zachowanie w tle), a także kontrolować zużycie zasobów (bateria/\emph{CPU}) – symptomy nadmiernej telemetrii mogą ujawniać się jako wzrost aktywności sieciowej w tle czy anomalia energetyczne.
 
 \section{Narzędzia}
 
 W badaniach wykorzystano zestaw narzędzi do przechwytywania, inspekcji i korelacji ruchu sieciowego oraz do analizy statycznej aplikacji. Poniżej opisano ich rolę, wytwarzane artefakty i ograniczenia.
 
-\subsection*{PCAPdroid (Android, tryb VPN)}
+\subsection*{PCAPdroid (Android, tryb \emph{VPN})}
 \begin{itemize}
-  \item \textbf{Rola:} podstawowe narzędzie rejestracji ruchu \emph{na urządzeniu} w badaniach właściwych; działa w oparciu o \texttt{VpnService} i przechwytuje pakiety bez rootowania.
-  \item \textbf{Zastosowanie w pracy:} każda sesja aplikacji była rejestrowana do plików \texttt{PCAPNG} oraz agregowana do \texttt{CSV} (metryki: protokół, host, port, flows, wolumen RX/TX).
+  \item \textbf{Rola:} podstawowe narzędzie rejestracji ruchu \emph{na urządzeniu} w badaniach właściwych; działa w oparciu o \texttt{VpnService} i przechwytuje pakiety bez \emph{rootowania}.
+  \item \textbf{Zastosowanie w pracy:} każda sesja aplikacji była rejestrowana do plików \texttt{PCAPNG} oraz agregowana do \texttt{CSV} (metryki: protokół, host, port, flows, wolumen \emph{RX/TX}).
   \item \textbf{Artefakty:} pliki \texttt{.pcapng}, \texttt{.csv}; metryki per protokół/host/port wykorzystywane w tabelach i podsumowaniach.
-  \item \textbf{Ograniczenia:} brak dostępu do treści szyfrowanych (TLS/QUIC); metryki oparte o metadane.
+  \item \textbf{Ograniczenia:} brak dostępu do treści szyfrowanych (\emph{TLS/QUIC}); metryki oparte o metadane.
 \end{itemize}
 
 \subsection*{Wireshark (analiza i próby radiowe)}
 \begin{itemize}
-  \item \textbf{Rola:} inspekcja \texttt{PCAP/PCAPNG} oraz wstępne próby przechwytywania ramek w trybie \emph{monitor}.
+  \item \textbf{Rola:} inspekcja \emph{PCAP/PCAPNG} oraz wstępne próby przechwytywania ramek w trybie \emph{monitor}.
   \item \textbf{Zastosowanie w pracy:} manualna weryfikacja strumieni, klasyfikacja hostów i protokołów; podejście radiowe porzucono z uwagi na małą skuteczność w warunkach produkcyjnych.
-  \item \textbf{Artefakty:} zrzuty ekranów/wnioski jakościowe; brak dodatkowych danych liczbowych poza tymi z PCAPdroida.
-  \item \textbf{Ograniczenia:} trudności z dekrypcją WPA2/SAE (rotacja kluczy, brak materiału kryptograficznego); wysoki koszt operacyjny przy niskiej wartości poznawczej dla aplikacji mobilnych.
+  \item \textbf{Artefakty:} zrzuty ekranów/wnioski jakościowe; brak dodatkowych danych liczbowych poza tymi z \emph{PCAPdroida}.
+  \item \textbf{Ograniczenia:} trudności z dekrypcją \emph{WPA2/SAE} (rotacja kluczy, brak materiału kryptograficznego); wysoki koszt operacyjny przy niskiej wartości poznawczej dla aplikacji mobilnych.
 \end{itemize}
 
-\subsection*{tcpdump (host/AP)}
+\subsection*{tcpdump (host/\emph{AP})}
 \begin{itemize}
-  \item \textbf{Rola:} uzupełniające przechwytywanie ruchu po stronie hosta lub punktu dostępowego (AP), szczególnie podczas konfiguracji środowiska i testów.
+  \item \textbf{Rola:} uzupełniające przechwytywanie ruchu po stronie hosta lub punktu dostępowego (\emph{AP}), szczególnie podczas konfiguracji środowiska i testów.
   \item \textbf{Zastosowanie w pracy:} weryfikacja, że ruch przechodzi przez kontrolowany węzeł; pomocnicze ślady do szybkiego podglądu (\texttt{tcpdump -i <iface> -w file.pcap}).
   \item \textbf{Artefakty:} \texttt{.pcap} do inspekcji w Wiresharku.
-  \item \textbf{Ograniczenia:} jak wyżej — brak wglądu w treść TLS/QUIC; zależność od topologii sieci.
+  \item \textbf{Ograniczenia:} jak wyżej — brak wglądu w treść \emph{TLS/QUIC}; zależność od topologii sieci.
 \end{itemize}
 
-\subsection*{mitmproxy (HTTP(S) proxy, MITM)}
+\subsection*{mitmproxy (\emph{HTTP(S)} proxy, \emph{MITM})}
 \begin{itemize}
-  \item \textbf{Rola:} próby aktywnego \emph{MITM} na HTTP/TLS-over-TCP (inspekcja nagłówków HTTP, mapowanie żądań).
-  \item \textbf{Zastosowanie w pracy:} etap wstępny — klasyfikacja ruchu, kontrola DNS/trasowania przez własny węzeł.
-  \item \textbf{Artefakty:} logi \texttt{mitmproxy}, ewentualne ślady żądań HTTP(S) dla aplikacji bez pinningu i bez HTTP/3.
-  \item \textbf{Ograniczenia:} nieskuteczne wobec \textbf{HTTP/3/QUIC} oraz aplikacji z \textbf{pinningiem certyfikatów}; w badaniach właściwych kluczowe było przejście na rejestrację \emph{on-device}.
+  \item \textbf{Rola:} próby aktywnego \emph{MITM} na \emph{HTTP/TLS-over-TCP} (inspekcja nagłówków \emph{HTTP}, mapowanie żądań).
+  \item \textbf{Zastosowanie w pracy:} etap wstępny — klasyfikacja ruchu, kontrola \emph{DNS}/trasowania przez własny węzeł.
+  \item \textbf{Artefakty:} logi \texttt{mitmproxy}, ewentualne ślady żądań \emph{HTTP(S)} dla aplikacji bez pinningu i bez \emph{HTTP/3}.
+  \item \textbf{Ograniczenia:} nieskuteczne wobec \emph{HTTP/3/QUIC} oraz aplikacji z \textbf{pinningiem certyfikatów}; w badaniach właściwych kluczowe było przejście na rejestrację \emph{on-device}.
 \end{itemize}
 
-\subsection*{Exodus Privacy (analiza statyczna APK)}
+\subsection*{Exodus Privacy (analiza statyczna \emph{APK})}
 \begin{itemize}
   \item \textbf{Rola:} zewnętrzna analiza statyczna paczek aplikacji (sygnatury bibliotek \emph{trackerów}, lista \emph{uprawnień}).
   \item \textbf{Zastosowanie w pracy:} dla każdej aplikacji zestawiono liczbę trackerów i zakres uprawnień w badanej wersji; dane skorelowano z obserwacjami sieciowymi.
-  \item \textbf{Artefakty:} wyniki (raporty WWW/PDF) cytowane w podrozdziałach; liczby w tabeli zbiorczej podsumowania.
+  \item \textbf{Artefakty:} wyniki (raporty \emph{WWW/PDF}) cytowane w podrozdziałach; liczby w tabeli zbiorczej podsumowania.
   \item \textbf{Ograniczenia:} detekcja oparta o \emph{sygnatury statyczne}; obecność biblioteki nie jest dowodem \emph{aktywności} trackera w czasie sesji.
 \end{itemize}
 
 \subsection*{Frida (instrumentacja dynamiczna)}
 \begin{itemize}
-  \item \textbf{Rola:} próba obejścia niestandardowych weryfikacji TLS/pinningu w wybranych aplikacjach.
-  \item \textbf{Zastosowanie w pracy:} etap wstępny — eksperymenty z hookami; próba nieudana ze względu na rozproszone ścieżki walidacji i ochrony anty-tamper.
+  \item \textbf{Rola:} próba obejścia niestandardowych weryfikacji \emph{TLS/pinningu} w wybranych aplikacjach.
+  \item \textbf{Zastosowanie w pracy:} etap wstępny — eksperymenty z hookami; próba nieudana ze względu na rozproszone ścieżki walidacji i ochrony \emph{anty-tamper}.
   \item \textbf{Artefakty:} wnioski metodologiczne (ograniczona skuteczność bez głębokiej personalizacji skryptów).
-  \item \textbf{Ograniczenia:} wysoka złożoność, podatność na mechanizmy anty-debug/anti-root; nie stosowano w badaniach właściwych.
+  \item \textbf{Ograniczenia:} wysoka złożoność, podatność na mechanizmy \emph{anty-debug/anti-root}; nie stosowano w badaniach właściwych.
 \end{itemize}

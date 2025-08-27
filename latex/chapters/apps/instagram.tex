@@ -4,7 +4,7 @@
 \subsection*{Okno i wolumen}
 Okno eksperymentu: \textbf{2025-08-18 17{:}55:47–18{:}08:00} ($\approx$ \SI{12.2}{\minute}). 
 Zarejestrowano \textbf{302} przepływy, wolumen $\approx$ \textbf{28.04 MiB} 
-(\textbf{RX $\approx$ 27.20 MiB}, \textbf{TX $\approx$ 0.85 MiB}).
+(\textbf{\emph{RX} $\approx$ 27.20 MiB}, \textbf{\emph{TX} $\approx$ 0.85 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym: 
@@ -33,7 +33,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch Instagrama jest silnie zdominowany przez QUIC/HTTP/3. 
+Ruch Instagrama jest silnie zdominowany przez \emph{QUIC/HTTP/3}. 
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -59,7 +59,7 @@ Ruch Instagrama jest silnie zdominowany przez QUIC/HTTP/3.
 \end{table}
 
 \paragraph{Obserwacja:}
-Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin). Występują też długotrwałe połączenia TCP/5222 (port MQTT) do \texttt{185.60.217.175}, związane najprawdopodobniej z powiadomieniami/czatem.
+Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer Meta, Dublin). Występują też długotrwałe połączenia \emph{TCP}/5222 (port \emph{MQTT}) do \texttt{185.60.217.175}, związane najprawdopodobniej z powiadomieniami/czatem.
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -89,7 +89,7 @@ Widoczna jest silna integracja z infrastrukturą Meta: poza domenami instagrama 
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Dominacja HTTP/3/QUIC.} Zdecydowana większość ruchu (liczebnie i wolumenowo) to QUIC na 443/UDP, co jest zgodne z trendem migracji warstwy mediów do HTTP/3 \cite{RFC9114,RFC9000}.
+  \item \textbf{Dominacja \emph{HTTP/3}/\emph{QUIC}.} Zdecydowana większość ruchu (liczebnie i wolumenowo) to \emph{QUIC} na 443/\emph{UDP}, co jest zgodne z trendem migracji warstwy mediów do \emph{HTTP/3} \cite{RFC9114,RFC9000}.
   \item \textbf{Kanał utrzymania sesji.} Występuje równoległy kanał na \textbf{TCP/5222} (11--12 flows, mały wolumen), prawdopodobnie do komunikacji w czasie rzeczywistym/utrzymania połączenia.
   \item \textbf{Intensyfikacja przepływów po interakcji, następnie spadek aktywności.} Zliczenia per minuta (niezamieszczone tu dla zwięzłości) pokazują silny pik około 17{:}59 (setki nowych/kończących się flow), po którym następują krótkie sekwencje aktywności w tle ($\approx$ 18{:}05–18{:}06).
   \item \textbf{Niewielki ślad HTTP/1.1/HTTPS.} Jedynie kilka żądań; główna komunikacja i zasoby idą ścieżką QUIC.
@@ -108,9 +108,9 @@ Raport dla \texttt{com.instagram.android} (wersja 394.0.0.46.81, źródło Googl
 
 \textbf{Uprawnienia — przykłady kluczowe:}
 \begin{itemize}
-  \item \textbf{Lokalizacja:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION},
-  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO},
-  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_CALL\_LOG}, \texttt{READ\_PHONE\_STATE}, \texttt{ANSWER\_PHONE\_CALLS},
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION}.
+  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO}.
+  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_CALL\_LOG}, \texttt{READ\_PHONE\_STATE}, \texttt{ANSWER\_PHONE\_CALLS}.
   \item \textbf{Sieć i praca w tle:} \texttt{ACCESS\_NETWORK\_STATE}, \texttt{WAKE\_LOCK}, \texttt{RECEIVE\_BOOT\_COMPLETED}, \texttt{FOREGROUND\_SERVICE\_*}.
 \end{itemize}
 

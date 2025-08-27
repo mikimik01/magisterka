@@ -68,44 +68,44 @@ Workspace \\
 \section{Przechwytywanie radiowe Wiresharkiem w trybie monitorowania (niepowodzenie)}
 \textbf{Cel:} pasywna obserwacja ruchu bez konfigurowania proxy na urządzeniu.
 
-\textbf{Sprzęt:} laptop z Linuksem; karta Wi-Fi w trybie monitorowania; dwa Galaxy S7.
+\textbf{Sprzęt:} laptop z Linuksem; karta \emph{Wi-Fi} w trybie monitorowania; dwa Galaxy S7.
 
-\textbf{Metoda:} nasłuch (monitor mode) podczas korzystania z Wi-Fi zabezpieczonego (WPA2), próba późniejszej dekrypcji ramek i analizy ruchu aplikacji.
+\textbf{Metoda:} nasłuch (\emph{monitor mode}) podczas korzystania z \emph{Wi-Fi} zabezpieczonego (\emph{WPA2}), próba późniejszej dekrypcji ramek i analizy ruchu aplikacji.
 
-\textbf{Wynik:} \textit{niepowodzenie metody} w kontekście pełnej analizy treści: kluczowy ruch pozostaje szyfrowany (WPA2), brak materiału do bezstratnej dekrypcji (m.in. konieczność złapania handshake i posiadania parametrów sieci). Metoda okazała się niewspółmiernie pracochłonna i ograniczona względem celów projektu; zrezygnowano na rzecz podejścia proxy/pcap.
+\textbf{Wynik:} \textit{niepowodzenie metody} w kontekście pełnej analizy treści: kluczowy ruch pozostaje szyfrowany (\emph{WPA2}), brak materiału do bezstratnej dekrypcji (m.in. konieczność złapania handshake i posiadania parametrów sieci). Metoda okazała się niewspółmiernie pracochłonna i ograniczona względem celów projektu; zrezygnowano na rzecz podejścia \emph{proxy}/\emph{pcap}.
 
-\textbf{Wnioski:} przy analizie aplikacji mobilnych efektywniejsze jest środowisko kontrolowane (AP + proxy/pcap) niż sniffing radiowy na produkcyjnej sieci.
+\textbf{Wnioski:} przy analizie aplikacji mobilnych efektywniejsze jest środowisko kontrolowane (\emph{AP} + \emph{proxy}/\emph{pcap}) niż sniffing radiowy na produkcyjnej sieci.
 % ----------
-\section{MITM przez proxy}
+\section{\emph{MITM} przez \emph{proxy}}
 
-\textbf{Cel:} przechwytywanie i inspekcja ruchu HTTP(S) generowanego przez badane aplikacje.
+\textbf{Cel:} przechwytywanie i inspekcja ruchu \emph{HTTP(S)} generowanego przez badane aplikacje.
 
 \textbf{Narzędzia:} \textit{mitmproxy}, \textit{tcpdump}.
 
-\textbf{Sprzęt i sieć:} laptop z systemem Debian skonfigurowany jako punkt dostępowy (hostapd + dnsmasq) oraz dwa telefony Samsung Galaxy S7 po resecie do ustawień fabrycznych.
+\textbf{Sprzęt i sieć:} laptop z systemem Debian skonfigurowany jako punkt dostępowy (\emph{hostapd} + \emph{dnsmasq}) oraz dwa telefony Samsung Galaxy S7 po resecie do ustawień fabrycznych.
 
 \textbf{Metoda:}
 \begin{enumerate}
-  \item Konfiguracja AP i routingu; uruchomienie \textit{mitmproxy} w trybie przechwytującym oraz równoległe rejestrowanie pakietów za pomocą \textit{tcpdump}.
+  \item Konfiguracja \emph{AP} i \emph{routingu}; uruchomienie \textit{mitmproxy} w trybie przechwytującym oraz równoległe rejestrowanie pakietów za pomocą \textit{tcpdump}.
   \item Instalacja certyfikatu użytkownika \textit{mitmproxy} na urządzeniach oraz próby uruchomienia i obsługi wybranych aplikacji.
 \end{enumerate}
 
 \textbf{Wynik:} 
-Przy podejściu pierwszym aplikacje odmawiały działania, wykrywając obecność proxy i blokując komunikację. Próba drugiego wariantu (instalacja certyfikatu i obejście pinningu) również zakończyła się niepowodzeniem: telefony odrzucały certyfikat podczas pracy, a dodatkowo podczas próby uzyskania uprawnień \emph{root} w celu głębszej ingerencji doszło do uszkodzenia jednego z urządzeń. Sytuacja ta wymusiła zmianę metodologii i poszukiwanie alternatywnych rozwiązań.
+Przy podejściu pierwszym aplikacje odmawiały działania, wykrywając obecność \emph{proxy} i blokując komunikację. Próba drugiego wariantu (instalacja certyfikatu i obejście \emph{pinningu}) również zakończyła się niepowodzeniem: telefony odrzucały certyfikat podczas pracy, a dodatkowo podczas próby uzyskania uprawnień \emph{root} w celu głębszej ingerencji doszło do uszkodzenia jednego z urządzeń. Sytuacja ta wymusiła zmianę metodologii i poszukiwanie alternatywnych rozwiązań.
 
-\textbf{Wnioski:} samo zastosowanie proxy MITM daje bardzo ograniczoną obserwowalność wobec aplikacji stosujących pinning i/lub protokół QUIC. Niezbędne są inne podejścia, np.\ instrumentacja, przechwytywanie ruchu na poziomie systemowym (pcap) lub konwersja ruchu HTTP/3 na HTTP/2.
+\textbf{Wnioski:} samo zastosowanie \emph{proxy MITM} daje bardzo ograniczoną obserwowalność wobec aplikacji stosujących \emph{pinning} i/lub protokół \emph{QUIC}. Niezbędne są inne podejścia, np.\ instrumentacja, przechwytywanie ruchu na poziomie systemowym (\emph{pcap}) lub konwersja ruchu \emph{HTTP/3} na \emph{HTTP/2}.
 
-\section{MITM z instrumentacją (Frida) wobec pinningu — próba nieudana}
+\section{\emph{MITM} z instrumentacją (\emph{Frida}) wobec \emph{pinningu} — próba nieudana}
 
 \textbf{Cel:} obejście mechanizmu \emph{certificate pinning} i przywrócenie możliwości inspekcji treści żądań.
 
-\textbf{Narzędzia:} \textit{Frida} (\textit{frida-server} oraz gotowe skrypty hookujące interfejsy API związane z walidacją certyfikatów).
+\textbf{Narzędzia:} \textit{Frida} (\textit{frida-server} oraz gotowe skrypty \emph{hookujące} interfejsy \emph{API} związane z walidacją certyfikatów).
 
 \textbf{Metoda:} uruchomiono \textit{frida-server} na urządzeniu i wstrzyknięto skrypty mające na celu przechwycenie wywołań metod weryfikujących certyfikaty oraz ich dynamiczne obejście.
 
-\textbf{Wynik:} próba zakończyła się \textit{niepowodzeniem}. Wstrzyknięte skrypty nie zadziałały w przypadku analizowanej aplikacji. Prawdopodobnymi przyczynami były: brak uprawnień \emph{root}, aktywne mechanizmy SELinux oraz natywne implementacje weryfikacji certyfikatów (np.\ niestandardowe \texttt{TrustManager}), których nie obejmowały standardowe hooki.
+\textbf{Wynik:} próba zakończyła się \textit{niepowodzeniem}. Wstrzyknięte skrypty nie zadziałały w przypadku analizowanej aplikacji. Prawdopodobnymi przyczynami były: brak uprawnień \emph{root}, aktywne mechanizmy \emph{SELinux} oraz natywne implementacje weryfikacji certyfikatów (np.\ niestandardowe \texttt{TrustManager}), których nie obejmowały standardowe \emph{hooki}.
 
-\textbf{Wnioski:} w wielu nowoczesnych aplikacjach obejście pinningu bez dostępu do uprawnień \emph{root} jest nierealne lub bardzo trudne. Alternatywami pozostają uruchamianie aplikacji w środowisku z pełnym dostępem administracyjnym (emulator, urządzenie z \emph{root}) lub analiza ograniczona do metadanych transportowych (hosty, porty, czasy, wolumen danych), bez wglądu w same treści komunikatów.
+\textbf{Wnioski:} w wielu nowoczesnych aplikacjach obejście \emph{pinningu} bez dostępu do uprawnień \emph{root} jest nierealne lub bardzo trudne. Alternatywami pozostają uruchamianie aplikacji w środowisku z pełnym dostępem administracyjnym (emulator, urządzenie z \emph{root}) lub analiza ograniczona do metadanych transportowych (hosty, porty, czasy, wolumen danych), bez wglądu w same treści komunikatów.
 
 
 % % ----------

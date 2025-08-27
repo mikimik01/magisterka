@@ -4,7 +4,7 @@
 \subsection*{Okno i wolumen}
 Okno eksperymentu: \textbf{2025-08-24 14{:}31{:}51–2025-08-24 14{:}37{:}25} ($\approx$ \SI{5.6}{\minute}). 
 Zarejestrowano \textbf{465} przepływy, wolumen $\approx$ \textbf{9.61 MiB} 
-(\textbf{RX $\approx$ 9.21 MiB}, \textbf{TX $\approx$ 0.39 MiB}).
+(\textbf{\emph{RX} $\approx$ 9.21 MiB}, \textbf{\emph{TX} $\approx$ 0.39 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował: \emph{nasłuch tła (2 min), utworzenie konta, logowanie, nawigację po ekranach (online/offline), wyszukiwanie, wylogowanie}.
@@ -29,7 +29,7 @@ Scenariusz obejmował: \emph{nasłuch tła (2 min), utworzenie konta, logowanie,
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch aplikacji jest zdominowany przez \textbf{HTTPS}; kanały \textbf{TLS}/\textbf{TCP} mają znikomy wolumen. Nie odnotowano QUIC ani jawnego HTTP.
+Ruch aplikacji jest zdominowany przez \textbf{\emph{HTTPS}}; kanały \textbf{\emph{TLS}/\emph{TCP}} mają znikomy wolumen. Nie odnotowano \emph{QUIC} ani jawnego \emph{HTTP}.
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -53,7 +53,7 @@ Ruch aplikacji jest zdominowany przez \textbf{HTTPS}; kanały \textbf{TLS}/\text
 \end{table}
 
 \paragraph{Obserwacja:}
-Największy wolumen skupia się na 443/TCP do chmury (adresy AWS/Google) — typowe dla API/CDN aplikacji.
+Największy wolumen skupia się na 443/\emph{TCP} do chmury (adresy \emph{AWS}/Google) — typowe dla \emph{API/CDN} aplikacji.
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -83,8 +83,8 @@ Dominują domeny aplikacji (\texttt{api.voronoiapp.com}, \texttt{cdn.voronoiapp.
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Brak QUIC/HTTP/3} — transport klasyczny TLS/TCP po 443.
-  \item \textbf{Brak HTTP w badanym oknie czasowym} — w badanym oknie nie zaobserwowano nieszyfrowanych żądań.
+  \item \textbf{Brak \emph{QUIC}/\emph{HTTP/3}} — transport klasyczny \emph{TLS}/\emph{TCP} po 443.
+  \item \textbf{Brak \emph{HTTP} w badanym oknie czasowym} — w badanym oknie nie zaobserwowano nieszyfrowanych żądań.
   \item \textbf{Integracje zewnętrzne} — logowanie/konfiguracja przez \texttt{cognito-identity}/\texttt{cognito-idp}; telemetria do \texttt{crashlytics}; logowanie zdarzeń do \texttt{firebaselogging}.
 \end{itemize}
 
@@ -100,9 +100,9 @@ Raport dla \texttt{com.voronoi.organization.app} (wersja 1.0.34, Google Play) uj
 
 \textbf{Uprawnienia — przykłady kluczowe:}
 \begin{itemize}
-  \item \textbf{Pamięć masowa:} \texttt{READ\_EXTERNAL\_STORAGE}, \texttt{WRITE\_EXTERNAL\_STORAGE},
-  \item \textbf{Reklama/atrybucja:} \texttt{ACCESS\_ADSERVICES\_AD\_ID}, \texttt{ACCESS\_ADSERVICES\_ATTRIBUTION},
-  \item \textbf{Sieć/system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{POST\_NOTIFICATIONS}, \texttt{READ\_GSERVICES},
+  \item \textbf{Pamięć masowa:} \texttt{READ\_EXTERNAL\_STORAGE}, \texttt{WRITE\_EXTERNAL\_STORAGE}.
+  \item \textbf{Reklama/atrybucja:} \texttt{ACCESS\_ADSERVICES\_AD\_ID}, \texttt{ACCESS\_ADSERVICES\_ATTRIBUTION}.
+  \item \textbf{Sieć/system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{POST\_NOTIFICATIONS}, \texttt{READ\_GSERVICES}.
   \item \textbf{Inne:} \texttt{RECEIVE} (FCM push).
 \end{itemize}
 
@@ -114,15 +114,15 @@ Raport dla \texttt{com.voronoi.organization.app} (wersja 1.0.34, Google Play) uj
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.} 
-Szyfrowanie TLS ogranicza wgląd do metadanych; wolumen wskazuje na standardowe korzystanie z API/CDN (brak jawnego przesyłu danych wrażliwych).
+Szyfrowanie \emph{TLS} ogranicza wgląd do metadanych; wolumen wskazuje na standardowe korzystanie z \emph{API/CDN} (brak jawnego przesyłu danych wrażliwych).
 
 \paragraph{Uwagi dot. bezpieczeństwa.}
-Zachowanie sieciowe (HTTPS, brak plaintext, integracja z Cognito) jest spójne z typową architekturą: tożsamość w AWS Cognito, treści przez CDN/API. Pełna ocena (pinning certyfikatów, obsługa błędów TLS, polityka uprawnień w runtime) wymaga analizy APK/testów dynamicznych.
+Zachowanie sieciowe (\emph{HTTPS}, brak plaintext, integracja z Cognito) jest spójne z typową architekturą: tożsamość w AWS Cognito, treści przez \emph{CDN}/\emph{API}. Pełna ocena (pinning certyfikatów, obsługa błędów \emph{TLS}, polityka uprawnień w runtime) wymaga analizy \emph{APK}/testów dynamicznych.
 
 \subsection{Podsumowanie}
 W badanej sesji Voronoi wykazuje:
 \begin{enumerate}
-\item dominację HTTPS ($\approx 9.61$ MiB) w \textbf{465} flow, okno \SI{5.6}{\minute},
+\item dominację \emph{HTTPS} ($\approx 9.61$ MiB) w \textbf{465} flow, okno \SI{5.6}{\minute},
 \item koncentrację na hostach aplikacji (\texttt{api.voronoiapp.com}, \texttt{cdn.voronoiapp.com}) i usługach Google/AWS (Firebase, Crashlytics, Cognito),
-\item brak śladów QUIC i HTTP w badanym oknie czasowym.
+\item brak śladów \emph{QUIC} i \emph{HTTP} w badanym oknie czasowym.
 \end{enumerate}

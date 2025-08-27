@@ -1,0 +1,16 @@
+\chapter{Stan wiedzy i przegląd literatury}
+
+\section{Analiza ruchu sieciowego}
+Badania pokazują, że ruch generowany przez aplikacje mobilne niesie znaczące wyzwania dla prywatności – nawet konfiguracje \emph{TLS} nie chronią całkowicie, bo analizę można przeprowadzać na metadanych lub kanałach bocznych. W przeglądzie literatury poświęconym analizie ruchu mobilnego autorzy klasyfikują cele, miejsca przechwytywania oraz metody wykorzystania danych sieciowych do profilowania użytkowników \cite{Conti2017TrafficAnalysis}. Inne prace demonstrują, jak sieć może zostać wykorzystana do identyfikacji konkretnej aplikacji, nawet przy szyfrowaniu, wykorzystując uczenie maszynowe na podstawie cech pakietów \cite{Taylor2017AppFingerprinting}. Przykłady wykorzystania narzędzi takich jak \textit{mitmproxy} i \textit{tcpdump} pokazują, jak można wychwycić i analizować zarówno \emph{HTTP} jak i inne kanały sieciowe \cite{mitmproxy,tcpdump}.
+
+\section{Inżynieria wsteczna i testy penetracyjne}
+Inżynieria wsteczna aplikacji mobilnych, ułatwiająca badanie mechanizmów takich jak \emph{SSL pinning}, jest szeroko stosowana. Wczesne prace wskazują na powszechne błędy konfiguracji \emph{SSL} w aplikacjach Androidowych — ponad połowa analizowanych aplikacji korzystających z \emph{SSL} miała błędne wdrożenia lub brak obsługi poprawnego pinningu \cite{Fahl2012WhyEve}. W celu przeprowadzania dynamicznych testów bezpieczeństwa wykorzystuje się narzędzia takie jak \textit{Frida}, \textit{Drozer} czy \textit{MobSF}, które wspierają zarówno analizę dynamiczną, jak i automatyzację \cite{MobSF,Frida}.
+
+\section{Prywatność, uprawnienia i trackery}
+Coraz więcej badań zwraca uwagę na skalę gromadzenia danych przez aplikacje mobilne. Systematyczne opracowania przeglądowe pokazują spektrum metod oceny prywatności (statycznych, dynamicznych i hybrydowych) oraz wskazują luki w zgodności z regulacjami \cite{DelAlamo2021PrivacyMapping}. Narzędzia takie jak \textit{Exodus Privacy} umożliwiają analizę \emph{APK} pod kątem wbudowanych trackerów i żądanych uprawnień \cite{ExodusPrivacy}. Wyniki badań empirycznych pokazują, że aplikacje często żądają nadmiarowych uprawnień lub integrują zewnętrzne trackery reklamowe \cite{Razaghpanah2018AppsPrivacy}.
+
+\section{Zużycie zasobów i kontekst behawioralny}
+Nadmierne użycie zasobów (np. bateria, \emph{CPU}) może wskazywać na obecność komponentów śledzących lub brak optymalizacji. Do pomiarów wykorzystuje się m.in. \textit{Battery Historian} oraz \textit{Android Profiler} \cite{BatteryHistorian,AndroidProfiler}. Chociaż ten aspekt jest rzadziej eksplorowany w literaturze naukowej, podkreśla się jego znaczenie w identyfikacji ukrytych mechanizmów aplikacji \cite{Pathak2012BatteryDrain}.
+
+\section{Podsumowanie}
+Przegląd literatury wykazuje, że istnieje bogata baza wiedzy w obszarach analizy ruchu sieciowego, inżynierii wstecznej, testów penetracyjnych oraz badania prywatności aplikacji mobilnych. Jednocześnie wciąż brakuje holistycznego podejścia, które łączyłoby te wszystkie elementy — co stanowi niszę, którą niniejsza praca ma ambicję wypełnić.

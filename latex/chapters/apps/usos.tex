@@ -1,10 +1,10 @@
-\section{Mobile USOS (wersja 2.0.3)}
+\section{Mobile USOS PP (wersja 1.14.1)}
 \label{sec:usos}
 
 \subsection*{Okno i wolumen}
 Okno eksperymentu: \textbf{2025-08-24 13{:}43{:}09–13{:}47{:}29} ($\approx$ \SI{4.3}{\minute}). 
 Zarejestrowano \textbf{200} przepływów, wolumen $\approx$ \textbf{2.88 MiB} 
-(\textbf{RX $\approx$ 2.47 MiB}, \textbf{TX $\approx$ 0.40 MiB}).
+(\textbf{\emph{RX} $\approx$ 2.47 MiB}, \textbf{\emph{TX} $\approx$ 0.40 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
@@ -29,7 +29,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch USOS w tej sesji jest zdominowany przez \textbf{HTTPS/TLS} (brak QUIC i brak HTTP w badanym oknie czasowym).
+Ruch USOS w tej sesji jest zdominowany przez \textbf{\emph{HTTPS}/\emph{TLS}} (brak \emph{QUIC} i brak \emph{HTTP} w badanym oknie czasowym).
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -53,7 +53,7 @@ Ruch USOS w tej sesji jest zdominowany przez \textbf{HTTPS/TLS} (brak QUIC i bra
 \end{table}
 
 \paragraph{Obserwacja:}
-Największy wolumen kierowany jest do hostów na porcie \textbf{443/TCP} (HTTPS); widoczny jest też kanał \textbf{TLS/3000} o znikomym wolumenie (telemetria/błędy).
+Największy wolumen kierowany jest do hostów na porcie \textbf{443/\emph{TCP}} (\emph{HTTPS}); widoczny jest też kanał \textbf{\emph{TLS}/3000} o znikomym wolumenie (telemetria/błędy).
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -79,8 +79,8 @@ Dominują hosty uczelniane (\texttt{usosapps.put.poznan.pl}, \texttt{ppulse.put.
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Brak QUIC/HTTP/3.} Komunikacja aplikacyjna po TLS/443; treść niedostępna.
-  \item \textbf{Brak HTTP.} Nie odnotowano żądań nieszyfrowanych.
+  \item \textbf{Brak \emph{QUIC}/\emph{HTTP/3}.} Komunikacja aplikacyjna po \emph{TLS}/443; treść niedostępna.
+  \item \textbf{Brak \emph{HTTP}.} Nie odnotowano żądań nieszyfrowanych.
   \item \textbf{Integracje zewnętrzne.} Połączenia do usług Google (Firebase/Crashlytics) o małym wolumenie są zgodne z diagnostyką/aplikacyjną telemetrią.
 \end{itemize}
 
@@ -89,9 +89,9 @@ Raport dla \texttt{pl.edu.usos.mobilny} (wersja 2.0.3, Google Play) wskazuje obe
 
 \textbf{Uprawnienia — przykłady kluczowe:}
 \begin{itemize}
-  \item \textbf{Kamera/kalendarium:} \texttt{CAMERA}, \texttt{READ\_CALENDAR}, \texttt{WRITE\_CALENDAR},
-  \item \textbf{Biometria:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT},
-  \item \textbf{Sieć/system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{NFC}, \texttt{POST\_NOTIFICATIONS}, \texttt{WAKE\_LOCK},
+  \item \textbf{Kamera/kalendarium:} \texttt{CAMERA}, \texttt{READ\_CALENDAR}, \texttt{WRITE\_CALENDAR}.
+  \item \textbf{Biometria:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT}.
+  \item \textbf{Sieć/system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{NFC}, \texttt{POST\_NOTIFICATIONS}, \texttt{WAKE\_LOCK}.
   \item \textbf{Inne:} \texttt{CHECK\_LICENSE}, \texttt{RECEIVE} (FCM), \nolinkurl{pl.edu.usos.mobilny.DYNAMIC\_RECEIVER\_NOT\_EXPORTED\_PERMISSION}.
 \end{itemize}
 \emph{Spostrzeżenia:} 
@@ -99,15 +99,15 @@ Jedyny tracker ma charakter czysto diagnostyczny; zestaw uprawnień obejmuje zar
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
-Warstwa transportowa jest poprawnie szyfrowana (TLS); brak widoczności treści żądań/odpowiedzi oraz brak jawnego HTTP.
+Warstwa transportowa jest poprawnie szyfrowana (\emph{TLS}); brak widoczności treści żądań/odpowiedzi oraz brak jawnego \emph{HTTP}.
 
 \paragraph{Praktyki bezpieczeństwa.}
-W analizowanej sesji widać konsekwentne użycie \textbf{HTTPS/TLS} do hostów uczelnianych oraz ograniczoną telemetrię (Crashlytics/Firebase). Dalsza ocena (pinning certyfikatów, mechanizmy anti-root/anti-tamper, magazyn kluczy) wymaga analizy APK i testów dynamicznych.
+W analizowanej sesji widać konsekwentne użycie \textbf{\emph{HTTPS}/\emph{TLS}} do hostów uczelnianych oraz ograniczoną telemetrię (Crashlytics/Firebase). Dalsza ocena (pinning certyfikatów, mechanizmy \emph{anti-root}/\emph{anti-tamper}, magazyn kluczy) wymaga analizy \emph{APK} i testów dynamicznych.
 
 \subsection{Podsumowanie}
 W badanej sesji USOS wykazuje:
 \begin{enumerate}
-\item dominację TLS/HTTPS; wolumen ($\approx 2.88$ MiB), \textbf{200} przepływów w $\sim$\SI{4.3}{\minute},
+\item dominację \emph{TLS}/\emph{HTTPS}; wolumen ($\approx 2.88$ MiB), \textbf{200} przepływów w $\sim$\SI{4.3}{\minute},
 \item koncentrację ruchu na hostach uczelnianych (\texttt{usosapps.put.poznan.pl}, \texttt{ppulse.put.poznan.pl}) oraz niewielką telemetrię do usług Google,
 \item brak śladów HTTP w badanym oknie czasowym oraz brak QUIC/HTTP/3 w zarejestrowanym oknie.
 \end{enumerate}

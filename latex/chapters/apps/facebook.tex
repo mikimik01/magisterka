@@ -2,7 +2,7 @@
 \label{sec:facebook}
 
 \subsection*{Okno i wolumen}
-Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \SI{12.28}{\minute}). Zarejestrowano \textbf{305} przepływów, wolumen $\approx$ \textbf{29.75 MiB} (\textbf{RX $\approx$ 28.30 MiB}, \textbf{TX $\approx$ 1.45 MiB}).
+Okno eksperymentu: \textbf{2025-08-19 19{:}24{:}12–19{:}36{:}29} ($\approx$ \SI{12.28}{\minute}). Zarejestrowano \textbf{305} przepływów, wolumen $\approx$ \textbf{29.75 MiB} (\textbf{\emph{RX} $\approx$ 28.30 MiB}, \textbf{\emph{TX} $\approx$ 1.45 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym: 
@@ -30,7 +30,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch Facebooka jest silnie zdominowany przez QUIC/HTTP/3 (jak u Instagrama). 
+Ruch Facebooka jest silnie zdominowany przez \emph{QUIC/HTTP/3} (jak u Instagrama). 
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -82,7 +82,7 @@ Największy wolumen koncentruje się na adresie \texttt{185.60.217.63} (serwer M
 \end{table}
 
 \paragraph{Obserwacja:} 
-Analiza hostów pokazuje silną koncentrację ruchu na \texttt{graph.facebook.com} oraz powiązanych usługach (\texttt{lookaside}, \texttt{chat-e2ee-mini}, \texttt{gateway}). Wskazuje to na dominującą rolę centralnego API (\texttt{graph}) i serwisów pomocniczych (logowanie, czat, integracja z Instagramem). Dodatkowa obecność hostów typu \texttt{*-fallback} oraz \texttt{*.fbcdn.net} sugeruje stosowanie mechanizmów redundancji i serwerów CDN do dystrybucji treści multimedialnych.
+Analiza hostów pokazuje silną koncentrację ruchu na \texttt{graph.facebook.com} oraz powiązanych usługach (\texttt{lookaside}, \texttt{chat-e2ee-mini}, \texttt{gateway}). Wskazuje to na dominującą rolę centralnego \emph{API} (\texttt{graph}) i serwisów pomocniczych (logowanie, czat, integracja z Instagramem). Dodatkowa obecność hostów typu \texttt{*-fallback} oraz \texttt{*.fbcdn.net} sugeruje stosowanie mechanizmów redundancji i serwerów \emph{CDN} do dystrybucji treści multimedialnych.
 
 \subsection{Wyniki z Exodus Privacy (aplikacja)}
 Raport dla \texttt{com.facebook.katana} (wersja 525.0.0.53.51, Google Play) wskazuje obecność \textbf{8 trackerów} oraz \textbf{90 uprawnień}.
@@ -101,10 +101,10 @@ Raport dla \texttt{com.facebook.katana} (wersja 525.0.0.53.51, Google Play) wska
 
 \textbf{Uprawnienia — przykłady kluczowe:}
 \begin{itemize}
-  \item \textbf{Lokalizacja:} \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION},
-  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO},
-  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_PHONE\_STATE}, \texttt{MANAGE\_ACCOUNTS},
-  \item \textbf{Sieć i system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{NFC}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW},
+  \item \textbf{Lokalizacja:} \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_MEDIA\_LOCATION}.
+  \item \textbf{Multimedia:} \texttt{CAMERA}, \texttt{RECORD\_AUDIO}, \texttt{READ/WRITE\_EXTERNAL\_STORAGE}, \texttt{READ\_MEDIA\_IMAGES/VIDEO}.
+  \item \textbf{Tożsamość/konta/telefonia:} \texttt{GET\_ACCOUNTS}, \texttt{READ\_CONTACTS}, \texttt{READ\_PHONE\_STATE}, \texttt{MANAGE\_ACCOUNTS}.
+  \item \textbf{Sieć i system:} \texttt{INTERNET}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{NFC}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW}.
   \item \textbf{Biometria i powiadomienia:} \texttt{USE\_BIOMETRIC}, \texttt{USE\_FINGERPRINT}, \texttt{POST\_NOTIFICATIONS}.
 \end{itemize}
 
@@ -126,7 +126,7 @@ Raport dla \texttt{com.facebook.katana} (wersja 525.0.0.53.51, Google Play) wska
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
-Transport QUIC/UDP ogranicza klasyczne MITM/TLS-over-TCP; wgląd w semantykę HTTP jest bardzo ograniczony.
+Transport \emph{QUIC/UDP} ogranicza klasyczne \emph{MITM/TLS-over-TCP}; wgląd w semantykę HTTP jest bardzo ograniczony.
 
 \paragraph{Zmienność wersji.}
 Facebook to aplikacja o wysokiej dynamice wydawniczej; zestaw hostów, udział QUIC/H2 oraz uprawnienia mogą różnić się między wersjami i regionami. Liczby w tym rozdziale odnoszą się do konkretnej sesji i wersji aplikacji użytej w eksperymencie.

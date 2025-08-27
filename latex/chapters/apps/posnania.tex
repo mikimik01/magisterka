@@ -4,7 +4,7 @@
 \subsection*{Okno i wolumen}
 Okno eksperymentu: \textbf{2025-08-23 17{:}54{:}14–17{:}57{:}08} ($\approx$ \SI{2.9}{\minute}). 
 Zarejestrowano \textbf{21} przepływy, wolumen $\approx$ \textbf{0.08 MiB} 
-(\textbf{RX $\approx$ 0.06 MiB}, \textbf{TX $\approx$ 0.03 MiB}).
+(\textbf{\emph{RX} $\approx$ 0.06 MiB}, \textbf{\emph{TX} $\approx$ 0.03 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym: 
@@ -28,7 +28,7 @@ Scenariusz obejmował około \textbf{15 minut interakcji} z aplikacją, w tym:
 \end{table}
 
 \paragraph{Obserwacja:} 
-Ruch aplikacji jest w całości oparty o \textbf{HTTPS} (brak QUIC oraz HTTP w badanym oknie czasowym).
+Ruch aplikacji jest w całości oparty o \textbf{\emph{HTTPS}} (brak \emph{QUIC} oraz \emph{HTTP} w badanym oknie czasowym).
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -49,7 +49,7 @@ Ruch aplikacji jest w całości oparty o \textbf{HTTPS} (brak QUIC oraz HTTP w b
 \end{table}
 
 \paragraph{Obserwacja:}
-Cele to wyłącznie port \textbf{443/TCP} (HTTPS) oraz standardowe \textbf{DNS/53}. Brak nietypowych portów.
+Cele to wyłącznie port \textbf{443/\emph{TCP}} (\emph{HTTPS}) oraz standardowe \textbf{\emph{DNS}/53}. Brak nietypowych portów.
 
 \subsection{Najczęstsze hosty (liczba przepływów)}
 \begin{table}[H]
@@ -69,12 +69,12 @@ Cele to wyłącznie port \textbf{443/TCP} (HTTPS) oraz standardowe \textbf{DNS/5
 \end{table}
 
 \paragraph{Obserwacja:}
-Widoczne są domeny \texttt{yourb.app} (API/aktualizacje), \texttt{sentry.io} (raportowanie błędów) oraz \texttt{stripe.com} (płatności).
+Widoczne są domeny \texttt{yourb.app} (\emph{API}/aktualizacje), \texttt{sentry.io} (raportowanie błędów) oraz \texttt{stripe.com} (płatności).
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Brak QUIC/HTTP/3.} Cała komunikacja po 443/TCP (TLS).
-  \item \textbf{Brak HTTP.} W badanej sesji nie obserwowano niezaszyfrowanych żądań HTTP.
+  \item \textbf{Brak \emph{QUIC}/\emph{HTTP/3}.} Cała komunikacja po 443/\emph{TCP} (\emph{TLS}).
+  \item \textbf{Brak \emph{HTTP}.} W badanej sesji nie obserwowano niezaszyfrowanych żądań \emph{HTTP}.
   \item \textbf{Integracje zewnętrzne.} Ruch do \texttt{sentry.io} (crash reporting) i \texttt{stripe.com} (płatności) jest zgodny z funkcjonalnością aplikacji.
 \end{itemize}
 
@@ -94,7 +94,7 @@ Raport dla \texttt{com.yourbuildingapp.app.posnania} (wersja 1.1.1, Google Play)
 
 \subsection{Subiektywne spostrzeżenia}
 \paragraph{Obserwowalność treści.}
-Ze względu na TLS treści żądań/odpowiedzi nie są dostępne; brak oznak jawnego przesyłania danych.
+Ze względu na \emph{TLS} treści żądań/odpowiedzi nie są dostępne; brak oznak jawnego przesyłania danych.
 
 \paragraph{Hipotezy dot. bezpieczeństwa (hipoteza wymagająca osobnych badań w celu klaryfikacji).}
 Podczas korzystania z aplikacji spostrzeżono możliwość wycieku informacji danych wrażliwych. Dodawanie tablic rejestracyjnych pojazdów nie wymaga wykazania własności samochodu. Dodać można każdą rejestrację, a następnie śledzić zarejestrowane na nią wjazdy i wyjazdy z parkingu.
@@ -103,7 +103,7 @@ Na podstawie samego ruchu sieciowego \emph{nie można} potwierdzić „otwartej�
 \subsection{Podsumowanie}
 W badanej sesji Posnania wykazuje:
 \begin{enumerate}
-\item ruch wyłącznie po HTTPS (bez QUIC), niewielki wolumen ($\approx 0.08$ MiB) i zapytania DNS,
+\item ruch wyłącznie po \emph{HTTPS} (bez \emph{QUIC}), niewielki wolumen ($\approx 0.08$ MiB) i zapytania \emph{DNS},
 \item integrację z \texttt{sentry.io} (telemetria błędów) i \texttt{stripe.com} (płatności),
 \item brak śladów HTTP w badanym oknie czasowym; dalsze badania wymagane, by ocenić bezpieczeństwo lokalnej bazy danych.
 \end{enumerate}

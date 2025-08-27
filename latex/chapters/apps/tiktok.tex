@@ -4,7 +4,7 @@
 \subsection*{Okno i wolumen}
 Okno eksperymentu: \textbf{2025-08-24 16{:}40{:}55–2025-08-24 16{:}45{:}00} ($\approx$ \SI{4.1}{\minute}). 
 Zarejestrowano \textbf{649} przepływy, wolumen $\approx$ \textbf{125.30 MiB} 
-(\textbf{RX $\approx$ 123.71 MiB}, \textbf{TX $\approx$ 1.59 MiB}).
+(\textbf{\emph{RX} $\approx$ 123.71 MiB}, \textbf{\emph{TX} $\approx$ 1.59 MiB}).
 
 \paragraph{Przebieg badania:} 
 Scenariusz obejmował: \emph{2 min nasłuchu tła, tworzenie konta, logowanie, wylogowanie, nawigację po głównych stronach, lajkowanie, zmianę personalizacji treści, wyłączenie aplikacji oraz 10 min nasłuchu tła}.
@@ -31,7 +31,7 @@ Scenariusz obejmował: \emph{2 min nasłuchu tła, tworzenie konta, logowanie, w
 \end{table}
 
 \paragraph{Obserwacja:} 
-Wolumenowo dominował HTTPS/TCP.
+Wolumenowo dominował \emph{HTTPS/TCP}.
 
 \subsection{Największe cele (IP/port) wg wolumenu}
 \begin{table}[H]
@@ -87,8 +87,8 @@ Typowe domeny: \texttt{*.tiktokv.eu/com}, \texttt{*.tiktokcdn-eu.com}, \texttt{*
 
 \subsection{Obserwacje jakościowe}
 \begin{itemize}
-  \item \textbf{Dominacja HTTP/3/QUIC} — strumienie wideo po UDP/443; niskie RTT ustanawiania i dobra tolerancja strat.
-  \item \textbf{Asymetria RX/TX} — silna przewaga danych odbieranych, zgodna z autoplay/scroll feedu.
+  \item \textbf{Dominacja \emph{HTTP/3}/\emph{QUIC}} — strumienie wideo po \emph{UDP}/443; niskie \emph{RTT} ustanawiania i dobra tolerancja strat.
+  \item \textbf{Asymetria \emph{RX}/\emph{TX}} — silna przewaga danych odbieranych, zgodna z autoplay/scroll feedu.
   \item \textbf{Telemetria} — połączenia do hostów \texttt{mcs-*}/\texttt{mon-*}; wolumen niewielki względem mediów.
 \end{itemize}
 
@@ -97,10 +97,10 @@ Raport dla \texttt{com.ss.android.ugc.trill} (wersja 34.8.4, Google Play) wskazu
 
 \textbf{Uprawnienia — przykłady kluczowe:}
 \begin{itemize}
-  \item \textbf{Lokalizacja i łączność:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{BLUETOOTH\_CONNECT},
-  \item \textbf{Multimedia:} \texttt{RECORD\_AUDIO}, \texttt{CAMERA}, \texttt{READ\_MEDIA\_AUDIO/IMAGES/VIDEO},
-  \item \textbf{Powiadomienia/system:} \texttt{POST\_NOTIFICATIONS}, \texttt{FOREGROUND\_SERVICE}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW},
-  \item \textbf{Reklama/identyfikacja:} \texttt{ACCESS\_ADSERVICES\_AD\_ID}, \texttt{AD\_ID},
+  \item \textbf{Lokalizacja i łączność:} \texttt{ACCESS\_FINE\_LOCATION}, \texttt{ACCESS\_COARSE\_LOCATION}, \texttt{ACCESS\_NETWORK\_STATE}, \texttt{ACCESS\_WIFI\_STATE}, \texttt{BLUETOOTH\_CONNECT}.
+  \item \textbf{Multimedia:} \texttt{RECORD\_AUDIO}, \texttt{CAMERA}, \texttt{READ\_MEDIA\_AUDIO/IMAGES/VIDEO}.
+  \item \textbf{Powiadomienia/system:} \texttt{POST\_NOTIFICATIONS}, \texttt{FOREGROUND\_SERVICE}, \texttt{WAKE\_LOCK}, \texttt{SYSTEM\_ALERT\_WINDOW}.
+  \item \textbf{Reklama/identyfikacja:} \texttt{ACCESS\_ADSERVICES\_AD\_ID}, \texttt{AD\_ID}.
   \item \textbf{Pamięć:} \texttt{READ/WRITE\_EXTERNAL\_STORAGE}.
 \end{itemize}
 

@@ -6,39 +6,16 @@ Celem pracy była empiryczna charakterystyka ruchu sieciowego wybranych aplikacj
 
 \begin{itemize}
   \item zarejestrowano i zestandaryzowano sesje pracy aplikacji (Instagram, Facebook, Posnania, mObywatel, USOS, Spotify, Voronoi, TikTok),
-  \item porównano protokoły transportowe (HTTP/1.1, HTTP/2, HTTP/3/QUIC, TLS), koncentrację ruchu na hostach oraz obecność telemetrii,
-  \item skorelowano obserwacje z wynikami z Exodus Privacy (liczba trackerów i kategorie uprawnień).
+  \item porównano protokoły transportowe (\emph{HTTP/1.1}, \emph{HTTP/2}, \emph{HTTP/3}/\emph{QUIC}, \emph{TLS}), koncentrację ruchu na hostach oraz obecność telemetrii,
+  \item skorelowano obserwacje z wynikami z \emph{Exodus Privacy} (liczba trackerów i kategorie uprawnień).
 \end{itemize}
 
 \noindent Najważniejsze tendencje:
 \begin{enumerate}
-  \item \textbf{Aplikacje multimedialne/społecznościowe} (Instagram, Facebook, TikTok) wykazują wyraźną dominację \textbf{HTTP/3/QUIC} i dużą asymetrię RX/TX (konsumpcja treści).
-  \item \textbf{Aplikacje instytucjonalne} (mObywatel, USOS) komunikują się konsekwentnie po \textbf{TLS/HTTPS} (brak QUIC, brak HTTP w klarze w zarejestrowanych oknach) i mają ograniczone odwołania do domen trzecich.
-  \item \textbf{Aplikacje komercyjne} (Posnania, Spotify, Voronoi) opierają się głównie na \textbf{TLS/HTTPS} z typową telemetrią (np. Sentry, Crashlytics) i zapleczem w chmurze (AWS/Google).
+  \item \textbf{Aplikacje multimedialne/społecznościowe} (Instagram, Facebook, TikTok) wykazują wyraźną dominację \textbf{\emph{HTTP/3}/\emph{QUIC}} i dużą asymetrię \emph{RX}/\emph{TX} (konsumpcja treści).
+  \item \textbf{Aplikacje instytucjonalne} (mObywatel, USOS) komunikują się konsekwentnie po \textbf{\emph{TLS}/\emph{HTTPS}} (brak \emph{QUIC}, brak \emph{HTTP} w klarze w zarejestrowanych oknach) i mają ograniczone odwołania do domen trzecich.
+  \item \textbf{Aplikacje komercyjne} (Posnania, Spotify, Voronoi) opierają się głównie na \textbf{\emph{TLS}/\emph{HTTPS}} z typową telemetrią (np. \emph{Sentry}, \emph{Crashlytics}) i zapleczem w chmurze (\emph{AWS}/\emph{Google}).
 \end{enumerate}
-
-% \begin{table}[H]
-% \centering
-% \caption{Porównanie badanych aplikacji — zwięzły przegląd sesji i protokołów}
-% \label{tab:apps-overview}
-% \small
-% \begin{tabular}{lrrrrll}
-% \toprule
-% \textbf{Aplikacja} & \multicolumn{1}{c}{\textbf{Flows}} & \multicolumn{1}{c}{\textbf{MiB}} & \multicolumn{1}{c}{\textbf{Okno}} & \textbf{Dominujący} & \textbf{HTTP/3} & \textbf{Uwagi (hosty/telemetria)} \\
-% \midrule
-% Instagram & 302 & 28{,}04 & $\sim$12{,}2 min & QUIC & Tak & graph/gateway.\,instagram, edge-mqtt (5222), silna asymetria \\
-% Facebook  & 305 & 29{,}75 & $\sim$12{,}3 min & QUIC & Tak & graph/gateway, edge-mqtt; \textasciitilde98{,}5\% wolumenu po QUIC \\
-% Posnania  & 21  & 0{,}08  & $\sim$2{,}9 min  & HTTPS & Nie & yourb.app; Sentry (ingest.\,sentry.io), Stripe \\
-% mObywatel & 13  & 0{,}21  & $\sim$2{,}9 min  & HTTPS/TLS & Nie & api.\,mobywatel.gov.pl; sentry.\,puch.\,coi.\,gov.pl; jednorazowy HTTP/80 do Google \\
-% USOS      & 200 & 2{,}88  & $\sim$4{,}3 min  & HTTPS & Nie & usosapps.\,put.\,poznan.pl, ppulse.\,put.\,poznan.pl; Crashlytics/Firebase \\
-% Spotify   & 72  & 12{,}42 & $\sim$2{,}2 min  & HTTPS & Nie & spclient.\,wg.\,spotify.com; mDNS/SSDP (integracje urządzeń) \\
-% Voronoi   & 465 & 9{,}61  & $\sim$5{,}6 min  & HTTPS & Nie & adresy AWS/Google (API/CDN); TLS/3000 śladowy \\
-% TikTok    & --  & --      & --             & QUIC & Tak & domeny *tiktokv*.eu/\-tiktokcdn*, telemetria mcs/mon, silna asymetria \\
-% \bottomrule
-% \end{tabular}
-% \vspace{0.5ex}
-% \\ \footnotesize{Liczby \textit{Flows/MiB/Okno} odnoszą się do pojedynczych reprezentatywnych sesji zarejestrowanych w pracy; dla TikTok w części tabelarycznej nie zestawiano łącznych wartości, gdyż w rozdziale przedstawiono je głównie w ujęciu jakościowym.}
-% \end{table}
 
 \begin{table}[H]
 \centering
@@ -51,14 +28,14 @@ Celem pracy była empiryczna charakterystyka ruchu sieciowego wybranych aplikacj
 \toprule
 \textbf{Aplikacja} & \textbf{Flows} & \textbf{MiB} & \textbf{Okno} & \textbf{Dominujący} & \textbf{HTTP/3} & \textbf{Uwagi (hosty/telemetria)} \\
 \midrule
-Instagram & 302 & 28{,}04 & \(\sim\)12{,}2 min & QUIC       & Tak & graph/gateway.instagram, edge-mqtt (5222); silna asymetria RX/TX \\
-Facebook  & 305 & 29{,}75 & \(\sim\)12{,}3 min & QUIC       & Tak & graph/gateway, edge-mqtt; \(\sim\)98{,}5\% wolumenu po QUIC \\
-Posnania  & 21  & 0{,}08  & \(\sim\)2{,}9  min & HTTPS      & Nie & yourb.app; Sentry (ingest.sentry.io); Stripe \\
-mObywatel & 13  & 0{,}21  & \(\sim\)2{,}9  min & HTTPS/TLS  & Nie & api.mobywatel.gov.pl; sentry.puch.coi.gov.pl; jednorazowy HTTP/80 do Google \\
-USOS      & 200 & 2{,}88  & \(\sim\)4{,}3  min & HTTPS      & Nie & usosapps.put.poznan.pl, ppulse.put.poznan.pl; Crashlytics/Firebase \\
-Spotify   & 72  & 12{,}42 & \(\sim\)2{,}2  min & HTTPS      & Nie & spclient.wg.spotify.com; mDNS/SSDP (integracje urządzeń) \\
-Voronoi   & 465 & 9{,}61  & \(\sim\)5{,}6  min & HTTPS      & Nie & adresy AWS/Google (API/CDN); TLS/3000 śladowy \\
-TikTok    & 649 & 125{,}30& \(\sim\)4{,}1  min & HTTPS (+ QUIC) & Tak & *tiktokv*.eu / tiktokcdn-eu.com; QUIC dla części strumieni; silna asymetria RX/TX \\
+Instagram & 302 & 28{,}04 & \(\sim\)12{,}2 min & \emph{QUIC}       & Tak & graph/gateway.instagram, edge-mqtt (5222); silna asymetria \emph{RX}/\emph{TX} \\
+Facebook  & 305 & 29{,}75 & \(\sim\)12{,}3 min & \emph{QUIC}       & Tak & graph/gateway, edge-mqtt; \(\sim\)98{,}5\% wolumenu po \emph{QUIC} \\
+Posnania  & 21  & 0{,}08  & \(\sim\)2{,}9  min & \emph{HTTPS}      & Nie & yourb.app; Sentry (ingest.sentry.io); Stripe \\
+mObywatel & 13  & 0{,}21  & \(\sim\)2{,}9  min & \emph{HTTPS}/\emph{TLS}  & Nie & api.mobywatel.gov.pl; sentry.puch.coi.gov.pl; jednorazowy \emph{HTTP}/80 do Google \\
+USOS      & 200 & 2{,}88  & \(\sim\)4{,}3  min & \emph{HTTPS}      & Nie & usosapps.put.poznan.pl, ppulse.put.poznan.pl; Crashlytics/Firebase \\
+Spotify   & 72  & 12{,}42 & \(\sim\)2{,}2  min & \emph{HTTPS}      & Nie & spclient.wg.spotify.com; \emph{mDNS}/\emph{SSDP} (integracje urządzeń) \\
+Voronoi   & 465 & 9{,}61  & \(\sim\)5{,}6  min & \emph{HTTPS}      & Nie & adresy AWS/Google (\emph{API}/\emph{CDN}); \emph{TLS}/3000 śladowy \\
+TikTok    & 649 & 125{,}30& \(\sim\)4{,}1  min & \emph{HTTPS} (+ \emph{QUIC}) & Tak & *tiktokv*.eu / tiktokcdn-eu.com; \emph{QUIC} dla części strumieni; silna asymetria \emph{RX}/\emph{TX} \\
 \bottomrule
 \end{tabularx}
 \vspace{0.25em}
@@ -90,24 +67,24 @@ Na dwóch urządzeniach po przywróceniu ustawień fabrycznych zidentyfikowano \
   \end{tabular}
 \end{table}
 
-\paragraph{Przechwytywanie radiowe (Wireshark/monitor mode) — niepowodzenie.}
-Sniffing ramek 802.11 z próbą dekrypcji ruchu aplikacji okazał się nieefektywny (złożone warunki radiowe, rotacja kluczy, brak pełnego materiału kryptograficznego). \textbf{Wniosek:} metoda ma wysoką cenę operacyjną i niską wartość poznawczą dla aplikacji mobilnych w warunkach produkcyjnych; lepiej \textit{kierować ruch przez własny węzeł} i rejestrować go na końcu.
+\paragraph{Przechwytywanie radiowe (\emph{Wireshark}/\emph{monitor mode}) — niepowodzenie.}
+\emph{Sniffing} ramek 802.11 z próbą dekrypcji ruchu aplikacji okazał się nieefektywny (złożone warunki radiowe, rotacja kluczy, brak pełnego materiału kryptograficznego). \textbf{Wniosek:} metoda ma wysoką cenę operacyjną i niską wartość poznawczą dla aplikacji mobilnych w warunkach produkcyjnych; lepiej \textit{kierować ruch przez własny węzeł} i rejestrować go na końcu.
 
-\paragraph{MITM przez proxy (mitmproxy) — ograniczenia.}
-Podejście z własnym AP i proxy ułatwia klasyfikację hostów i kontrolę DNS, ale w praktyce na przeszkodzie stają \textbf{pinning certyfikatów} i \textbf{HTTP/3/QUIC}, które omijają klasyczny „TLS-over-TCP” MITM. 
+\paragraph{\emph{MITM} przez \emph{proxy} (\emph{mitmproxy}) — ograniczenia.}
+Podejście z własnym \emph{AP} i \emph{proxy} ułatwia klasyfikację hostów i kontrolę \emph{DNS}, ale w praktyce na przeszkodzie stają \textbf{\emph{pinning} certyfikatów} i \textbf{\emph{HTTP/3}/\emph{QUIC}}, które omijają klasyczny „\emph{TLS-over-TCP}” \emph{MITM}. 
 
-\paragraph{MITM + instrumentacja (Frida) — próba nieudana.}
-Próba dynamicznego obejścia niestandardowych walidacji certyfikatów i pinningu zakończyła się niepowodzeniem (niestandardowe ścieżki weryfikacji, komponenty spoza prostych hooków). \textbf{Wniosek:} skuteczny MITM nowoczesnych aplikacji wymaga \emph{silnie customizowanej} instrumentacji lub środowisk buildowych — co wykracza poza zakres niniejszej pracy.
+\paragraph{\emph{MITM} + instrumentacja (\emph{Frida}) — próba nieudana.}
+Próba dynamicznego obejścia niestandardowych walidacji certyfikatów i \emph{pinningu} zakończyła się niepowodzeniem (niestandardowe ścieżki weryfikacji, komponenty spoza prostych hooków). \textbf{Wniosek:} skuteczny \emph{MITM} nowoczesnych aplikacji wymaga \emph{silnie customizowanej} instrumentacji lub środowisk buildowych — co wykracza poza zakres niniejszej pracy.
 
-\paragraph{Rejestracja na urządzeniu (PCAP/PCAPNG) — sukces.}
-Rejestracja bezpośrednio na telefonie (np. PCAPdroid) okazała się \textbf{najbardziej efektywna}, dając stabilny wgląd w metadane (protokoły/hosty/wolumeny) przy zachowaniu realnych warunków użytkowania, mimo braku semantyki HTTP przy QUIC/pinningu.
+\paragraph{Rejestracja na urządzeniu (\emph{PCAP}/\emph{PCAPNG}) — sukces.}
+Rejestracja bezpośrednio na telefonie (np. \emph{PCAPdroid}) okazała się \textbf{najbardziej efektywna}, dając stabilny wgląd w metadane (protokoły/hosty/wolumeny) przy zachowaniu realnych warunków użytkowania, mimo braku semantyki \emph{HTTP} przy \emph{QUIC}/\emph{pinningu}.
 
 \section{Wnioski merytoryczne}
 
 \begin{enumerate}
-  \item \textbf{HTTP/3/QUIC jako standard mediów:} aplikacje z intensywną warstwą treści (Instagram, Facebook, TikTok) niemal całkowicie przeniosły strumienie na QUIC, co ogranicza możliwości klasycznego MITM i przesuwa analizę w stronę metadanych.
-  \item \textbf{Transport TLS/HTTPS jako norma bezpieczeństwa:} w sesjach mObywatel i USOS nie odnotowano jawnego HTTP ani QUIC; ruch koncentrował się na hostach instytucjonalnych z niewielką telemetrią pomocniczą.
-  \item \textbf{Telemetria w aplikacjach komercyjnych:} Posnania (Sentry, Stripe) i Spotify (ograniczona telemetria Google/Crashlytics) pokazują typowy profil integracji; Voronoi korzysta z chmury (AWS/Google) bez jawnego QUIC.
+  \item \textbf{HTTP/3/QUIC jako standard mediów:} aplikacje z intensywną warstwą treści (Instagram, Facebook, TikTok) niemal całkowicie przeniosły strumienie na \emph{QUIC}, co ogranicza możliwości klasycznego \emph{MITM} i przesuwa analizę w stronę metadanych.
+  \item \textbf{Transport TLS/HTTPS jako norma bezpieczeństwa:} w sesjach mObywatel i USOS nie odnotowano jawnego \emph{HTTP} ani \emph{QUIC}; ruch koncentrował się na hostach instytucjonalnych z niewielką telemetrią pomocniczą.
+  \item \textbf{Telemetria w aplikacjach komercyjnych:} Posnania (\emph{Sentry}, \emph{Stripe}) i Spotify (ograniczona telemetria \emph{Google}/\emph{Crashlytics}) pokazują typowy profil integracji; Voronoi korzysta z chmury (\emph{AWS}/\emph{Google}) bez jawnego \emph{QUIC}.
   \item \textbf{Ryzyka funkcjonalne niezależne od transportu:} w Posnanii zidentyfikowano możliwość \emph{dodania dowolnej tablicy rejestracyjnej} i wglądu w zdarzenia parkingowe — to obserwacja wymagająca dalszych badań on-device (nie przesądzana przez sam ruch sieciowy), ale istotna z perspektywy prywatności.
 \end{enumerate}
 
@@ -115,19 +92,19 @@ Rejestracja bezpośrednio na telefonie (np. PCAPdroid) okazała się \textbf{naj
 
 \begin{itemize}
   \item wartości liczbowe dotyczą \emph{konkretnych wersji} aplikacji i \emph{pojedynczych okien czasowych}; zmiany wersji i regionu mogą wpływać na protokoły i hosty,
-  \item QUIC i pinning ograniczają wgląd w semantykę HTTP — analiza dotyczy głównie metadanych,
-  \item wyniki Exodus Privacy są statyczne (sygnatury obecności trackerów), a nie dowodem ich aktywności w danej sesji.
+  \item \emph{QUIC} i \emph{pinning} ograniczają wgląd w semantykę \emph{HTTP} — analiza dotyczy głównie metadanych,
+  \item wyniki \emph{Exodus Privacy} są statyczne (sygnatury obecności trackerów), a nie dowodem ich aktywności w danej sesji.
 \end{itemize}
 
 \section{Rekomendacje i kierunki dalszych prac}
 
 \begin{enumerate}
-  \item \textbf{Metodyka:} w badaniach terenowych preferować \emph{rejestrację on-device} + pasywną klasyfikację, a MITM stosować selektywnie (tam, gdzie brak QUIC i pinning pozwala na wgląd w HTTP).
-  \item \textbf{Automatyzacja:} rozbudować pipeline o rozpoznawanie kategorii hostów (API/CDN/telemetria) i detekcję anomalii (np. nietypowe porty, nagły wzrost domen trzecich).
+  \item \textbf{Metodyka:} w badaniach terenowych preferować \emph{rejestrację on-device} + pasywną klasyfikację, a \emph{MITM} stosować selektywnie (tam, gdzie brak \emph{QUIC} i \emph{pinning} pozwala na wgląd w \emph{HTTP}).
+  \item \textbf{Automatyzacja:} rozbudować \emph{pipeline} o rozpoznawanie kategorii hostów (\emph{API}/\emph{CDN}/telemetria) i detekcję anomalii (np. nietypowe porty, nagły wzrost domen trzecich).
   \item \textbf{Prywatność:} dla aplikacji instytucjonalnych utrzymywać monitoring odwołań do domen trzecich i okresowo weryfikować politykę uprawnień.
-  \item \textbf{Weryfikacja hipotez funkcyjnych:} przeprowadzić testy on-device (np. inspekcja bazy lokalnej, pinning, reverse engineering APK) dla przypadków takich jak rejestracje pojazdów w Posnanii.
+  \item \textbf{Weryfikacja hipotez funkcyjnych:} przeprowadzić testy \emph{on-device} (np. inspekcja bazy lokalnej, \emph{pinning}, \emph{reverse engineering} \emph{APK}) dla przypadków takich jak rejestracje pojazdów w Posnanii.
 \end{enumerate}
 
 \section{Konkluzja}
 
-Zastosowana metodyka pozwoliła na \textbf{spójne i powtarzalne} porównanie zachowań sieciowych różnych klas aplikacji. W praktyce użytkowej \textbf{transport jest w przeważającej mierze szyfrowany} (TLS/HTTPS lub QUIC), zaś realne ryzyka prywatności ujawniają się częściej w \emph{semantyce funkcji} i \emph{modelu danych} niż w „nagiej” warstwie protokołów. Badania potwierdzają kierunek: \textit{metadane są wystarczające do profilowania zachowań aplikacji}, ale \textit{ocena bezpieczeństwa} wymaga łączenia pasywnej obserwacji z testami dynamicznymi i analizą on-device.
+Zastosowana metodyka pozwoliła na \textbf{spójne i powtarzalne} porównanie zachowań sieciowych różnych klas aplikacji. W praktyce użytkowej \textbf{transport jest w przeważającej mierze szyfrowany} (\emph{TLS}/\emph{HTTPS} lub \emph{QUIC}), zaś realne ryzyka prywatności ujawniają się częściej w \emph{semantyce funkcji} i \emph{modelu danych} niż w „nagiej” warstwie protokołów. Badania potwierdzają kierunek: \textit{metadane są wystarczające do profilowania zachowań aplikacji}, ale \textit{ocena bezpieczeństwa} wymaga łączenia pasywnej obserwacji z testami dynamicznymi i analizą \emph{on-device}.

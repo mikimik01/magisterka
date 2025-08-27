@@ -1,14 +1,14 @@
 \chapter{Architektura rozwiązania}
 
 \section{Cel rozdziału}
-Celem rozdziału jest opis architektury środowiska badawczego, w którym realizowana jest analiza bezpieczeństwa i prywatności aplikacji mobilnych na Androidzie. Rozdział definiuje topologię sieci, komponenty, przepływ danych oraz decyzje projektowe umożliwiające analizę HTTP/1.1, HTTP/2 i HTTP/3/QUIC z uwzględnieniem TLS~1.3 i barier takich jak \emph{certificate pinning} \cite{RFC8446,RFC9113,RFC9114,RFC9000,OWASPMASTGIntercept,OWASPMASTGPinning}.
+Celem rozdziału jest opis architektury środowiska badawczego, w którym realizowana jest analiza bezpieczeństwa i prywatności aplikacji mobilnych na Androidzie. Rozdział definiuje topologię sieci, komponenty, przepływ danych oraz decyzje projektowe umożliwiające analizę \emph{HTTP/1.1}, \emph{HTTP/2} i \emph{HTTP/3/QUIC} z uwzględnieniem \emph{TLS}~1.3 i barier takich jak \emph{certificate pinning} \cite{RFC8446,RFC9113,RFC9114,RFC9000,OWASPMASTGIntercept,OWASPMASTGPinning}.
 
 \section{Przegląd architektury}
 Środowisko składa się z czterech głównych bloków (rys. \ref{fig:arch-overview}):
 \begin{enumerate}
-  \item \textbf{Urządzenie testowe (DUT)} – telefon z Androidem wykonujący scenariusze testowe.
-  \item \textbf{Brama/AP (Linux)} – laptop z Debianem pełniący rolę punktu dostępowego (Wi-Fi) i bramy NAT; działa na nim \textit{hostapd}, \textit{dnsmasq}, \textit{mitmproxy}, \textit{tcpdump}/\textit{Wireshark}.
-  \item \textbf{Warstwa przechwytywania} – intercept HTTPS przez \textit{mitmproxy} (CA użytkownika) oraz niezależny zrzut pakietów (\texttt{pcap}) dla niskiego poziomu \cite{MitmproxyDocs,WiresharkDocs,tcpdump}.
+  \item \textbf{Urządzenie testowe (\emph{DUT})} – telefon z Androidem wykonujący scenariusze testowe.
+  \item \textbf{Brama/\emph{AP} (Linux)} – laptop z Debianem pełniący rolę punktu dostępowego (Wi-Fi) i bramy \emph{NAT}; działa na nim \textit{hostapd}, \textit{dnsmasq}, \textit{mitmproxy}, \textit{tcpdump}/\textit{Wireshark}.
+  \item \textbf{Warstwa przechwytywania} – intercept \emph{HTTPS} przez \textit{mitmproxy} (\emph{CA} użytkownika) oraz niezależny zrzut pakietów (\texttt{pcap}) dla niskiego poziomu \cite{MitmproxyDocs,WiresharkDocs,tcpdump}.
   \item \textbf{Repozytorium i przetwarzanie} – magazyn \texttt{pcap}/\texttt{flow}, logi proxy i skrypty normalizacji do metryk opisanych w rozdziale „Metodyka”.
 \end{enumerate}
 
@@ -26,34 +26,34 @@ Linuxowy host uruchamia \textit{hostapd} (AP) oraz \textit{dnsmasq} (DHCP/DNS). 
   \item dla HTTP/HTTPS po TCP – jest przekierowywany do \textit{mitmproxy} (intercept), co umożliwia inspekcję transakcji HTTP, nagłówków i treści \cite{MitmproxyDocs,OWASPMASTGIntercept};
   \item niezależnie – interfejsy są rejestrowane \textit{tcpdump}/\textit{Wireshark} w celu analizy ALPN/SNI, wersji TLS, identyfikacji QUIC/HTTP/3 i korelacji strumieni \cite{WiresharkDocs,tcpdump,RFC9114,RFC9000}.
 \end{enumerate}
-Ponieważ \textbf{HTTP/3 działa nad QUIC (UDP)}, nie może być transparentnie odszyfrowany przez klasyczne \emph{TLS MITM}. W praktyce stosowane są dwa tryby: (i) analiza metadanych QUIC/HTTP/3 z \texttt{pcap} oraz (ii) \emph{fallback} do HTTP/2 wymuszony polityką sieci (np. blokada/limitacja UDP/443) – zgodnie z dobrymi praktykami badawczymi i etyką testów \cite{RFC9114,OWASPMASTGIntercept}.
+Ponieważ \textbf{HTTP/3 działa nad \emph{QUIC} (\emph{UDP})}, nie może być transparentnie odszyfrowany przez klasyczne \emph{TLS MITM}. W praktyce stosowane są dwa tryby: (i) analiza metadanych \emph{QUIC}/\emph{HTTP/3} z \texttt{pcap} oraz (ii) \emph{fallback} do \emph{HTTP/2} wymuszony polityką sieci (np. blokada/limitacja \emph{UDP}/443) – zgodnie z dobrymi praktykami badawczymi i etyką testów \cite{RFC9114,OWASPMASTGIntercept}.
 
 \section{Komponenty}
 \subsection{Urządzenia testowe}
 Dwa urządzenia z Androidem pełnią rolę DUT. Konfiguracja badawcza przewiduje:
 \begin{itemize}
   \item czyste profile i kontrolowane konto testowe;
-  \item instalację zaufanego CA użytkownika dla \textit{mitmproxy} (o ile aplikacja nie stosuje pinningu);
+  \item instalację zaufanego \emph{CA} użytkownika dla \textit{mitmproxy} (o ile aplikacja nie stosuje pinningu);
   \item ograniczenie danych w tle aplikacji niewymagających tego dla poprawnego działania (minimalizacja tła w oknie obserwacji);
-  \item wariant z uprawnieniami \textit{root}/emulator w przypadku analiz wymagających pełnej kontroli trust store lub instrumentacji \cite{OWASPMASTGPinning,OWASPMASTGIntercept}.
+  \item wariant z uprawnieniami \textit{root}/emulator w przypadku analiz wymagających pełnej kontroli \emph{trust store} lub instrumentacji \cite{OWASPMASTGPinning,OWASPMASTGIntercept}.
 \end{itemize}
 
 \subsection{AP/brama i segmentacja}
-Host z Debianem działa jako AP i brama NAT. \textit{hostapd} odpowiada za nadawanie SSID i parametry bezpieczeństwa Wi-Fi, \textit{dnsmasq} – za DHCP/DNS, a routing (\texttt{iptables}/\texttt{nftables}) rozdziela podsieci i wymusza ścieżki pomiarowe. Na hoście działają równolegle:
+Host z Debianem działa jako \emph{AP} i brama \emph{NAT}. \textit{hostapd} odpowiada za nadawanie \emph{SSID} i parametry bezpieczeństwa Wi-Fi, \textit{dnsmasq} – za \emph{DHCP}/\emph{DNS}, a routing (\texttt{iptables}/\texttt{nftables}) rozdziela podsieci i wymusza ścieżki pomiarowe. Na hoście działają równolegle:
 \begin{enumerate}
-  \item \textbf{Proxy} – \textit{mitmproxy} w trybie intercept z CA użytkownika (generowanie certyfikatów dla domen), co umożliwia analizę treści HTTP/1.1 i HTTP/2 \cite{MitmproxyDocs,OWASPMASTGIntercept};
-  \item \textbf{Kolektor pakietów} – \textit{tcpdump}/\textit{Wireshark} zapisujące strumienie \texttt{pcap} z interfejsów (Wi-Fi i uplink) do analizy QUIC/TLS \cite{WiresharkDocs,tcpdump,RFC9000,RFC8446}.
+  \item \textbf{Proxy} – \textit{mitmproxy} w trybie intercept z \emph{CA} użytkownika (generowanie certyfikatów dla domen), co umożliwia analizę treści \emph{HTTP/1.1} i \emph{HTTP/2} \cite{MitmproxyDocs,OWASPMASTGIntercept};
+  \item \textbf{Kolektor pakietów} – \textit{tcpdump}/\textit{Wireshark} zapisujące strumienie \texttt{pcap} z interfejsów (Wi-Fi i uplink) do analizy \emph{QUIC}/\emph{TLS} \cite{WiresharkDocs,tcpdump,RFC9000,RFC8446}.
 \end{enumerate}
 
 \subsection{Warstwa instrumentacji (opcjonalnie)}
-Dla aplikacji z rygorystycznym \emph{certificate pinning} (własne \texttt{TrustManager}, weryfikacje natywne) stosuje się instrumentację (np. \textit{Frida}) w celu hookowania wybranych API. W wielu komercyjnych aplikacjach obejście pinningu bez \textit{roota} bywa niewykonalne lub znacząco utrudnione; w takich przypadkach badanie ogranicza się do metadanych sieciowych i efektów objawowych \cite{OWASPMASTGPinning,Frida}.
+Dla aplikacji z rygorystycznym \emph{certificate pinning} (własne \texttt{TrustManager}, weryfikacje natywne) stosuje się instrumentację (np. \textit{Frida}) w celu \emph{hookowania} wybranych \emph{API}. W wielu komercyjnych aplikacjach obejście pinningu bez \textit{roota} bywa niewykonalne lub znacząco utrudnione; w takich przypadkach badanie ogranicza się do metadanych sieciowych i efektów objawowych \cite{OWASPMASTGPinning,Frida}.
 
 \section{Przepływ danych i artefakty}
 \subsection{Rejestracja i normalizacja}
 Dane zebrane w sesji obejmują:
 \begin{itemize}
   \item \textbf{transakcje HTTP} z \textit{mitmproxy}: metoda, kod, nagłówki, rozmiary, czasy, treści (gdy brak pinningu);
-  \item \textbf{zrzuty \texttt{pcap}}: pełne pakiety/strumienie do analizy ALPN/SNI, wersji TLS, cech QUIC (DCID/SCID), liczby strumieni, retransmisji \cite{RFC9113,RFC9114,RFC9000};
+  \item \textbf{zrzuty \texttt{pcap}}: pełne pakiety/strumienie do analizy \emph{ALPN}/\emph{SNI}, wersji \emph{TLS}, cech \emph{QUIC} (\emph{DCID}/\emph{SCID}), liczby strumieni, retransmisji \cite{RFC9113,RFC9114,RFC9000};
   \item \textbf{logi i metadane} z hosta/AP: reguły routingu, kroki wymuszenia fallback, znaczniki czasu.
 \end{itemize}
 Artefakty są następnie normalizowane do poziomu \emph{flow} i \emph{transakcji HTTP}, a następnie agregowane do metryk zdefiniowanych w metodyce (udział szyfrowania, wersje protokołów, wskaźnik pinningu, aktywność w tle, liczba unikalnych domen/AS, itp.).
@@ -66,10 +66,10 @@ Dla wybranych sesji generowane są artefakty energetyczne i wydajnościowe (np. 
 Intercept przez \textit{mitmproxy} daje największą widoczność semantyki HTTP, lecz jest blokowany przez \emph{certificate pinning} oraz nie obejmuje QUIC/HTTP/3. Zrzut \texttt{pcap} jest niezależny od pinningu i pozwala na identyfikację QUIC/HTTP/3, ale ogranicza się do metadanych i analizy transportowej. Z tego powodu architektura łączy obie ścieżki \cite{MitmproxyDocs,OWASPMASTGIntercept,RFC9114}.
 
 \subsection{Wymuszanie fallbacku z QUIC}
-Aby porównać semantykę HTTP/2 i HTTP/3 dla tej samej aplikacji, można tymczasowo ograniczyć UDP/443 (kontrolowany eksperyment) i odnotować wpływ na wydajność i ścieżki domenowe. Takie działanie jest wykonywane wyłącznie w sieci laboratoryjnej i na kontach testowych \cite{RFC9114,OWASPMASTGIntercept}.
+Aby porównać semantykę \emph{HTTP/2} i \emph{HTTP/3} dla tej samej aplikacji, można tymczasowo ograniczyć \emph{UDP}/443 (kontrolowany eksperyment) i odnotować wpływ na wydajność i ścieżki domenowe. Takie działanie jest wykonywane wyłącznie w sieci laboratoryjnej i na kontach testowych \cite{RFC9114,OWASPMASTGIntercept}.
 
 \subsection{Obsługa pinningu}
-Gdy aplikacja odrzuca certyfikat CA użytkownika, raportujemy to jako przypadek pinningu i przechodzimy do analizy warstwy transportowej (ALPN/SNI, docelowe domeny, częstotliwość wywołań) oraz — jeśli uzasadnione — do analizy instrumentacyjnej/emulatora. Decyzja o dalszych krokach zależy od wpływu na wyniki i kosztu badania \cite{OWASPMASTGPinning,Frida}.
+Gdy aplikacja odrzuca certyfikat \emph{CA} użytkownika, raportujemy to jako przypadek pinningu i przechodzimy do analizy warstwy transportowej (\emph{ALPN}/\emph{SNI}, docelowe domeny, częstotliwość wywołań) oraz — jeśli uzasadnione — do analizy instrumentacyjnej/emulatora. Decyzja o dalszych krokach zależy od wpływu na wyniki i kosztu badania \cite{OWASPMASTGPinning,Frida}.
 
 \section{Bezpieczeństwo, etyka i izolacja}
 Lab działa w wydzielonej podsieci, bez dostępu osób trzecich; używane są wyłącznie konta testowe i minimalny zestaw danych. Zasada minimalizacji dotyczy również logów: przechowujemy tylko to, co niezbędne do replikowalności i analizy wniosków. \textit{mitmproxy} i \texttt{pcap} są rotowane i anonimizowane, a artefakty opisane checksummami.
